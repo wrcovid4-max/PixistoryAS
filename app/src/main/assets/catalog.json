@@ -1,0 +1,638 @@
+[
+ {
+  "name": "Pixel Watch",
+  "brand": "Google",
+  "type": "WATCH",
+  "year": 2022
+ },
+ {
+  "name": "Pixel Watch 2",
+  "brand": "Google",
+  "type": "WATCH",
+  "year": 2023
+ },
+ {
+  "name": "Pixel Watch 3",
+  "brand": "Google",
+  "type": "WATCH",
+  "year": 2024
+ },
+ {
+  "name": "Pixel Watch 4",
+  "brand": "Google",
+  "type": "WATCH",
+  "year": 2025
+ },
+ {
+  "name": "Pixel Buds Pro",
+  "brand": "Google",
+  "type": "EARBUDS",
+  "year": 2022
+ },
+ {
+  "name": "Pixel Buds Pro 2",
+  "brand": "Google",
+  "type": "EARBUDS",
+  "year": 2024
+ },
+ {
+  "name": "Galaxy S20",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2020,
+  "api": 29
+ },
+ {
+  "name": "Galaxy S21",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2021,
+  "api": 30
+ },
+ {
+  "name": "Galaxy S22",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2022,
+  "api": 31
+ },
+ {
+  "name": "Galaxy S23",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Galaxy S24",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34
+ },
+ {
+  "name": "Galaxy S25",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2025,
+  "api": 35
+ },
+ {
+  "name": "Galaxy Z Fold3",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2021,
+  "api": 31
+ },
+ {
+  "name": "Galaxy Z Flip3",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2021,
+  "api": 31
+ },
+ {
+  "name": "Galaxy Z Fold4",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2022,
+  "api": 32
+ },
+ {
+  "name": "Galaxy Z Flip4",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2022,
+  "api": 32
+ },
+ {
+  "name": "Galaxy Z Fold5",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Galaxy Z Flip5",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Galaxy Z Fold6",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2024,
+  "api": 34
+ },
+ {
+  "name": "Galaxy Z Flip6",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2024,
+  "api": 34
+ },
+ {
+  "name": "Galaxy Z Fold7",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2025,
+  "api": 36
+ },
+ {
+  "name": "Galaxy Z Flip7",
+  "brand": "Samsung",
+  "type": "FOLDABLE",
+  "year": 2025,
+  "api": 36
+ },
+ {
+  "name": "Galaxy A04s",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2022,
+  "api": 31
+ },
+ {
+  "name": "Galaxy A15",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 34
+ },
+ {
+  "name": "Galaxy A35 5G",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34
+ },
+ {
+  "name": "Galaxy A54 5G",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Galaxy A55 5G",
+  "brand": "Samsung",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34
+ },
+ {
+  "name": "Galaxy Tab S8",
+  "brand": "Samsung",
+  "type": "TABLET",
+  "year": 2022,
+  "api": 32
+ },
+ {
+  "name": "Galaxy Tab S9",
+  "brand": "Samsung",
+  "type": "TABLET",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Galaxy Watch6",
+  "brand": "Samsung",
+  "type": "WATCH",
+  "year": 2023
+ },
+ {
+  "name": "Galaxy Watch7",
+  "brand": "Samsung",
+  "type": "WATCH",
+  "year": 2024
+ },
+ {
+  "name": "Galaxy Buds2",
+  "brand": "Samsung",
+  "type": "EARBUDS",
+  "year": 2021
+ },
+ {
+  "name": "Galaxy Buds3 Pro",
+  "brand": "Samsung",
+  "type": "EARBUDS",
+  "year": 2024
+ },
+ {
+  "name": "Note 10 Pro",
+  "brand": "Infinix",
+  "type": "PHONE",
+  "year": 2021,
+  "api": 30
+ },
+ {
+  "name": "Zero 30 5G",
+  "brand": "Infinix",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "OnePlus 9 Pro",
+  "brand": "OnePlus",
+  "type": "PHONE",
+  "year": 2021,
+  "api": 30
+ },
+ {
+  "name": "OnePlus 11",
+  "brand": "OnePlus",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "OnePlus 12",
+  "brand": "OnePlus",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34
+ },
+ {
+  "name": "Xiaomi 13",
+  "brand": "Xiaomi",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Xiaomi 14",
+  "brand": "Xiaomi",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34
+ },
+ {
+  "name": "Redmi Note 13 Pro",
+  "brand": "Xiaomi",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 33
+ },
+ {
+  "name": "Poco F5",
+  "brand": "Xiaomi",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Mi Smart Camera C100",
+  "brand": "Xiaomi",
+  "type": "CAMERA",
+  "year": 2021
+ },
+ {
+  "name": "Nothing Phone (1)",
+  "brand": "Nothing",
+  "type": "PHONE",
+  "year": 2022,
+  "api": 31
+ },
+ {
+  "name": "Nothing Phone (2)",
+  "brand": "Nothing",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Razr 40 Ultra",
+  "brand": "Motorola",
+  "type": "FOLDABLE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Xperia 1 V",
+  "brand": "Sony",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33
+ },
+ {
+  "name": "Buds T100",
+  "brand": "Realme",
+  "type": "EARBUDS",
+  "year": 2023
+ },
+ {
+  "name": "Pixel",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2016,
+  "api": 25,
+  "kid": "pixel_1"
+ },
+ {
+  "name": "Pixel XL",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2016,
+  "api": 25,
+  "kid": "pixel_1_xl"
+ },
+ {
+  "name": "Pixel 2",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2017,
+  "api": 26,
+  "kid": "pixel_2"
+ },
+ {
+  "name": "Pixel 2 XL",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2017,
+  "api": 26,
+  "kid": "pixel_2_xl"
+ },
+ {
+  "name": "Pixel 3",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2018,
+  "api": 28,
+  "kid": "pixel_3"
+ },
+ {
+  "name": "Pixel 3 XL",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2018,
+  "api": 28,
+  "kid": "pixel_3_xl"
+ },
+ {
+  "name": "Pixel 3a",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2019,
+  "api": 28,
+  "kid": "pixel_3a"
+ },
+ {
+  "name": "Pixel 3a XL",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2019,
+  "api": 28,
+  "kid": "pixel_3a_xl"
+ },
+ {
+  "name": "Pixel 4",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2019,
+  "api": 29,
+  "kid": "pixel_4"
+ },
+ {
+  "name": "Pixel 4 XL",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2019,
+  "api": 29,
+  "kid": "pixel_4_xl"
+ },
+ {
+  "name": "Pixel 4a",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2020,
+  "api": 29,
+  "kid": "pixel_4a"
+ },
+ {
+  "name": "Pixel 4a (5G)",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2020,
+  "api": 30,
+  "kid": "pixel_4a_5g"
+ },
+ {
+  "name": "Pixel 5",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2020,
+  "api": 30,
+  "kid": "pixel_5"
+ },
+ {
+  "name": "Pixel 5a (5G)",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2021,
+  "api": 30,
+  "kid": "pixel_5a"
+ },
+ {
+  "name": "Pixel 6",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2021,
+  "api": 31,
+  "kid": "pixel_6"
+ },
+ {
+  "name": "Pixel 6 Pro",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2021,
+  "api": 31,
+  "kid": "pixel_6_pro"
+ },
+ {
+  "name": "Pixel 6a",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2022,
+  "api": 31,
+  "kid": "pixel_6a"
+ },
+ {
+  "name": "Pixel 7",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2022,
+  "api": 33,
+  "kid": "pixel_7"
+ },
+ {
+  "name": "Pixel 7 Pro",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2022,
+  "api": 33,
+  "kid": "pixel_7_pro"
+ },
+ {
+  "name": "Pixel 7a",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 33,
+  "kid": "pixel_7a"
+ },
+ {
+  "name": "Pixel Fold",
+  "brand": "Google",
+  "type": "FOLDABLE",
+  "year": 2023,
+  "api": 33,
+  "kid": "pixel_fold"
+ },
+ {
+  "name": "Pixel Tablet",
+  "brand": "Google",
+  "type": "TABLET",
+  "year": 2023,
+  "api": 33,
+  "kid": "pixel_tablet"
+ },
+ {
+  "name": "Pixel 8",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 34,
+  "kid": "pixel_8"
+ },
+ {
+  "name": "Pixel 8 Pro",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2023,
+  "api": 34,
+  "kid": "pixel_8_pro"
+ },
+ {
+  "name": "Pixel 8a",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34,
+  "kid": "pixel_8a"
+ },
+ {
+  "name": "Pixel 9",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34,
+  "kid": "pixel_9"
+ },
+ {
+  "name": "Pixel 9 Pro",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34,
+  "kid": "pixel_9_pro"
+ },
+ {
+  "name": "Pixel 9 Pro XL",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2024,
+  "api": 34,
+  "kid": "pixel_9_pro_xl"
+ },
+ {
+  "name": "Pixel 9 Pro Fold",
+  "brand": "Google",
+  "type": "FOLDABLE",
+  "year": 2024,
+  "api": 34,
+  "kid": "pixel_9_pro_fold"
+ },
+ {
+  "name": "Pixel 9a",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2025,
+  "api": 35,
+  "kid": "pixel_9a"
+ },
+ {
+  "name": "Pixel 10",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2025,
+  "api": 36,
+  "kid": "pixel_10"
+ },
+ {
+  "name": "Pixel 10 Pro",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2025,
+  "api": 36,
+  "kid": "pixel_10_pro"
+ },
+ {
+  "name": "Pixel 10 Pro XL",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2025,
+  "api": 36,
+  "kid": "pixel_10_pro_xl"
+ },
+ {
+  "name": "Pixel 10 Pro Fold",
+  "brand": "Google",
+  "type": "FOLDABLE",
+  "year": 2025,
+  "api": 36,
+  "kid": "pixel_10_pro_fold"
+ },
+ {
+  "name": "Pixel 10a",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2026,
+  "api": 36,
+  "kid": "pixel_10a"
+ },
+ {
+  "name": "Pixel 11",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2026,
+  "api": 37,
+  "kid": "pixel_11"
+ },
+ {
+  "name": "Pixel 11 Pro",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2026,
+  "api": 37,
+  "kid": "pixel_11_pro"
+ },
+ {
+  "name": "Pixel 11 Pro XL",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2026,
+  "api": 37,
+  "kid": "pixel_11_pro_xl"
+ },
+ {
+  "name": "Pixel 11 Pro Fold",
+  "brand": "Google",
+  "type": "FOLDABLE",
+  "year": 2026,
+  "api": 37,
+  "kid": "pixel_11_pro_fold"
+ }
+]

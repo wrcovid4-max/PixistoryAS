@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Firebase connection values for "Sign in with Google" and cloud sync. Leave them blank and the app
+  runs fully offline; fill them in (see SETUP.md) and sync switches on. No google-services plugin or
+  google-services.json is needed, so the project always builds.
+
+  Firebase console -> Project settings -> Your apps -> the com.pixistory Android app:
+    firebase_app_id         "App ID"        e.g. 1:1234567890:android:abcdef123456
+    firebase_api_key        "Web API Key"   e.g. AIzaSy...
+    firebase_project_id     "Project ID"
+    firebase_storage_bucket "Storage bucket" (optional)
+    firebase_web_client_id  "Web client ID" (Authentication -> Sign-in method -> Google -> Web SDK configuration)
+-->
+<resources>
+    <string name="firebase_app_id" translatable="false"></string>
+    <string name="firebase_api_key" translatable="false"></string>
+    <string name="firebase_project_id" translatable="false"></string>
+    <string name="firebase_storage_bucket" translatable="false"></string>
+    <string name="firebase_web_client_id" translatable="false"></string>
+</resources>

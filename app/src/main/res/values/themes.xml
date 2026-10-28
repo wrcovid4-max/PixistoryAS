@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Pixistory" parent="Theme.Material3.DayNight.NoActionBar" />
+
+    <style name="Theme.Pixistory.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.Pixistory</item>
+    </style>
+</resources>

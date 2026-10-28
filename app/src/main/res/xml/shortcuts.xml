@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="add_device"
+        android:enabled="true"
+        android:icon="@drawable/ic_notif"
+        android:shortcutShortLabel="@string/shortcut_add">
+        <intent
+            android:action="com.pixistory.ADD_DEVICE"
+            android:targetClass="com.pixistory.MainActivity"
+            android:targetPackage="com.pixistory" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="ask_ai"
+        android:enabled="true"
+        android:icon="@drawable/ic_notif"
+        android:shortcutShortLabel="@string/shortcut_ask">
+        <intent
+            android:action="com.pixistory.ASK_AI"
+            android:targetClass="com.pixistory.MainActivity"
+            android:targetPackage="com.pixistory" />
+    </shortcut>
+</shortcuts>

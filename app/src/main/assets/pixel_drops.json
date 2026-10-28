@@ -1,0 +1,2226 @@
+{
+ "drops": [
+  {
+   "id": "2026-09",
+   "date": "2026-09-15",
+   "title": {
+    "en": "September 2026 Pixel Drop",
+    "ur": "ستمبر 2026 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 17 QPR1",
+    "ur": "اینڈرائیڈ 17 QPR1"
+   },
+   "summary": {
+    "en": "A lighter drop built around Android 17 QPR1 with interface polish and fixes. It was the first drop to include the Pixel 11 series; Pixel 6 and 6 Pro receive their final major update.",
+    "ur": "اینڈرائیڈ 17 QPR1 پر مبنی ہلکا ڈراپ جس میں انٹرفیس کی بہتری اور اصلاحات ہیں۔ اس میں پہلی بار پکسل 11 سلسلہ شامل ہے؛ پکسل 6 اور 6 پرو کو آخری بڑی اپ ڈیٹ مل رہی ہے۔"
+   },
+   "features": [
+    {
+     "en": "More blur effects in the volume panel, power menu and folders (reported to be limited on Pixel 6 and 7 series)",
+     "ur": "والیوم پینل، پاور مینو اور فولڈرز میں مزید بلر اثرات (پکسل 6 اور 7 سلسلے میں محدود ہونے کی اطلاع)"
+    },
+    {
+     "en": "Pause Point in Digital Wellbeing",
+     "ur": "ڈیجیٹل ویل بیئنگ میں پاز پوائنٹ"
+    },
+    {
+     "en": "Redesigned Pixel VIPs widget with badges and a floating menu",
+     "ur": "نئے ڈیزائن کا پکسل VIPs ویجٹ، بیجز اور تیرتے مینو کے ساتھ"
+    },
+    {
+     "en": "Scam Detection in the Pixel keyboard (US, Pixel 6 and newer)",
+     "ur": "پکسل کی بورڈ میں اسکیم ڈیٹیکشن (امریکہ، پکسل 6 اور نئے)"
+    },
+    {
+     "en": "Fixes for gaming crashes, Wi-Fi / Bluetooth and app-install crashes on Pixel 10",
+     "ur": "پکسل 10 پر گیمنگ کریش، وائی فائی / بلوٹوتھ اور ایپ انسٹال کریش کی اصلاحات"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold",
+    "pixel_9a",
+    "pixel_10",
+    "pixel_10_pro",
+    "pixel_10_pro_xl",
+    "pixel_10_pro_fold",
+    "pixel_10a",
+    "pixel_11",
+    "pixel_11_pro",
+    "pixel_11_pro_xl",
+    "pixel_11_pro_fold"
+   ],
+   "note": {
+    "en": "Some features arrive later or only in selected countries.",
+    "ur": "کچھ سہولیات بعد میں یا صرف منتخب ممالک میں آتی ہیں۔"
+   }
+  },
+  {
+   "id": "2026-06",
+   "date": "2026-06-16",
+   "title": {
+    "en": "June 2026 Pixel Drop",
+    "ur": "جون 2026 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 17 + Wear OS 7",
+    "ur": "اینڈرائیڈ 17 + ویئر او ایس 7"
+   },
+   "summary": {
+    "en": "The launch of Android 17 on Pixel, together with new features for phones and watches.",
+    "ur": "پکسل پر اینڈرائیڈ 17 کا اجراء، ساتھ فونز اور گھڑیوں کے لیے نئی سہولیات۔"
+   },
+   "features": [
+    {
+     "en": "Bubbles: turn any app into a floating bubble",
+     "ur": "بلبلز: کسی بھی ایپ کو تیرتے بلبلے میں بدلیں"
+    },
+    {
+     "en": "Screen Reactions: record a selfie video together with your screen",
+     "ur": "اسکرین ری ایکشنز: اپنی سیلفی ویڈیو کے ساتھ اسکرین ریکارڈ کریں"
+    },
+    {
+     "en": "Gemini soundtrack generation and Gemini Omni (for Gemini Pro users)",
+     "ur": "جیمنائی ساؤنڈ ٹریک تخلیق اور جیمنائی اومنی (جیمنائی پرو صارفین کے لیے)"
+    },
+    {
+     "en": "A gaming UI for foldables and wider Quick Share support",
+     "ur": "فولڈ ایبلز کے لیے گیمنگ انٹرفیس اور کوئیک شیئر کی وسیع سہولت"
+    },
+    {
+     "en": "Pixel Watch: emergency sharing in Car Crash, Fall (all models) and Loss of Pulse (Watch 3 and 4) detection",
+     "ur": "پکسل واچ: کار کریش، فال (تمام ماڈلز) اور لاس آف پلس (واچ 3 اور 4) ڈیٹیکشن میں ہنگامی اطلاع"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold",
+    "pixel_9a",
+    "pixel_10",
+    "pixel_10_pro",
+    "pixel_10_pro_xl",
+    "pixel_10_pro_fold",
+    "pixel_10a"
+   ],
+   "note": {
+    "en": "Every officially supported Pixel at the time was eligible. Gemini Intelligence is limited to newer hardware.",
+    "ur": "اس وقت باقاعدہ سپورٹ ہونے والے تمام پکسل اہل تھے۔ جیمنائی انٹیلی جنس صرف نئے ہارڈ ویئر تک محدود ہے۔"
+   },
+   "details": [
+    {
+     "title": "Android 17",
+     "desc": "Stable Android 17 reaches every supported Pixel, from the Pixel 6 to the Pixel 10a",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a"
+     ]
+    },
+    {
+     "title": "Bubbles",
+     "desc": "Turn supported apps into floating windows; foldables get a Bubble Bar (Android 17 required)",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a"
+     ]
+    },
+    {
+     "title": "Screen reactions",
+     "desc": "Overlay your selfie camera on a full-screen recording, like a built-in green screen (Android 17)",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a"
+     ]
+    },
+    {
+     "title": "Lyria 3 AI music creation",
+     "desc": "Create short songs with Gemini on eligible Android 17 Pixels",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a"
+     ]
+    },
+    {
+     "title": "Quick Share with AirDrop compatibility",
+     "desc": "Send files to nearby Apple devices (listed for the Pixel 8a and 9a; some other Pixels already had it)",
+     "devices": [
+      "pixel_8a",
+      "pixel_9a"
+     ]
+    },
+    {
+     "title": "Custom Greetings",
+     "desc": "Record a personal outgoing voicemail greeting",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a"
+     ]
+    },
+    {
+     "title": "Manual Call Screen in a new market",
+     "desc": "Screen unknown callers manually; arrives in a new country (Android 17)",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a"
+     ]
+    },
+    {
+     "title": "Edit Photos in Google Photos (Europe)",
+     "desc": "Conversational photo editing reaches France, Germany, Italy, Spain and the UK",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2026-03",
+   "date": "2026-03-03",
+   "title": {
+    "en": "March 2026 Pixel Drop",
+    "ur": "مارچ 2026 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 16 QPR3",
+    "ur": "اینڈرائیڈ 16 QPR3"
+   },
+   "summary": {
+    "en": "One of the larger drops, with more than a dozen features for phones and watches.",
+    "ur": "بڑے ڈراپس میں سے ایک جس میں فونز اور گھڑیوں کے لیے ایک درجن سے زیادہ سہولیات ہیں۔"
+   },
+   "features": [
+    {
+     "en": "Circle to Search: 'Find the look' for whole outfits and 'Try it on'",
+     "ur": "سرکل ٹو سرچ: پورے لباس کے لیے 'فائنڈ دی لُک' اور 'ٹرائی اِٹ آن'"
+    },
+    {
+     "en": "Now Playing becomes a standalone Play Store app (Pixel 6 and newer)",
+     "ur": "ناؤ پلئنگ علیحدہ پلے اسٹور ایپ بن گئی (پکسل 6 اور نئے)"
+    },
+    {
+     "en": "At a Glance shows live sports scores and Google Finance movers (not on Pixel Tablet)",
+     "ur": "ایٹ اے گلانس میں براہ راست اسپورٹس اسکور اور گوگل فنانس (پکسل ٹیبلیٹ پر نہیں)"
+    },
+    {
+     "en": "Custom AI-generated app icons in six styles (not on Pixel Tablet)",
+     "ur": "چھ انداز میں AI سے بنے ایپ آئیکن (پکسل ٹیبلیٹ پر نہیں)"
+    },
+    {
+     "en": "Desktop mode available on Pixel Tablet without workarounds",
+     "ur": "پکسل ٹیبلیٹ پر ڈیسک ٹاپ موڈ بغیر کسی ترکیب کے دستیاب"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold",
+    "pixel_9a",
+    "pixel_10",
+    "pixel_10_pro",
+    "pixel_10_pro_xl",
+    "pixel_10_pro_fold",
+    "pixel_10a"
+   ],
+   "note": {
+    "en": "21 supported devices, including the new Pixel 10a.",
+    "ur": "21 سپورٹ شدہ ڈیوائسز، بشمول نیا پکسل 10a۔"
+   },
+   "details": [
+    {
+     "title": "Custom AI icons",
+     "desc": "Six AI-generated icon styles restyle the home screen",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "At a Glance: sports scores and finance",
+     "desc": "New At a Glance cards",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "At a Glance: My commute",
+     "desc": "Live commute details (not the Pixel 6 series)",
+     "devices": [
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Connected cameras over USB (UVC)",
+     "desc": "Use supported camera apps and UVC cameras by cable",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Desktop experience with an external monitor",
+     "desc": "Multi-window desktop mode with USB DisplayPort out",
+     "devices": [
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Desktop windowing on Pixel Tablet",
+     "desc": "Arrange and resize windows",
+     "devices": [
+      "pixel_tablet"
+     ]
+    },
+    {
+     "title": "Circle to Search: multiple objects",
+     "desc": "Identify several things in one screenshot (Gemini 3)",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Try it on with Circle to Search",
+     "desc": "Virtual try-on for clothes found in search",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Magic Cue restaurant suggestions",
+     "desc": "Suggests restaurant searches from chat criteria",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Comfort view",
+     "desc": "Display eye-care filter",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Guided Frame offline",
+     "desc": "Guided Frame works without a connection",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Gemini task automation",
+     "desc": "Hand Gemini multi-step tasks such as ordering groceries or booking a ride",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl"
+     ]
+    },
+    {
+     "title": "Notification summaries in Japanese",
+     "desc": "AI summaries (A-series excluded)",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Journal AI features",
+     "desc": "Reflection, Revisit Topics and Mood ID",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Scam Detection in more countries",
+     "desc": "France, Italy, Spain, Mexico, Germany and Japan",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Call Notes in India",
+     "desc": "Call Notes arrives in India",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2025-11",
+   "date": "2025-11-11",
+   "title": {
+    "en": "November 2025 Pixel Drop",
+    "ur": "نومبر 2025 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 16 QPR1",
+    "ur": "اینڈرائیڈ 16 QPR1"
+   },
+   "summary": {
+    "en": "Personalisation and notification tools for phones and tablets.",
+    "ur": "فونز اور ٹیبلیٹس کے لیے ذاتی نوعیت اور نوٹیفکیشن کے اوزار۔"
+   },
+   "features": [
+    {
+     "en": "Pixel Themes (theme packs) for the whole look",
+     "ur": "پورے انداز کے لیے پکسل تھیمز (تھیم پیکس)"
+    },
+    {
+     "en": "Notification Summaries and Notification Organizer",
+     "ur": "نوٹیفکیشن سمریز اور نوٹیفکیشن آرگنائزر"
+    },
+    {
+     "en": "New Messages and Photos features for all Android devices",
+     "ur": "تمام اینڈرائیڈ ڈیوائسز کے لیے میسجز اور فوٹوز کی نئی سہولیات"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold",
+    "pixel_9a",
+    "pixel_10",
+    "pixel_10_pro",
+    "pixel_10_pro_xl",
+    "pixel_10_pro_fold"
+   ],
+   "note": null,
+   "details": [
+    {
+     "title": "Notification summaries",
+     "desc": "Recaps of long conversations in the notification shade (English)",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Notification organiser",
+     "desc": "Groups and silences lower-priority notifications",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Pixel Themes: Wicked For Good pack",
+     "desc": "Limited-time wallpapers, icons, sounds and GIFs",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Scam Detection for chat notifications",
+     "desc": "'Likely scam' warning before you open a message (US)",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl"
+     ]
+    },
+    {
+     "title": "Pixel VIPs improvements",
+     "desc": "Priority for messages from your VIPs",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl"
+     ]
+    },
+    {
+     "title": "Magic Cue with Private AI Compute",
+     "desc": "More timely suggestions with extra privacy",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Google Maps Power Saving mode",
+     "desc": "Simplified black-and-white navigation that can add up to four hours",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Pixel Journal app",
+     "desc": "Private journaling space, now beyond the Pixel 10",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Device Health and Support hub",
+     "desc": "Diagnostics and troubleshooting hub",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Magnifier on Pixel Fold",
+     "desc": "Magnifier app comes to the first Pixel Fold",
+     "devices": [
+      "pixel_fold"
+     ]
+    },
+    {
+     "title": "Remix in Google Messages",
+     "desc": "Edit and remix images inside chats",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2025-09",
+   "date": "2025-09-03",
+   "title": {
+    "en": "September 2025 Pixel Drop",
+    "ur": "ستمبر 2025 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 16",
+    "ur": "اینڈرائیڈ 16"
+   },
+   "summary": {
+    "en": "Brought the Material 3 Expressive look to older Pixels and improved earbuds and watch features.",
+    "ur": "پرانے پکسل فونز میں میٹیریل 3 ایکسپریسو انداز آیا اور ایربڈز و گھڑی کی سہولیات بہتر ہوئیں۔"
+   },
+   "features": [
+    {
+     "en": "Material 3 Expressive design on Pixel 6 and newer",
+     "ur": "پکسل 6 اور نئے فونز پر میٹیریل 3 ایکسپریسو ڈیزائن"
+    },
+    {
+     "en": "Refreshed Quick Share interface",
+     "ur": "کوئیک شیئر کا نیا انٹرفیس"
+    },
+    {
+     "en": "Adaptive Audio on Pixel Buds Pro 2",
+     "ur": "پکسل بڈز پرو 2 پر اڈاپٹو آڈیو"
+    },
+    {
+     "en": "Glanceable Maps navigation on Pixel Watch",
+     "ur": "پکسل واچ پر نظر آنے والی میپس نیویگیشن"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold",
+    "pixel_9a",
+    "pixel_10",
+    "pixel_10_pro",
+    "pixel_10_pro_xl"
+   ],
+   "note": {
+    "en": "The Pixel 10 Pro Fold shipped later, in October 2025.",
+    "ur": "پکسل 10 پرو فولڈ بعد میں، اکتوبر 2025 میں آیا۔"
+   },
+   "details": [
+    {
+     "title": "Material 3 Expressive",
+     "desc": "New Android design language: smoother animations, glanceable info, redesigned Quick Settings",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl"
+     ]
+    },
+    {
+     "title": "Live effects for wallpapers",
+     "desc": "Animated shapes and weather effects on the lock screen wallpaper",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl"
+     ]
+    },
+    {
+     "title": "Customised Phone by Google calling",
+     "desc": "Personalise how contacts look when they call",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl"
+     ]
+    },
+    {
+     "title": "LE Audio sharing",
+     "desc": "Share audio to several Bluetooth LE Audio headsets",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2025-06",
+   "date": "2025-06-10",
+   "title": {
+    "en": "June 2025 Pixel Drop",
+    "ur": "جون 2025 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 16",
+    "ur": "اینڈرائیڈ 16"
+   },
+   "summary": {
+    "en": "Android 16 reached Pixel first, with new Pixel-only features.",
+    "ur": "اینڈرائیڈ 16 سب سے پہلے پکسل پر آیا، ساتھ صرف پکسل کی نئی سہولیات۔"
+   },
+   "features": [
+    {
+     "en": "Android 16 stable release",
+     "ur": "اینڈرائیڈ 16 کا مستحکم اجراء"
+    },
+    {
+     "en": "Pixel VIPs: quick access to your important contacts",
+     "ur": "پکسل VIPs: اہم رابطوں تک فوری رسائی"
+    },
+    {
+     "en": "New Pixel camera, call and notification features",
+     "ur": "پکسل کیمرا، کال اور نوٹیفکیشن کی نئی سہولیات"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold",
+    "pixel_9a"
+   ],
+   "note": null,
+   "details": [
+    {
+     "title": "Android 16",
+     "desc": "The Android 16 stable release starts rolling out to supported Pixels",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a"
+     ]
+    },
+    {
+     "title": "Pixel VIPs widget",
+     "desc": "Contacts widget for your favourite people; VIPs can bypass Do Not Disturb (Google Messages and WhatsApp only)",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a"
+     ]
+    },
+    {
+     "title": "Gboard AI stickers (Pixel Studio)",
+     "desc": "Create custom stickers from text or photos inside Gboard",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Satellite SOS in Australia",
+     "desc": "Emergency satellite messaging expands to Australia",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Recorder summaries in French and German",
+     "desc": "AI summaries; English-only on the Pixel 8 series and 9a",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a"
+     ]
+    },
+    {
+     "title": "Recorder Clear Voice on Pixel 8",
+     "desc": "Removes background noise from recordings",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a"
+     ]
+    },
+    {
+     "title": "Camera education hub",
+     "desc": "Question-mark button explains each camera mode",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a"
+     ]
+    },
+    {
+     "title": "Magnifier live search",
+     "desc": "Type what you look for and matches are highlighted live (not tablets or foldables)",
+     "devices": [
+      "pixel_5a",
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a"
+     ]
+    },
+    {
+     "title": "LE Audio hearing-aid controls",
+     "desc": "Hearing aid presets, calls and ambient volume (Android 16 required)",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a"
+     ]
+    },
+    {
+     "title": "Expressive Captions upgrades",
+     "desc": "Captures elongated words; more countries (English: US, Canada, UK, Australia)",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2025-03",
+   "date": "2025-03-04",
+   "title": {
+    "en": "March 2025 Pixel Drop",
+    "ur": "مارچ 2025 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 15 QPR2",
+    "ur": "اینڈرائیڈ 15 QPR2"
+   },
+   "summary": {
+    "en": "A smaller drop that expanded Gemini and scam protection.",
+    "ur": "نسبتاً چھوٹا ڈراپ جس نے جیمنائی اور فراڈ سے تحفظ کو وسعت دی۔"
+   },
+   "features": [
+    {
+     "en": "Real-time alerts for suspicious text messages",
+     "ur": "مشکوک ٹیکسٹ پیغامات پر فوری انتباہ"
+    },
+    {
+     "en": "Gemini Live multimodal features expand to Pixel 6 and newer and Pixel Fold",
+     "ur": "جیمنائی لائیو کی ملٹی موڈل سہولیات پکسل 6 اور نئے فونز اور پکسل فولڈ تک"
+    },
+    {
+     "en": "Pixel Screenshots suggests images to add to collections",
+     "ur": "پکسل اسکرین شاٹس کلیکشنز میں شامل کرنے کے لیے تصاویر تجویز کرتا ہے"
+    },
+    {
+     "en": "Pixel Studio: text-to-image prompts",
+     "ur": "پکسل اسٹوڈیو: متن سے تصویر بنانے کی سہولت"
+    },
+    {
+     "en": "Pixel Watch: better step tracking",
+     "ur": "پکسل واچ: قدموں کی بہتر پیمائش"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold"
+   ],
+   "note": null,
+   "details": [
+    {
+     "title": "Scam Detection (messages)",
+     "desc": "On-device scam warnings for text messages",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Scam Detection (calls)",
+     "desc": "On-device scam detection in phone calls, powered by Gemini Nano",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Connected cameras",
+     "desc": "Record or stream from two cameras using a second phone or action camera",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Pixel Studio can draw people",
+     "desc": "Stickers, cartoons and other images with human likeness",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Satellite SOS expansion",
+     "desc": "More carriers and regions for emergency messaging by satellite",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Pixel Screenshots suggestions",
+     "desc": "Suggested screenshots to add to collections",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Foldable Dual Screen video and Add Me",
+     "desc": "Dual Screen recording and Add Me compositions",
+     "devices": [
+      "pixel_fold",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Gemini Live with video, images and files",
+     "desc": "Share your camera, images and files in Gemini Live",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Recorder imports older recordings",
+     "desc": "Finds and transcribes older recordings",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2024-12",
+   "date": "2024-12-05",
+   "title": {
+    "en": "December 2024 Pixel Drop",
+    "ur": "دسمبر 2024 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 15 QPR1",
+    "ur": "اینڈرائیڈ 15 QPR1"
+   },
+   "summary": {
+    "en": "A big drop, and the day Google extended update support for Pixel 6, Pixel 7 and Pixel Fold by two years.",
+    "ur": "بڑا ڈراپ، اور وہی دن جب گوگل نے پکسل 6، پکسل 7 اور پکسل فولڈ کی اپ ڈیٹ سپورٹ میں دو سال کی توسیع کی۔"
+   },
+   "features": [
+    {
+     "en": "Pixel Weather app reaches Pixel 6 and newer, including Pixel Tablet",
+     "ur": "پکسل ویدر ایپ پکسل 6 اور نئے فونز اور پکسل ٹیبلیٹ تک"
+    },
+    {
+     "en": "Next-generation Call Screen",
+     "ur": "کال اسکرین کی نئی نسل"
+    },
+    {
+     "en": "Pixel Screenshots updates and Pixel Studio stickers in Gboard",
+     "ur": "پکسل اسکرین شاٹس کی تازہ کاری اور جی بورڈ میں پکسل اسٹوڈیو اسٹیکرز"
+    },
+    {
+     "en": "Emoji Kitchen mixes and more widgets",
+     "ur": "ایموجی کچن مکس اور مزید ویجٹس"
+    },
+    {
+     "en": "Pixel 6 series, Pixel 7 series and Pixel Fold get two extra years of OS updates",
+     "ur": "پکسل 6، پکسل 7 سلسلے اور پکسل فولڈ کو او ایس اپ ڈیٹس کے دو اضافی سال"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold"
+   ],
+   "note": null,
+   "details": [
+    {
+     "title": "Automatic Call Screen, conversation view",
+     "desc": "Calls are screened and shown as a conversation (US, English)",
+     "devices": [
+      "pixel_4",
+      "pixel_4_xl",
+      "pixel_4a",
+      "pixel_4a_5g",
+      "pixel_5",
+      "pixel_5a",
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Simple View",
+     "desc": "One toggle for larger text, bigger display size and easier navigation",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Album art in Now Playing",
+     "desc": "History of recognised songs now shows artwork",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Identity Check",
+     "desc": "Biometric confirmation for sensitive changes away from trusted places",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Pixel Screenshots upgrades",
+     "desc": "Auto-categorising, Circle to Search saving, Wallet cards, Gboard suggestions (English)",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Dual Screen in Portrait mode",
+     "desc": "Viewfinder on both screens for portraits",
+     "devices": [
+      "pixel_fold",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Recorder Clear Voice",
+     "desc": "Reduces background noise in recordings",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Made You Look on Pixel Fold",
+     "desc": "Cover-screen animation to attract a child's attention",
+     "devices": [
+      "pixel_fold",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Pixel Studio stickers in Gboard",
+     "desc": "Use Pixel Studio stickers in any app",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Lock screen widgets on Pixel Tablet",
+     "desc": "Swipe right on the lock screen for widgets",
+     "devices": [
+      "pixel_tablet"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2024-10",
+   "date": "2024-10-15",
+   "title": {
+    "en": "October 2024 Pixel Drop",
+    "ur": "اکتوبر 2024 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 15",
+    "ur": "اینڈرائیڈ 15"
+   },
+   "summary": {
+    "en": "Android 15 arrived for Pixel 6 and newer with a round of Pixel features.",
+    "ur": "اینڈرائیڈ 15 پکسل 6 اور نئے فونز پر آیا اور ساتھ پکسل کی نئی سہولیات بھی۔"
+   },
+   "features": [
+    {
+     "en": "Android 15 stable release for Pixel 6 and newer",
+     "ur": "پکسل 6 اور نئے فونز کے لیے اینڈرائیڈ 15 کا مستحکم اجراء"
+    },
+    {
+     "en": "Cast to nearby devices on Pixel Tablet, 6 Pro, 7 Pro, Fold, 8 Pro and 9 Pro models",
+     "ur": "پکسل ٹیبلیٹ، 6 پرو، 7 پرو، فولڈ، 8 پرو اور 9 پرو ماڈلز پر قریبی ڈیوائسز پر کاسٹ"
+    },
+    {
+     "en": "More Gemini features and Pixel Watch improvements",
+     "ur": "جیمنائی کی مزید سہولیات اور پکسل واچ میں بہتری"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold"
+   ],
+   "note": null,
+   "details": [
+    {
+     "title": "Night Sight for Instagram",
+     "desc": "Shoot with Night Sight straight from Instagram's camera (not a-series)",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Underwater photo and video",
+     "desc": "Automatic underwater scene detection in a waterproof case",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl"
+     ]
+    },
+    {
+     "title": "Astrophotography slider in Night Sight",
+     "desc": "Slide to Astro inside Night Sight",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Theft Protection",
+     "desc": "Theft Detection Lock, Offline Device Lock and Remote Lock",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Private Space",
+     "desc": "A PIN-protected second space for apps and data",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Audio Magic Eraser controls",
+     "desc": "Turn individual sounds or voices up or down",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Object temperature sensor upgrades",
+     "desc": "Log readings and see a live reading in the camera viewfinder",
+     "devices": [
+      "pixel_8_pro",
+      "pixel_9_pro",
+      "pixel_9_pro_xl"
+     ]
+    },
+    {
+     "title": "Pixel Weather app",
+     "desc": "Pixel Weather expands to older Pixels, with a pollen block in some countries",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Gemini Live / Screenshots extension",
+     "desc": "Gemini Live in more countries; Screenshots extension in selected markets",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Widget Discovery",
+     "desc": "Widget suggestions with previews",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Adaptive Vibration",
+     "desc": "Vibration strength follows ambient noise",
+     "devices": [
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold"
+     ]
+    },
+    {
+     "title": "Tablet screensavers & cross-device notifications",
+     "desc": "Panel screensaver for smart-home cameras; dismiss notifications across phone and tablet",
+     "devices": [
+      "pixel_tablet"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2024-06",
+   "date": "2024-06-11",
+   "title": {
+    "en": "June 2024 Pixel Drop",
+    "ur": "جون 2024 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 14 QPR3",
+    "ur": "اینڈرائیڈ 14 QPR3"
+   },
+   "summary": {
+    "en": "A feature drop focused on Gemini Nano, external displays and camera control.",
+    "ur": "جیمنائی نینو، بیرونی اسکرین اور کیمرا کنٹرول پر مرکوز فیچر ڈراپ۔"
+   },
+   "features": [
+    {
+     "en": "Gemini Nano comes to Pixel 8 and Pixel 8a (developer option)",
+     "ur": "جیمنائی نینو پکسل 8 اور پکسل 8a پر (ڈویلپر آپشن)"
+    },
+    {
+     "en": "DisplayPort Alt Mode: external monitor over USB-C on Pixel 8, 8 Pro and 8a",
+     "ur": "ڈسپلے پورٹ آلٹ موڈ: پکسل 8، 8 پرو اور 8a پر USB-C کے ذریعے بیرونی مانیٹر"
+    },
+    {
+     "en": "Manual lens selection on Pixel 6 Pro, 7 Pro, 8 Pro and Fold",
+     "ur": "پکسل 6 پرو، 7 پرو، 8 پرو اور فولڈ پر دستی لینس انتخاب"
+    },
+    {
+     "en": "Lookup in the Phone app (Pixel 6 and newer)",
+     "ur": "فون ایپ میں لُک اپ (پکسل 6 اور نئے)"
+    },
+    {
+     "en": "Pixel VPN by Google for Pixel 7 series and Fold",
+     "ur": "پکسل 7 سلسلے اور فولڈ کے لیے گوگل کا پکسل وی پی این"
+    }
+   ],
+   "devices": [
+    "pixel_5a",
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_fold",
+    "pixel_tablet"
+   ],
+   "note": null,
+   "details": [
+    {
+     "title": "Gemini Nano on Pixel 8 / 8a",
+     "desc": "On-device AI (enabled through developer options on the 8 and 8a)",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a"
+     ]
+    },
+    {
+     "title": "DisplayPort output",
+     "desc": "Mirror or extend the phone to an external display by cable",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a"
+     ]
+    },
+    {
+     "title": "Reverse phone number lookup",
+     "desc": "Look up an unknown number from the call log",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "Recorder: speaker names and Docs export",
+     "desc": "Name speakers (Gemini Nano models only) and export transcripts to Docs",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a"
+     ]
+    },
+    {
+     "title": "Find My Device when powered off",
+     "desc": "Locate the phone even when it is switched off",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "HDR+ best-frame selection",
+     "desc": "Pick the best frame from an HDR+ burst",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "Smart doorbell preview in Hub Mode",
+     "desc": "Live Nest Doorbell feed on the docked tablet",
+     "devices": [
+      "pixel_tablet"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2024-03",
+   "date": "2024-03-04",
+   "title": {
+    "en": "March 2024 Pixel Drop",
+    "ur": "مارچ 2024 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 14 QPR2",
+    "ur": "اینڈرائیڈ 14 QPR2"
+   },
+   "summary": {
+    "en": "Brought Circle to Search to the Pixel 7 series and improved Instagram uploads.",
+    "ur": "پکسل 7 سلسلے میں سرکل ٹو سرچ آیا اور انسٹاگرام اپ لوڈز بہتر ہوئے۔"
+   },
+   "features": [
+    {
+     "en": "Circle to Search on Pixel 7 and 7 Pro",
+     "ur": "پکسل 7 اور 7 پرو پر سرکل ٹو سرچ"
+    },
+    {
+     "en": "Ultra HDR photos and 10-bit HDR video to Instagram (Pixel 7, 7 Pro, 8, 8 Pro, Fold)",
+     "ur": "انسٹاگرام پر الٹرا ایچ ڈی آر تصاویر اور 10 بٹ ایچ ڈی آر ویڈیو (پکسل 7، 7 پرو، 8، 8 پرو، فولڈ)"
+    },
+    {
+     "en": "App screen sharing on Pixel 5a (5G) and newer, including Tablet and Fold",
+     "ur": "پکسل 5a (5G) اور نئے فونز، ٹیبلیٹ اور فولڈ پر ایپ اسکرین شیئرنگ"
+    },
+    {
+     "en": "Improved Call Screen; Pixel Watch (1st gen) gains Pixel Watch 2 features",
+     "ur": "کال اسکرین میں بہتری؛ پہلی پکسل واچ کو پکسل واچ 2 کی سہولیات"
+    }
+   ],
+   "devices": [
+    "pixel_5a",
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro"
+   ],
+   "note": null,
+   "details": [
+    {
+     "title": "Circle to Search expands",
+     "desc": "Now on the Pixel 7 and 7 Pro as well",
+     "devices": [
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "10-bit HDR video & Ultra HDR photos on Instagram",
+     "desc": "Capture and share HDR Reels and photos",
+     "devices": [
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_fold",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "Call Screen 'Hello?' chip",
+     "desc": "Prompts a silent caller to speak",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "App screen sharing",
+     "desc": "Share or record one app instead of the whole screen",
+     "devices": [
+      "pixel_5a",
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "Fast Pair subsequent pairing",
+     "desc": "Accessories paired to your Google account show up on a new Pixel",
+     "devices": [
+      "pixel_5a",
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "2024-01",
+   "date": "2024-01-24",
+   "title": {
+    "en": "January 2024 Pixel Drop",
+    "ur": "جنوری 2024 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Pixel Feature Drop",
+    "ur": "پکسل فیچر ڈراپ"
+   },
+   "summary": {
+    "en": "The first drop of 2024 is best known for bringing Circle to Search to the Pixel 8 series.",
+    "ur": "2024 کا پہلا ڈراپ پکسل 8 سلسلے میں سرکل ٹو سرچ لانے کی وجہ سے مشہور ہے۔"
+   },
+   "features": [
+    {
+     "en": "Circle to Search arrives on Pixel 8 and Pixel 8 Pro (late January)",
+     "ur": "پکسل 8 اور پکسل 8 پرو پر سرکل ٹو سرچ (جنوری کے آخر میں)"
+    }
+   ],
+   "devices": [
+    "pixel_8",
+    "pixel_8_pro"
+   ],
+   "note": {
+    "en": "Only the headline feature is listed; other parts of this drop varied by model.",
+    "ur": "صرف نمایاں سہولت درج ہے؛ اس ڈراپ کے دیگر حصے ماڈل کے لحاظ سے مختلف تھے۔"
+   },
+   "details": [
+    {
+     "title": "Circle to Search",
+     "desc": "Circle, tap or scribble on anything on screen to search it",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "Magic Compose",
+     "desc": "AI rewrites of Google Messages drafts in different styles; on-device on the 8 Pro, cloud on the 8",
+     "devices": [
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "Body temperature with Fitbit",
+     "desc": "FDA-cleared body temperature readings from the rear sensor, saved to Fitbit",
+     "devices": [
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "Photomoji",
+     "desc": "Turn a photo into a reaction in Google Messages",
+     "devices": [
+      "pixel_3a",
+      "pixel_3a_xl",
+      "pixel_4",
+      "pixel_4_xl",
+      "pixel_4a",
+      "pixel_4a_5g",
+      "pixel_5",
+      "pixel_5a",
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    },
+    {
+     "title": "Audio Switch",
+     "desc": "Pixel Buds Pro switch between your phone, tablet and watch automatically",
+     "devices": [
+      "pixel_5a",
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro"
+     ]
+    }
+   ]
+  }
+ ]
+}
