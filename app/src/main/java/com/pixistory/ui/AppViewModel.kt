@@ -49,7 +49,8 @@ class AppViewModel(val container: AppContainer) : ViewModel() {
 
     private val _messages = MutableSharedFlow<String>(extraBufferCapacity = 8)
     val messages = _messages.asSharedFlow()
-    private fun say(text: String) { _messages.tryEmit(text) }
+    fun say(text: String) { _messages.tryEmit(text) }
+    fun announce(text: String) = say(text)
 
     // ---- editor state (kept here so it survives fold / unfold and rotation) ----------------
     private val _editing = MutableStateFlow<DeviceEntity?>(null)

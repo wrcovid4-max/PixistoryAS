@@ -10,6 +10,7 @@ Done so far:
 - Data layer: Room entities and DAOs, settings, repository, file store, asset tags and label PDF
 - Google sign-in + Firestore/Storage sync, AI client (Claude / Gemini), analytics, exports and backup
 - Pixel knowledge assets (EN/UR): generations, 39 models (specs, faults), Pixel Drops 2024 to Sept 2026 with per-feature device lists
+- Screens written so far: PixistoryRoot (navigation), Devices list, Device detail, Pixel insights (history, specs, new features, known faults, drops received), launch pop-up, About
 - Logo, adaptive icon, launch pop-up with copyright, About screen, language helper (English / Urdu)
 
 Still missing before it can build:
