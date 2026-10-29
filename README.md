@@ -20,3 +20,8 @@ Still missing before it can build:
 
 Setup for sign-in and sync: fill res/values/firebase.xml (see comments in that file).
 tools/ holds the scripts and notes used to build the Pixel data assets.
+
+## Open in Android Studio
+1. File > Open > this folder, then **File > Sync Project with Gradle Files**.
+2. The shared run configuration `app` (in `.run/app.run.xml`, module `Pixistory.app`) appears in the toolbar; pick a device and press Run.
+3. If the toolbar still says *Add Configuration*, Gradle sync has not finished: open the Build tab and fix the first error shown.
