@@ -51,7 +51,7 @@ fun DeviceEditorScreen(
     onSaved: (DeviceEntity) -> Unit,
     onClose: () -> Unit,
 ) {
-    BackHandler(onClose = onClose)
+    BackHandler(onBack = onClose)
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
     val settings by vm.settings.collectAsStateWithLifecycle()
