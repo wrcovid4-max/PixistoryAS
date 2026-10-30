@@ -34,7 +34,7 @@ object CollectionContext {
                 if (d.storageGb != null) append(" | ${d.storageGb}GB storage")
                 if (d.ramGb != null) append(" | ${d.ramGb}GB RAM")
                 if (d.colorName.isNotBlank()) append(" | ${d.colorName}")
-                if (d.price != null) append(" | paid ${d.price} ${d.currency}")
+                if (d.price != null) append(" | paid ${d.price}")
                 if (d.purchaseDate != null) append(" on ${formatDate(d.purchaseDate)}")
                 append(" | condition ${d.condition.lowercase()}")
                 if (d.groupName.isNotBlank()) append(" | group ${d.groupName}")
@@ -52,7 +52,7 @@ You are Pixi, the assistant inside Pixistory, an Android app for people who coll
 Answer questions about the user's own collection and about Android hardware and software, using the data below.
 Reply in the language the user writes in (English or Urdu). Reply in the language the user writes in (English or Urdu; use formal Urdu for Urdu). Be concise and practical. Use short paragraphs or simple "- " bullet lists. Put key facts in **bold**.
 If the answer is not in the data, say so plainly instead of guessing, and keep device specifications you are not sure of clearly labelled as general knowledge.
-Today's date is $today. The user's default currency is $currency.
+Today's date is $today.
 
 Collection summary: ${stats.owned} owned, ${stats.wishlist} on the wishlist, ${stats.sold} sold or gone.
 

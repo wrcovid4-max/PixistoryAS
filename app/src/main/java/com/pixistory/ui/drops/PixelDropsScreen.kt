@@ -51,7 +51,7 @@ fun PixelDropsScreen(vm: AppViewModel, fold: FoldState) {
     val models = remember { knowledge.models.sortedBy { it.name } }
 
     Column(Modifier.fillMaxSize()) {
-        TopAppBar(title = { Text(stringResource(R.string.tab_drops)) })
+        PixiTopBar(title = { Text(stringResource(R.string.tab_drops)) })
         Column(Modifier.widthIn(max = 760.dp).align(Alignment.CenterHorizontally)) {
             Text(
                 stringResource(R.string.drops_intro),

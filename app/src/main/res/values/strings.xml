@@ -106,7 +106,6 @@
     <string name="f_group">Collection / group</string>
     <string name="f_purchased">Purchase date</string>
     <string name="f_price">Price</string>
-    <string name="f_currency">Currency</string>
     <string name="f_notes">Notes</string>
     <string name="f_asset_tag">Asset tag</string>
     <string name="field_name">Field</string>
@@ -157,7 +156,7 @@
     <string name="analysis_by_type">By type</string>
     <string name="analysis_by_android">By Android version</string>
     <string name="analysis_by_year">By release year</string>
-    <string name="analysis_spend_year">Spending by year (%1$s)</string>
+    <string name="analysis_spend_year">Spending by year</string>
     <string name="analysis_patch_health">Security patch health</string>
     <string name="analysis_palette">Colour palette</string>
     <string name="analysis_extremes">Oldest and newest</string>
@@ -172,10 +171,8 @@
     <string name="coverage_missing">Missing: Android %1$s</string>
     <string name="coverage_covered">Covered</string>
     <string name="coverage_gaps">Gaps</string>
-    <string name="coverage_gap">Gap between your oldest and newest</string>
-    <string name="coverage_not_owned">Outside your range</string>
     <string name="ask_intro">Ask Pixi about your collection: updates, spending, which Pixel gets what, or anything about Android.</string>
-    <string name="ask_need_key">Add your Claude or Gemini API key in Settings to use Ask Pixi.</string>
+    <string name="ask_need_key">Ask Pixi needs an AI key. Add ANTHROPIC_API_KEY or GEMINI_API_KEY to local.properties in Android Studio and rebuild.</string>
     <string name="ask_hint">Ask a question…</string>
     <string name="ask_send">Send</string>
     <string name="ask_thinking">Thinking…</string>
@@ -200,16 +197,10 @@
     <string name="sync_done">Synced: %1$d received, %2$d sent</string>
     <string name="sync_last">Last synced %1$s</string>
     <string name="sync_never">Not synced yet</string>
-    <string name="set_ai">Ask Pixi (AI)</string>
-    <string name="set_ai_body">Uses your own API key. It stays on this phone and is sent only to the provider you choose.</string>
-    <string name="set_api_key_claude">Claude API key</string>
-    <string name="set_api_key_gemini">Gemini API key</string>
-    <string name="set_model">Model</string>
     <string name="set_appearance">Appearance</string>
     <string name="theme_system">System</string>
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
-    <string name="set_currency">Default currency</string>
     <string name="set_notifications">Notifications</string>
     <string name="set_patch_alerts">Alert me about old security patches</string>
     <string name="set_patch_after">Alert when a patch is older than:</string>
@@ -239,6 +230,13 @@
     <string name="about_libs_title">Built with</string>
     <string name="about_libs_body">Kotlin, Jetpack Compose, Room, WorkManager, Firebase, Google Play services, OkHttp, Coil, ZXing.</string>
     <string name="about_trademark">Pixel, Android and Google are trademarks of Google LLC. Pixistory is an independent app and is not affiliated with or endorsed by Google.</string>
+    <string name="ask_name">Pixi</string>
+    <string name="ask_banner_sub">Your collection assistant</string>
+    <string name="coverage_col_android">Android</string>
+    <string name="coverage_col_status">Status</string>
+    <string name="coverage_col_devices">Your devices</string>
+    <string name="coverage_pill_gap">Gap</string>
+    <string name="coverage_pill_out">Not owned</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
 </resources>

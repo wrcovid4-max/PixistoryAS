@@ -3,6 +3,8 @@
 package com.pixistory.ui.common
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -38,6 +40,8 @@ import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -55,6 +59,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.pixistory.data.model.DeviceEntity
+import com.pixistory.data.model.DeviceStatus
 import com.pixistory.data.model.DeviceType
 import com.pixistory.data.model.typeEnum
 import com.pixistory.data.repo.FileStore
@@ -140,17 +145,80 @@ fun PatchChip(patch: String, modifier: Modifier = Modifier) {
     }
 }
 
+/** Top bar tinted with the brand colour. */
 @Composable
-fun SectionCard(title: String, modifier: Modifier = Modifier, content: @Composable () -> Unit) {
+fun PixiTopBar(
+    title: @Composable () -> Unit,
+    navigationIcon: @Composable () -> Unit = {},
+    actions: @Composable RowScope.() -> Unit = {},
+) {
+    val c = MaterialTheme.colorScheme
+    TopAppBar(
+        title = title,
+        navigationIcon = navigationIcon,
+        actions = actions,
+        colors = TopAppBarDefaults.topAppBarColors(
+            containerColor = c.primaryContainer,
+            titleContentColor = c.onPrimaryContainer,
+            navigationIconContentColor = c.onPrimaryContainer,
+            actionIconContentColor = c.onPrimaryContainer,
+        ),
+    )
+}
+
+/** A card with a coloured accent bar; the colour is picked from the title unless given. */
+@Composable
+fun SectionCard(title: String, modifier: Modifier = Modifier, accent: Color? = null, content: @Composable () -> Unit) {
+    val c = MaterialTheme.colorScheme
+    val palette = listOf(c.primary, c.secondary, c.tertiary, c.error)
+    val color = accent ?: palette[(title.hashCode() and 0x7fffffff) % palette.size]
     Card(
         modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow),
+        colors = CardDefaults.cardColors(containerColor = c.surfaceContainerLow),
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            Text(title, style = MaterialTheme.typography.titleMedium)
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Box(Modifier.width(5.dp).height(22.dp).clip(RoundedCornerShape(3.dp)).background(color))
+                Spacer(Modifier.width(10.dp))
+                Text(title, style = MaterialTheme.typography.titleMedium, color = color)
+            }
             content()
         }
     }
+}
+
+/** Two-column table with striped rows. Rows whose value is blank are left out. */
+@Composable
+fun InfoTable(rows: List<Pair<String, String>>, modifier: Modifier = Modifier) {
+    val shown = rows.filter { it.second.isNotBlank() }
+    if (shown.isEmpty()) return
+    val c = MaterialTheme.colorScheme
+    val shape = RoundedCornerShape(12.dp)
+    Column(modifier.fillMaxWidth().clip(shape).border(1.dp, c.outlineVariant, shape)) {
+        shown.forEachIndexed { i, (k, v) ->
+            Row(
+                Modifier
+                    .fillMaxWidth()
+                    .background(if (i % 2 == 0) c.surfaceContainerHigh.copy(alpha = 0.7f) else c.surfaceContainerLowest.copy(alpha = 0.35f))
+                    .padding(horizontal = 12.dp, vertical = 9.dp),
+                verticalAlignment = Alignment.Top,
+            ) {
+                Text(k, Modifier.weight(0.38f), style = MaterialTheme.typography.labelLarge, color = c.primary)
+                Text(v, Modifier.weight(0.62f), style = MaterialTheme.typography.bodyMedium)
+            }
+        }
+    }
+}
+
+/** Small coloured status pill. */
+@Composable
+fun StatusPill(text: String, color: Color, modifier: Modifier = Modifier) {
+    Text(
+        text,
+        modifier = modifier.clip(RoundedCornerShape(50)).background(color.copy(alpha = 0.16f)).padding(horizontal = 10.dp, vertical = 3.dp),
+        style = MaterialTheme.typography.labelMedium,
+        color = color,
+    )
 }
 
 @Composable
@@ -247,4 +315,11 @@ fun FormattedText(text: String, modifier: Modifier = Modifier, color: Color = Co
         }
     }
     Text(annotated, modifier, color = color, style = MaterialTheme.typography.bodyMedium)
+}
+
+@Composable
+fun statusColor(status: DeviceStatus): Color = when (status) {
+    DeviceStatus.OWNED -> MaterialTheme.colorScheme.secondary
+    DeviceStatus.WISHLIST -> MaterialTheme.colorScheme.tertiary
+    DeviceStatus.SOLD -> MaterialTheme.colorScheme.outline
 }

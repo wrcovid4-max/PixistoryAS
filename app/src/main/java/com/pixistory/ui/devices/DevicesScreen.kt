@@ -128,7 +128,7 @@ fun DevicesScreen(
 
     val listPane: @Composable (Modifier) -> Unit = { mod ->
         Column(mod) {
-            TopAppBar(
+            PixiTopBar(
                 title = { Text(stringResource(R.string.tab_devices)) },
                 actions = {
                     IconButton(onClick = { scan() }) { Icon(Icons.Filled.QrCodeScanner, stringResource(R.string.scan_tag)) }
@@ -284,9 +284,7 @@ private fun DeviceRow(device: DeviceEntity, selected: Boolean, vm: AppViewModel,
                 if (sub.isNotBlank()) Text(sub, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant, maxLines = 1, overflow = TextOverflow.Ellipsis)
                 Spacer(Modifier.height(4.dp))
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
-                    if (device.statusEnum != DeviceStatus.OWNED) {
-                        Text(device.statusEnum.text(), style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.tertiary)
-                    }
+                    StatusPill(device.statusEnum.text(), statusColor(device.statusEnum))
                     if (device.statusEnum == DeviceStatus.OWNED && device.securityPatch.isNotBlank()) PatchChip(device.securityPatch)
                 }
             }

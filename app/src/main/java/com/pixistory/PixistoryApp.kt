@@ -24,7 +24,7 @@ class AppContainer(val app: Application) {
     val catalog = CatalogRepository(app)
     val auth = AuthManager(app)
     val sync = SyncManager(db, settings, auth, files)
-    val ai = AiClient(settings)
+    val ai = AiClient()
     val exporter = Exporter(app, repository)
 }
 

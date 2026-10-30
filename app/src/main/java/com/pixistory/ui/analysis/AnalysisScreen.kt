@@ -3,6 +3,7 @@
 package com.pixistory.ui.analysis
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
@@ -35,7 +36,7 @@ fun AnalysisScreen(vm: AppViewModel, fold: FoldState) {
     val stats = remember(devices, settings.currency) { Analytics.compute(devices, settings.currency) }
 
     Column(Modifier.fillMaxSize()) {
-        TopAppBar(
+        PixiTopBar(
             title = { Text(stringResource(R.string.tab_analysis)) },
             actions = {
                 IconButton(onClick = { vm.export(ExportKind.CARD) }) { Icon(Icons.Filled.Share, stringResource(R.string.share_card)) }
@@ -61,11 +62,12 @@ fun AnalysisScreen(vm: AppViewModel, fold: FoldState) {
 private fun Charts(stats: com.pixistory.analysis.Stats, currency: String) {
     SectionCard(stringResource(R.string.analysis_overview)) {
         FlowRow(horizontalArrangement = Arrangement.spacedBy(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            Big(stats.owned.toString(), stringResource(R.string.status_owned))
-            Big(stats.wishlist.toString(), stringResource(R.string.status_wishlist))
-            Big(stats.sold.toString(), stringResource(R.string.status_sold))
-            Big(stats.upgradeCount.toString(), stringResource(R.string.section_upgrades))
-            Big(stats.favorites.toString(), stringResource(R.string.filter_favorites))
+            val c = MaterialTheme.colorScheme
+            Big(stats.owned.toString(), stringResource(R.string.status_owned), c.secondary)
+            Big(stats.wishlist.toString(), stringResource(R.string.status_wishlist), c.tertiary)
+            Big(stats.sold.toString(), stringResource(R.string.status_sold), c.outline)
+            Big(stats.upgradeCount.toString(), stringResource(R.string.section_upgrades), c.primary)
+            Big(stats.favorites.toString(), stringResource(R.string.filter_favorites), c.error)
         }
         stats.spentByCurrency.forEach { (cur, total) ->
             Text(stringResource(R.string.analysis_spent, formatMoney(total, cur)), style = MaterialTheme.typography.bodyMedium)
@@ -86,7 +88,7 @@ private fun Charts(stats: com.pixistory.analysis.Stats, currency: String) {
     if (stats.byReleaseYear.isNotEmpty()) SectionCard(stringResource(R.string.analysis_by_year)) {
         ColumnChart(stats.byReleaseYear.map { it.first.toString() to it.second.toDouble() })
     }
-    if (stats.spendByYear.isNotEmpty()) SectionCard(stringResource(R.string.analysis_spend_year, currency)) {
+    if (stats.spendByYear.isNotEmpty()) SectionCard(stringResource(R.string.analysis_spend_year)) {
         ColumnChart(stats.spendByYear.map { it.first.toString() to it.second }, color = MaterialTheme.colorScheme.secondary, valueLabel = { v -> if (v >= 1000) "${(v / 1000).toInt()}k" else v.toInt().toString() })
     }
     SectionCard(stringResource(R.string.analysis_patch_health)) {
@@ -113,9 +115,12 @@ private fun Charts(stats: com.pixistory.analysis.Stats, currency: String) {
 }
 
 @Composable
-private fun Big(value: String, label: String) {
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(value, style = MaterialTheme.typography.headlineMedium)
+private fun Big(value: String, label: String, color: androidx.compose.ui.graphics.Color) {
+    Column(
+        Modifier.clip(androidx.compose.foundation.shape.RoundedCornerShape(16.dp)).background(color.copy(alpha = 0.15f)).padding(horizontal = 18.dp, vertical = 10.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
+        Text(value, style = MaterialTheme.typography.headlineMedium, color = color)
         Text(label, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 }
@@ -139,19 +144,35 @@ private fun Coverage(rows: List<CoverageRow>, covered: Int, span: Int, missing: 
     }
     val firstIdx = rows.indexOfFirst { it.covered }
     val lastIdx = rows.indexOfLast { it.covered }
-    rows.forEachIndexed { i, row ->
-        val inSpan = i in firstIdx..lastIdx && firstIdx >= 0
-        val visible = when (filter) { 1 -> row.covered; 2 -> !row.covered && inSpan; else -> true }
-        if (visible) {
-            ListItem(
-                headlineContent = { Text(row.major.name) },
-                supportingContent = {
-                    if (row.covered) Text(row.devices.joinToString(", ") { it.name }, maxLines = 2)
-                    else Text(stringResource(if (inSpan) R.string.coverage_gap else R.string.coverage_not_owned))
-                },
-                trailingContent = { Text(if (row.covered) "✓ ${row.devices.size}" else "—") },
-                colors = ListItemDefaults.colors(containerColor = if (row.covered) MaterialTheme.colorScheme.secondaryContainer.copy(alpha = 0.4f) else MaterialTheme.colorScheme.surface),
-            )
+    val c = MaterialTheme.colorScheme
+    val shape = androidx.compose.foundation.shape.RoundedCornerShape(14.dp)
+    Column(Modifier.fillMaxWidth().clip(shape).border(1.dp, c.outlineVariant, shape)) {
+        Row(Modifier.fillMaxWidth().background(c.primary).padding(horizontal = 12.dp, vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+            Text(stringResource(R.string.coverage_col_android), Modifier.weight(0.34f), color = c.onPrimary, style = MaterialTheme.typography.labelLarge)
+            Text(stringResource(R.string.coverage_col_status), Modifier.weight(0.26f), color = c.onPrimary, style = MaterialTheme.typography.labelLarge)
+            Text(stringResource(R.string.coverage_col_devices), Modifier.weight(0.40f), color = c.onPrimary, style = MaterialTheme.typography.labelLarge)
+        }
+        var shown = 0
+        rows.forEachIndexed { i, row ->
+            val inSpan = firstIdx >= 0 && i in firstIdx..lastIdx
+            val visible = when (filter) { 1 -> row.covered; 2 -> !row.covered && inSpan; else -> true }
+            if (visible) {
+                val stripe = shown % 2 == 0
+                shown++
+                val (pill, color) = when {
+                    row.covered -> stringResource(R.string.coverage_covered) to c.secondary
+                    inSpan -> stringResource(R.string.coverage_pill_gap) to c.error
+                    else -> stringResource(R.string.coverage_pill_out) to c.outline
+                }
+                Row(
+                    Modifier.fillMaxWidth().background(if (stripe) c.surfaceContainerHigh.copy(alpha = 0.7f) else c.surfaceContainerLowest.copy(alpha = 0.35f)).padding(horizontal = 12.dp, vertical = 9.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Text(row.major.name, Modifier.weight(0.34f), style = MaterialTheme.typography.bodyMedium)
+                    Box(Modifier.weight(0.26f)) { StatusPill(pill, color) }
+                    Text(if (row.covered) row.devices.joinToString(", ") { it.name } else "—", Modifier.weight(0.40f), style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant)
+                }
+            }
         }
     }
 }

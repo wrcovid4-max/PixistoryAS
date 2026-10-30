@@ -68,7 +68,7 @@ object Analytics {
         val kept = devices.filter { it.statusEnum != DeviceStatus.WISHLIST }
 
         val spent = LinkedHashMap<String, Double>()
-        kept.forEach { d -> d.price?.let { spent[d.currency] = (spent[d.currency] ?: 0.0) + it } }
+        kept.forEach { d -> d.price?.let { spent[""] = (spent[""] ?: 0.0) + it } }
 
         val byBrand = owned.filter { it.brand.isNotBlank() }.groupingBy { it.brand }.eachCount()
             .toList().sortedByDescending { it.second }
@@ -79,7 +79,7 @@ object Analytics {
             .map { (_, list) -> AndroidVersions.majorLabel(list.first().apiLevel, list.first().androidVersion) to list.size }
         val byYear = owned.mapNotNull { it.releaseYear }.groupingBy { it }.eachCount().toList().sortedBy { it.first }
 
-        val spendByYear = kept.filter { it.price != null && it.purchaseDate != null && it.currency == currency }
+        val spendByYear = kept.filter { it.price != null && it.purchaseDate != null }
             .groupBy { yearOf(it.purchaseDate!!) }
             .map { (y, l) -> y to l.sumOf { it.price ?: 0.0 } }
             .sortedBy { it.first }

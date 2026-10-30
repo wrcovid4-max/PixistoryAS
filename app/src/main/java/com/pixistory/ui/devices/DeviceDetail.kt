@@ -58,7 +58,7 @@ fun DeviceDetailScreen(
     val lang = currentLang()
 
     Column(Modifier.fillMaxSize()) {
-        TopAppBar(
+        PixiTopBar(
             title = { Text(device.name.ifBlank { device.model }, maxLines = 1) },
             navigationIcon = {
                 if (onBack != null) IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, stringResource(R.string.back)) }
@@ -89,21 +89,26 @@ fun DeviceDetailScreen(
                     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                         Text(listOf(device.brand, device.model).filter { it.isNotBlank() }.joinToString(" "), style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                            AssistChip(onClick = {}, label = { Text(device.statusEnum.text()) })
-                            AssistChip(onClick = {}, label = { Text(device.typeEnum.text()) })
+                            StatusPill(device.statusEnum.text(), statusColor(device.statusEnum))
+                            StatusPill(device.typeEnum.text(), MaterialTheme.colorScheme.primary)
                             if (device.statusEnum == DeviceStatus.OWNED && device.securityPatch.isNotBlank()) PatchChip(device.securityPatch)
                         }
                     }
                 }
 
                 SectionCard(stringResource(R.string.section_software)) {
-                    InfoRow(stringResource(R.string.f_android), if (device.apiLevel != null || device.androidVersion.isNotBlank()) AndroidVersions.label(device.apiLevel, device.androidVersion) else "")
-                    InfoRow(stringResource(R.string.f_api), device.apiLevel?.toString().orEmpty())
-                    InfoRow(stringResource(R.string.f_patch), device.securityPatch.let { p ->
+                    val patchText = device.securityPatch.let { p ->
                         val age = patchAgeDays(p)
                         if (p.isBlank()) "" else if (age != null) stringResource(R.string.patch_with_age, p, age.toInt()) else p
-                    })
-                    InfoRow(stringResource(R.string.f_build), device.buildNumber)
+                    }
+                    InfoTable(
+                        listOf(
+                            stringResource(R.string.f_android) to (if (device.apiLevel != null || device.androidVersion.isNotBlank()) AndroidVersions.label(device.apiLevel, device.androidVersion) else ""),
+                            stringResource(R.string.f_api) to device.apiLevel?.toString().orEmpty(),
+                            stringResource(R.string.f_patch) to patchText,
+                            stringResource(R.string.f_build) to device.buildNumber,
+                        ),
+                    )
                     if (device.statusEnum == DeviceStatus.OWNED) {
                         OutlinedButton(onClick = { logUpdate = true }, modifier = Modifier.fillMaxWidth()) {
                             Icon(Icons.Filled.SystemUpdate, null)
@@ -114,15 +119,19 @@ fun DeviceDetailScreen(
                 }
 
                 SectionCard(stringResource(R.string.section_details)) {
-                    InfoRow(stringResource(R.string.f_released), device.releaseYear?.toString().orEmpty())
-                    InfoRow(stringResource(R.string.f_serial), device.serial)
-                    InfoRow(stringResource(R.string.f_color), device.colorName)
-                    InfoRow(stringResource(R.string.f_storage), device.storageGb?.let { "$it GB" }.orEmpty())
-                    InfoRow(stringResource(R.string.f_ram), device.ramGb?.let { "$it GB" }.orEmpty())
-                    InfoRow(stringResource(R.string.f_condition), device.conditionEnum.text())
-                    InfoRow(stringResource(R.string.f_group), device.groupName)
-                    InfoRow(stringResource(R.string.f_purchased), device.purchaseDate?.let { formatDate(it) }.orEmpty())
-                    InfoRow(stringResource(R.string.f_price), device.price?.let { formatMoney(it, device.currency) }.orEmpty())
+                    InfoTable(
+                        listOf(
+                            stringResource(R.string.f_released) to device.releaseYear?.toString().orEmpty(),
+                            stringResource(R.string.f_serial) to device.serial,
+                            stringResource(R.string.f_color) to device.colorName,
+                            stringResource(R.string.f_storage) to device.storageGb?.let { "$it GB" }.orEmpty(),
+                            stringResource(R.string.f_ram) to device.ramGb?.let { "$it GB" }.orEmpty(),
+                            stringResource(R.string.f_condition) to device.conditionEnum.text(),
+                            stringResource(R.string.f_group) to device.groupName,
+                            stringResource(R.string.f_purchased) to device.purchaseDate?.let { formatDate(it) }.orEmpty(),
+                            stringResource(R.string.f_price) to device.price?.let { formatMoney(it) }.orEmpty(),
+                        ),
+                    )
                     if (device.notes.isNotBlank()) {
                         Text(stringResource(R.string.f_notes), style = MaterialTheme.typography.labelLarge)
                         Text(device.notes, style = MaterialTheme.typography.bodyMedium)
@@ -144,7 +153,7 @@ fun DeviceDetailScreen(
                 val custom = device.customFields()
                 if (custom.isNotEmpty()) {
                     SectionCard(stringResource(R.string.section_custom)) {
-                        custom.forEach { (k, v) -> InfoRow(k, v) }
+                        InfoTable(custom.toList())
                     }
                 }
                 val ups = device.upgrades()

@@ -98,7 +98,7 @@ fun DeviceEditorScreen(
     }
 
     Column(Modifier.fillMaxSize()) {
-        TopAppBar(
+        PixiTopBar(
             title = { Text(stringResource(if (isNew) R.string.add_device else R.string.edit)) },
             navigationIcon = { IconButton(onClick = onClose) { Icon(Icons.Filled.Close, stringResource(R.string.cancel)) } },
             actions = { TextButton(onClick = { save() }) { Text(stringResource(R.string.save)) } },
@@ -168,7 +168,6 @@ fun DeviceEditorScreen(
                 }
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     OutlinedTextField(priceText, { priceText = it.filter { c -> c.isDigit() || c == '.' || c == ',' } }, label = { Text(stringResource(R.string.f_price)) }, singleLine = true, keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(keyboardType = KeyboardType.Decimal), modifier = Modifier.weight(1f))
-                    OutlinedTextField(d.currency, { d = d.copy(currency = it.uppercase().take(4)) }, label = { Text(stringResource(R.string.f_currency)) }, singleLine = true, modifier = Modifier.weight(0.6f))
                 }
 
                 Text(stringResource(R.string.section_organise), style = MaterialTheme.typography.titleSmall)

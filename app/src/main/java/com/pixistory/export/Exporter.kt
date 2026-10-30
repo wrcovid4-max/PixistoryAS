@@ -59,7 +59,7 @@ class Exporter(private val context: Context, private val repo: DeviceRepository)
         }
         val header = listOf(
             "Name", "Brand", "Model", "Type", "Status", "Released", "Android", "API", "Security patch", "Build",
-            "Serial", "Colour", "Storage GB", "RAM GB", "Purchased", "Price", "Currency", "Condition", "Group",
+            "Serial", "Colour", "Storage GB", "RAM GB", "Purchased", "Price", "Condition", "Group",
             "Asset tag", "Favourite", "Notes",
         )
         val sb = StringBuilder(header.joinToString(",")).append('\n')
@@ -68,7 +68,7 @@ class Exporter(private val context: Context, private val repo: DeviceRepository)
                 listOf(
                     d.name, d.brand, d.model, d.typeEnum.label, d.statusEnum.label, d.releaseYear, d.androidVersion,
                     d.apiLevel, d.securityPatch, d.buildNumber, d.serial, d.colorName, d.storageGb, d.ramGb,
-                    d.purchaseDate?.let { formatDate(it) }, d.price, d.currency, d.condition, d.groupName,
+                    d.purchaseDate?.let { formatDate(it) }, d.price, d.condition, d.groupName,
                     d.assetTag, d.favorite, d.notes,
                 ).joinToString(",") { cell(it) },
             ).append('\n')

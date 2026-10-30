@@ -12,10 +12,10 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import com.pixistory.ui.common.PixiTopBar
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.pixistory.R
@@ -38,7 +38,7 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
     val notifPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { }
 
     Column(Modifier.fillMaxSize()) {
-        TopAppBar(title = { Text(stringResource(R.string.tab_settings)) })
+        PixiTopBar(title = { Text(stringResource(R.string.tab_settings)) })
         Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).navigationBarsPadding(), horizontalAlignment = Alignment.CenterHorizontally) {
             Column(Modifier.widthIn(max = 640.dp).padding(16.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
 
@@ -77,28 +77,12 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
                     }
                 }
 
-                SectionCard(stringResource(R.string.set_ai)) {
-                    Text(stringResource(R.string.set_ai_body), style = MaterialTheme.typography.bodySmall)
-                    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        FilterChip(selected = s.aiProvider == "anthropic", onClick = { vm.updateSettings { it.copy(aiProvider = "anthropic") } }, label = { Text("Claude") })
-                        FilterChip(selected = s.aiProvider == "gemini", onClick = { vm.updateSettings { it.copy(aiProvider = "gemini") } }, label = { Text("Gemini") })
-                    }
-                    if (s.aiProvider == "gemini") {
-                        SecretField(stringResource(R.string.set_api_key_gemini), s.geminiKey) { v -> vm.updateSettings { it.copy(geminiKey = v) } }
-                        PlainField(stringResource(R.string.set_model), s.geminiModel) { v -> vm.updateSettings { it.copy(geminiModel = v) } }
-                    } else {
-                        SecretField(stringResource(R.string.set_api_key_claude), s.anthropicKey) { v -> vm.updateSettings { it.copy(anthropicKey = v) } }
-                        PlainField(stringResource(R.string.set_model), s.anthropicModel) { v -> vm.updateSettings { it.copy(anthropicModel = v) } }
-                    }
-                }
-
                 SectionCard(stringResource(R.string.set_appearance)) {
                     FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         listOf("system" to R.string.theme_system, "light" to R.string.theme_light, "dark" to R.string.theme_dark).forEach { (k, label) ->
                             FilterChip(selected = s.theme == k, onClick = { vm.updateSettings { it.copy(theme = k) } }, label = { Text(stringResource(label)) })
                         }
                     }
-                    PlainField(stringResource(R.string.set_currency), s.currency) { v -> vm.updateSettings { it.copy(currency = v.uppercase().take(4)) } }
                 }
 
                 SectionCard(stringResource(R.string.set_notifications)) {
@@ -153,12 +137,4 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
 @Composable
 private fun PlainField(label: String, value: String, onChange: (String) -> Unit) {
     OutlinedTextField(value, onChange, label = { Text(label) }, singleLine = true, modifier = Modifier.fillMaxWidth())
-}
-
-@Composable
-private fun SecretField(label: String, value: String, onChange: (String) -> Unit) {
-    OutlinedTextField(
-        value, onChange, label = { Text(label) }, singleLine = true,
-        visualTransformation = PasswordVisualTransformation(), modifier = Modifier.fillMaxWidth(),
-    )
 }

@@ -106,7 +106,6 @@
     <string name="f_group">مجموعہ / گروپ</string>
     <string name="f_purchased">خریداری کی تاریخ</string>
     <string name="f_price">قیمت</string>
-    <string name="f_currency">کرنسی</string>
     <string name="f_notes">نوٹس</string>
     <string name="f_asset_tag">اثاثہ ٹیگ</string>
     <string name="field_name">خانہ</string>
@@ -157,7 +156,7 @@
     <string name="analysis_by_type">قسم کے لحاظ سے</string>
     <string name="analysis_by_android">اینڈرائیڈ ورژن کے لحاظ سے</string>
     <string name="analysis_by_year">سال اجرا کے لحاظ سے</string>
-    <string name="analysis_spend_year">سالانہ اخراجات (%1$s)</string>
+    <string name="analysis_spend_year">سالانہ اخراجات</string>
     <string name="analysis_patch_health">سیکیورٹی پیچ کی صحت</string>
     <string name="analysis_palette">رنگوں کا مجموعہ</string>
     <string name="analysis_extremes">قدیم ترین اور نیا ترین</string>
@@ -172,10 +171,8 @@
     <string name="coverage_missing">غائب: اینڈرائیڈ %1$s</string>
     <string name="coverage_covered">شامل</string>
     <string name="coverage_gaps">خلا</string>
-    <string name="coverage_gap">آپ کے قدیم ترین اور نیا ترین کے درمیان خلا</string>
-    <string name="coverage_not_owned">آپ کی حد سے باہر</string>
     <string name="ask_intro">اپنے مجموعے کے بارے میں پکسی سے پوچھیں: اپ ڈیٹس، اخراجات، کس پکسل کو کیا ملتا ہے، یا اینڈرائیڈ سے متعلق کچھ بھی۔</string>
-    <string name="ask_need_key">پکسی استعمال کرنے کے لیے ترتیبات میں اپنی کلاڈ یا جیمنائی API کلید شامل کریں۔</string>
+    <string name="ask_need_key">پکسی کو اے آئی کلید درکار ہے۔ اینڈرائیڈ اسٹوڈیو میں local.properties میں ANTHROPIC_API_KEY یا GEMINI_API_KEY شامل کر کے دوبارہ بنائیں۔</string>
     <string name="ask_hint">سوال پوچھیں…</string>
     <string name="ask_send">بھیجیں</string>
     <string name="ask_thinking">سوچ رہا ہوں…</string>
@@ -200,16 +197,10 @@
     <string name="sync_done">ہم آہنگ: %1$d موصول، %2$d ارسال</string>
     <string name="sync_last">آخری ہم آہنگی %1$s</string>
     <string name="sync_never">ابھی ہم آہنگ نہیں ہوا</string>
-    <string name="set_ai">پکسی سے پوچھیں (اے آئی)</string>
-    <string name="set_ai_body">یہ آپ کی اپنی API کلید استعمال کرتا ہے۔ وہ اسی فون میں رہتی ہے اور صرف منتخب فراہم کنندہ کو بھیجی جاتی ہے۔</string>
-    <string name="set_api_key_claude">کلاڈ API کلید</string>
-    <string name="set_api_key_gemini">جیمنائی API کلید</string>
-    <string name="set_model">ماڈل</string>
     <string name="set_appearance">ظاہری شکل</string>
     <string name="theme_system">سسٹم</string>
     <string name="theme_light">روشن</string>
     <string name="theme_dark">تاریک</string>
-    <string name="set_currency">ڈیفالٹ کرنسی</string>
     <string name="set_notifications">اطلاعات</string>
     <string name="set_patch_alerts">پرانے سیکیورٹی پیچ کے بارے میں مطلع کریں</string>
     <string name="set_patch_after">پیچ اتنا پرانا ہونے پر مطلع کریں:</string>
@@ -239,6 +230,13 @@
     <string name="about_libs_title">تیاری میں استعمال</string>
     <string name="about_libs_body">کوٹلن، جیٹ پیک کمپوز، روم، ورک مینیجر، فائر بیس، گوگل پلے سروسز، اوکے ایچ ٹی ٹی پی، کوائل، زیکسنگ۔</string>
     <string name="about_trademark">پکسل، اینڈرائیڈ اور گوگل، گوگل ایل ایل سی کے ٹریڈ مارکس ہیں۔ پکسسٹوری ایک آزاد ایپ ہے اور گوگل سے منسلک یا اس کی تصدیق شدہ نہیں۔</string>
+    <string name="ask_name">پکسی</string>
+    <string name="ask_banner_sub">آپ کے مجموعے کا معاون</string>
+    <string name="coverage_col_android">اینڈرائیڈ</string>
+    <string name="coverage_col_status">حیثیت</string>
+    <string name="coverage_col_devices">آپ کے آلات</string>
+    <string name="coverage_pill_gap">خلا</string>
+    <string name="coverage_pill_out">ملکیت میں نہیں</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
 </resources>

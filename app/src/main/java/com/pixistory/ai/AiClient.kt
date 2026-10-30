@@ -1,6 +1,6 @@
 package com.pixistory.ai
 
-import com.pixistory.data.repo.SettingsStore
+import com.pixistory.BuildConfig
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import okhttp3.MediaType.Companion.toMediaType
@@ -16,25 +16,25 @@ data class AiTurn(val role: String, val text: String)
 class AiException(message: String) : Exception(message)
 
 /**
- * Talks to the AI provider chosen in Settings with the user's own API key: Claude (Anthropic) or
- * Gemini (Google). The key is only ever sent to that provider.
+ * Talks to Claude (Anthropic) or Gemini (Google) with the key from local.properties, baked in at build time.
+ * The key is only ever sent to that provider.
  */
-class AiClient(private val settings: SettingsStore) {
+class AiClient {
     private val http = OkHttpClient.Builder()
         .connectTimeout(30, TimeUnit.SECONDS)
         .readTimeout(90, TimeUnit.SECONDS)
         .build()
     private val json = "application/json".toMediaType()
 
+    /** Claude is used when its key is in local.properties, otherwise Gemini. */
     val isConfigured: Boolean
-        get() = settings.current.let { if (it.aiProvider == "gemini") it.geminiKey.isNotBlank() else it.anthropicKey.isNotBlank() }
+        get() = BuildConfig.ANTHROPIC_API_KEY.isNotBlank() || BuildConfig.GEMINI_API_KEY.isNotBlank()
 
     suspend fun ask(system: String, turns: List<AiTurn>): String = withContext(Dispatchers.IO) {
-        val s = settings.current
         val clean = normalise(turns)
         if (clean.isEmpty()) throw AiException("Nothing to ask")
-        if (s.aiProvider == "gemini") gemini(s.geminiKey, s.geminiModel, system, clean)
-        else anthropic(s.anthropicKey, s.anthropicModel, system, clean)
+        if (BuildConfig.ANTHROPIC_API_KEY.isNotBlank()) anthropic(BuildConfig.ANTHROPIC_API_KEY, BuildConfig.ANTHROPIC_MODEL, system, clean)
+        else gemini(BuildConfig.GEMINI_API_KEY, BuildConfig.GEMINI_MODEL, system, clean)
     }
 
     /** Providers need the first turn from the user and strictly alternating roles. */
@@ -53,7 +53,7 @@ class AiClient(private val settings: SettingsStore) {
     }
 
     private fun anthropic(key: String, model: String, system: String, turns: List<AiTurn>): String {
-        if (key.isBlank()) throw AiException("Add your Claude API key in Settings")
+        if (key.isBlank()) throw AiException("Add ANTHROPIC_API_KEY to local.properties")
         val messages = JSONArray()
         turns.forEach { messages.put(JSONObject().put("role", it.role).put("content", it.text)) }
         val body = JSONObject()
@@ -81,7 +81,7 @@ class AiClient(private val settings: SettingsStore) {
     }
 
     private fun gemini(key: String, model: String, system: String, turns: List<AiTurn>): String {
-        if (key.isBlank()) throw AiException("Add your Gemini API key in Settings")
+        if (key.isBlank()) throw AiException("Add GEMINI_API_KEY to local.properties")
         val contents = JSONArray()
         turns.forEach {
             contents.put(

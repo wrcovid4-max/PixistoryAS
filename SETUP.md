@@ -22,7 +22,16 @@ service cloud.firestore {
 Storage rules: allow read, write on `users/{uid}/**` when `request.auth.uid == uid`.
 
 ## 3. Ask Pixi (AI)
-Settings > Ask Pixi: choose Claude or Gemini and paste your own API key. It is stored only on the phone.
+Add your key to `local.properties` in the project root (it is git-ignored), then rebuild:
+```
+ANTHROPIC_API_KEY=your-claude-key
+# or
+GEMINI_API_KEY=your-gemini-key
+# optional model overrides
+ANTHROPIC_MODEL=claude-sonnet-5-5
+GEMINI_MODEL=gemini-2.5-flash
+```
+Claude is used when its key is present, otherwise Gemini. The key is compiled into your own build; it is not in the repo and there is no key field in the app.
 
 ## 4. Pixel data
 `app/src/main/assets/pixel_knowledge.json` and `pixel_drops.json` hold the history, specs, faults and Pixel Drops (English and Urdu).

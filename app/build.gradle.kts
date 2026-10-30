@@ -1,9 +1,19 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.ksp)
 }
+
+// AI keys live in local.properties (not committed): ANTHROPIC_API_KEY=... and/or GEMINI_API_KEY=...
+val localProps = Properties().apply {
+    val f = rootProject.file("local.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+fun secret(name: String, fallback: String = ""): String =
+    (localProps.getProperty(name) ?: System.getenv(name) ?: fallback).trim().replace("\"", "")
 
 android {
     namespace = "com.pixistory"
@@ -15,6 +25,10 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
+        buildConfigField("String", "ANTHROPIC_API_KEY", "\"${secret("ANTHROPIC_API_KEY")}\"")
+        buildConfigField("String", "ANTHROPIC_MODEL", "\"${secret("ANTHROPIC_MODEL", "claude-sonnet-5-5")}\"")
+        buildConfigField("String", "GEMINI_API_KEY", "\"${secret("GEMINI_API_KEY")}\"")
+        buildConfigField("String", "GEMINI_MODEL", "\"${secret("GEMINI_MODEL", "gemini-2.5-flash")}\"")
     }
 
     buildTypes {

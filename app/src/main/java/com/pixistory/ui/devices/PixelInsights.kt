@@ -17,7 +17,7 @@ import androidx.compose.ui.unit.dp
 import com.pixistory.R
 import com.pixistory.data.pixel.PixelKnowledge
 import com.pixistory.data.pixel.PixelModel
-import com.pixistory.ui.common.InfoRow
+import com.pixistory.ui.common.InfoTable
 import com.pixistory.ui.common.SectionCard
 
 /** Background, tech specs, what was new, known faults and received Pixel Drops for a Pixel in the collection. */
@@ -38,10 +38,12 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
             "display" to R.string.spec_display, "battery" to R.string.spec_battery, "camera" to R.string.spec_camera,
             "protection" to R.string.spec_protection, "price" to R.string.spec_price,
         )
-        model.specs.forEach { (k, v) -> InfoRow(labels[k]?.let { stringResource(it) } ?: k, v) }
-        InfoRow(stringResource(R.string.spec_released), model.released)
-        if (model.launchApi > 0) InfoRow(stringResource(R.string.spec_launch_android), "API ${model.launchApi}")
-        InfoRow(stringResource(R.string.spec_support), model.supportEnds)
+        val rows = model.specs.map { (k, v) -> (labels[k]?.let { stringResource(it) } ?: k) to v } + listOf(
+            stringResource(R.string.spec_released) to model.released,
+            stringResource(R.string.spec_launch_android) to (if (model.launchApi > 0) "API ${model.launchApi}" else ""),
+            stringResource(R.string.spec_support) to model.supportEnds,
+        )
+        InfoTable(rows)
     }
 
     if (gen != null && gen.features.isNotEmpty()) {
