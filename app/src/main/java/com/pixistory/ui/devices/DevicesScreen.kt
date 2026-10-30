@@ -250,12 +250,12 @@ fun DevicesScreen(
 
 @Composable
 private fun <T> MenuChip(label: String, options: List<T>, optionLabel: @Composable (T) -> String, onSelect: (T) -> Unit) {
-    var open by remember { mutableStateOf(false) }
+    var menuOpen by remember { mutableStateOf(false) }
     Box {
-        AssistChip(onClick = { open = true }, label = { Text(label, maxLines = 1, overflow = TextOverflow.Ellipsis) })
-        DropdownMenu(expanded = open, onDismissRequest = { open = false }) {
+        AssistChip(onClick = { menuOpen = true }, label = { Text(label, maxLines = 1, overflow = TextOverflow.Ellipsis) })
+        DropdownMenu(expanded = menuOpen, onDismissRequest = { menuOpen = false }) {
             options.forEach { o ->
-                DropdownMenuItem(text = { Text(optionLabel(o)) }, onClick = { onSelect(o); open = false })
+                DropdownMenuItem(text = { Text(optionLabel(o)) }, onClick = { onSelect(o); menuOpen = false })
             }
         }
     }
