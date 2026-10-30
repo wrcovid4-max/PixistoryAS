@@ -59,8 +59,6 @@
     <string name="menu_group">Group: %1$s</string>
     <string name="menu_sort">Sort: %1$s</string>
     <string name="search_hint">Search name, serial, tag…</string>
-    <string name="scan_tag">Scan a tag or barcode</string>
-    <string name="scan_not_found">No device matches that code</string>
     <string name="shelf_mode">Shelf mode</string>
     <string name="shelf_empty">Add devices you own to see them on the shelf</string>
     <string name="shelf_prev">Previous</string>

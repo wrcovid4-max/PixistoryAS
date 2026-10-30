@@ -60,8 +60,6 @@ S = {
     'menu_group': ('Group: %1$s', 'گروپ: %1$s'),
     'menu_sort': ('Sort: %1$s', 'ترتیب: %1$s'),
     'search_hint': ('Search name, serial, tag…', 'نام، سیریل، ٹیگ تلاش کریں…'),
-    'scan_tag': ('Scan a tag or barcode', 'ٹیگ یا بار کوڈ اسکین کریں'),
-    'scan_not_found': ('No device matches that code', 'اس کوڈ سے کوئی آلہ نہیں ملا'),
     'shelf_mode': ('Shelf mode', 'شیلف موڈ'),
     'shelf_empty': ('Add devices you own to see them on the shelf', 'شیلف پر دیکھنے کے لیے اپنے آلات شامل کریں'),
     'shelf_prev': ('Previous', 'پچھلا'),

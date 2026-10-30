@@ -59,8 +59,6 @@
     <string name="menu_group">گروپ: %1$s</string>
     <string name="menu_sort">ترتیب: %1$s</string>
     <string name="search_hint">نام، سیریل، ٹیگ تلاش کریں…</string>
-    <string name="scan_tag">ٹیگ یا بار کوڈ اسکین کریں</string>
-    <string name="scan_not_found">اس کوڈ سے کوئی آلہ نہیں ملا</string>
     <string name="shelf_mode">شیلف موڈ</string>
     <string name="shelf_empty">شیلف پر دیکھنے کے لیے اپنے آلات شامل کریں</string>
     <string name="shelf_prev">پچھلا</string>

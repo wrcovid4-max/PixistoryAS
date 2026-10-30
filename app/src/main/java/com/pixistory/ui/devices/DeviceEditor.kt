@@ -18,7 +18,6 @@ import androidx.compose.material.icons.filled.AttachFile
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.PhotoCamera
-import androidx.compose.material.icons.filled.QrCodeScanner
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -30,7 +29,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.google.mlkit.vision.codescanner.GmsBarcodeScanning
 import com.pixistory.R
 import com.pixistory.data.catalog.CatalogItem
 import com.pixistory.data.model.*
@@ -77,10 +75,6 @@ fun DeviceEditorScreen(
         if (uri != null) vm.addDocument(d.id, uri)
     }
     val groups = remember(devices) { devices.map { it.groupName }.filter { it.isNotBlank() }.distinct() }
-
-    fun scanInto(apply: (String) -> Unit) {
-        GmsBarcodeScanning.getClient(context).startScan().addOnSuccessListener { b -> b.rawValue?.let(apply) }
-    }
 
     fun save() {
         val name = d.name.trim().ifBlank { listOf(d.brand, d.model).filter { it.isNotBlank() }.joinToString(" ") }
@@ -179,7 +173,6 @@ fun DeviceEditorScreen(
                 }
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                     OutlinedTextField(d.serial, { d = d.copy(serial = it.trim()) }, label = { Text(stringResource(R.string.f_serial)) }, singleLine = true, modifier = Modifier.weight(1f))
-                    IconButton(onClick = { scanInto { code -> d = d.copy(serial = code) } }) { Icon(Icons.Filled.QrCodeScanner, stringResource(R.string.scan_tag)) }
                 }
                 OutlinedTextField(d.notes, { d = d.copy(notes = it) }, label = { Text(stringResource(R.string.f_notes)) }, minLines = 2, modifier = Modifier.fillMaxWidth())
 

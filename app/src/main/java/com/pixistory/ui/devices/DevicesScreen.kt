@@ -13,7 +13,6 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Devices
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
-import androidx.compose.material.icons.filled.QrCodeScanner
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.ViewCarousel
 import androidx.compose.material3.*
@@ -26,7 +25,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.google.mlkit.vision.codescanner.GmsBarcodeScanning
 import com.pixistory.R
 import com.pixistory.data.model.DeviceEntity
 import com.pixistory.data.model.DeviceStatus
@@ -117,21 +115,12 @@ fun DevicesScreen(
         }
     }
     val selected = devices.firstOrNull { it.id == selectedId }
-    val scanNotFound = stringResource(R.string.scan_not_found)
-
-    fun scan() {
-        GmsBarcodeScanning.getClient(context).startScan().addOnSuccessListener { barcode ->
-            val code = barcode.rawValue.orEmpty()
-            vm.findByCode(code) { d -> if (d != null) onSelect(d.id) else vm.say(scanNotFound) }
-        }
-    }
 
     val listPane: @Composable (Modifier) -> Unit = { mod ->
         Column(mod) {
             PixiTopBar(
                 title = { Text(stringResource(R.string.tab_devices)) },
                 actions = {
-                    IconButton(onClick = { scan() }) { Icon(Icons.Filled.QrCodeScanner, stringResource(R.string.scan_tag)) }
                     IconButton(onClick = onOpenShelf) { Icon(Icons.Filled.ViewCarousel, stringResource(R.string.shelf_mode)) }
                 },
             )

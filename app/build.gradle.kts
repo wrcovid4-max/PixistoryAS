@@ -91,8 +91,7 @@ dependencies {
     implementation(libs.firebase.storage)
     implementation(libs.play.services.auth)
 
-    // Asset-tag scanning (no camera permission needed) and barcode labels.
-    implementation(libs.play.services.code.scanner)
+    // Barcode images for asset tags and the printable label sheet.
     implementation(libs.zxing.core)
 
     implementation(libs.okhttp)
