@@ -292,4 +292,11 @@ S = {
     'shelf_pause': ('Pause', 'روکیں'),
     'shelf_play': ('Play', 'چلائیں'),
     'shelf_count': ('%1$d devices on your shelf', 'آپ کی شیلف پر %1$d آلات'),
+    'drops_search': ('Search drops, features or Pixels…', 'ڈراپس، خصوصیات یا پکسل تلاش کریں…'),
+    'drops_my_pixels': ('My Pixels', 'میرے پکسل'),
+    'drops_count': ('%1$d drops • %2$d highlights', '%1$d ڈراپس • %2$d نمایاں خصوصیات'),
+    'drops_features_n': ('%1$d features', '%1$d خصوصیات'),
+    'drops_phones_n': ('%1$d phones', '%1$d فون'),
+    'drops_select': ('Select a drop', 'کوئی ڈراپ منتخب کریں'),
+    'drops_select_body': ('Its features and the exact Pixels show here.', 'اس کی خصوصیات اور درست پکسل یہاں دکھائے جائیں گے۔'),
 }

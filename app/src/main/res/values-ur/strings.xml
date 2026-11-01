@@ -291,6 +291,13 @@
     <string name="shelf_pause">روکیں</string>
     <string name="shelf_play">چلائیں</string>
     <string name="shelf_count">آپ کی شیلف پر %1$d آلات</string>
+    <string name="drops_search">ڈراپس، خصوصیات یا پکسل تلاش کریں…</string>
+    <string name="drops_my_pixels">میرے پکسل</string>
+    <string name="drops_count">%1$d ڈراپس • %2$d نمایاں خصوصیات</string>
+    <string name="drops_features_n">%1$d خصوصیات</string>
+    <string name="drops_phones_n">%1$d فون</string>
+    <string name="drops_select">کوئی ڈراپ منتخب کریں</string>
+    <string name="drops_select_body">اس کی خصوصیات اور درست پکسل یہاں دکھائے جائیں گے۔</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
 </resources>

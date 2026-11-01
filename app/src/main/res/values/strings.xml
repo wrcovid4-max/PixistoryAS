@@ -291,6 +291,13 @@
     <string name="shelf_pause">Pause</string>
     <string name="shelf_play">Play</string>
     <string name="shelf_count">%1$d devices on your shelf</string>
+    <string name="drops_search">Search drops, features or Pixels…</string>
+    <string name="drops_my_pixels">My Pixels</string>
+    <string name="drops_count">%1$d drops • %2$d highlights</string>
+    <string name="drops_features_n">%1$d features</string>
+    <string name="drops_phones_n">%1$d phones</string>
+    <string name="drops_select">Select a drop</string>
+    <string name="drops_select_body">Its features and the exact Pixels show here.</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
 </resources>
