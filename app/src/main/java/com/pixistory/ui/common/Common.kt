@@ -4,6 +4,8 @@ package com.pixistory.ui.common
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -32,6 +34,7 @@ import androidx.compose.material.icons.filled.Usb
 import androidx.compose.material.icons.filled.Watch
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Card
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -63,6 +66,7 @@ import com.pixistory.data.model.DeviceStatus
 import com.pixistory.data.model.DeviceType
 import com.pixistory.data.model.typeEnum
 import com.pixistory.data.repo.FileStore
+import com.pixistory.util.Currencies
 import com.pixistory.util.PatchStatus
 import com.pixistory.util.patchStatus
 
@@ -322,4 +326,24 @@ fun statusColor(status: DeviceStatus): Color = when (status) {
     DeviceStatus.OWNED -> MaterialTheme.colorScheme.secondary
     DeviceStatus.WISHLIST -> MaterialTheme.colorScheme.tertiary
     DeviceStatus.SOLD -> MaterialTheme.colorScheme.outline
+}
+
+/** Currency chips (same list as CashMemer's receipt generator), styled like the language selector. */
+@Composable
+fun CurrencySwitcher(selected: String, onSelect: (String) -> Unit, modifier: Modifier = Modifier, scrollable: Boolean = false) {
+    val options = remember(selected) { (listOf(selected) + Currencies.COMMON).filter { it.isNotBlank() }.distinct() }
+    val chips: @Composable () -> Unit = {
+        options.forEach { code ->
+            FilterChip(
+                selected = code == selected,
+                onClick = { onSelect(code) },
+                label = { Text("${Currencies.flagOf(code)} $code".trim()) },
+            )
+        }
+    }
+    if (scrollable) {
+        Row(modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) { chips() }
+    } else {
+        FlowRow(modifier, horizontalArrangement = Arrangement.spacedBy(8.dp)) { chips() }
+    }
 }

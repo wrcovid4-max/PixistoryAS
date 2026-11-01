@@ -20,6 +20,7 @@ import com.pixistory.data.model.toUpgradesJson
 import com.pixistory.data.repo.AppSettings
 import com.pixistory.export.openFile
 import com.pixistory.export.shareFile
+import com.pixistory.notify.NewsAlerts
 import com.pixistory.notify.PatchAlerts
 import com.pixistory.sync.SyncScheduler
 import com.pixistory.util.AndroidVersions
@@ -146,6 +147,14 @@ class AppViewModel(val container: AppContainer) : ViewModel() {
     fun setPatchAlerts(enabled: Boolean) {
         container.settings.update { it.copy(patchAlerts = enabled) }
         PatchAlerts.apply(app, enabled)
+    }
+
+    /** Applies a settings change that affects alerts and (re)schedules the background checks. */
+    fun setAlerts(block: (AppSettings) -> AppSettings) {
+        container.settings.update(block)
+        val s = container.settings.current
+        PatchAlerts.apply(app, s.patchAlerts)
+        NewsAlerts.apply(app, s)
     }
 
     // ---- account & sync -----------------------------------------------------------------------

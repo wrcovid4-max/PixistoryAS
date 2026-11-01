@@ -163,6 +163,8 @@ fun DeviceEditorScreen(
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     OutlinedTextField(priceText, { priceText = it.filter { c -> c.isDigit() || c == '.' || c == ',' } }, label = { Text(stringResource(R.string.f_price)) }, singleLine = true, keyboardOptions = androidx.compose.foundation.text.KeyboardOptions(keyboardType = KeyboardType.Decimal), modifier = Modifier.weight(1f))
                 }
+                Text(stringResource(R.string.f_currency), style = MaterialTheme.typography.labelLarge)
+                CurrencySwitcher(d.currency, { d = d.copy(currency = it) }, scrollable = true)
 
                 Text(stringResource(R.string.section_organise), style = MaterialTheme.typography.titleSmall)
                 OutlinedTextField(d.groupName, { d = d.copy(groupName = it) }, label = { Text(stringResource(R.string.f_group)) }, singleLine = true, modifier = Modifier.fillMaxWidth())

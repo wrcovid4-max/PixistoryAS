@@ -15,6 +15,11 @@ data class AppSettings(
     /** "system", "light" or "dark" */
     val theme: String = "system",
     val patchAlerts: Boolean = false,
+    val notifDrops: Boolean = false,
+    val notifDevices: Boolean = false,
+    val notifLeaks: Boolean = false,
+    val notifKilled: Boolean = false,
+    val notifAvailability: Boolean = false,
     val patchDays: Int = 180,
     val autoSync: Boolean = true,
     val lastSync: Long = 0L,
@@ -50,6 +55,11 @@ class SettingsStore(context: Context) {
             geminiModel = prefs.getString("geminiModel", d.geminiModel) ?: d.geminiModel,
             theme = prefs.getString("theme", d.theme) ?: d.theme,
             patchAlerts = prefs.getBoolean("patchAlerts", d.patchAlerts),
+            notifDrops = prefs.getBoolean("notifDrops", false),
+            notifDevices = prefs.getBoolean("notifDevices", false),
+            notifLeaks = prefs.getBoolean("notifLeaks", false),
+            notifKilled = prefs.getBoolean("notifKilled", false),
+            notifAvailability = prefs.getBoolean("notifAvailability", false),
             patchDays = prefs.getInt("patchDays", d.patchDays),
             autoSync = prefs.getBoolean("autoSync", d.autoSync),
             lastSync = prefs.getLong("lastSync", 0L),
@@ -70,6 +80,11 @@ class SettingsStore(context: Context) {
             .putString("geminiModel", s.geminiModel)
             .putString("theme", s.theme)
             .putBoolean("patchAlerts", s.patchAlerts)
+            .putBoolean("notifDrops", s.notifDrops)
+            .putBoolean("notifDevices", s.notifDevices)
+            .putBoolean("notifLeaks", s.notifLeaks)
+            .putBoolean("notifKilled", s.notifKilled)
+            .putBoolean("notifAvailability", s.notifAvailability)
             .putInt("patchDays", s.patchDays)
             .putBoolean("autoSync", s.autoSync)
             .putLong("lastSync", s.lastSync)

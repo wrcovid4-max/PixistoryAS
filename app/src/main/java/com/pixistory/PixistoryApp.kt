@@ -9,6 +9,8 @@ import com.pixistory.data.repo.DeviceRepository
 import com.pixistory.data.repo.FileStore
 import com.pixistory.data.repo.SettingsStore
 import com.pixistory.export.Exporter
+import com.pixistory.data.features.FeatureData
+import com.pixistory.notify.NewsAlerts
 import com.pixistory.notify.PatchAlerts
 import com.pixistory.sync.AuthManager
 import com.pixistory.sync.FirebaseGate
@@ -21,6 +23,7 @@ class AppContainer(val app: Application) {
     val db = PixistoryDb.build(app)
     val repository = DeviceRepository(app, db, settings, files)
     val knowledge = PixelKnowledge(app)
+    val features = FeatureData(app)
     val catalog = CatalogRepository(app)
     val auth = AuthManager(app)
     val sync = SyncManager(db, settings, auth, files)
@@ -41,5 +44,6 @@ class PixistoryApp : Application() {
         val s = container.settings.current
         if (FirebaseGate.isConfigured) SyncScheduler.applyAutoSync(this, s.autoSync)
         PatchAlerts.apply(this, s.patchAlerts)
+        NewsAlerts.apply(this, s)
     }
 }

@@ -88,7 +88,7 @@ private fun Charts(stats: com.pixistory.analysis.Stats, currency: String) {
     if (stats.byReleaseYear.isNotEmpty()) SectionCard(stringResource(R.string.analysis_by_year)) {
         ColumnChart(stats.byReleaseYear.map { it.first.toString() to it.second.toDouble() })
     }
-    if (stats.spendByYear.isNotEmpty()) SectionCard(stringResource(R.string.analysis_spend_year)) {
+    if (stats.spendByYear.isNotEmpty()) SectionCard(stringResource(R.string.analysis_spend_year, currency)) {
         ColumnChart(stats.spendByYear.map { it.first.toString() to it.second }, color = MaterialTheme.colorScheme.secondary, valueLabel = { v -> if (v >= 1000) "${(v / 1000).toInt()}k" else v.toInt().toString() })
     }
     SectionCard(stringResource(R.string.analysis_patch_health)) {

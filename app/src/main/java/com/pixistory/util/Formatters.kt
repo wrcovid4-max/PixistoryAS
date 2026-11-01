@@ -18,11 +18,10 @@ fun formatDateTime(millis: Long): String =
 
 fun yearOf(millis: Long): Int = Instant.ofEpochMilli(millis).atZone(ZoneId.systemDefault()).year
 
-/** The amount with thousands separators. (Currency was removed from the app; the argument is ignored.) */
-fun formatMoney(amount: Double, @Suppress("UNUSED_PARAMETER") currency: String = ""): String {
+fun formatMoney(amount: Double, currency: String = ""): String {
     val rounded = if (amount % 1.0 == 0.0) amount.toLong().toString() else String.format("%.2f", amount)
     val grouped = rounded.replace(Regex("(\\d)(?=(\\d{3})+(?!\\d))"), "$1,")
-    return grouped
+    return if (currency.isBlank()) grouped else "${Currencies.symbolOf(currency)} $grouped"
 }
 
 fun parsePatchDate(patch: String): LocalDate? = try {

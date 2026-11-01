@@ -1,0 +1,1606 @@
+{
+"source": "https://www.whereisenabled.com/",
+"retrieved": "2026-10-30",
+"note": "Country lists are bundled for the features marked with 'available'; others show rules only.",
+"countries": [
+{
+"name": "Afghanistan",
+"iso": "AF",
+"slug": "afghanistan"
+},
+{
+"name": "Albania",
+"iso": "AL",
+"slug": "albania"
+},
+{
+"name": "Algeria",
+"iso": "DZ",
+"slug": "algeria"
+},
+{
+"name": "Andorra",
+"iso": "AD",
+"slug": "andorra"
+},
+{
+"name": "Angola",
+"iso": "AO",
+"slug": "angola"
+},
+{
+"name": "Antigua and Barbuda",
+"iso": "AG",
+"slug": "antigua-and-barbuda"
+},
+{
+"name": "Argentina",
+"iso": "AR",
+"slug": "argentina"
+},
+{
+"name": "Armenia",
+"iso": "AM",
+"slug": "armenia"
+},
+{
+"name": "Australia",
+"iso": "AU",
+"slug": "australia"
+},
+{
+"name": "Austria",
+"iso": "AT",
+"slug": "austria"
+},
+{
+"name": "Azerbaijan",
+"iso": "AZ",
+"slug": "azerbaijan"
+},
+{
+"name": "Bahamas",
+"iso": "BS",
+"slug": "bahamas"
+},
+{
+"name": "Bahrain",
+"iso": "BH",
+"slug": "bahrain"
+},
+{
+"name": "Bangladesh",
+"iso": "BD",
+"slug": "bangladesh"
+},
+{
+"name": "Barbados",
+"iso": "BB",
+"slug": "barbados"
+},
+{
+"name": "Belarus",
+"iso": "BY",
+"slug": "belarus"
+},
+{
+"name": "Belgium",
+"iso": "BE",
+"slug": "belgium"
+},
+{
+"name": "Belize",
+"iso": "BZ",
+"slug": "belize"
+},
+{
+"name": "Benin",
+"iso": "BJ",
+"slug": "benin"
+},
+{
+"name": "Bhutan",
+"iso": "BT",
+"slug": "bhutan"
+},
+{
+"name": "Bolivia",
+"iso": "BO",
+"slug": "bolivia"
+},
+{
+"name": "Bosnia and Herzegovina",
+"iso": "BA",
+"slug": "bosnia-and-herzegovina"
+},
+{
+"name": "Botswana",
+"iso": "BW",
+"slug": "botswana"
+},
+{
+"name": "Brazil",
+"iso": "BR",
+"slug": "brazil"
+},
+{
+"name": "Brunei",
+"iso": "BN",
+"slug": "brunei"
+},
+{
+"name": "Bulgaria",
+"iso": "BG",
+"slug": "bulgaria"
+},
+{
+"name": "Burkina Faso",
+"iso": "BF",
+"slug": "burkina-faso"
+},
+{
+"name": "Burundi",
+"iso": "BI",
+"slug": "burundi"
+},
+{
+"name": "Cabo Verde",
+"iso": "CV",
+"slug": "cabo-verde"
+},
+{
+"name": "Cambodia",
+"iso": "KH",
+"slug": "cambodia"
+},
+{
+"name": "Cameroon",
+"iso": "CM",
+"slug": "cameroon"
+},
+{
+"name": "Canada",
+"iso": "CA",
+"slug": "canada"
+},
+{
+"name": "Central African Republic",
+"iso": "CF",
+"slug": "central-african-republic"
+},
+{
+"name": "Chad",
+"iso": "TD",
+"slug": "chad"
+},
+{
+"name": "Chile",
+"iso": "CL",
+"slug": "chile"
+},
+{
+"name": "China",
+"iso": "CN",
+"slug": "china"
+},
+{
+"name": "Colombia",
+"iso": "CO",
+"slug": "colombia"
+},
+{
+"name": "Comoros",
+"iso": "KM",
+"slug": "comoros"
+},
+{
+"name": "Congo (Congo-Brazzaville)",
+"iso": "CG",
+"slug": "congo-congo-brazzaville"
+},
+{
+"name": "Costa Rica",
+"iso": "CR",
+"slug": "costa-rica"
+},
+{
+"name": "Croatia",
+"iso": "HR",
+"slug": "croatia"
+},
+{
+"name": "Cuba",
+"iso": "CU",
+"slug": "cuba"
+},
+{
+"name": "Cyprus",
+"iso": "CY",
+"slug": "cyprus"
+},
+{
+"name": "Czechia (Czech Republic)",
+"iso": "CZ",
+"slug": "czechia-czech-republic"
+},
+{
+"name": "Democratic Republic of the Congo",
+"iso": "CD",
+"slug": "democratic-republic-of-the-congo"
+},
+{
+"name": "Denmark",
+"iso": "DK",
+"slug": "denmark"
+},
+{
+"name": "Djibouti",
+"iso": "DJ",
+"slug": "djibouti"
+},
+{
+"name": "Dominica",
+"iso": "DM",
+"slug": "dominica"
+},
+{
+"name": "Dominican Republic",
+"iso": "DO",
+"slug": "dominican-republic"
+},
+{
+"name": "Ecuador",
+"iso": "EC",
+"slug": "ecuador"
+},
+{
+"name": "Egypt",
+"iso": "EG",
+"slug": "egypt"
+},
+{
+"name": "El Salvador",
+"iso": "SV",
+"slug": "el-salvador"
+},
+{
+"name": "Equatorial Guinea",
+"iso": "GQ",
+"slug": "equatorial-guinea"
+},
+{
+"name": "Eritrea",
+"iso": "ER",
+"slug": "eritrea"
+},
+{
+"name": "Estonia",
+"iso": "EE",
+"slug": "estonia"
+},
+{
+"name": "Eswatini (Swaziland)",
+"iso": "SZ",
+"slug": "eswatini-swaziland"
+},
+{
+"name": "Ethiopia",
+"iso": "ET",
+"slug": "ethiopia"
+},
+{
+"name": "Fiji",
+"iso": "FJ",
+"slug": "fiji"
+},
+{
+"name": "Finland",
+"iso": "FI",
+"slug": "finland"
+},
+{
+"name": "France",
+"iso": "FR",
+"slug": "france"
+},
+{
+"name": "Gabon",
+"iso": "GA",
+"slug": "gabon"
+},
+{
+"name": "Gambia",
+"iso": "GM",
+"slug": "gambia"
+},
+{
+"name": "Georgia",
+"iso": "GE",
+"slug": "georgia"
+},
+{
+"name": "Germany",
+"iso": "DE",
+"slug": "germany"
+},
+{
+"name": "Ghana",
+"iso": "GH",
+"slug": "ghana"
+},
+{
+"name": "Greece",
+"iso": "GR",
+"slug": "greece"
+},
+{
+"name": "Grenada",
+"iso": "GD",
+"slug": "grenada"
+},
+{
+"name": "Guatemala",
+"iso": "GT",
+"slug": "guatemala"
+},
+{
+"name": "Guinea",
+"iso": "GN",
+"slug": "guinea"
+},
+{
+"name": "Guinea-Bissau",
+"iso": "GW",
+"slug": "guinea-bissau"
+},
+{
+"name": "Guyana",
+"iso": "GY",
+"slug": "guyana"
+},
+{
+"name": "Haiti",
+"iso": "HT",
+"slug": "haiti"
+},
+{
+"name": "Honduras",
+"iso": "HN",
+"slug": "honduras"
+},
+{
+"name": "Hungary",
+"iso": "HU",
+"slug": "hungary"
+},
+{
+"name": "Iceland",
+"iso": "IS",
+"slug": "iceland"
+},
+{
+"name": "India",
+"iso": "IN",
+"slug": "india"
+},
+{
+"name": "Indonesia",
+"iso": "ID",
+"slug": "indonesia"
+},
+{
+"name": "Iran",
+"iso": "IR",
+"slug": "iran"
+},
+{
+"name": "Iraq",
+"iso": "IQ",
+"slug": "iraq"
+},
+{
+"name": "Ireland",
+"iso": "IE",
+"slug": "ireland"
+},
+{
+"name": "Israel",
+"iso": "IL",
+"slug": "israel"
+},
+{
+"name": "Italy",
+"iso": "IT",
+"slug": "italy"
+},
+{
+"name": "Jamaica",
+"iso": "JM",
+"slug": "jamaica"
+},
+{
+"name": "Japan",
+"iso": "JP",
+"slug": "japan"
+},
+{
+"name": "Jordan",
+"iso": "JO",
+"slug": "jordan"
+},
+{
+"name": "Kazakhstan",
+"iso": "KZ",
+"slug": "kazakhstan"
+},
+{
+"name": "Kenya",
+"iso": "KE",
+"slug": "kenya"
+},
+{
+"name": "Kiribati",
+"iso": "KI",
+"slug": "kiribati"
+},
+{
+"name": "Kuwait",
+"iso": "KW",
+"slug": "kuwait"
+},
+{
+"name": "Kyrgyzstan",
+"iso": "KG",
+"slug": "kyrgyzstan"
+},
+{
+"name": "Laos",
+"iso": "LA",
+"slug": "laos"
+},
+{
+"name": "Latvia",
+"iso": "LV",
+"slug": "latvia"
+},
+{
+"name": "Lebanon",
+"iso": "LB",
+"slug": "lebanon"
+},
+{
+"name": "Lesotho",
+"iso": "LS",
+"slug": "lesotho"
+},
+{
+"name": "Liberia",
+"iso": "LR",
+"slug": "liberia"
+},
+{
+"name": "Libya",
+"iso": "LY",
+"slug": "libya"
+},
+{
+"name": "Liechtenstein",
+"iso": "LI",
+"slug": "liechtenstein"
+},
+{
+"name": "Lithuania",
+"iso": "LT",
+"slug": "lithuania"
+},
+{
+"name": "Luxembourg",
+"iso": "LU",
+"slug": "luxembourg"
+},
+{
+"name": "Madagascar",
+"iso": "MG",
+"slug": "madagascar"
+},
+{
+"name": "Malawi",
+"iso": "MW",
+"slug": "malawi"
+},
+{
+"name": "Malaysia",
+"iso": "MY",
+"slug": "malaysia"
+},
+{
+"name": "Maldives",
+"iso": "MV",
+"slug": "maldives"
+},
+{
+"name": "Mali",
+"iso": "ML",
+"slug": "mali"
+},
+{
+"name": "Malta",
+"iso": "MT",
+"slug": "malta"
+},
+{
+"name": "Marshall Islands",
+"iso": "MH",
+"slug": "marshall-islands"
+},
+{
+"name": "Mauritania",
+"iso": "MR",
+"slug": "mauritania"
+},
+{
+"name": "Mauritius",
+"iso": "MU",
+"slug": "mauritius"
+},
+{
+"name": "Mexico",
+"iso": "MX",
+"slug": "mexico"
+},
+{
+"name": "Micronesia",
+"iso": "FM",
+"slug": "micronesia"
+},
+{
+"name": "Moldova",
+"iso": "MD",
+"slug": "moldova"
+},
+{
+"name": "Monaco",
+"iso": "MC",
+"slug": "monaco"
+},
+{
+"name": "Mongolia",
+"iso": "MN",
+"slug": "mongolia"
+},
+{
+"name": "Montenegro",
+"iso": "ME",
+"slug": "montenegro"
+},
+{
+"name": "Morocco",
+"iso": "MA",
+"slug": "morocco"
+},
+{
+"name": "Mozambique",
+"iso": "MZ",
+"slug": "mozambique"
+},
+{
+"name": "Myanmar (Burma)",
+"iso": "MM",
+"slug": "myanmar-burma"
+},
+{
+"name": "Namibia",
+"iso": "NA",
+"slug": "namibia"
+},
+{
+"name": "Nauru",
+"iso": "NR",
+"slug": "nauru"
+},
+{
+"name": "Nepal",
+"iso": "NP",
+"slug": "nepal"
+},
+{
+"name": "Netherlands",
+"iso": "NL",
+"slug": "netherlands"
+},
+{
+"name": "New Zealand",
+"iso": "NZ",
+"slug": "new-zealand"
+},
+{
+"name": "Nicaragua",
+"iso": "NI",
+"slug": "nicaragua"
+},
+{
+"name": "Niger",
+"iso": "NE",
+"slug": "niger"
+},
+{
+"name": "Nigeria",
+"iso": "NG",
+"slug": "nigeria"
+},
+{
+"name": "North Korea",
+"iso": "KP",
+"slug": "north-korea"
+},
+{
+"name": "North Macedonia",
+"iso": "MK",
+"slug": "north-macedonia"
+},
+{
+"name": "Norway",
+"iso": "NO",
+"slug": "norway"
+},
+{
+"name": "Oman",
+"iso": "OM",
+"slug": "oman"
+},
+{
+"name": "Pakistan",
+"iso": "PK",
+"slug": "pakistan"
+},
+{
+"name": "Palau",
+"iso": "PW",
+"slug": "palau"
+},
+{
+"name": "Palestine",
+"iso": "PS",
+"slug": "palestine"
+},
+{
+"name": "Panama",
+"iso": "PA",
+"slug": "panama"
+},
+{
+"name": "Papua New Guinea",
+"iso": "PG",
+"slug": "papua-new-guinea"
+},
+{
+"name": "Paraguay",
+"iso": "PY",
+"slug": "paraguay"
+},
+{
+"name": "Peru",
+"iso": "PE",
+"slug": "peru"
+},
+{
+"name": "Philippines",
+"iso": "PH",
+"slug": "philippines"
+},
+{
+"name": "Poland",
+"iso": "PL",
+"slug": "poland"
+},
+{
+"name": "Portugal",
+"iso": "PT",
+"slug": "portugal"
+},
+{
+"name": "Qatar",
+"iso": "QA",
+"slug": "qatar"
+},
+{
+"name": "Romania",
+"iso": "RO",
+"slug": "romania"
+},
+{
+"name": "Russia",
+"iso": "RU",
+"slug": "russia"
+},
+{
+"name": "Rwanda",
+"iso": "RW",
+"slug": "rwanda"
+},
+{
+"name": "Saint Kitts and Nevis",
+"iso": "KN",
+"slug": "saint-kitts-and-nevis"
+},
+{
+"name": "Saint Lucia",
+"iso": "LC",
+"slug": "saint-lucia"
+},
+{
+"name": "Saint Vincent and the Grenadines",
+"iso": "VC",
+"slug": "saint-vincent-and-the-grenadines"
+},
+{
+"name": "Samoa",
+"iso": "WS",
+"slug": "samoa"
+},
+{
+"name": "San Marino",
+"iso": "SM",
+"slug": "san-marino"
+},
+{
+"name": "Sao Tome and Principe",
+"iso": "ST",
+"slug": "sao-tome-and-principe"
+},
+{
+"name": "Saudi Arabia",
+"iso": "SA",
+"slug": "saudi-arabia"
+},
+{
+"name": "Senegal",
+"iso": "SN",
+"slug": "senegal"
+},
+{
+"name": "Serbia",
+"iso": "RS",
+"slug": "serbia"
+},
+{
+"name": "Seychelles",
+"iso": "SC",
+"slug": "seychelles"
+},
+{
+"name": "Sierra Leone",
+"iso": "SL",
+"slug": "sierra-leone"
+},
+{
+"name": "Singapore",
+"iso": "SG",
+"slug": "singapore"
+},
+{
+"name": "Slovakia",
+"iso": "SK",
+"slug": "slovakia"
+},
+{
+"name": "Slovenia",
+"iso": "SI",
+"slug": "slovenia"
+},
+{
+"name": "Solomon Islands",
+"iso": "SB",
+"slug": "solomon-islands"
+},
+{
+"name": "Somalia",
+"iso": "SO",
+"slug": "somalia"
+},
+{
+"name": "South Africa",
+"iso": "ZA",
+"slug": "south-africa"
+},
+{
+"name": "South Korea",
+"iso": "KR",
+"slug": "south-korea"
+},
+{
+"name": "South Sudan",
+"iso": "SS",
+"slug": "south-sudan"
+},
+{
+"name": "Spain",
+"iso": "ES",
+"slug": "spain"
+},
+{
+"name": "Sri Lanka",
+"iso": "LK",
+"slug": "sri-lanka"
+},
+{
+"name": "Sudan",
+"iso": "SD",
+"slug": "sudan"
+},
+{
+"name": "Suriname",
+"iso": "SR",
+"slug": "suriname"
+},
+{
+"name": "Sweden",
+"iso": "SE",
+"slug": "sweden"
+},
+{
+"name": "Switzerland",
+"iso": "CH",
+"slug": "switzerland"
+},
+{
+"name": "Syria",
+"iso": "SY",
+"slug": "syria"
+},
+{
+"name": "Taiwan",
+"iso": "TW",
+"slug": "taiwan"
+},
+{
+"name": "Tajikistan",
+"iso": "TJ",
+"slug": "tajikistan"
+},
+{
+"name": "Tanzania",
+"iso": "TZ",
+"slug": "tanzania"
+},
+{
+"name": "Thailand",
+"iso": "TH",
+"slug": "thailand"
+},
+{
+"name": "Timor-Leste",
+"iso": "TL",
+"slug": "timor-leste"
+},
+{
+"name": "Togo",
+"iso": "TG",
+"slug": "togo"
+},
+{
+"name": "Tonga",
+"iso": "TO",
+"slug": "tonga"
+},
+{
+"name": "Trinidad and Tobago",
+"iso": "TT",
+"slug": "trinidad-and-tobago"
+},
+{
+"name": "Tunisia",
+"iso": "TN",
+"slug": "tunisia"
+},
+{
+"name": "Turkey",
+"iso": "TR",
+"slug": "turkey"
+},
+{
+"name": "Turkmenistan",
+"iso": "TM",
+"slug": "turkmenistan"
+},
+{
+"name": "Tuvalu",
+"iso": "TV",
+"slug": "tuvalu"
+},
+{
+"name": "Uganda",
+"iso": "UG",
+"slug": "uganda"
+},
+{
+"name": "Ukraine",
+"iso": "UA",
+"slug": "ukraine"
+},
+{
+"name": "United Arab Emirates",
+"iso": "AE",
+"slug": "united-arab-emirates"
+},
+{
+"name": "United Kingdom",
+"iso": "GB",
+"slug": "uk"
+},
+{
+"name": "United States",
+"iso": "US",
+"slug": "us"
+},
+{
+"name": "Uruguay",
+"iso": "UY",
+"slug": "uruguay"
+},
+{
+"name": "Uzbekistan",
+"iso": "UZ",
+"slug": "uzbekistan"
+},
+{
+"name": "Vanuatu",
+"iso": "VU",
+"slug": "vanuatu"
+},
+{
+"name": "Venezuela",
+"iso": "VE",
+"slug": "venezuela"
+},
+{
+"name": "Vietnam",
+"iso": "VN",
+"slug": "vietnam"
+},
+{
+"name": "Yemen",
+"iso": "YE",
+"slug": "yemen"
+},
+{
+"name": "Zambia",
+"iso": "ZM",
+"slug": "zambia"
+},
+{
+"name": "Zimbabwe",
+"iso": "ZW",
+"slug": "zimbabwe"
+}
+],
+"features": [
+{
+"id": "5g-and-native-volte-support",
+"name": "5G and native VoLTE support",
+"service": "Android",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "",
+"note": "Some carriers can enable it, otherwise it is disabled by default outside the officially sold regions.",
+"available": null
+},
+{
+"id": "add-items-from-a-photo",
+"name": "'Everything else' pass creator",
+"service": "Google Wallet",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "Save passes to Google Wallet from an image without a QR code, such as library cards, gym passes or insurance cards.",
+"note": "",
+"available": null
+},
+{
+"id": "ai-powered-notification-summaries",
+"name": "AI-powered notification summaries",
+"service": "Android",
+"from": "Pixel 9",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "Your Pixel can summarise longer conversations in notifications.",
+"note": "English only.",
+"available": null
+},
+{
+"id": "ai-summary-of-weather-forecast",
+"name": "AI summary of weather forecast",
+"service": "Weather",
+"from": "Pixel 9",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "Pixel Weather with a customisable detail page, notifications and a summary.",
+"note": "Available in English, Japanese and German.",
+"available": null
+},
+{
+"id": "android-emergency-live-video",
+"name": "Android Emergency Live Video",
+"service": "Android",
+"from": "Pixel 5",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "Share live video with emergency services in one tap.",
+"note": "",
+"available": null
+},
+{
+"id": "ask-photos",
+"name": "Ask Photos",
+"service": "Google Photos",
+"from": "Pixel 10",
+"location": true,
+"language": false,
+"exclusive": true,
+"desc": "Make edits just by asking in Google Photos.",
+"note": "",
+"available": null
+},
+{
+"id": "ask-youtube",
+"name": "Ask YouTube",
+"service": "Youtube",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "",
+"note": "Needs YouTube Premium.",
+"available": null
+},
+{
+"id": "assistant-voice-typing",
+"name": "Assistant voice typing",
+"service": "Gboard",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "",
+"note": "Based on spoken language, not location. May work elsewhere if the phone and Google account are set to English (US).",
+"available": null
+},
+{
+"id": "calendar-extension",
+"name": "Calendar extension",
+"service": "Gemini",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "Allow Gemini to access your calendar.",
+"note": "Available wherever Gemini is available.",
+"available": null
+},
+{
+"id": "call-notes",
+"name": "Call Notes",
+"service": "Phone",
+"from": "Pixel 9",
+"location": true,
+"language": true,
+"exclusive": false,
+"desc": "Gemini Nano summarises your calls and highlights key points in the call log.",
+"note": "May work elsewhere if the phone and Google account are set to English (US).",
+"available": null
+},
+{
+"id": "call-recording",
+"name": "Call Recording",
+"service": "Phone",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "Record calls from the Phone app.",
+"note": "Not available for Pixel devices in many places.",
+"available": null
+},
+{
+"id": "call-scam-detection",
+"name": "Call Scam Detection",
+"service": "Phone",
+"from": "Pixel 9",
+"location": true,
+"language": true,
+"exclusive": false,
+"desc": "On-device AI warns you of a likely scam call in real time.",
+"note": "English only.",
+"available": null
+},
+{
+"id": "call-screen",
+"name": "Call Screen",
+"service": "Phone",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "Find out who is calling and why before you pick up.",
+"note": "Automatic screening on all Pixel phones only in the US and Canada.",
+"available": [
+"Australia",
+"Canada",
+"France",
+"Germany",
+"Ireland",
+"Italy",
+"Japan",
+"Spain",
+"United Kingdom",
+"United States"
+]
+},
+{
+"id": "camera-coach",
+"name": "Camera Coach",
+"service": "Camera",
+"from": "Pixel 10",
+"location": false,
+"language": false,
+"exclusive": true,
+"desc": "Tips on framing, camera modes and more while you shoot.",
+"note": "",
+"available": null
+},
+{
+"id": "car-crash-detection",
+"name": "Car Crash Detection",
+"service": "Android",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "After a severe crash the phone can call emergency services and share your location.",
+"note": "Languages: Danish, Dutch, English, French, French (Canada), Italian, Japanese, Mandarin Chinese, Norwegian, Spanish, Swedish.",
+"available": null
+},
+{
+"id": "custom-stickers-in-gboard",
+"name": "Custom stickers in Gboard",
+"service": "Gboard",
+"from": "Pixel 9",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "Use Pixel Studio inside Gboard to generate stickers.",
+"note": "English, Japanese and German only. Sideloading is possible.",
+"available": null
+},
+{
+"id": "digital-id",
+"name": "Digital ID",
+"service": "Google Wallet",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "Driver's licence, state ID or passport in Wallet.",
+"note": "In some cases only in the US.",
+"available": null
+},
+{
+"id": "direct-my-call",
+"name": "Direct My Call",
+"service": "Phone",
+"from": "Pixel 4",
+"location": true,
+"language": true,
+"exclusive": true,
+"desc": "Shows an automated phone menu on screen as tappable buttons.",
+"note": "English only.",
+"available": null
+},
+{
+"id": "earthquake-alerts",
+"name": "Earthquake Alerts",
+"service": "Android",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "",
+"note": "",
+"available": null
+},
+{
+"id": "expressive-captions",
+"name": "Expressive Captions",
+"service": "Android",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "Captions capture the intensity and emotion of how someone speaks.",
+"note": "English only.",
+"available": null
+},
+{
+"id": "fall-detection",
+"name": "Fall detection",
+"service": "Pixel Watch",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": true,
+"desc": "After a hard fall the watch vibrates, rings and asks if you want to call emergency services.",
+"note": "Only in countries where the Pixel Watch is sold.",
+"available": null
+},
+{
+"id": "fix-it",
+"name": "Fix it / Proofread",
+"service": "Gboard",
+"from": "",
+"location": true,
+"language": true,
+"exclusive": false,
+"desc": "",
+"note": "",
+"available": null
+},
+{
+"id": "gemini-in-android-studio",
+"name": "Gemini in Android Studio",
+"service": "Android Studio",
+"from": "",
+"location": false,
+"language": false,
+"exclusive": false,
+"desc": "Available in many countries and territories, in English.",
+"note": "",
+"available": null
+},
+{
+"id": "gemini-in-google-messages",
+"name": "Gemini in Google Messages",
+"service": "Google Messages",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "",
+"note": "Available in many countries, but not always in the country's language (for example Germany).",
+"available": null
+},
+{
+"id": "gemini-live",
+"name": "Gemini Live",
+"service": "Gemini",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "",
+"note": "May work elsewhere if the phone and Google account use English, German, Spanish, French, Portuguese or Indian languages.",
+"available": null
+},
+{
+"id": "gems",
+"name": "Gems",
+"service": "Gemini",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "Create and save Gems to customise Gemini's answers.",
+"note": "Needs a Google One subscription.",
+"available": null
+},
+{
+"id": "generate-images",
+"name": "Generate images",
+"service": "Gemini",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "Create images with Gemini Apps.",
+"note": "",
+"available": null
+},
+{
+"id": "google-keep-extension",
+"name": "Google Keep extension",
+"service": "Gemini",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "Allow Gemini to access your notes.",
+"note": "",
+"available": null
+},
+{
+"id": "google-vpn",
+"name": "Google VPN",
+"service": "Android",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": true,
+"desc": "",
+"note": "",
+"available": null
+},
+{
+"id": "hold-for-me",
+"name": "Hold for me",
+"service": "Phone",
+"from": "Pixel 3",
+"location": true,
+"language": false,
+"exclusive": true,
+"desc": "Call Assist waits on hold for you and tells you when a representative is ready.",
+"note": "",
+"available": [
+"Australia",
+"Canada",
+"Japan",
+"United Kingdom",
+"United States"
+]
+},
+{
+"id": "learn-about",
+"name": "Learn About",
+"service": "Gemini",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "A generative-AI learning companion.",
+"note": "Signed-in Google users in the United States aged 18 or over.",
+"available": null
+},
+{
+"id": "location-sharing",
+"name": "Location sharing",
+"service": "Family Link",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "",
+"note": "",
+"available": null
+},
+{
+"id": "loss-of-pulse-detection",
+"name": "Loss of Pulse Detection",
+"service": "Pixel Watch",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": true,
+"desc": "",
+"note": "Starts with the Pixel Watch 3.",
+"available": null
+},
+{
+"id": "magic-cue",
+"name": "Magic Cue",
+"service": "Gemini",
+"from": "Pixel 10",
+"location": true,
+"language": true,
+"exclusive": true,
+"desc": "Proactively surfaces helpful info and actions when you need them.",
+"note": "English only.",
+"available": null
+},
+{
+"id": "native-ai-image-editing",
+"name": "Native AI image editing",
+"service": "Gemini",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "Modify uploaded and generated images in Gemini.",
+"note": "Available wherever Gemini is available.",
+"available": null
+},
+{
+"id": "pixel-screenshot",
+"name": "Pixel Screenshots",
+"service": "Pixel Screenshot",
+"from": "Pixel 9",
+"location": false,
+"language": true,
+"exclusive": true,
+"desc": "",
+"note": "May work elsewhere through sideloading.",
+"available": null
+},
+{
+"id": "pixel-studio",
+"name": "Pixel Studio",
+"service": "Pixel Studio",
+"from": "Pixel 9",
+"location": false,
+"language": true,
+"exclusive": true,
+"desc": "Create images with Pixel Studio.",
+"note": "",
+"available": [
+"Australia",
+"Austria",
+"Canada",
+"Czechia (Czech Republic)",
+"Dominican Republic",
+"Germany",
+"Hungary",
+"India",
+"Ireland",
+"Israel",
+"Japan",
+"Malaysia",
+"Mexico",
+"Morocco",
+"Peru",
+"Philippines",
+"Singapore",
+"Sri Lanka",
+"Switzerland",
+"United Kingdom",
+"United States"
+]
+},
+{
+"id": "rambler",
+"name": "Rambler",
+"service": "Gboard",
+"from": "Pixel 11",
+"location": false,
+"language": true,
+"exclusive": true,
+"desc": "Gemini turns spoken thoughts into clean, structured text.",
+"note": "",
+"available": null
+},
+{
+"id": "real-time-transcription",
+"name": "Real-time transcription",
+"service": "Recorder",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": true,
+"desc": "",
+"note": "May work elsewhere if the phone and Google account are set to English (US).",
+"available": null
+},
+{
+"id": "satellite-sos",
+"name": "Satellite SOS",
+"service": "Android",
+"from": "",
+"location": false,
+"language": false,
+"exclusive": true,
+"desc": "",
+"note": "",
+"available": null
+},
+{
+"id": "scam-detection",
+"name": "Scam Detection (Messages)",
+"service": "Google Messages",
+"from": "",
+"location": true,
+"language": false,
+"exclusive": false,
+"desc": "AI flags message patterns commonly linked to scams.",
+"note": "",
+"available": null
+},
+{
+"id": "smart-compose",
+"name": "Smart Compose",
+"service": "Gboard",
+"from": "Pixel 4",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "",
+"note": "English, French, German, Italian and Spanish.",
+"available": null
+},
+{
+"id": "spotify-extension",
+"name": "Spotify extension",
+"service": "Gemini",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": false,
+"desc": "Ask Gemini to play or search for music on Spotify.",
+"note": "May work if the language is set to English.",
+"available": null
+},
+{
+"id": "take-a-message",
+"name": "Take a Message",
+"service": "Phone",
+"from": "",
+"location": false,
+"language": false,
+"exclusive": false,
+"desc": "Automatically answers and transcribes voicemails.",
+"note": "The carrier DISH does not support it.",
+"available": null
+},
+{
+"id": "take-body-temperature",
+"name": "Take body temperature",
+"service": "Thermometer",
+"from": "Pixel 8",
+"location": true,
+"language": false,
+"exclusive": true,
+"desc": "Measure body temperature with your Pixel.",
+"note": "",
+"available": null
+},
+{
+"id": "transcription-summarization",
+"name": "Recorder summarisation",
+"service": "Recorder",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": true,
+"desc": "Get a summary of your transcribed recordings.",
+"note": "",
+"available": null
+},
+{
+"id": "transcription-summarization-copy",
+"name": "Label when different people speak",
+"service": "Recorder",
+"from": "",
+"location": false,
+"language": true,
+"exclusive": true,
+"desc": "",
+"note": "May work elsewhere if the phone and Google account are set to English (US).",
+"available": null
+},
+{
+"id": "voice-translate",
+"name": "Voice Translate",
+"service": "Phone",
+"from": "Pixel 10",
+"location": false,
+"language": true,
+"exclusive": true,
+"desc": "Translates your voice in real time and mimics your tone.",
+"note": "Translate between English and the national language.",
+"available": null
+},
+{
+"id": "writing-tools",
+"name": "Writing tools",
+"service": "Gboard",
+"from": "",
+"location": true,
+"language": true,
+"exclusive": false,
+"desc": "Improve your text with Gboard writing tools.",
+"note": "English, Chinese (Simplified), French, German, Italian, Japanese, Korean, Portuguese and Spanish.",
+"available": null
+}
+]
+}

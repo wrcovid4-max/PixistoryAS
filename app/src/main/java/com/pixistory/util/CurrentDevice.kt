@@ -13,6 +13,11 @@ import java.util.UUID
 
 /** Builds a ready-to-save entry from the phone the app is running on. */
 object CurrentDevice {
+    /** True only on a Google Pixel (the app's one-tap add is for Pixels). */
+    fun isPixel(): Boolean = Build.MANUFACTURER.equals("Google", ignoreCase = true) && Build.MODEL.startsWith("Pixel", ignoreCase = true)
+
+    fun label(): String = "${Build.MANUFACTURER.replaceFirstChar { it.uppercase() }} ${Build.MODEL}"
+
     fun snapshot(context: Context, currency: String): DeviceEntity {
         val now = System.currentTimeMillis()
         val brand = Build.MANUFACTURER.replaceFirstChar { it.uppercase() }

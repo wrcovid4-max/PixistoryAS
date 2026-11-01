@@ -12,6 +12,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Devices
 import androidx.compose.material.icons.filled.Favorite
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.ViewCarousel
@@ -70,6 +71,7 @@ fun DevicesScreen(
     var group by rememberSaveable { mutableStateOf(GroupBy.NONE) }
     var sort by rememberSaveable { mutableStateOf(SortBy.NAME) }
     var addMenu by remember { mutableStateOf(false) }
+    var notPixel by remember { mutableStateOf(false) }
     val noGroup = stringResource(R.string.group_unassigned)
     val settings by vm.settings.collectAsStateWithLifecycle()
 
@@ -225,7 +227,10 @@ fun DevicesScreen(
                     )
                     DropdownMenuItem(
                         text = { Text(stringResource(R.string.add_this_device)) },
-                        onClick = { addMenu = false; vm.startNew(CurrentDevice.snapshot(context, settings.currency)) },
+                        onClick = {
+                            addMenu = false
+                            if (CurrentDevice.isPixel()) vm.startNew(CurrentDevice.snapshot(context, settings.currency)) else notPixel = true
+                        },
                     )
                     DropdownMenuItem(
                         text = { Text(stringResource(R.string.add_manual)) },
@@ -234,6 +239,16 @@ fun DevicesScreen(
                 }
             }
         }
+    }
+
+    if (notPixel) {
+        AlertDialog(
+            onDismissRequest = { notPixel = false },
+            icon = { Icon(Icons.Filled.Info, null) },
+            title = { Text(stringResource(R.string.not_pixel_title)) },
+            text = { Text(stringResource(R.string.not_pixel_body, CurrentDevice.label())) },
+            confirmButton = { TextButton(onClick = { notPixel = false }) { Text(stringResource(R.string.ok)) } },
+        )
     }
 }
 

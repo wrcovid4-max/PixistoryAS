@@ -103,9 +103,6 @@ fun AboutScreen(onBack: () -> Unit) {
                             modifier = Modifier.fillMaxWidth(),
                         ) { Text(stringResource(R.string.about_source)) }
                     }
-                    SectionCard(stringResource(R.string.about_libs_title)) {
-                        Text(stringResource(R.string.about_libs_body), style = MaterialTheme.typography.bodySmall)
-                    }
                     Text(
                         stringResource(R.string.about_trademark),
                         style = MaterialTheme.typography.bodySmall,

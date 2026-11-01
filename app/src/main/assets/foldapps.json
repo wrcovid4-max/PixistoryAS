@@ -1,0 +1,185 @@
+{
+"intro": "Apps Google named as optimised for the Pixel Fold and other large screens. Open the Google Play listing to install; many more apps support large screens and foldables.",
+"apps": [
+{
+"name": "Google Keep",
+"pkg": "com.google.android.keep",
+"publisher": "Google",
+"category": "Productivity",
+"note": "Switches to a two-pane layout when you unfold the Pixel Fold, with a toggle to expand the notes list.",
+"source": "Google blog, June 2023",
+"url": "https://play.google.com/store/apps/details?id=com.google.android.keep"
+},
+{
+"name": "Google Weather",
+"pkg": "com.google.android.apps.weather",
+"publisher": "Google",
+"category": "Weather",
+"note": "Shows only today when folded; unfolded it adapts to a two-pane layout with more weather detail.",
+"source": "Google blog, June 2023",
+"url": "https://play.google.com/store/apps/details?id=com.google.android.apps.weather"
+},
+{
+"name": "Deezer",
+"pkg": "deezer.android.app",
+"publisher": "Deezer",
+"category": "Music",
+"note": "Two-pane player: artwork, lyrics and actions on one side, controls on the other.",
+"source": "Google blog, June 2023",
+"url": "https://play.google.com/store/apps/details?id=deezer.android.app"
+},
+{
+"name": "LINE",
+"pkg": "jp.naver.line.android",
+"publisher": "LINE",
+"category": "Messaging",
+"note": "Two-pane chat layout on the unfolded screen.",
+"source": "Google blog, June 2023",
+"url": "https://play.google.com/store/apps/details?id=jp.naver.line.android"
+},
+{
+"name": "SideChef",
+"pkg": "com.sidechef.sidechef",
+"publisher": "SideChef",
+"category": "Food",
+"note": "A layout that keeps everything for a recipe in one view on big screens.",
+"source": "Google blog, June 2023",
+"url": "https://play.google.com/store/apps/details?id=com.sidechef.sidechef"
+},
+{
+"name": "YouTube",
+"pkg": "com.google.android.youtube",
+"publisher": "Google",
+"category": "Video",
+"note": "Google's own app, tuned for the Pixel Fold's screens.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.google.android.youtube"
+},
+{
+"name": "Gmail",
+"pkg": "com.google.android.gm",
+"publisher": "Google",
+"category": "Productivity",
+"note": "Google's own app, tuned for the Pixel Fold's screens.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.google.android.gm"
+},
+{
+"name": "Google Home",
+"pkg": "com.google.android.apps.chromecast.app",
+"publisher": "Google",
+"category": "Smart home",
+"note": "First-party app that received the foldable redesign.",
+"source": "Android Central, June 2023",
+"url": "https://play.google.com/store/apps/details?id=com.google.android.apps.chromecast.app"
+},
+{
+"name": "Netflix",
+"pkg": "com.netflix.mediaclient",
+"publisher": "Netflix",
+"category": "Entertainment",
+"note": "Named by Google as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient"
+},
+{
+"name": "Disney+",
+"pkg": "com.disney.disneyplus",
+"publisher": "Disney",
+"category": "Entertainment",
+"note": "Named by Google as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.disney.disneyplus"
+},
+{
+"name": "Hulu",
+"pkg": "com.hulu.plus",
+"publisher": "Hulu",
+"category": "Entertainment",
+"note": "Named by Google as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.hulu.plus"
+},
+{
+"name": "Spotify",
+"pkg": "com.spotify.music",
+"publisher": "Spotify",
+"category": "Music",
+"note": "Named by Google as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.spotify.music"
+},
+{
+"name": "Microsoft Word",
+"pkg": "com.microsoft.office.word",
+"publisher": "Microsoft",
+"category": "Productivity",
+"note": "Microsoft Office apps were named as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.microsoft.office.word"
+},
+{
+"name": "Microsoft Excel",
+"pkg": "com.microsoft.office.excel",
+"publisher": "Microsoft",
+"category": "Productivity",
+"note": "Microsoft Office apps were named as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.microsoft.office.excel"
+},
+{
+"name": "Microsoft PowerPoint",
+"pkg": "com.microsoft.office.powerpoint",
+"publisher": "Microsoft",
+"category": "Productivity",
+"note": "Microsoft Office apps were named as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.microsoft.office.powerpoint"
+},
+{
+"name": "Microsoft Outlook",
+"pkg": "com.microsoft.office.outlook",
+"publisher": "Microsoft",
+"category": "Productivity",
+"note": "Microsoft Office apps were named as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook"
+},
+{
+"name": "Canva",
+"pkg": "com.canva.editor",
+"publisher": "Canva",
+"category": "Design",
+"note": "Named by Google as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.canva.editor"
+},
+{
+"name": "Evernote",
+"pkg": "com.evernote",
+"publisher": "Evernote",
+"category": "Productivity",
+"note": "Named by Google as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.evernote"
+},
+{
+"name": "Zoom",
+"pkg": "us.zoom.videomeetings",
+"publisher": "Zoom",
+"category": "Communication",
+"note": "Named by Google as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings"
+},
+{
+"name": "Amazon Kindle",
+"pkg": "com.amazon.kindle",
+"publisher": "Amazon",
+"category": "Books",
+"note": "Named by Google as tuned for the Pixel Fold.",
+"source": "TechCrunch, Google I/O 2023",
+"url": "https://play.google.com/store/apps/details?id=com.amazon.kindle"
+}
+]
+}

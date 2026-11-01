@@ -1,0 +1,7 @@
+{
+  "note": "Pixistory news feed. Add an item here and push; phones with the matching alert switched on are notified on their next check. Types: drop, device, leak, killed, availability. Each id must be unique and never reused.",
+  "items": [
+    { "id": "drop-2026-09", "type": "drop", "title": "September 2026 Pixel Drop", "body": "Scam Detection in Gboard and a refreshed VIPs widget, plus the new Pixel 11 series.", "url": "" },
+    { "id": "device-pixel-11", "type": "device", "title": "Pixel 11 series is out", "body": "Pixel 11, 11 Pro, 11 Pro XL and 11 Pro Fold with Tensor G6.", "url": "" }
+  ]
+}
