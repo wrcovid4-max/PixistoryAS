@@ -275,6 +275,22 @@
     <string name="fold_source">ماخذ: گوگل بلاگ اور گوگل آئی/او 2023 کی خبریں؛ فہرستیں گوگل پلے سے منسلک ہیں۔</string>
     <string name="fold_source_line">ماخذ: %1$s</string>
     <string name="fold_open_play">پلے اسٹور</string>
+    <string name="notif_drops">نیا پکسل ڈراپ</string>
+    <string name="notif_drops_sub">جب کوئی نیا پکسل ڈراپ جاری ہو</string>
+    <string name="notif_devices">نئے پکسل اور گوگل آلات</string>
+    <string name="notif_devices_sub">جب نیا ہارڈ ویئر متعارف ہو یا فروخت کے لیے آئے</string>
+    <string name="notif_leaks">لیکس اور افواہیں</string>
+    <string name="notif_leaks_sub">آنے والے پکسل اور خصوصیات کے بارے میں معتبر لیکس</string>
+    <string name="notif_killed">گوگل کی بند کردہ مصنوعات</string>
+    <string name="notif_killed_sub">جب گوگل کوئی مصنوعہ یا خصوصیت بند کرے</string>
+    <string name="notif_availability">خصوصیات کی دستیابی</string>
+    <string name="notif_availability_sub">جب کوئی خصوصیت کسی نئے ملک میں پہنچے</string>
+    <string name="notif_patch">سیکیورٹی پیچ کی یاد دہانی</string>
+    <string name="notif_patch_sub">جب آپ کے کسی آلے کا پیچ پرانا ہو</string>
+    <string name="notif_feed_note">خبروں کی اطلاعات پکسسٹوری کی نیوز فیڈ سے آتی ہیں، جو ہر چند گھنٹے بعد دیکھی جاتی ہے۔</string>
+    <string name="shelf_pause">روکیں</string>
+    <string name="shelf_play">چلائیں</string>
+    <string name="shelf_count">آپ کی شیلف پر %1$d آلات</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
 </resources>

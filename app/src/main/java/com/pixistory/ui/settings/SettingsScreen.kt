@@ -22,6 +22,7 @@ import com.pixistory.R
 import com.pixistory.sync.SyncState
 import com.pixistory.ui.AppViewModel
 import com.pixistory.ui.ExportKind
+import com.pixistory.ui.common.CurrencySwitcher
 import com.pixistory.ui.common.SectionCard
 import com.pixistory.util.AppLanguage
 import com.pixistory.util.formatDateTime
@@ -83,22 +84,29 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
                             FilterChip(selected = s.theme == k, onClick = { vm.updateSettings { it.copy(theme = k) } }, label = { Text(stringResource(label)) })
                         }
                     }
+                    Text(stringResource(R.string.set_currency), style = MaterialTheme.typography.labelLarge)
+                    CurrencySwitcher(s.currency, { c -> vm.updateSettings { it.copy(currency = c) } })
                 }
 
                 SectionCard(stringResource(R.string.set_notifications)) {
-                    Row(verticalAlignment = Alignment.CenterVertically) {
-                        Text(stringResource(R.string.set_patch_alerts), Modifier.weight(1f))
-                        Switch(checked = s.patchAlerts, onCheckedChange = { on ->
-                            vm.setPatchAlerts(on)
-                            if (on && Build.VERSION.SDK_INT >= 33) notifPermission.launch(Manifest.permission.POST_NOTIFICATIONS)
-                        })
+                    fun askPermission() {
+                        if (Build.VERSION.SDK_INT >= 33) notifPermission.launch(Manifest.permission.POST_NOTIFICATIONS)
                     }
-                    Text(stringResource(R.string.set_patch_after), style = MaterialTheme.typography.bodySmall)
-                    FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        listOf(90, 180, 365).forEach { days ->
-                            FilterChip(selected = s.patchDays == days, onClick = { vm.updateSettings { it.copy(patchDays = days) } }, label = { Text(stringResource(R.string.days_n, days)) })
+                    NotifRow(R.string.notif_drops, R.string.notif_drops_sub, s.notifDrops) { on -> vm.setAlerts { it.copy(notifDrops = on) }; if (on) askPermission() }
+                    NotifRow(R.string.notif_devices, R.string.notif_devices_sub, s.notifDevices) { on -> vm.setAlerts { it.copy(notifDevices = on) }; if (on) askPermission() }
+                    NotifRow(R.string.notif_leaks, R.string.notif_leaks_sub, s.notifLeaks) { on -> vm.setAlerts { it.copy(notifLeaks = on) }; if (on) askPermission() }
+                    NotifRow(R.string.notif_killed, R.string.notif_killed_sub, s.notifKilled) { on -> vm.setAlerts { it.copy(notifKilled = on) }; if (on) askPermission() }
+                    NotifRow(R.string.notif_availability, R.string.notif_availability_sub, s.notifAvailability) { on -> vm.setAlerts { it.copy(notifAvailability = on) }; if (on) askPermission() }
+                    NotifRow(R.string.notif_patch, R.string.notif_patch_sub, s.patchAlerts) { on -> vm.setAlerts { it.copy(patchAlerts = on) }; if (on) askPermission() }
+                    if (s.patchAlerts) {
+                        Text(stringResource(R.string.set_patch_after), style = MaterialTheme.typography.bodySmall)
+                        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            listOf(90, 180, 365).forEach { days ->
+                                FilterChip(selected = s.patchDays == days, onClick = { vm.updateSettings { it.copy(patchDays = days) } }, label = { Text(stringResource(R.string.days_n, days)) })
+                            }
                         }
                     }
+                    Text(stringResource(R.string.notif_feed_note), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
 
                 SectionCard(stringResource(R.string.set_tags)) {
@@ -137,4 +145,15 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
 @Composable
 private fun PlainField(label: String, value: String, onChange: (String) -> Unit) {
     OutlinedTextField(value, onChange, label = { Text(label) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+}
+
+@Composable
+private fun NotifRow(@androidx.annotation.StringRes title: Int, @androidx.annotation.StringRes subtitle: Int, checked: Boolean, onChange: (Boolean) -> Unit) {
+    Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+        Column(Modifier.weight(1f)) {
+            Text(stringResource(title), style = MaterialTheme.typography.bodyLarge)
+            Text(stringResource(subtitle), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+        Switch(checked = checked, onCheckedChange = onChange)
+    }
 }

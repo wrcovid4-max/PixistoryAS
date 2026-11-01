@@ -275,6 +275,22 @@
     <string name="fold_source">Source: Google blog and press coverage of Google I/O 2023; listings link to Google Play.</string>
     <string name="fold_source_line">Source: %1$s</string>
     <string name="fold_open_play">Play Store</string>
+    <string name="notif_drops">New Pixel Drop</string>
+    <string name="notif_drops_sub">When a new Pixel Drop is released</string>
+    <string name="notif_devices">New Pixel and Google devices</string>
+    <string name="notif_devices_sub">When new hardware is announced or goes on sale</string>
+    <string name="notif_leaks">Leaks and rumours</string>
+    <string name="notif_leaks_sub">Credible leaks about upcoming Pixels and features</string>
+    <string name="notif_killed">Killed by Google</string>
+    <string name="notif_killed_sub">When Google shuts down a product or feature</string>
+    <string name="notif_availability">Feature availability</string>
+    <string name="notif_availability_sub">When a feature reaches a new country</string>
+    <string name="notif_patch">Security patch reminders</string>
+    <string name="notif_patch_sub">When one of your devices has an old patch</string>
+    <string name="notif_feed_note">News alerts come from Pixistory\'s news feed, checked every few hours.</string>
+    <string name="shelf_pause">Pause</string>
+    <string name="shelf_play">Play</string>
+    <string name="shelf_count">%1$d devices on your shelf</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
 </resources>
