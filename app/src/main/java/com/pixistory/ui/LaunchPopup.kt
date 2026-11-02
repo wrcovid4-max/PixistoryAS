@@ -42,13 +42,12 @@ import com.pixistory.ui.common.currentLang
 import com.pixistory.util.AppLanguage
 import kotlinx.coroutines.delay
 
-/** The pop-up shown when the app opens: logo, name and copyright, with a quick English / Urdu choice. */
+/** The pop-up shown when the app opens: logo, name and copyright. */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LaunchPopup(onDone: () -> Unit) {
     var shown by remember { mutableStateOf(false) }
     val alpha by animateFloatAsState(if (shown) 1f else 0f, tween(500), label = "launch-fade")
-    val lang = currentLang()
     LaunchedEffect(Unit) {
         shown = true
         delay(3200)
@@ -80,22 +79,7 @@ fun LaunchPopup(onDone: () -> Unit) {
             fontSize = 15.sp,
             textAlign = TextAlign.Center,
         )
-        Spacer(Modifier.height(36.dp))
-        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-            FilterChip(
-                selected = lang == "en",
-                onClick = { onDone(); AppLanguage.set("en") },
-                label = { Text("English") },
-                colors = FilterChipDefaults.filterChipColors(labelColor = Color.White, selectedLabelColor = Color(0xFF172A43), selectedContainerColor = Color.White),
-            )
-            FilterChip(
-                selected = lang == "ur",
-                onClick = { onDone(); AppLanguage.set("ur") },
-                label = { Text("اردو") },
-                colors = FilterChipDefaults.filterChipColors(labelColor = Color.White, selectedLabelColor = Color(0xFF172A43), selectedContainerColor = Color.White),
-            )
-        }
-        Spacer(Modifier.height(40.dp))
+        Spacer(Modifier.height(48.dp))
         Text(stringResource(R.string.copyright), color = Color(0xFF8FA2BF), fontSize = 13.sp, textAlign = TextAlign.Center)
         Spacer(Modifier.height(4.dp))
         Text(stringResource(R.string.tap_to_continue), color = Color(0xFF6F819C), fontSize = 11.sp)

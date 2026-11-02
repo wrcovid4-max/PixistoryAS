@@ -191,7 +191,6 @@
     <string name="set_auto_sync">Sync automatically</string>
     <string name="set_sync_now">Sync now</string>
     <string name="sync_running">Syncing…</string>
-    <string name="sync_error">Sync problem: %1$s</string>
     <string name="sync_done">Synced: %1$d received, %2$d sent</string>
     <string name="sync_last">Last synced %1$s</string>
     <string name="sync_never">Not synced yet</string>
@@ -298,6 +297,22 @@
     <string name="drops_phones_n">%1$d phones</string>
     <string name="drops_select">Select a drop</string>
     <string name="drops_select_body">Its features and the exact Pixels show here.</string>
+    <string name="err_no_internet">No internet connection. Please check it and try again.</string>
+    <string name="err_signin_failed">Couldn\'t sign in. Please try again.</string>
+    <string name="err_sync_failed">Couldn\'t sync right now.</string>
+    <string name="err_export_failed">Couldn\'t create the file.</string>
+    <string name="err_restore_failed">Couldn\'t restore from that file.</string>
+    <string name="err_ai_failed">Pixi couldn\'t answer right now. Please try again.</string>
+    <string name="pixel_links">Official pages and references</string>
+    <string name="link_official_store">Official Google page</string>
+    <string name="link_official_search">Official Google pages for this device</string>
+    <string name="link_gsmarena">Technical details by GSMArena</string>
+    <string name="link_ifixit">Repairability on iFixit</string>
+    <string name="repair_score">iFixit repairability score: %1$s / 10</string>
+    <string name="f_latest_update">Latest update for this model</string>
+    <string name="mark_updated">Mark as updated to Android %1$s</string>
+    <string name="about_credits_title">Thanks and credits</string>
+    <string name="about_credits_body">Technical Details by GSMArena (gsmarena.com): open any device\'s specs page from its details.\nRepairability scores by iFixit (ifixit.com): see the full teardowns there.\nFeature availability by whereisenabled.com.\nKilled by Google by killedbygoogle.com.\nPixel Drop history compiled from Google\'s announcements and Android Authority, 9to5Google and other press.</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
 </resources>

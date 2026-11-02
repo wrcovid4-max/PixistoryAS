@@ -66,7 +66,7 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
                         }
                         val status = when (val st = sync) {
                             is SyncState.Syncing -> stringResource(R.string.sync_running)
-                            is SyncState.Error -> stringResource(R.string.sync_error, st.message)
+                            is SyncState.Error -> stringResource(if (st.network) R.string.err_no_internet else R.string.err_sync_failed)
                             is SyncState.Done -> stringResource(R.string.sync_done, st.pulled, st.pushed)
                             SyncState.Idle -> if (s.lastSync > 0) stringResource(R.string.sync_last, formatDateTime(s.lastSync)) else stringResource(R.string.sync_never)
                         }

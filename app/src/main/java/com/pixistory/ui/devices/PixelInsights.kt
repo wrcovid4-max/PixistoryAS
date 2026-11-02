@@ -6,12 +6,14 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.pixistory.R
@@ -30,6 +32,24 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
         SectionCard(stringResource(R.string.pixel_background, gen.name.get(lang))) {
             Text(gen.history.get(lang), style = MaterialTheme.typography.bodyMedium)
         }
+    }
+
+    val uri = LocalUriHandler.current
+    val q = model.name.replace(" ", "+")
+    SectionCard(stringResource(R.string.pixel_links)) {
+        OutlinedButton(onClick = { uri.openUri(model.officialUrl) }, modifier = Modifier.fillMaxWidth()) {
+            Text(stringResource(if (model.officialIsStore) R.string.link_official_store else R.string.link_official_search))
+        }
+        OutlinedButton(onClick = { uri.openUri("https://www.gsmarena.com/res.php3?sSearch=$q") }, modifier = Modifier.fillMaxWidth()) {
+            Text(stringResource(R.string.link_gsmarena))
+        }
+        model.ifixitScore?.let { score ->
+            Text(stringResource(R.string.repair_score, String.format("%.0f", score)), style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.secondary)
+        }
+        OutlinedButton(
+            onClick = { uri.openUri(model.ifixitUrl.ifBlank { "https://www.ifixit.com/Search?query=$q" }) },
+            modifier = Modifier.fillMaxWidth(),
+        ) { Text(stringResource(R.string.link_ifixit)) }
     }
 
     SectionCard(stringResource(R.string.pixel_specs)) {

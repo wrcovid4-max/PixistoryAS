@@ -86,6 +86,9 @@ fun AboutScreen(onBack: () -> Unit) {
                     SectionCard(stringResource(R.string.about_data_title)) {
                         Text(stringResource(R.string.about_data_body), style = MaterialTheme.typography.bodyMedium)
                     }
+                    SectionCard(stringResource(R.string.about_credits_title)) {
+                        Text(stringResource(R.string.about_credits_body), style = MaterialTheme.typography.bodyMedium)
+                    }
                     SectionCard(stringResource(R.string.about_developer_title)) {
                         Text(stringResource(R.string.about_developer_body), style = MaterialTheme.typography.bodyMedium)
                         OutlinedButton(

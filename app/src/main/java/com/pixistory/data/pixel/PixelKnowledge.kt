@@ -21,6 +21,12 @@ data class PixelModel(
     val supportEnds: String,
     val specs: Map<String, String>,
     val faults: List<PixelFault>,
+    /** Newest Android API level this model has been updated to (what a fully updated unit runs). */
+    val latestApi: Int = 0,
+    val officialUrl: String = "",
+    val officialIsStore: Boolean = false,
+    val ifixitScore: Double? = null,
+    val ifixitUrl: String = "",
 )
 data class DropDetail(val title: String, val desc: String, val devices: List<String>)
 data class PixelDrop(
@@ -88,6 +94,9 @@ class PixelKnowledge(private val context: Context) {
                 PixelModel(
                     o.getString("id"), o.getString("name"), o.optString("gen"), o.optString("type"),
                     o.optString("released"), o.optInt("launchApi"), o.optString("supportEnds"), specs, faults,
+                    o.optInt("latestApi"), o.optString("officialUrl"), o.optBoolean("officialIsStore"),
+                    if (o.has("ifixitScore") && !o.isNull("ifixitScore")) o.getDouble("ifixitScore") else null,
+                    o.optString("ifixitUrl"),
                 )
             }
         } catch (e: Exception) {

@@ -61,6 +61,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.pixistory.data.model.DeviceEntity
 import com.pixistory.data.model.DeviceStatus
@@ -82,6 +83,20 @@ fun typeIcon(type: DeviceType): ImageVector = when (type) {
     DeviceType.CAMERA -> Icons.Filled.CameraAlt
     DeviceType.ACCESSORY -> Icons.Filled.Usb
     DeviceType.OTHER -> Icons.Filled.DevicesOther
+}
+
+/** The emoji shown for a device without a photo. */
+fun deviceEmoji(type: DeviceType): String = when (type) {
+    DeviceType.PHONE -> "\uD83D\uDCF1"       // 📱
+    DeviceType.FOLDABLE -> "\uD83D\uDCD6"    // 📖 opens like a book
+    DeviceType.TABLET -> "\uD83D\uDCCB"      // 📋
+    DeviceType.WATCH -> "\u231A"              // ⌚
+    DeviceType.EARBUDS -> "\uD83C\uDFA7"     // 🎧
+    DeviceType.TV -> "\uD83D\uDCFA"          // 📺
+    DeviceType.LAPTOP -> "\uD83D\uDCBB"      // 💻
+    DeviceType.CAMERA -> "\uD83D\uDCF7"      // 📷
+    DeviceType.ACCESSORY -> "\uD83D\uDD0C"   // 🔌
+    DeviceType.OTHER -> "\uD83D\uDCE6"       // 📦
 }
 
 fun parseColorOrNull(hex: String): Color? =
@@ -124,12 +139,7 @@ fun DeviceAvatar(device: DeviceEntity, files: FileStore, size: Dp, modifier: Mod
                 modifier = Modifier.fillMaxSize(),
             )
         } else {
-            Icon(
-                typeIcon(device.typeEnum),
-                contentDescription = null,
-                modifier = Modifier.size(size * 0.5f),
-                tint = tint ?: MaterialTheme.colorScheme.onSecondaryContainer,
-            )
+            Text(deviceEmoji(device.typeEnum), fontSize = (size.value * 0.5f).sp)
         }
     }
 }

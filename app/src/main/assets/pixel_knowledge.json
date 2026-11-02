@@ -568,7 +568,10 @@
     "protection": "IP53",
     "price": "$649"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 29,
+   "officialUrl": "https://www.google.com/search?q=Pixel+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_1_xl",
@@ -588,7 +591,10 @@
     "protection": "IP53",
     "price": "$769"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 29,
+   "officialUrl": "https://www.google.com/search?q=Pixel+XL+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_2",
@@ -608,7 +614,10 @@
     "protection": "IP67",
     "price": "$649"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 30,
+   "officialUrl": "https://www.google.com/search?q=Pixel+2+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_2_xl",
@@ -634,7 +643,10 @@
      "ur": "لانچ کے وقت اسکرین کی شکایات (رنگوں میں تبدیلی، دھندلاہٹ اور جلد برن اِن کی اطلاعات)۔ گوگل نے سافٹ ویئر اصلاحات کیں اور وارنٹی میں توسیع کی۔",
      "official": true
     }
-   ]
+   ],
+   "latestApi": 30,
+   "officialUrl": "https://www.google.com/search?q=Pixel+2+XL+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_3",
@@ -654,7 +666,10 @@
     "protection": "IP68",
     "price": "$799"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 31,
+   "officialUrl": "https://www.google.com/search?q=Pixel+3+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_3_xl",
@@ -674,7 +689,10 @@
     "protection": "IP68",
     "price": "$899"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 31,
+   "officialUrl": "https://www.google.com/search?q=Pixel+3+XL+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_3a",
@@ -693,7 +711,10 @@
     "camera": "12.2 MP rear",
     "price": "$399"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 31,
+   "officialUrl": "https://www.google.com/search?q=Pixel+3a+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_3a_xl",
@@ -712,7 +733,10 @@
     "camera": "12.2 MP rear",
     "price": "$479"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 31,
+   "officialUrl": "https://www.google.com/search?q=Pixel+3a+XL+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_4",
@@ -732,7 +756,10 @@
     "protection": "IP68",
     "price": "$799"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 33,
+   "officialUrl": "https://www.google.com/search?q=Pixel+4+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_4_xl",
@@ -752,7 +779,10 @@
     "protection": "IP68",
     "price": "$899"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 33,
+   "officialUrl": "https://www.google.com/search?q=Pixel+4+XL+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_4a",
@@ -777,7 +807,10 @@
      "ur": "بیٹری کے استحکام کا مسئلہ: جنوری 2025 میں گوگل نے لازمی اپ ڈیٹ جاری کی جو متاثرہ فونز میں بیٹری کی گنجائش اور چارجنگ محدود کرتی ہے، اور مفت بیٹری تبدیلی یا معاوضہ پیش کیا۔",
      "official": true
     }
-   ]
+   ],
+   "latestApi": 33,
+   "officialUrl": "https://www.google.com/search?q=Pixel+4a+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_4a_5g",
@@ -796,7 +829,10 @@
     "camera": "12.2 MP + 16 MP ultrawide",
     "price": "$499"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 33,
+   "officialUrl": "https://www.google.com/search?q=Pixel+4a+(5G)+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_5",
@@ -816,7 +852,10 @@
     "protection": "IP68",
     "price": "$699"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 33,
+   "officialUrl": "https://www.google.com/search?q=Pixel+5+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_5a",
@@ -836,7 +875,10 @@
     "protection": "IP67",
     "price": "$449"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 34,
+   "officialUrl": "https://www.google.com/search?q=Pixel+5a+(5G)+site%3Agoogle.com",
+   "officialIsStore": false
   },
   {
    "id": "pixel_6",
@@ -867,7 +909,10 @@
      "ur": "اس سلسلے میں ابتدائی طور پر کنیکٹیویٹی (موبائل ڈیٹا / وائی فائی) اور اسکرین کی خرابیوں کی اطلاعات ملیں۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_6",
+   "officialIsStore": true
   },
   {
    "id": "pixel_6_pro",
@@ -898,7 +943,10 @@
      "ur": "اس سلسلے میں ابتدائی طور پر کنیکٹیویٹی (موبائل ڈیٹا / وائی فائی) اور اسکرین کی خرابیوں کی اطلاعات ملیں۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_6_pro",
+   "officialIsStore": true
   },
   {
    "id": "pixel_6a",
@@ -924,7 +972,10 @@
      "ur": "بیٹری کے زیادہ گرم ہونے کا خطرہ: گرم ہونے کی اطلاعات کے بعد گوگل نے 8 جولائی 2025 سے لازمی اپ ڈیٹ جاری کی جو متاثرہ فونز میں چارجنگ محدود کرتی ہے۔ 21 جولائی 2025 سے مفت بیٹری تبدیلی یا 150 ڈالر تک معاوضہ دستیاب ہے۔",
      "official": true
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_6a",
+   "officialIsStore": true
   },
   {
    "id": "pixel_7",
@@ -944,7 +995,10 @@
     "protection": "IP68",
     "price": "$599"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_7",
+   "officialIsStore": true
   },
   {
    "id": "pixel_7_pro",
@@ -964,7 +1018,10 @@
     "protection": "IP68",
     "price": "$899"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_7_pro",
+   "officialIsStore": true
   },
   {
    "id": "pixel_7a",
@@ -990,7 +1047,10 @@
      "ur": "بیٹری پھولنے کی اطلاعات: اپریل 2025 میں گوگل نے متاثرہ پکسل 7a کے لیے مرمت اور معاوضے کا پروگرام شروع کیا۔",
      "official": true
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_7a",
+   "officialIsStore": true
   },
   {
    "id": "pixel_fold",
@@ -1021,7 +1081,10 @@
      "ur": "بعض صارفین نے فون کھولتے وقت قبضے سے ٹک ٹک کی آواز کی شکایت کی۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_fold",
+   "officialIsStore": true
   },
   {
    "id": "pixel_tablet",
@@ -1040,7 +1103,10 @@
     "camera": "8 MP front and rear",
     "price": "$499 (with dock)"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_tablet",
+   "officialIsStore": true
   },
   {
    "id": "pixel_8",
@@ -1060,7 +1126,10 @@
     "protection": "IP68",
     "price": "$699"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_8",
+   "officialIsStore": true
   },
   {
    "id": "pixel_8_pro",
@@ -1080,7 +1149,10 @@
     "protection": "IP68",
     "price": "$999"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_8_pro",
+   "officialIsStore": true
   },
   {
    "id": "pixel_8a",
@@ -1100,7 +1172,10 @@
     "protection": "IP67",
     "price": "$499"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_8a",
+   "officialIsStore": true
   },
   {
    "id": "pixel_9",
@@ -1126,7 +1201,10 @@
      "ur": "کچھ صارفین نے مارچ 2025 کی اپ ڈیٹ کے بعد فنگر پرنٹ سینسر کے رک جانے اور آٹو برائٹنس کے غیر مستقل ہونے کی اطلاع دی۔ یہ سافٹ ویئر سے متعلق شکایات تھیں اور انہیں ہارڈ ویئر کی خرابی کے طور پر اعلان نہیں کیا گیا۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_9",
+   "officialIsStore": true
   },
   {
    "id": "pixel_9_pro",
@@ -1152,7 +1230,10 @@
      "ur": "گوگل نے پکسل 9 پرو، 9 پرو ایکس ایل اور 9 پرو فولڈ کی اسکرین کی خرابیوں (جھلملاہٹ یا مکمل اونچائی کی لکیر) کے لیے توسیعی مرمتی پروگرام شروع کیا۔",
      "official": true
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_9_pro",
+   "officialIsStore": true
   },
   {
    "id": "pixel_9_pro_xl",
@@ -1178,7 +1259,10 @@
      "ur": "گوگل نے پکسل 9 پرو، 9 پرو ایکس ایل اور 9 پرو فولڈ کی اسکرین کی خرابیوں (جھلملاہٹ یا مکمل اونچائی کی لکیر) کے لیے توسیعی مرمتی پروگرام شروع کیا۔",
      "official": true
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_9_pro_xl",
+   "officialIsStore": true
   },
   {
    "id": "pixel_9_pro_fold",
@@ -1214,7 +1298,10 @@
      "ur": "پکسل 9 پرو فولڈ اور 10 پرو فولڈ پر بیٹری کے ساتھ سوالیہ نشان کی علامت کی اطلاع ملی۔ زیادہ تر صارفین کے لیے ری بوٹ سے ٹھیک ہو جاتی ہے؛ گوگل نے اسے عوامی طور پر تسلیم نہیں کیا۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_9_pro_fold",
+   "officialIsStore": true
   },
   {
    "id": "pixel_9a",
@@ -1234,7 +1321,10 @@
     "protection": "IP68",
     "price": "$499"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_9a",
+   "officialIsStore": true
   },
   {
    "id": "pixel_10",
@@ -1260,7 +1350,10 @@
      "ur": "پکسل 10 فونز میں ابتدائی سافٹ ویئر خرابیاں، جن میں گیمنگ ایپس کا کریش ہونا، وائی فائی / بلوٹوتھ بند کھولنے کے مسائل اور ایپس انسٹال یا اپ ڈیٹ کرتے وقت کریش شامل ہیں۔ گوگل نے انہیں اینڈرائیڈ 17 QPR1 (ستمبر 2026) میں دور کیا۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_10",
+   "officialIsStore": true
   },
   {
    "id": "pixel_10_pro",
@@ -1286,7 +1379,10 @@
      "ur": "پکسل 10 فونز میں ابتدائی سافٹ ویئر خرابیاں، جن میں گیمنگ ایپس کا کریش ہونا، وائی فائی / بلوٹوتھ بند کھولنے کے مسائل اور ایپس انسٹال یا اپ ڈیٹ کرتے وقت کریش شامل ہیں۔ گوگل نے انہیں اینڈرائیڈ 17 QPR1 (ستمبر 2026) میں دور کیا۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_10_pro",
+   "officialIsStore": true
   },
   {
    "id": "pixel_10_pro_xl",
@@ -1312,7 +1408,10 @@
      "ur": "پکسل 10 فونز میں ابتدائی سافٹ ویئر خرابیاں، جن میں گیمنگ ایپس کا کریش ہونا، وائی فائی / بلوٹوتھ بند کھولنے کے مسائل اور ایپس انسٹال یا اپ ڈیٹ کرتے وقت کریش شامل ہیں۔ گوگل نے انہیں اینڈرائیڈ 17 QPR1 (ستمبر 2026) میں دور کیا۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_10_pro_xl",
+   "officialIsStore": true
   },
   {
    "id": "pixel_10_pro_fold",
@@ -1342,7 +1441,10 @@
      "ur": "پکسل 9 پرو فولڈ اور 10 پرو فولڈ پر بیٹری کے ساتھ سوالیہ نشان کی علامت کی اطلاع ملی۔ زیادہ تر صارفین کے لیے ری بوٹ سے ٹھیک ہو جاتی ہے؛ گوگل نے اسے عوامی طور پر تسلیم نہیں کیا۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_10_pro_fold",
+   "officialIsStore": true
   },
   {
    "id": "pixel_10a",
@@ -1368,7 +1470,10 @@
      "ur": "پکسل 10 فونز میں ابتدائی سافٹ ویئر خرابیاں، جن میں گیمنگ ایپس کا کریش ہونا، وائی فائی / بلوٹوتھ بند کھولنے کے مسائل اور ایپس انسٹال یا اپ ڈیٹ کرتے وقت کریش شامل ہیں۔ گوگل نے انہیں اینڈرائیڈ 17 QPR1 (ستمبر 2026) میں دور کیا۔",
      "official": false
     }
-   ]
+   ],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_10a",
+   "officialIsStore": true
   },
   {
    "id": "pixel_11",
@@ -1386,7 +1491,10 @@
     "battery": "4,985 mAh",
     "price": "$899"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_11",
+   "officialIsStore": true
   },
   {
    "id": "pixel_11_pro",
@@ -1404,7 +1512,10 @@
     "battery": "4,850 mAh",
     "price": "$1,099"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_11_pro",
+   "officialIsStore": true
   },
   {
    "id": "pixel_11_pro_xl",
@@ -1422,7 +1533,10 @@
     "battery": "5,115 mAh",
     "price": "$1,299"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_11_pro_xl",
+   "officialIsStore": true
   },
   {
    "id": "pixel_11_pro_fold",
@@ -1439,7 +1553,10 @@
     "battery": "4,806 mAh (reported)",
     "price": "$1,899"
    },
-   "faults": []
+   "faults": [],
+   "latestApi": 37,
+   "officialUrl": "https://store.google.com/product/pixel_11_pro_fold",
+   "officialIsStore": true
   }
  ]
 }

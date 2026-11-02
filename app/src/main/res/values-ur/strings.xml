@@ -191,7 +191,6 @@
     <string name="set_auto_sync">خودکار ہم آہنگی</string>
     <string name="set_sync_now">ابھی ہم آہنگ کریں</string>
     <string name="sync_running">ہم آہنگی جاری ہے…</string>
-    <string name="sync_error">ہم آہنگی میں مسئلہ: %1$s</string>
     <string name="sync_done">ہم آہنگ: %1$d موصول، %2$d ارسال</string>
     <string name="sync_last">آخری ہم آہنگی %1$s</string>
     <string name="sync_never">ابھی ہم آہنگ نہیں ہوا</string>
@@ -298,6 +297,22 @@
     <string name="drops_phones_n">%1$d فون</string>
     <string name="drops_select">کوئی ڈراپ منتخب کریں</string>
     <string name="drops_select_body">اس کی خصوصیات اور درست پکسل یہاں دکھائے جائیں گے۔</string>
+    <string name="err_no_internet">انٹرنیٹ کنکشن دستیاب نہیں۔ براہ کرم اسے چیک کر کے دوبارہ کوشش کریں۔</string>
+    <string name="err_signin_failed">سائن ان نہیں ہو سکا۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="err_sync_failed">اس وقت ہم آہنگی نہیں ہو سکی۔</string>
+    <string name="err_export_failed">فائل نہیں بن سکی۔</string>
+    <string name="err_restore_failed">اس فائل سے بحالی نہیں ہو سکی۔</string>
+    <string name="err_ai_failed">پکسی اس وقت جواب نہیں دے سکا۔ براہ کرم دوبارہ کوشش کریں۔</string>
+    <string name="pixel_links">سرکاری صفحات اور حوالہ جات</string>
+    <string name="link_official_store">گوگل کا سرکاری صفحہ</string>
+    <string name="link_official_search">اس آلے کے گوگل کے سرکاری صفحات</string>
+    <string name="link_gsmarena">GSMArena کی تکنیکی تفصیلات</string>
+    <string name="link_ifixit">iFixit پر مرمت کی آسانی</string>
+    <string name="repair_score">iFixit مرمت کی آسانی کا اسکور: %1$s / 10</string>
+    <string name="f_latest_update">اس ماڈل کی تازہ ترین اپ ڈیٹ</string>
+    <string name="mark_updated">اینڈرائیڈ %1$s پر اپ ڈیٹ شدہ کے طور پر نشان زد کریں</string>
+    <string name="about_credits_title">شکریہ اور حوالہ جات</string>
+    <string name="about_credits_body">GSMArena (gsmarena.com) کی طرف سے تکنیکی تفصیلات: کسی بھی آلے کی تفصیلات سے اس کا اسپیکس صفحہ کھولیں۔\niFixit (ifixit.com) کی طرف سے مرمت کی آسانی کے اسکور: مکمل ٹیئر ڈاؤن وہیں دیکھیں۔\nخصوصیات کی دستیابی: whereisenabled.com۔\nگوگل کی بند کردہ مصنوعات: killedbygoogle.com۔\nپکسل ڈراپ کی تاریخ گوگل کے اعلانات، اینڈرائیڈ اتھارٹی، 9to5Google اور دیگر خبروں سے مرتب کی گئی ہے۔</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
 </resources>

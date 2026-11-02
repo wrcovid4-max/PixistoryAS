@@ -74,6 +74,14 @@ fun DeviceEditorScreen(
     val docPicker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
         if (uri != null) vm.addDocument(d.id, uri)
     }
+    // Auto-select the software update: a known Pixel / Nexus starts on the newest Android it can run.
+    val matched = remember(d.name, d.model) { vm.container.knowledge.match(d.name, d.model) }
+    LaunchedEffect(matched?.id) {
+        val latest = matched?.latestApi ?: 0
+        if (latest > 0 && d.apiLevel == null) {
+            d = d.copy(apiLevel = latest, androidVersion = AndroidVersions.byApi(latest)?.version.orEmpty())
+        }
+    }
     val groups = remember(devices) { devices.map { it.groupName }.filter { it.isNotBlank() }.distinct() }
 
     fun save() {
@@ -223,7 +231,8 @@ fun DeviceEditorScreen(
             val pixel = vm.container.knowledge.match(item.title)
             d = d.copy(
                 name = item.title, brand = item.brand, model = item.name, type = item.type.name,
-                apiLevel = item.api, androidVersion = AndroidVersions.byApi(item.api)?.version.orEmpty(),
+                apiLevel = (pixel?.latestApi?.takeIf { it > 0 } ?: item.api),
+                androidVersion = AndroidVersions.byApi(pixel?.latestApi?.takeIf { it > 0 } ?: item.api)?.version.orEmpty(),
             )
             yearText = item.year?.toString().orEmpty()
             if (pixel != null) {

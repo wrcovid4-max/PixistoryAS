@@ -5,6 +5,13 @@ data class AndroidRelease(val api: Int, val version: String, val name: String, v
 /** The Android versions the coverage tab and the version pickers know about. Edit to add new ones. */
 object AndroidVersions {
     val releases: List<AndroidRelease> = listOf(
+        AndroidRelease(9, "2.3", "Gingerbread", 2010),
+        AndroidRelease(10, "2.3.3", "Gingerbread", 2011),
+        AndroidRelease(14, "4.0", "Ice Cream Sandwich", 2011),
+        AndroidRelease(15, "4.0.3", "Ice Cream Sandwich", 2011),
+        AndroidRelease(16, "4.1", "Jelly Bean", 2012),
+        AndroidRelease(17, "4.2", "Jelly Bean", 2012),
+        AndroidRelease(18, "4.3", "Jelly Bean", 2013),
         AndroidRelease(19, "4.4", "KitKat", 2013),
         AndroidRelease(21, "5.0", "Lollipop", 2014),
         AndroidRelease(22, "5.1", "Lollipop", 2015),
@@ -22,11 +29,13 @@ object AndroidVersions {
         AndroidRelease(34, "14", "Android 14", 2023),
         AndroidRelease(35, "15", "Android 15", 2024),
         AndroidRelease(36, "16", "Android 16", 2025),
+        AndroidRelease(37, "17", "Android 17", 2026),
     )
 
     /** Major generations for the coverage view: one row per major Android version. */
     val majors: List<AndroidMajor> = listOf(
-        AndroidMajor("4", "KitKat", listOf(19)),
+        AndroidMajor("2", "Gingerbread", listOf(9, 10)),
+        AndroidMajor("4", "Android 4.x", listOf(14, 15, 16, 17, 18, 19)),
         AndroidMajor("5", "Lollipop", listOf(21, 22)),
         AndroidMajor("6", "Marshmallow", listOf(23)),
         AndroidMajor("7", "Nougat", listOf(24, 25)),
@@ -39,6 +48,7 @@ object AndroidVersions {
         AndroidMajor("14", "Android 14", listOf(34)),
         AndroidMajor("15", "Android 15", listOf(35)),
         AndroidMajor("16", "Android 16", listOf(36)),
+        AndroidMajor("17", "Android 17", listOf(37)),
     )
 
     fun byApi(api: Int?): AndroidRelease? = releases.firstOrNull { it.api == api }
@@ -57,7 +67,7 @@ object AndroidVersions {
     }
 
     fun majorLabel(api: Int?, fallback: String = ""): String =
-        majorOf(api)?.let { if (it.major == "4") "Android 4.4" else "Android ${it.major}" }
+        majorOf(api)?.let { if (it.major == "4") "Android 4.x" else if (it.major == "2") "Android 2.3" else "Android ${it.major}" }
             ?: if (fallback.isNotBlank()) "Android ${fallback.substringBefore('.')}" else "Unknown"
 
     /** Best-guess API level from a version string such as "13" or "12L". */

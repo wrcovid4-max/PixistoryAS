@@ -109,6 +109,16 @@ fun DeviceDetailScreen(
                             stringResource(R.string.f_build) to device.buildNumber,
                         ),
                     )
+                    val latest = pixel?.latestApi ?: 0
+                    if (pixel != null && latest > 0) {
+                        InfoTable(listOf(stringResource(R.string.f_latest_update) to AndroidVersions.label(latest)))
+                        if (device.apiLevel != latest && device.statusEnum == DeviceStatus.OWNED) {
+                            val ver = AndroidVersions.byApi(latest)?.version.orEmpty()
+                            FilledTonalButton(onClick = { vm.logUpgrade(device, ver, "", "") }, modifier = Modifier.fillMaxWidth()) {
+                                Text(stringResource(R.string.mark_updated, ver))
+                            }
+                        }
+                    }
                     if (device.statusEnum == DeviceStatus.OWNED) {
                         OutlinedButton(onClick = { logUpdate = true }, modifier = Modifier.fillMaxWidth()) {
                             Icon(Icons.Filled.SystemUpdate, null)

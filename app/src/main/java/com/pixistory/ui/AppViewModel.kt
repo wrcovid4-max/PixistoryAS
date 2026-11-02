@@ -8,6 +8,8 @@ import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.pixistory.AppContainer
+import com.pixistory.R
+import com.pixistory.util.FriendlyError
 import com.pixistory.ai.AiTurn
 import com.pixistory.ai.CollectionContext
 import com.pixistory.data.model.ChatMessageEntity
@@ -169,7 +171,7 @@ class AppViewModel(val container: AppContainer) : ViewModel() {
                 if (settings.value.autoSync) SyncScheduler.applyAutoSync(app, true)
                 container.sync.sync()
             } catch (e: Exception) {
-                say(e.message ?: "Sign-in failed")
+                say(app.getString(if (FriendlyError.isNetwork(e)) R.string.err_no_internet else R.string.err_signin_failed))
             }
         }
     }
@@ -202,7 +204,7 @@ class AppViewModel(val container: AppContainer) : ViewModel() {
                 val reply = container.ai.ask(system, history)
                 repo.addChat("assistant", reply)
             } catch (e: Exception) {
-                _aiError.value = e.message ?: "The AI request failed"
+                _aiError.value = app.getString(if (FriendlyError.isNetwork(e)) R.string.err_no_internet else R.string.err_ai_failed)
             } finally {
                 _aiBusy.value = false
             }
@@ -233,7 +235,7 @@ class AppViewModel(val container: AppContainer) : ViewModel() {
                 }
                 shareFile(app, file, mime, "Share")
             } catch (e: Exception) {
-                say("Export failed: ${e.message}")
+                say(app.getString(if (FriendlyError.isNetwork(e)) R.string.err_no_internet else R.string.err_export_failed))
             }
         }
     }
@@ -245,7 +247,7 @@ class AppViewModel(val container: AppContainer) : ViewModel() {
                 say("Restored $n device${if (n == 1) "" else "s"}")
                 if (settings.value.autoSync) SyncScheduler.requestSync(app)
             } catch (e: Exception) {
-                say("Restore failed: ${e.message}")
+                say(app.getString(R.string.err_restore_failed))
             }
         }
     }

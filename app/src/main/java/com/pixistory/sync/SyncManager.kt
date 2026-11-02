@@ -21,7 +21,8 @@ sealed interface SyncState {
     data object Idle : SyncState
     data object Syncing : SyncState
     data class Done(val pulled: Int, val pushed: Int, val at: Long) : SyncState
-    data class Error(val message: String) : SyncState
+    /** [network] is true when the phone simply had no connection. */
+    data class Error(val network: Boolean) : SyncState
 }
 
 /**
@@ -42,7 +43,7 @@ class SyncManager(
     suspend fun sync(): SyncState = mutex.withLock {
         val uid = auth.uid
         if (uid == null) {
-            val s = SyncState.Error("Sign in with Google to sync")
+            val s = SyncState.Error(false)
             _state.value = s
             return s
         }
@@ -92,7 +93,7 @@ class SyncManager(
             _state.value = done
             done
         } catch (e: Exception) {
-            val s = SyncState.Error(e.message ?: "Sync failed")
+            val s = SyncState.Error(com.pixistory.util.FriendlyError.isNetwork(e))
             _state.value = s
             s
         }
