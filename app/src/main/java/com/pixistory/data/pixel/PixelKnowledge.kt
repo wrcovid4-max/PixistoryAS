@@ -27,6 +27,7 @@ data class PixelModel(
     val officialIsStore: Boolean = false,
     val ifixitScore: Double? = null,
     val ifixitUrl: String = "",
+    val ifixitNote: String = "",
 )
 data class DropDetail(val title: String, val desc: String, val devices: List<String>)
 data class PixelDrop(
@@ -97,6 +98,7 @@ class PixelKnowledge(private val context: Context) {
                     o.optInt("latestApi"), o.optString("officialUrl"), o.optBoolean("officialIsStore"),
                     if (o.has("ifixitScore") && !o.isNull("ifixitScore")) o.getDouble("ifixitScore") else null,
                     o.optString("ifixitUrl"),
+                    o.optString("ifixitNote"),
                 )
             }
         } catch (e: Exception) {
@@ -137,7 +139,7 @@ class PixelKnowledge(private val context: Context) {
 
     /** Finds the Pixel in the database that a device entry is: "Google Pixel 9 Pro" matches "Pixel 9 Pro". */
     fun match(name: String, model: String = ""): PixelModel? {
-        val candidates = listOf(name, model).map { norm(it) }.filter { it.startsWith("pixel") }
+        val candidates = listOf(name, model).map { norm(it) }.filter { it.startsWith("pixel") || it.contains("nexus") }
         if (candidates.isEmpty()) return null
         return models.firstOrNull { m -> norm(m.name) in candidates }
     }

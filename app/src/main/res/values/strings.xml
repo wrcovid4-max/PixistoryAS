@@ -313,6 +313,7 @@
     <string name="mark_updated">Mark as updated to Android %1$s</string>
     <string name="about_credits_title">Thanks and credits</string>
     <string name="about_credits_body">Technical Details by GSMArena (gsmarena.com): open any device\'s specs page from its details.\nRepairability scores by iFixit (ifixit.com): see the full teardowns there.\nFeature availability by whereisenabled.com.\nKilled by Google by killedbygoogle.com.\nPixel Drop history compiled from Google\'s announcements and Android Authority, 9to5Google and other press.</string>
+    <string name="repair_provisional">Provisional score from iFixit\'s first look.</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
 </resources>

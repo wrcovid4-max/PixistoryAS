@@ -45,6 +45,7 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
         }
         model.ifixitScore?.let { score ->
             Text(stringResource(R.string.repair_score, String.format("%.0f", score)), style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.secondary)
+            if (model.ifixitNote.isNotBlank()) Text(stringResource(R.string.repair_provisional), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
         OutlinedButton(
             onClick = { uri.openUri(model.ifixitUrl.ifBlank { "https://www.ifixit.com/Search?query=$q" }) },
@@ -93,6 +94,7 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
         Text(stringResource(R.string.pixel_faults_note), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 
+    if (model.id.startsWith("pixel")) {
     SectionCard(stringResource(R.string.pixel_drops_received, drops.size)) {
         if (drops.isEmpty()) {
             Text(stringResource(R.string.pixel_drops_none), style = MaterialTheme.typography.bodyMedium)
@@ -107,5 +109,6 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
                 }
             }
         }
+    }
     }
 }

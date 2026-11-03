@@ -634,5 +634,89 @@
   "year": 2026,
   "api": 37,
   "kid": "pixel_11_pro_fold"
+ },
+ {
+  "name": "Nexus One",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2010,
+  "api": 7
+ },
+ {
+  "name": "Nexus S",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2010,
+  "api": 9
+ },
+ {
+  "name": "Galaxy Nexus",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2011,
+  "api": 14
+ },
+ {
+  "name": "Nexus 4",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2012,
+  "api": 17
+ },
+ {
+  "name": "Nexus 5",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2013,
+  "api": 19
+ },
+ {
+  "name": "Nexus 6",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2014,
+  "api": 21
+ },
+ {
+  "name": "Nexus 5X",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2015,
+  "api": 23
+ },
+ {
+  "name": "Nexus 6P",
+  "brand": "Google",
+  "type": "PHONE",
+  "year": 2015,
+  "api": 23
+ },
+ {
+  "name": "Nexus 7 (2012)",
+  "brand": "Google",
+  "type": "TABLET",
+  "year": 2012,
+  "api": 16
+ },
+ {
+  "name": "Nexus 7 (2013)",
+  "brand": "Google",
+  "type": "TABLET",
+  "year": 2013,
+  "api": 18
+ },
+ {
+  "name": "Nexus 9",
+  "brand": "Google",
+  "type": "TABLET",
+  "year": 2014,
+  "api": 21
+ },
+ {
+  "name": "Nexus 10",
+  "brand": "Google",
+  "type": "TABLET",
+  "year": 2012,
+  "api": 17
  }
 ]

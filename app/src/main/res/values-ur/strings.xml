@@ -313,6 +313,7 @@
     <string name="mark_updated">اینڈرائیڈ %1$s پر اپ ڈیٹ شدہ کے طور پر نشان زد کریں</string>
     <string name="about_credits_title">شکریہ اور حوالہ جات</string>
     <string name="about_credits_body">GSMArena (gsmarena.com) کی طرف سے تکنیکی تفصیلات: کسی بھی آلے کی تفصیلات سے اس کا اسپیکس صفحہ کھولیں۔\niFixit (ifixit.com) کی طرف سے مرمت کی آسانی کے اسکور: مکمل ٹیئر ڈاؤن وہیں دیکھیں۔\nخصوصیات کی دستیابی: whereisenabled.com۔\nگوگل کی بند کردہ مصنوعات: killedbygoogle.com۔\nپکسل ڈراپ کی تاریخ گوگل کے اعلانات، اینڈرائیڈ اتھارٹی، 9to5Google اور دیگر خبروں سے مرتب کی گئی ہے۔</string>
+    <string name="repair_provisional">iFixit کے ابتدائی جائزے کا عارضی اسکور۔</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
 </resources>

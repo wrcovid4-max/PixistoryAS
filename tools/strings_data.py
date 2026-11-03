@@ -314,4 +314,5 @@ S = {
     'mark_updated': ('Mark as updated to Android %1$s', 'اینڈرائیڈ %1$s پر اپ ڈیٹ شدہ کے طور پر نشان زد کریں'),
     'about_credits_title': ('Thanks and credits', 'شکریہ اور حوالہ جات'),
     'about_credits_body': ("Technical Details by GSMArena (gsmarena.com): open any device's specs page from its details.\nRepairability scores by iFixit (ifixit.com): see the full teardowns there.\nFeature availability by whereisenabled.com.\nKilled by Google by killedbygoogle.com.\nPixel Drop history compiled from Google's announcements and Android Authority, 9to5Google and other press.", 'GSMArena (gsmarena.com) کی طرف سے تکنیکی تفصیلات: کسی بھی آلے کی تفصیلات سے اس کا اسپیکس صفحہ کھولیں۔\niFixit (ifixit.com) کی طرف سے مرمت کی آسانی کے اسکور: مکمل ٹیئر ڈاؤن وہیں دیکھیں۔\nخصوصیات کی دستیابی: whereisenabled.com۔\nگوگل کی بند کردہ مصنوعات: killedbygoogle.com۔\nپکسل ڈراپ کی تاریخ گوگل کے اعلانات، اینڈرائیڈ اتھارٹی، 9to5Google اور دیگر خبروں سے مرتب کی گئی ہے۔'),
+    'repair_provisional': ("Provisional score from iFixit's first look.", 'iFixit کے ابتدائی جائزے کا عارضی اسکور۔'),
 }

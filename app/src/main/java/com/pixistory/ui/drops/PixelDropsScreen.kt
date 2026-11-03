@@ -57,7 +57,7 @@ fun PixelDropsScreen(vm: AppViewModel, fold: FoldState) {
 
     val mine: Set<String> = remember(devices) { devices.mapNotNull { knowledge.match(it.name, it.model)?.id }.toSet() }
     val years = remember { knowledge.drops.map { it.date.take(4).toInt() }.distinct().sortedDescending() }
-    val models = remember { knowledge.models.sortedBy { it.name } }
+    val models = remember { knowledge.models.filter { it.id.startsWith("pixel") }.sortedBy { it.name } }
     val shown = remember(query, year, modelId, mineOnly, mine, lang) {
         knowledge.drops.filter { d ->
             (year == null || d.date.startsWith(year.toString())) &&

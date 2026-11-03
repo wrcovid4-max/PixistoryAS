@@ -5,6 +5,8 @@ data class AndroidRelease(val api: Int, val version: String, val name: String, v
 /** The Android versions the coverage tab and the version pickers know about. Edit to add new ones. */
 object AndroidVersions {
     val releases: List<AndroidRelease> = listOf(
+        AndroidRelease(7, "2.1", "Eclair", 2009),
+        AndroidRelease(8, "2.2", "Froyo", 2010),
         AndroidRelease(9, "2.3", "Gingerbread", 2010),
         AndroidRelease(10, "2.3.3", "Gingerbread", 2011),
         AndroidRelease(14, "4.0", "Ice Cream Sandwich", 2011),
@@ -34,7 +36,7 @@ object AndroidVersions {
 
     /** Major generations for the coverage view: one row per major Android version. */
     val majors: List<AndroidMajor> = listOf(
-        AndroidMajor("2", "Gingerbread", listOf(9, 10)),
+        AndroidMajor("2", "Android 2.x", listOf(7, 8, 9, 10)),
         AndroidMajor("4", "Android 4.x", listOf(14, 15, 16, 17, 18, 19)),
         AndroidMajor("5", "Lollipop", listOf(21, 22)),
         AndroidMajor("6", "Marshmallow", listOf(23)),
@@ -67,7 +69,7 @@ object AndroidVersions {
     }
 
     fun majorLabel(api: Int?, fallback: String = ""): String =
-        majorOf(api)?.let { if (it.major == "4") "Android 4.x" else if (it.major == "2") "Android 2.3" else "Android ${it.major}" }
+        majorOf(api)?.let { if (it.major == "4") "Android 4.x" else if (it.major == "2") "Android 2.x" else "Android ${it.major}" }
             ?: if (fallback.isNotBlank()) "Android ${fallback.substringBefore('.')}" else "Unknown"
 
     /** Best-guess API level from a version string such as "13" or "12L". */
