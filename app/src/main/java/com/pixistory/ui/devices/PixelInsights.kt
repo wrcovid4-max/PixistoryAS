@@ -16,6 +16,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import com.pixistory.util.formatDate
+import java.net.URLEncoder
+import java.time.LocalDate
+import java.time.ZoneId
 import com.pixistory.R
 import com.pixistory.data.pixel.PixelKnowledge
 import com.pixistory.data.pixel.PixelModel
@@ -36,6 +40,24 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
 
     val uri = LocalUriHandler.current
     val q = model.name.replace(" ", "+")
+    model.launch?.let { l ->
+        SectionCard(stringResource(R.string.pixel_launch)) {
+            val date = runCatching { formatDate(LocalDate.parse(l.date).atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli()) }.getOrDefault(l.date)
+            InfoTable(
+                listOf(
+                    stringResource(R.string.launch_date) to date,
+                    stringResource(R.string.launch_event) to l.event.get(lang),
+                    stringResource(R.string.launch_place) to l.place.get(lang),
+                    stringResource(R.string.launch_presenter) to l.presenter.get(lang),
+                ),
+            )
+            OutlinedButton(
+                onClick = { uri.openUri("https://www.youtube.com/results?search_query=" + URLEncoder.encode(l.query, "UTF-8")) },
+                modifier = Modifier.fillMaxWidth(),
+            ) { Text(stringResource(R.string.link_youtube)) }
+        }
+    }
+
     SectionCard(stringResource(R.string.pixel_links)) {
         OutlinedButton(onClick = { uri.openUri(model.officialUrl) }, modifier = Modifier.fillMaxWidth()) {
             Text(stringResource(if (model.officialIsStore) R.string.link_official_store else R.string.link_official_search))

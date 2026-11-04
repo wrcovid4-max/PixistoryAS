@@ -84,6 +84,10 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
                             FilterChip(selected = s.theme == k, onClick = { vm.updateSettings { it.copy(theme = k) } }, label = { Text(stringResource(label)) })
                         }
                     }
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(stringResource(R.string.set_shelf_color), Modifier.weight(1f), style = MaterialTheme.typography.bodyMedium)
+                        Switch(checked = s.shelfMatchColor, onCheckedChange = { on -> vm.updateSettings { it.copy(shelfMatchColor = on) } })
+                    }
                     Text(stringResource(R.string.set_currency), style = MaterialTheme.typography.labelLarge)
                     CurrencySwitcher(s.currency, { c -> vm.updateSettings { it.copy(currency = c) } })
                 }

@@ -314,6 +314,14 @@
     <string name="about_credits_title">Thanks and credits</string>
     <string name="about_credits_body">Technical Details by GSMArena (gsmarena.com): open any device\'s specs page from its details.\nRepairability scores by iFixit (ifixit.com): see the full teardowns there.\nFeature availability by whereisenabled.com.\nKilled by Google by killedbygoogle.com.\nPixel Drop history compiled from Google\'s announcements and Android Authority, 9to5Google and other press.</string>
     <string name="repair_provisional">Provisional score from iFixit\'s first look.</string>
+    <string name="pixel_launch">Launch information</string>
+    <string name="launch_date">Introduced</string>
+    <string name="launch_event">Event</string>
+    <string name="launch_place">Where</string>
+    <string name="launch_presenter">Presented by</string>
+    <string name="link_youtube">Watch the launch on YouTube</string>
+    <string name="set_shelf_color">Shelf: tint the card with the device\'s colour</string>
+    <string name="shelf_story">Backstory</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
 </resources>

@@ -9,6 +9,8 @@ class LText(val en: String, val ur: String) {
     fun get(lang: String): String = if (lang == "ur" && ur.isNotBlank()) ur else en
 }
 
+data class LaunchInfo(val date: String, val event: LText, val place: LText, val presenter: LText, val query: String)
+
 data class PixelGen(val id: String, val name: LText, val year: Int, val history: LText, val features: List<LText>)
 data class PixelFault(val text: LText, val official: Boolean)
 data class PixelModel(
@@ -28,6 +30,7 @@ data class PixelModel(
     val ifixitScore: Double? = null,
     val ifixitUrl: String = "",
     val ifixitNote: String = "",
+    val launch: LaunchInfo? = null,
 )
 data class DropDetail(val title: String, val desc: String, val devices: List<String>)
 data class PixelDrop(
@@ -99,6 +102,7 @@ class PixelKnowledge(private val context: Context) {
                     if (o.has("ifixitScore") && !o.isNull("ifixitScore")) o.getDouble("ifixitScore") else null,
                     o.optString("ifixitUrl"),
                     o.optString("ifixitNote"),
+                    o.optJSONObject("launch")?.let { l -> LaunchInfo(l.optString("date"), l.lt("event"), l.lt("place"), l.lt("presenter"), l.optString("query")) },
                 )
             }
         } catch (e: Exception) {

@@ -15,6 +15,8 @@ data class AppSettings(
     /** "system", "light" or "dark" */
     val theme: String = "system",
     val patchAlerts: Boolean = false,
+    /** Tint the Shelf card with the shown device's colour. */
+    val shelfMatchColor: Boolean = true,
     val notifDrops: Boolean = false,
     val notifDevices: Boolean = false,
     val notifLeaks: Boolean = false,
@@ -55,6 +57,7 @@ class SettingsStore(context: Context) {
             geminiModel = prefs.getString("geminiModel", d.geminiModel) ?: d.geminiModel,
             theme = prefs.getString("theme", d.theme) ?: d.theme,
             patchAlerts = prefs.getBoolean("patchAlerts", d.patchAlerts),
+            shelfMatchColor = prefs.getBoolean("shelfMatchColor", true),
             notifDrops = prefs.getBoolean("notifDrops", false),
             notifDevices = prefs.getBoolean("notifDevices", false),
             notifLeaks = prefs.getBoolean("notifLeaks", false),
@@ -80,6 +83,7 @@ class SettingsStore(context: Context) {
             .putString("geminiModel", s.geminiModel)
             .putString("theme", s.theme)
             .putBoolean("patchAlerts", s.patchAlerts)
+            .putBoolean("shelfMatchColor", s.shelfMatchColor)
             .putBoolean("notifDrops", s.notifDrops)
             .putBoolean("notifDevices", s.notifDevices)
             .putBoolean("notifLeaks", s.notifLeaks)

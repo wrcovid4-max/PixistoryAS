@@ -891,7 +891,23 @@
    "officialUrl": "https://www.google.com/search?q=Pixel+site%3Agoogle.com",
    "officialIsStore": false,
    "ifixitScore": 7,
-   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel"
+   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel",
+   "launch": {
+    "date": "2016-10-04",
+    "event": {
+     "en": "Made by Google 2016",
+     "ur": "میڈ بائی گوگل 2016"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, with Sundar Pichai",
+     "ur": "رِک اوسٹرلوہ، سندر پچائی کے ساتھ"
+    },
+    "query": "Made by Google 2016 event full"
+   }
   },
   {
    "id": "pixel_1_xl",
@@ -914,7 +930,23 @@
    "faults": [],
    "latestApi": 29,
    "officialUrl": "https://www.google.com/search?q=Pixel+XL+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2016-10-04",
+    "event": {
+     "en": "Made by Google 2016",
+     "ur": "میڈ بائی گوگل 2016"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, with Sundar Pichai",
+     "ur": "رِک اوسٹرلوہ، سندر پچائی کے ساتھ"
+    },
+    "query": "Made by Google 2016 event full"
+   }
   },
   {
    "id": "pixel_2",
@@ -937,7 +969,23 @@
    "faults": [],
    "latestApi": 30,
    "officialUrl": "https://www.google.com/search?q=Pixel+2+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2017-10-04",
+    "event": {
+     "en": "Made by Google 2017",
+     "ur": "میڈ بائی گوگل 2017"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2017 event full"
+   }
   },
   {
    "id": "pixel_2_xl",
@@ -966,7 +1014,23 @@
    ],
    "latestApi": 30,
    "officialUrl": "https://www.google.com/search?q=Pixel+2+XL+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2017-10-04",
+    "event": {
+     "en": "Made by Google 2017",
+     "ur": "میڈ بائی گوگل 2017"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2017 event full"
+   }
   },
   {
    "id": "pixel_3",
@@ -989,7 +1053,23 @@
    "faults": [],
    "latestApi": 31,
    "officialUrl": "https://www.google.com/search?q=Pixel+3+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2018-10-09",
+    "event": {
+     "en": "Made by Google 2018",
+     "ur": "میڈ بائی گوگل 2018"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2018 event full"
+   }
   },
   {
    "id": "pixel_3_xl",
@@ -1012,7 +1092,23 @@
    "faults": [],
    "latestApi": 31,
    "officialUrl": "https://www.google.com/search?q=Pixel+3+XL+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2018-10-09",
+    "event": {
+     "en": "Made by Google 2018",
+     "ur": "میڈ بائی گوگل 2018"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2018 event full"
+   }
   },
   {
    "id": "pixel_3a",
@@ -1034,7 +1130,23 @@
    "faults": [],
    "latestApi": 31,
    "officialUrl": "https://www.google.com/search?q=Pixel+3a+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2019-05-07",
+    "event": {
+     "en": "Google I/O 2019 (launch announcement)",
+     "ur": "گوگل آئی/او 2019 (اجرا کا اعلان)"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Announced by Google",
+     "ur": "گوگل کی طرف سے اعلان"
+    },
+    "query": "Google Pixel 3a launch video"
+   }
   },
   {
    "id": "pixel_3a_xl",
@@ -1056,7 +1168,23 @@
    "faults": [],
    "latestApi": 31,
    "officialUrl": "https://www.google.com/search?q=Pixel+3a+XL+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2019-05-07",
+    "event": {
+     "en": "Google I/O 2019 (launch announcement)",
+     "ur": "گوگل آئی/او 2019 (اجرا کا اعلان)"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Announced by Google",
+     "ur": "گوگل کی طرف سے اعلان"
+    },
+    "query": "Google Pixel 3a launch video"
+   }
   },
   {
    "id": "pixel_4",
@@ -1079,7 +1207,23 @@
    "faults": [],
    "latestApi": 33,
    "officialUrl": "https://www.google.com/search?q=Pixel+4+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2019-10-15",
+    "event": {
+     "en": "Made by Google 2019",
+     "ur": "میڈ بائی گوگل 2019"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2019 event full"
+   }
   },
   {
    "id": "pixel_4_xl",
@@ -1104,7 +1248,23 @@
    "officialUrl": "https://www.google.com/search?q=Pixel+4+XL+site%3Agoogle.com",
    "officialIsStore": false,
    "ifixitScore": 4,
-   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_4_XL"
+   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_4_XL",
+   "launch": {
+    "date": "2019-10-15",
+    "event": {
+     "en": "Made by Google 2019",
+     "ur": "میڈ بائی گوگل 2019"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2019 event full"
+   }
   },
   {
    "id": "pixel_4a",
@@ -1132,7 +1292,23 @@
    ],
    "latestApi": 33,
    "officialUrl": "https://www.google.com/search?q=Pixel+4a+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2020-08-03",
+    "event": {
+     "en": "Pixel 4a announcement",
+     "ur": "پکسل 4a کا اعلان"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced online by Google (blog post and video, no live stage event)",
+     "ur": "گوگل نے آن لائن اعلان کیا (بلاگ پوسٹ اور ویڈیو، براہ راست اسٹیج تقریب نہیں)"
+    },
+    "query": "Google Pixel 4a introduction video"
+   }
   },
   {
    "id": "pixel_4a_5g",
@@ -1154,7 +1330,23 @@
    "faults": [],
    "latestApi": 33,
    "officialUrl": "https://www.google.com/search?q=Pixel+4a+(5G)+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2020-09-30",
+    "event": {
+     "en": "Launch Night In (online event)",
+     "ur": "لانچ نائٹ اِن (آن لائن تقریب)"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Google Launch Night In 2020 Pixel 5 event"
+   }
   },
   {
    "id": "pixel_5",
@@ -1177,7 +1369,23 @@
    "faults": [],
    "latestApi": 33,
    "officialUrl": "https://www.google.com/search?q=Pixel+5+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2020-09-30",
+    "event": {
+     "en": "Launch Night In (online event)",
+     "ur": "لانچ نائٹ اِن (آن لائن تقریب)"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Google Launch Night In 2020 Pixel 5 event"
+   }
   },
   {
    "id": "pixel_5a",
@@ -1200,7 +1408,23 @@
    "faults": [],
    "latestApi": 34,
    "officialUrl": "https://www.google.com/search?q=Pixel+5a+(5G)+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2021-08-17",
+    "event": {
+     "en": "Pixel 5a (5G) announcement",
+     "ur": "پکسل 5a (5G) کا اعلان"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced online by Google (blog post and video, no live stage event)",
+     "ur": "گوگل نے آن لائن اعلان کیا (بلاگ پوسٹ اور ویڈیو، براہ راست اسٹیج تقریب نہیں)"
+    },
+    "query": "Google Pixel 5a 5G introduction video"
+   }
   },
   {
    "id": "pixel_6",
@@ -1234,7 +1458,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_6",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2021-10-19",
+    "event": {
+     "en": "Pixel Fall Launch 2021",
+     "ur": "پکسل فال لانچ 2021"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Pixel Fall Launch 2021 Pixel 6 event"
+   }
   },
   {
    "id": "pixel_6_pro",
@@ -1268,7 +1508,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_6_pro",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2021-10-19",
+    "event": {
+     "en": "Pixel Fall Launch 2021",
+     "ur": "پکسل فال لانچ 2021"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Pixel Fall Launch 2021 Pixel 6 event"
+   }
   },
   {
    "id": "pixel_6a",
@@ -1297,7 +1553,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_6a",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2022-05-11",
+    "event": {
+     "en": "Google I/O 2022",
+     "ur": "گوگل آئی/او 2022"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Google I/O 2022 Pixel 6a keynote"
+   }
   },
   {
    "id": "pixel_7",
@@ -1320,7 +1592,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_7",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2022-10-06",
+    "event": {
+     "en": "Made by Google 2022",
+     "ur": "میڈ بائی گوگل 2022"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2022 event full"
+   }
   },
   {
    "id": "pixel_7_pro",
@@ -1343,7 +1631,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_7_pro",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2022-10-06",
+    "event": {
+     "en": "Made by Google 2022",
+     "ur": "میڈ بائی گوگل 2022"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2022 event full"
+   }
   },
   {
    "id": "pixel_7a",
@@ -1372,7 +1676,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_7a",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2023-05-10",
+    "event": {
+     "en": "Google I/O 2023",
+     "ur": "گوگل آئی/او 2023"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Google I/O 2023 Pixel Fold Pixel Tablet Pixel 7a"
+   }
   },
   {
    "id": "pixel_fold",
@@ -1408,7 +1728,23 @@
    "officialUrl": "https://store.google.com/product/pixel_fold",
    "officialIsStore": true,
    "ifixitScore": 3,
-   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_Fold"
+   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_Fold",
+   "launch": {
+    "date": "2023-05-10",
+    "event": {
+     "en": "Google I/O 2023",
+     "ur": "گوگل آئی/او 2023"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Google I/O 2023 Pixel Fold Pixel Tablet Pixel 7a"
+   }
   },
   {
    "id": "pixel_tablet",
@@ -1430,7 +1766,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_tablet",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2023-05-10",
+    "event": {
+     "en": "Google I/O 2023",
+     "ur": "گوگل آئی/او 2023"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Google I/O 2023 Pixel Fold Pixel Tablet Pixel 7a"
+   }
   },
   {
    "id": "pixel_8",
@@ -1453,7 +1805,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_8",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2023-10-04",
+    "event": {
+     "en": "Made by Google 2023",
+     "ur": "میڈ بائی گوگل 2023"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2023 event full"
+   }
   },
   {
    "id": "pixel_8_pro",
@@ -1478,7 +1846,23 @@
    "officialUrl": "https://store.google.com/product/pixel_8_pro",
    "officialIsStore": true,
    "ifixitScore": 6,
-   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_8_Pro"
+   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_8_Pro",
+   "launch": {
+    "date": "2023-10-04",
+    "event": {
+     "en": "Made by Google 2023",
+     "ur": "میڈ بائی گوگل 2023"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2023 event full"
+   }
   },
   {
    "id": "pixel_8a",
@@ -1501,7 +1885,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_8a",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2024-05-07",
+    "event": {
+     "en": "Pixel 8a announcement",
+     "ur": "پکسل 8a کا اعلان"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced online by Google (blog post and video, no live stage event)",
+     "ur": "گوگل نے آن لائن اعلان کیا (بلاگ پوسٹ اور ویڈیو، براہ راست اسٹیج تقریب نہیں)"
+    },
+    "query": "Google Pixel 8a introduction video"
+   }
   },
   {
    "id": "pixel_9",
@@ -1530,7 +1930,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_9",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2024-08-13",
+    "event": {
+     "en": "Made by Google 2024",
+     "ur": "میڈ بائی گوگل 2024"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2024 event full"
+   }
   },
   {
    "id": "pixel_9_pro",
@@ -1559,7 +1975,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_9_pro",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2024-08-13",
+    "event": {
+     "en": "Made by Google 2024",
+     "ur": "میڈ بائی گوگل 2024"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2024 event full"
+   }
   },
   {
    "id": "pixel_9_pro_xl",
@@ -1590,7 +2022,23 @@
    "officialUrl": "https://store.google.com/product/pixel_9_pro_xl",
    "officialIsStore": true,
    "ifixitScore": 5,
-   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_9_Pro_XL"
+   "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_9_Pro_XL",
+   "launch": {
+    "date": "2024-08-13",
+    "event": {
+     "en": "Made by Google 2024",
+     "ur": "میڈ بائی گوگل 2024"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2024 event full"
+   }
   },
   {
    "id": "pixel_9_pro_fold",
@@ -1629,7 +2077,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_9_pro_fold",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2024-08-13",
+    "event": {
+     "en": "Made by Google 2024",
+     "ur": "میڈ بائی گوگل 2024"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2024 event full"
+   }
   },
   {
    "id": "pixel_9a",
@@ -1652,7 +2116,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_9a",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2025-03-19",
+    "event": {
+     "en": "Pixel 9a announcement",
+     "ur": "پکسل 9a کا اعلان"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced online by Google (blog post and video, no live stage event)",
+     "ur": "گوگل نے آن لائن اعلان کیا (بلاگ پوسٹ اور ویڈیو، براہ راست اسٹیج تقریب نہیں)"
+    },
+    "query": "Google Pixel 9a introduction video"
+   }
   },
   {
    "id": "pixel_10",
@@ -1684,7 +2164,23 @@
    "officialIsStore": true,
    "ifixitScore": 6,
    "ifixitUrl": "https://www.ifixit.com/Device/Google_Pixel_10",
-   "ifixitNote": "provisional"
+   "ifixitNote": "provisional",
+   "launch": {
+    "date": "2025-08-20",
+    "event": {
+     "en": "Made by Google 2025",
+     "ur": "میڈ بائی گوگل 2025"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, with host Jimmy Fallon",
+     "ur": "رِک اوسٹرلوہ، میزبان جمی فیلن کے ساتھ"
+    },
+    "query": "Made by Google 2025 event full Pixel 10"
+   }
   },
   {
    "id": "pixel_10_pro",
@@ -1713,7 +2209,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_10_pro",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2025-08-20",
+    "event": {
+     "en": "Made by Google 2025",
+     "ur": "میڈ بائی گوگل 2025"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, with host Jimmy Fallon",
+     "ur": "رِک اوسٹرلوہ، میزبان جمی فیلن کے ساتھ"
+    },
+    "query": "Made by Google 2025 event full Pixel 10"
+   }
   },
   {
    "id": "pixel_10_pro_xl",
@@ -1742,7 +2254,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_10_pro_xl",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2025-08-20",
+    "event": {
+     "en": "Made by Google 2025",
+     "ur": "میڈ بائی گوگل 2025"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, with host Jimmy Fallon",
+     "ur": "رِک اوسٹرلوہ، میزبان جمی فیلن کے ساتھ"
+    },
+    "query": "Made by Google 2025 event full Pixel 10"
+   }
   },
   {
    "id": "pixel_10_pro_fold",
@@ -1775,7 +2303,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_10_pro_fold",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2025-08-20",
+    "event": {
+     "en": "Made by Google 2025",
+     "ur": "میڈ بائی گوگل 2025"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, with host Jimmy Fallon",
+     "ur": "رِک اوسٹرلوہ، میزبان جمی فیلن کے ساتھ"
+    },
+    "query": "Made by Google 2025 event full Pixel 10"
+   }
   },
   {
    "id": "pixel_10a",
@@ -1804,7 +2348,23 @@
    ],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_10a",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-02-18",
+    "event": {
+     "en": "Pixel 10a announcement",
+     "ur": "پکسل 10a کا اعلان"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced online by Google (blog post and video, no live stage event)",
+     "ur": "گوگل نے آن لائن اعلان کیا (بلاگ پوسٹ اور ویڈیو، براہ راست اسٹیج تقریب نہیں)"
+    },
+    "query": "Google Pixel 10a introduction video"
+   }
   },
   {
    "id": "pixel_11",
@@ -1825,7 +2385,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_11",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-08-12",
+    "event": {
+     "en": "Made by Google 2026",
+     "ur": "میڈ بائی گوگل 2026"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Google's devices team (presenter names not confirmed here)",
+     "ur": "گوگل کی ڈیوائسز ٹیم (مقررین کے نام یہاں تصدیق شدہ نہیں)"
+    },
+    "query": "Made by Google 2026 event Pixel 11"
+   }
   },
   {
    "id": "pixel_11_pro",
@@ -1846,7 +2422,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_11_pro",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-08-12",
+    "event": {
+     "en": "Made by Google 2026",
+     "ur": "میڈ بائی گوگل 2026"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Google's devices team (presenter names not confirmed here)",
+     "ur": "گوگل کی ڈیوائسز ٹیم (مقررین کے نام یہاں تصدیق شدہ نہیں)"
+    },
+    "query": "Made by Google 2026 event Pixel 11"
+   }
   },
   {
    "id": "pixel_11_pro_xl",
@@ -1867,7 +2459,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_11_pro_xl",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-08-12",
+    "event": {
+     "en": "Made by Google 2026",
+     "ur": "میڈ بائی گوگل 2026"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Google's devices team (presenter names not confirmed here)",
+     "ur": "گوگل کی ڈیوائسز ٹیم (مقررین کے نام یہاں تصدیق شدہ نہیں)"
+    },
+    "query": "Made by Google 2026 event Pixel 11"
+   }
   },
   {
    "id": "pixel_11_pro_fold",
@@ -1887,7 +2495,23 @@
    "faults": [],
    "latestApi": 37,
    "officialUrl": "https://store.google.com/product/pixel_11_pro_fold",
-   "officialIsStore": true
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-08-12",
+    "event": {
+     "en": "Made by Google 2026",
+     "ur": "میڈ بائی گوگل 2026"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Google's devices team (presenter names not confirmed here)",
+     "ur": "گوگل کی ڈیوائسز ٹیم (مقررین کے نام یہاں تصدیق شدہ نہیں)"
+    },
+    "query": "Made by Google 2026 event Pixel 11"
+   }
   },
   {
    "id": "nexus_one",
@@ -1916,7 +2540,23 @@
    ],
    "latestApi": 10,
    "officialUrl": "https://www.google.com/search?q=Nexus+One+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2010-01-05",
+    "event": {
+     "en": "Nexus One press event",
+     "ur": "نیکسس ون کی پریس تقریب"
+    },
+    "place": {
+     "en": "Mountain View, USA",
+     "ur": "ماؤنٹین ویو، امریکہ"
+    },
+    "presenter": {
+     "en": "Google's Android team (Andy Rubin)",
+     "ur": "گوگل کی اینڈرائیڈ ٹیم (اینڈی روبن)"
+    },
+    "query": "Google Nexus One announcement 2010"
+   }
   },
   {
    "id": "nexus_s",
@@ -1945,7 +2585,23 @@
    ],
    "latestApi": 16,
    "officialUrl": "https://www.google.com/search?q=Nexus+S+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2010-12-06",
+    "event": {
+     "en": "Nexus S announcement with Android 2.3",
+     "ur": "اینڈرائیڈ 2.3 کے ساتھ نیکسس ایس کا اعلان"
+    },
+    "place": {
+     "en": "Online / press",
+     "ur": "آن لائن / پریس"
+    },
+    "presenter": {
+     "en": "Announced by Google and Samsung",
+     "ur": "گوگل اور سام سنگ کی طرف سے اعلان"
+    },
+    "query": "Google Nexus S announcement Gingerbread"
+   }
   },
   {
    "id": "galaxy_nexus",
@@ -1974,7 +2630,23 @@
    ],
    "latestApi": 18,
    "officialUrl": "https://www.google.com/search?q=Galaxy+Nexus+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2011-10-19",
+    "event": {
+     "en": "Google and Samsung event (Android 4.0 launch)",
+     "ur": "گوگل اور سام سنگ کی تقریب (اینڈرائیڈ 4.0 کا اجرا)"
+    },
+    "place": {
+     "en": "Hong Kong",
+     "ur": "ہانگ کانگ"
+    },
+    "presenter": {
+     "en": "Google's Android team with Samsung",
+     "ur": "گوگل کی اینڈرائیڈ ٹیم، سام سنگ کے ساتھ"
+    },
+    "query": "Galaxy Nexus Ice Cream Sandwich launch event 2011"
+   }
   },
   {
    "id": "nexus_4",
@@ -2003,7 +2675,23 @@
    ],
    "latestApi": 22,
    "officialUrl": "https://www.google.com/search?q=Nexus+4+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2012-10-29",
+    "event": {
+     "en": "Nexus 4 and Nexus 10 announcement (event cancelled by Hurricane Sandy)",
+     "ur": "نیکسس 4 اور نیکسس 10 کا اعلان (طوفان سینڈی کی وجہ سے تقریب منسوخ)"
+    },
+    "place": {
+     "en": "Online / press",
+     "ur": "آن لائن / پریس"
+    },
+    "presenter": {
+     "en": "Announced by Google (blog post)",
+     "ur": "گوگل کی طرف سے اعلان (بلاگ پوسٹ)"
+    },
+    "query": "Nexus 4 Nexus 10 announcement Android 4.2"
+   }
   },
   {
    "id": "nexus_7_2012",
@@ -2032,7 +2720,23 @@
    ],
    "latestApi": 22,
    "officialUrl": "https://www.google.com/search?q=Nexus+7+(2012)+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2012-06-27",
+    "event": {
+     "en": "Google I/O 2012",
+     "ur": "گوگل آئی/او 2012"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Hugo Barra, Google's Android product lead",
+     "ur": "ہیوگو بارا، گوگل کے اینڈرائیڈ پروڈکٹ سربراہ"
+    },
+    "query": "Google I/O 2012 keynote Nexus 7 announcement"
+   }
   },
   {
    "id": "nexus_10",
@@ -2061,7 +2765,23 @@
    ],
    "latestApi": 22,
    "officialUrl": "https://www.google.com/search?q=Nexus+10+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2012-10-29",
+    "event": {
+     "en": "Nexus 4 and Nexus 10 announcement (event cancelled by Hurricane Sandy)",
+     "ur": "نیکسس 4 اور نیکسس 10 کا اعلان (طوفان سینڈی کی وجہ سے تقریب منسوخ)"
+    },
+    "place": {
+     "en": "Online / press",
+     "ur": "آن لائن / پریس"
+    },
+    "presenter": {
+     "en": "Announced by Google (blog post)",
+     "ur": "گوگل کی طرف سے اعلان (بلاگ پوسٹ)"
+    },
+    "query": "Nexus 4 Nexus 10 announcement Android 4.2"
+   }
   },
   {
    "id": "nexus_5",
@@ -2090,7 +2810,23 @@
    ],
    "latestApi": 23,
    "officialUrl": "https://www.google.com/search?q=Nexus+5+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2013-10-31",
+    "event": {
+     "en": "Nexus 5 and Android 4.4 KitKat announcement",
+     "ur": "نیکسس 5 اور اینڈرائیڈ 4.4 کٹ کیٹ کا اعلان"
+    },
+    "place": {
+     "en": "Online / press",
+     "ur": "آن لائن / پریس"
+    },
+    "presenter": {
+     "en": "Announced by Google (blog post)",
+     "ur": "گوگل کی طرف سے اعلان (بلاگ پوسٹ)"
+    },
+    "query": "Nexus 5 announcement KitKat Google"
+   }
   },
   {
    "id": "nexus_7_2013",
@@ -2119,7 +2855,23 @@
    ],
    "latestApi": 23,
    "officialUrl": "https://www.google.com/search?q=Nexus+7+(2013)+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2013-07-24",
+    "event": {
+     "en": "Breakfast with Sundar Pichai",
+     "ur": "بریک فاسٹ ود سندر پچائی"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Sundar Pichai",
+     "ur": "سندر پچائی"
+    },
+    "query": "Breakfast with Sundar Pichai 2013 Nexus 7"
+   }
   },
   {
    "id": "nexus_6",
@@ -2148,7 +2900,23 @@
    ],
    "latestApi": 25,
    "officialUrl": "https://www.google.com/search?q=Nexus+6+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2014-10-15",
+    "event": {
+     "en": "Nexus 6, Nexus 9 and Android 5.0 Lollipop announcement",
+     "ur": "نیکسس 6، نیکسس 9 اور اینڈرائیڈ 5.0 لالی پاپ کا اعلان"
+    },
+    "place": {
+     "en": "Online / press",
+     "ur": "آن لائن / پریس"
+    },
+    "presenter": {
+     "en": "Announced by Google (blog post and video)",
+     "ur": "گوگل کی طرف سے اعلان (بلاگ پوسٹ اور ویڈیو)"
+    },
+    "query": "Nexus 6 Nexus 9 Android Lollipop announcement"
+   }
   },
   {
    "id": "nexus_9",
@@ -2177,7 +2945,23 @@
    ],
    "latestApi": 25,
    "officialUrl": "https://www.google.com/search?q=Nexus+9+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2014-10-15",
+    "event": {
+     "en": "Nexus 6, Nexus 9 and Android 5.0 Lollipop announcement",
+     "ur": "نیکسس 6، نیکسس 9 اور اینڈرائیڈ 5.0 لالی پاپ کا اعلان"
+    },
+    "place": {
+     "en": "Online / press",
+     "ur": "آن لائن / پریس"
+    },
+    "presenter": {
+     "en": "Announced by Google (blog post and video)",
+     "ur": "گوگل کی طرف سے اعلان (بلاگ پوسٹ اور ویڈیو)"
+    },
+    "query": "Nexus 6 Nexus 9 Android Lollipop announcement"
+   }
   },
   {
    "id": "nexus_5x",
@@ -2206,7 +2990,23 @@
    ],
    "latestApi": 27,
    "officialUrl": "https://www.google.com/search?q=Nexus+5X+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2015-09-29",
+    "event": {
+     "en": "Google event: Nexus 5X, Nexus 6P and Android 6.0",
+     "ur": "گوگل کی تقریب: نیکسس 5X، نیکسس 6P اور اینڈرائیڈ 6.0"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Sundar Pichai and Google's Android team",
+     "ur": "سندر پچائی اور گوگل کی اینڈرائیڈ ٹیم"
+    },
+    "query": "Google event 2015 Nexus 5X Nexus 6P Chromecast"
+   }
   },
   {
    "id": "nexus_6p",
@@ -2235,7 +3035,23 @@
    ],
    "latestApi": 27,
    "officialUrl": "https://www.google.com/search?q=Nexus+6P+Nexus+site%3Agoogle.com",
-   "officialIsStore": false
+   "officialIsStore": false,
+   "launch": {
+    "date": "2015-09-29",
+    "event": {
+     "en": "Google event: Nexus 5X, Nexus 6P and Android 6.0",
+     "ur": "گوگل کی تقریب: نیکسس 5X، نیکسس 6P اور اینڈرائیڈ 6.0"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Sundar Pichai and Google's Android team",
+     "ur": "سندر پچائی اور گوگل کی اینڈرائیڈ ٹیم"
+    },
+    "query": "Google event 2015 Nexus 5X Nexus 6P Chromecast"
+   }
   }
  ]
 }

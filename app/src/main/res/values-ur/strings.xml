@@ -314,6 +314,14 @@
     <string name="about_credits_title">شکریہ اور حوالہ جات</string>
     <string name="about_credits_body">GSMArena (gsmarena.com) کی طرف سے تکنیکی تفصیلات: کسی بھی آلے کی تفصیلات سے اس کا اسپیکس صفحہ کھولیں۔\niFixit (ifixit.com) کی طرف سے مرمت کی آسانی کے اسکور: مکمل ٹیئر ڈاؤن وہیں دیکھیں۔\nخصوصیات کی دستیابی: whereisenabled.com۔\nگوگل کی بند کردہ مصنوعات: killedbygoogle.com۔\nپکسل ڈراپ کی تاریخ گوگل کے اعلانات، اینڈرائیڈ اتھارٹی، 9to5Google اور دیگر خبروں سے مرتب کی گئی ہے۔</string>
     <string name="repair_provisional">iFixit کے ابتدائی جائزے کا عارضی اسکور۔</string>
+    <string name="pixel_launch">اجرا کی معلومات</string>
+    <string name="launch_date">متعارف کرایا گیا</string>
+    <string name="launch_event">تقریب</string>
+    <string name="launch_place">مقام</string>
+    <string name="launch_presenter">پیش کنندہ</string>
+    <string name="link_youtube">یوٹیوب پر اجرا دیکھیں</string>
+    <string name="set_shelf_color">شیلف: کارڈ کو آلے کے رنگ میں رنگیں</string>
+    <string name="shelf_story">پس منظر</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
 </resources>

@@ -133,7 +133,13 @@ fun PixistoryRoot(container: AppContainer, pendingAction: String?, onActionConsu
                 )
             }
         }
-        if (shelfOpen) ShelfScreen(vm, fold) { shelfOpen = false }
+        if (shelfOpen) {
+            ShelfScreen(
+                vm, fold,
+                onOpenDevice = { id -> selectedId = id; tabName = MainTab.DEVICES.name; shelfOpen = false },
+                onClose = { shelfOpen = false },
+            )
+        }
         if (aboutOpen) AboutScreen { aboutOpen = false }
         if (showLaunch) LaunchPopup { showLaunch = false }
     }
