@@ -323,4 +323,9 @@ S = {
     'link_youtube': ('Watch the launch on YouTube', 'یوٹیوب پر اجرا دیکھیں'),
     'set_shelf_color': ("Shelf: tint the card with the device's colour", 'شیلف: کارڈ کو آلے کے رنگ میں رنگیں'),
     'shelf_story': ('Backstory', 'پس منظر'),
+    'shelf_ownership': ('Ownership', 'ملکیت'),
+    'shelf_added': ('Added %1$s', 'شامل کیا گیا %1$s'),
+    'shelf_owned_days': ('Owned for %1$d days', '%1$d دن سے آپ کی ملکیت میں'),
+    'tab_discover': ('Discover', 'دریافت'),
+    'launch_line': ('Introduced %1$s • %2$s', 'متعارف: %1$s • %2$s'),
 }

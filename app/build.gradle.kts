@@ -23,8 +23,8 @@ android {
         applicationId = "com.pixistory"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "2.0"
         buildConfigField("String", "ANTHROPIC_API_KEY", "\"${secret("ANTHROPIC_API_KEY")}\"")
         buildConfigField("String", "ANTHROPIC_MODEL", "\"${secret("ANTHROPIC_MODEL", "claude-sonnet-5-5")}\"")
         buildConfigField("String", "GEMINI_API_KEY", "\"${secret("GEMINI_API_KEY")}\"")

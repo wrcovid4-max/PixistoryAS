@@ -62,7 +62,7 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
         OutlinedButton(onClick = { uri.openUri(model.officialUrl) }, modifier = Modifier.fillMaxWidth()) {
             Text(stringResource(if (model.officialIsStore) R.string.link_official_store else R.string.link_official_search))
         }
-        OutlinedButton(onClick = { uri.openUri("https://www.gsmarena.com/res.php3?sSearch=$q") }, modifier = Modifier.fillMaxWidth()) {
+        OutlinedButton(onClick = { uri.openUri("https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=" + URLEncoder.encode(model.name, "UTF-8").replace("+", "%20")) }, modifier = Modifier.fillMaxWidth()) {
             Text(stringResource(R.string.link_gsmarena))
         }
         model.ifixitScore?.let { score ->

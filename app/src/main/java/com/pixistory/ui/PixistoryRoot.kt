@@ -9,7 +9,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Analytics
 import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.Devices
-import androidx.compose.material.icons.filled.NewReleases
 import androidx.compose.material.icons.filled.Public
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
@@ -18,6 +17,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.pixistory.AppContainer
@@ -27,16 +27,14 @@ import com.pixistory.ui.analysis.AnalysisScreen
 import com.pixistory.ui.common.rememberFoldState
 import com.pixistory.ui.devices.DeviceEditorScreen
 import com.pixistory.ui.devices.DevicesScreen
-import com.pixistory.ui.drops.PixelDropsScreen
-import com.pixistory.ui.features.FeaturesScreen
+import com.pixistory.ui.features.DiscoverScreen
 import com.pixistory.ui.settings.AboutScreen
 import com.pixistory.ui.settings.SettingsScreen
 import com.pixistory.ui.shelf.ShelfScreen
 
 enum class MainTab(@StringRes val label: Int, val icon: ImageVector) {
     DEVICES(R.string.tab_devices, Icons.Filled.Devices),
-    DROPS(R.string.tab_drops, Icons.Filled.NewReleases),
-    FEATURES(R.string.tab_features, Icons.Filled.Public),
+    DISCOVER(R.string.tab_discover, Icons.Filled.Public),
     ANALYSIS(R.string.tab_analysis, Icons.Filled.Analytics),
     ASK(R.string.tab_ask, Icons.Filled.AutoAwesome),
     SETTINGS(R.string.tab_settings, Icons.Filled.Settings),
@@ -74,7 +72,7 @@ fun PixistoryRoot(container: AppContainer, pendingAction: String?, onActionConsu
             bottomBar = {
                 // Cover screen / phone: bottom bar. Unfolded Pixel Fold or tablet: side rail.
                 if (!fold.isWide) {
-                    NavigationBar {
+                    NavigationBar(containerColor = MaterialTheme.colorScheme.surface, tonalElevation = 0.dp) {
                         MainTab.entries.forEach { t ->
                             NavigationBarItem(
                                 selected = t == tab,
@@ -111,8 +109,7 @@ fun PixistoryRoot(container: AppContainer, pendingAction: String?, onActionConsu
                 ) {
                     when (tab) {
                         MainTab.DEVICES -> DevicesScreen(vm, fold, selectedId, { selectedId = it }, { shelfOpen = true })
-                        MainTab.DROPS -> PixelDropsScreen(vm, fold)
-                        MainTab.FEATURES -> FeaturesScreen(vm, fold)
+                        MainTab.DISCOVER -> DiscoverScreen(vm, fold)
                         MainTab.ANALYSIS -> AnalysisScreen(vm, fold)
                         MainTab.ASK -> AskScreen(vm, fold)
                         MainTab.SETTINGS -> SettingsScreen(vm, onOpenShelf = { shelfOpen = true }, onOpenAbout = { aboutOpen = true })

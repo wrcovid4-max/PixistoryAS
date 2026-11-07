@@ -43,8 +43,8 @@ fun AnalysisScreen(vm: AppViewModel, fold: FoldState) {
             },
         )
         Row(Modifier.padding(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            FilterChip(selected = page == 0, onClick = { page = 0 }, label = { Text(stringResource(R.string.analysis_charts)) })
-            FilterChip(selected = page == 1, onClick = { page = 1 }, label = { Text(stringResource(R.string.analysis_coverage)) })
+            PixiChip(selected = page == 0, onClick = { page = 0 }, label = { Text(stringResource(R.string.analysis_charts)) })
+            PixiChip(selected = page == 1, onClick = { page = 1 }, label = { Text(stringResource(R.string.analysis_coverage)) })
         }
         if (devices.isEmpty()) {
             EmptyState(Icons.Filled.Analytics, stringResource(R.string.empty_title), stringResource(R.string.analysis_empty))
@@ -116,12 +116,18 @@ private fun Charts(stats: com.pixistory.analysis.Stats, currency: String) {
 
 @Composable
 private fun Big(value: String, label: String, color: androidx.compose.ui.graphics.Color) {
+    val c = MaterialTheme.colorScheme
+    val shape = androidx.compose.foundation.shape.RoundedCornerShape(16.dp)
     Column(
-        Modifier.clip(androidx.compose.foundation.shape.RoundedCornerShape(16.dp)).background(color.copy(alpha = 0.15f)).padding(horizontal = 18.dp, vertical = 10.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
+        Modifier.clip(shape).background(c.surfaceContainerLow).border(1.dp, c.outlineVariant, shape).padding(horizontal = 18.dp, vertical = 12.dp),
+        horizontalAlignment = Alignment.Start,
     ) {
-        Text(value, style = MaterialTheme.typography.headlineMedium, color = color)
-        Text(label, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Text(value, style = MaterialTheme.typography.headlineMedium, color = c.onSurface)
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Box(Modifier.size(8.dp).clip(androidx.compose.foundation.shape.CircleShape).background(color))
+            Spacer(Modifier.width(6.dp))
+            Text(label, style = MaterialTheme.typography.labelMedium, color = c.onSurfaceVariant)
+        }
     }
 }
 
@@ -137,9 +143,9 @@ private fun Coverage(rows: List<CoverageRow>, covered: Int, span: Int, missing: 
             if (missing.isNotEmpty()) Text(stringResource(R.string.coverage_missing, missing.joinToString(", ")), style = MaterialTheme.typography.bodyMedium)
         }
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            FilterChip(selected = filter == 0, onClick = { filter = 0 }, label = { Text(stringResource(R.string.filter_all)) })
-            FilterChip(selected = filter == 1, onClick = { filter = 1 }, label = { Text(stringResource(R.string.coverage_covered)) })
-            FilterChip(selected = filter == 2, onClick = { filter = 2 }, label = { Text(stringResource(R.string.coverage_gaps)) })
+            PixiChip(selected = filter == 0, onClick = { filter = 0 }, label = { Text(stringResource(R.string.filter_all)) })
+            PixiChip(selected = filter == 1, onClick = { filter = 1 }, label = { Text(stringResource(R.string.coverage_covered)) })
+            PixiChip(selected = filter == 2, onClick = { filter = 2 }, label = { Text(stringResource(R.string.coverage_gaps)) })
         }
     }
     val firstIdx = rows.indexOfFirst { it.covered }

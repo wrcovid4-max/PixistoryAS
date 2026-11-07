@@ -322,6 +322,11 @@
     <string name="link_youtube">Watch the launch on YouTube</string>
     <string name="set_shelf_color">Shelf: tint the card with the device\'s colour</string>
     <string name="shelf_story">Backstory</string>
+    <string name="shelf_ownership">Ownership</string>
+    <string name="shelf_added">Added %1$s</string>
+    <string name="shelf_owned_days">Owned for %1$d days</string>
+    <string name="tab_discover">Discover</string>
+    <string name="launch_line">Introduced %1$s • %2$s</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
 </resources>

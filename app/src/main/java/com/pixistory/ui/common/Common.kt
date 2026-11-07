@@ -8,6 +8,8 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.statusBarsPadding
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -36,6 +38,7 @@ import androidx.compose.material.icons.filled.Watch
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.Card
 import androidx.compose.material3.FilterChip
+import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -160,79 +163,113 @@ fun PatchChip(patch: String, modifier: Modifier = Modifier) {
     }
 }
 
-/** Top bar tinted with the brand colour. */
+/**
+ * Page header: a large, quiet title on the page background (no coloured bar). Detail screens pass
+ * large = false for a compact title next to the back arrow.
+ */
 @Composable
 fun PixiTopBar(
     title: @Composable () -> Unit,
     navigationIcon: @Composable () -> Unit = {},
     actions: @Composable RowScope.() -> Unit = {},
+    large: Boolean = true,
 ) {
     val c = MaterialTheme.colorScheme
-    TopAppBar(
-        title = title,
-        navigationIcon = navigationIcon,
-        actions = actions,
-        colors = TopAppBarDefaults.topAppBarColors(
-            containerColor = c.primaryContainer,
-            titleContentColor = c.onPrimaryContainer,
-            navigationIconContentColor = c.onPrimaryContainer,
-            actionIconContentColor = c.onPrimaryContainer,
-        ),
-    )
-}
-
-/** A card with a coloured accent bar; the colour is picked from the title unless given. */
-@Composable
-fun SectionCard(title: String, modifier: Modifier = Modifier, accent: Color? = null, content: @Composable () -> Unit) {
-    val c = MaterialTheme.colorScheme
-    val palette = listOf(c.primary, c.secondary, c.tertiary, c.error)
-    val color = accent ?: palette[(title.hashCode() and 0x7fffffff) % palette.size]
-    Card(
-        modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = c.surfaceContainerLow),
+    Row(
+        Modifier
+            .fillMaxWidth()
+            .background(c.surface)
+            .statusBarsPadding()
+            .padding(start = if (large) 20.dp else 4.dp, end = 8.dp, top = if (large) 14.dp else 4.dp, bottom = if (large) 8.dp else 4.dp)
+            .heightIn(min = 48.dp),
+        verticalAlignment = Alignment.CenterVertically,
     ) {
-        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Box(Modifier.width(5.dp).height(22.dp).clip(RoundedCornerShape(3.dp)).background(color))
-                Spacer(Modifier.width(10.dp))
-                Text(title, style = MaterialTheme.typography.titleMedium, color = color)
-            }
-            content()
+        navigationIcon()
+        androidx.compose.material3.ProvideTextStyle(
+            if (large) MaterialTheme.typography.headlineMedium.copy(color = c.onSurface)
+            else MaterialTheme.typography.titleLarge.copy(color = c.onSurface),
+        ) {
+            Box(Modifier.weight(1f).padding(start = if (large) 0.dp else 8.dp)) { title() }
         }
+        Row(verticalAlignment = Alignment.CenterVertically) { actions() }
     }
 }
 
-/** Two-column table with striped rows. Rows whose value is blank are left out. */
+/** A section: small muted title, then content on a white card with a hairline border. */
+@Composable
+fun SectionCard(title: String, modifier: Modifier = Modifier, accent: Color? = null, content: @Composable () -> Unit) {
+    val c = MaterialTheme.colorScheme
+    val shape = RoundedCornerShape(20.dp)
+    Column(modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text(
+            title.uppercase(),
+            style = MaterialTheme.typography.labelMedium,
+            color = accent ?: c.onSurfaceVariant,
+            modifier = Modifier.padding(start = 6.dp),
+        )
+        Column(
+            Modifier.fillMaxWidth().clip(shape).background(c.surfaceContainerLow).border(1.dp, c.outlineVariant, shape).padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+        ) { content() }
+    }
+}
+
+/** Two-column list with hairline dividers. Rows whose value is blank are left out. */
 @Composable
 fun InfoTable(rows: List<Pair<String, String>>, modifier: Modifier = Modifier) {
     val shown = rows.filter { it.second.isNotBlank() }
     if (shown.isEmpty()) return
     val c = MaterialTheme.colorScheme
-    val shape = RoundedCornerShape(12.dp)
-    Column(modifier.fillMaxWidth().clip(shape).border(1.dp, c.outlineVariant, shape)) {
+    Column(modifier.fillMaxWidth()) {
         shown.forEachIndexed { i, (k, v) ->
-            Row(
-                Modifier
-                    .fillMaxWidth()
-                    .background(if (i % 2 == 0) c.surfaceContainerHigh.copy(alpha = 0.7f) else c.surfaceContainerLowest.copy(alpha = 0.35f))
-                    .padding(horizontal = 12.dp, vertical = 9.dp),
-                verticalAlignment = Alignment.Top,
-            ) {
-                Text(k, Modifier.weight(0.38f), style = MaterialTheme.typography.labelLarge, color = c.primary)
-                Text(v, Modifier.weight(0.62f), style = MaterialTheme.typography.bodyMedium)
+            if (i > 0) androidx.compose.material3.HorizontalDivider(color = c.outlineVariant, thickness = 0.5.dp)
+            Row(Modifier.fillMaxWidth().padding(vertical = 10.dp), verticalAlignment = Alignment.Top) {
+                Text(k, Modifier.weight(0.38f), style = MaterialTheme.typography.bodyMedium, color = c.onSurfaceVariant)
+                Text(v, Modifier.weight(0.62f), style = MaterialTheme.typography.bodyMedium, color = c.onSurface)
             }
         }
     }
 }
 
-/** Small coloured status pill. */
+/** Small status label: tinted text on a soft tinted rounded rectangle. */
 @Composable
 fun StatusPill(text: String, color: Color, modifier: Modifier = Modifier) {
     Text(
         text,
-        modifier = modifier.clip(RoundedCornerShape(50)).background(color.copy(alpha = 0.16f)).padding(horizontal = 10.dp, vertical = 3.dp),
+        modifier = modifier.clip(RoundedCornerShape(8.dp)).background(color.copy(alpha = 0.12f)).padding(horizontal = 8.dp, vertical = 3.dp),
         style = MaterialTheme.typography.labelMedium,
         color = color,
+    )
+}
+
+/** The app's filter chip: quiet when off, soft blue when on. */
+@Composable
+fun PixiChip(
+    selected: Boolean,
+    onClick: () -> Unit,
+    label: @Composable () -> Unit,
+    modifier: Modifier = Modifier,
+    leadingIcon: (@Composable () -> Unit)? = null,
+) {
+    val c = MaterialTheme.colorScheme
+    FilterChip(
+        selected = selected,
+        onClick = onClick,
+        label = label,
+        modifier = modifier,
+        leadingIcon = leadingIcon,
+        shape = RoundedCornerShape(12.dp),
+        colors = FilterChipDefaults.filterChipColors(
+            containerColor = c.surfaceContainerLow,
+            labelColor = c.onSurfaceVariant,
+            selectedContainerColor = c.primaryContainer,
+            selectedLabelColor = c.onPrimaryContainer,
+            selectedLeadingIconColor = c.onPrimaryContainer,
+        ),
+        border = FilterChipDefaults.filterChipBorder(
+            enabled = true, selected = selected,
+            borderColor = c.outlineVariant, selectedBorderColor = c.primary.copy(alpha = 0.35f),
+        ),
     )
 }
 
@@ -345,7 +382,7 @@ fun CurrencySwitcher(selected: String, onSelect: (String) -> Unit, modifier: Mod
     val options = remember(selected) { (listOf(selected) + Currencies.COMMON).filter { it.isNotBlank() }.distinct() }
     val chips: @Composable () -> Unit = {
         options.forEach { code ->
-            FilterChip(
+            PixiChip(
                 selected = code == selected,
                 onClick = { onSelect(code) },
                 label = { Text("${Currencies.flagOf(code)} $code".trim()) },

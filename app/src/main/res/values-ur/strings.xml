@@ -322,6 +322,11 @@
     <string name="link_youtube">یوٹیوب پر اجرا دیکھیں</string>
     <string name="set_shelf_color">شیلف: کارڈ کو آلے کے رنگ میں رنگیں</string>
     <string name="shelf_story">پس منظر</string>
+    <string name="shelf_ownership">ملکیت</string>
+    <string name="shelf_added">شامل کیا گیا %1$s</string>
+    <string name="shelf_owned_days">%1$d دن سے آپ کی ملکیت میں</string>
+    <string name="tab_discover">دریافت</string>
+    <string name="launch_line">متعارف: %1$s • %2$s</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
 </resources>

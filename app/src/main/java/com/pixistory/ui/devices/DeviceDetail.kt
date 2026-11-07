@@ -40,6 +40,8 @@ import com.pixistory.util.AndroidVersions
 import com.pixistory.util.formatDate
 import com.pixistory.util.formatMoney
 import com.pixistory.util.patchAgeDays
+import java.time.LocalDate
+import java.time.ZoneId
 
 @Composable
 fun DeviceDetailScreen(
@@ -92,6 +94,14 @@ fun DeviceDetailScreen(
                             StatusPill(device.statusEnum.text(), statusColor(device.statusEnum))
                             StatusPill(device.typeEnum.text(), MaterialTheme.colorScheme.primary)
                             if (device.statusEnum == DeviceStatus.OWNED && device.securityPatch.isNotBlank()) PatchChip(device.securityPatch)
+                        }
+                        pixel?.launch?.let { l ->
+                            val when_ = runCatching { formatDate(LocalDate.parse(l.date).atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli()) }.getOrDefault(l.date)
+                            Text(
+                                stringResource(R.string.launch_line, when_, l.event.get(lang)),
+                                style = MaterialTheme.typography.bodySmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
                         }
                     }
                 }

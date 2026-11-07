@@ -32,8 +32,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 val ChartColors = listOf(
-    Color(0xFF4F8DF7), Color(0xFF2EBFA5), Color(0xFFF2A93B), Color(0xFFE5645F),
-    Color(0xFF9B7BE6), Color(0xFF5CC8F0), Color(0xFFB0B84A), Color(0xFFD97CB3),
+    Color(0xFF5B8DEF), Color(0xFF4FB3A9), Color(0xFFE3A857), Color(0xFFD9776F),
+    Color(0xFF9A86D6), Color(0xFF7C8AA0), Color(0xFF8BB36B), Color(0xFFC98FB0),
 )
 
 @Composable

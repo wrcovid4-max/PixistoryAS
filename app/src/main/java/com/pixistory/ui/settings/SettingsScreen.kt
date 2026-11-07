@@ -12,6 +12,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
+import com.pixistory.ui.common.PixiChip
 import com.pixistory.ui.common.PixiTopBar
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -45,9 +46,9 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
 
                 SectionCard(stringResource(R.string.set_language)) {
                     FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        FilterChip(selected = saved == "en", onClick = { AppLanguage.set("en") }, label = { Text("English") })
-                        FilterChip(selected = saved == "ur", onClick = { AppLanguage.set("ur") }, label = { Text("اردو") })
-                        FilterChip(selected = saved.isBlank(), onClick = { AppLanguage.set("") }, label = { Text(stringResource(R.string.set_system_default)) })
+                        PixiChip(selected = saved == "en", onClick = { AppLanguage.set("en") }, label = { Text("English") })
+                        PixiChip(selected = saved == "ur", onClick = { AppLanguage.set("ur") }, label = { Text("اردو") })
+                        PixiChip(selected = saved.isBlank(), onClick = { AppLanguage.set("") }, label = { Text(stringResource(R.string.set_system_default)) })
                     }
                 }
 
@@ -81,7 +82,7 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
                 SectionCard(stringResource(R.string.set_appearance)) {
                     FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         listOf("system" to R.string.theme_system, "light" to R.string.theme_light, "dark" to R.string.theme_dark).forEach { (k, label) ->
-                            FilterChip(selected = s.theme == k, onClick = { vm.updateSettings { it.copy(theme = k) } }, label = { Text(stringResource(label)) })
+                            PixiChip(selected = s.theme == k, onClick = { vm.updateSettings { it.copy(theme = k) } }, label = { Text(stringResource(label)) })
                         }
                     }
                     Row(verticalAlignment = Alignment.CenterVertically) {
@@ -106,7 +107,7 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
                         Text(stringResource(R.string.set_patch_after), style = MaterialTheme.typography.bodySmall)
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             listOf(90, 180, 365).forEach { days ->
-                                FilterChip(selected = s.patchDays == days, onClick = { vm.updateSettings { it.copy(patchDays = days) } }, label = { Text(stringResource(R.string.days_n, days)) })
+                                PixiChip(selected = s.patchDays == days, onClick = { vm.updateSettings { it.copy(patchDays = days) } }, label = { Text(stringResource(R.string.days_n, days)) })
                             }
                         }
                     }

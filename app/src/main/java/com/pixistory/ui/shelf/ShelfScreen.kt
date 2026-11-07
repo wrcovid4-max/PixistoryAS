@@ -69,6 +69,7 @@ private const val FACE_SUMMARY = 0
 private const val FACE_DETAILS = 1
 private const val FACE_SPECS = 2
 private const val FACE_STORY = 3
+private const val FACE_OWNERSHIP = 4
 
 /**
  * Shelf mode: a glowing night-stand display. A big clock and a swipeable stack of glass cards, one per
@@ -97,8 +98,9 @@ fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String) -> Uni
 
     LaunchedEffect(Unit) { while (true) { now = LocalDateTime.now(); delay(15_000) } }
 
-    // Each device: show it, animate into one random face for a short time, then move to the next one.
-    LaunchedEffect(pager.currentPage, playing, devices.size) {
+    // Each device: show it, animate into one random face for a few seconds, then move on to the next device.
+    // Keyed on the *settled* page so a scroll that is still moving is never cancelled half way.
+    LaunchedEffect(pager.settledPage, playing, devices.size) {
         face = FACE_SUMMARY
         if (devices.isEmpty()) return@LaunchedEffect
         // a tiny wobble as the device arrives
@@ -106,13 +108,17 @@ fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String) -> Uni
             for (t in listOf(2.4f, -2.0f, 1.3f, -0.7f, 0f)) wobble.animateTo(t, tween(110))
         }
         if (!playing) return@LaunchedEffect
-        delay(2200)
-        val d = devices.getOrNull(pager.currentPage) ?: return@LaunchedEffect
+        delay(1600)
+        val d = devices.getOrNull(pager.settledPage) ?: return@LaunchedEffect
         val known = knowledge.match(d.name, d.model)
-        val options = buildList { add(FACE_DETAILS); if (known != null) { add(FACE_SPECS); add(FACE_STORY) } }
+        val options = buildList {
+            add(FACE_DETAILS)
+            add(FACE_OWNERSHIP)
+            if (known != null) { add(FACE_SPECS); add(FACE_STORY) }
+        }
         face = options.random()
-        delay(6500)
-        if (devices.size > 1) pager.animateScrollToPage((pager.currentPage + 1) % devices.size)
+        delay(6000)
+        if (devices.size > 1) pager.animateScrollToPage((pager.settledPage + 1) % devices.size)
     }
     DisposableEffect(Unit) {
         val window = context.findActivity()?.window
@@ -274,13 +280,24 @@ private fun GlassCard(device: DeviceEntity, vm: AppViewModel, face: Int, tint: C
                     FACE_DETAILS -> {
                         FaceTitle(stringResource(R.string.section_details))
                         val rows = listOfNotNull(
-                            (device.typeEnum.text()),
+                            listOf(device.brand, device.model).filter { it.isNotBlank() }.joinToString(" ").takeIf { it.isNotBlank() && it != device.name },
+                            device.typeEnum.text(),
                             if (device.apiLevel != null || device.androidVersion.isNotBlank()) AndroidVersions.label(device.apiLevel, device.androidVersion) else null,
                             device.releaseYear?.let { stringResource(R.string.f_released) + ": " + it },
                             device.securityPatch.takeIf { it.isNotBlank() }?.let { stringResource(R.string.f_patch) + ": " + it },
-                            device.storageGb?.let { "$it GB" + (device.ramGb?.let { r -> " • $r GB RAM" } ?: "") },
+                            listOfNotNull(device.storageGb?.let { "$it GB" }, device.ramGb?.let { "$it GB RAM" }).joinToString(" • ").takeIf { it.isNotBlank() },
+                            device.colorName.takeIf { it.isNotBlank() },
                         )
-                        rows.forEach { FaceLine(it) }
+                        rows.take(6).forEach { FaceLine(it) }
+                    }
+                    FACE_OWNERSHIP -> {
+                        FaceTitle(stringResource(R.string.shelf_ownership))
+                        val days = ((System.currentTimeMillis() - device.createdAt) / 86_400_000L).toInt().coerceAtLeast(0)
+                        FaceLine(stringResource(R.string.shelf_added, com.pixistory.util.formatDate(device.createdAt)))
+                        FaceLine(stringResource(R.string.shelf_owned_days, days))
+                        device.price?.let { FaceLine(stringResource(R.string.f_price) + ": " + com.pixistory.util.formatMoney(it, device.currency)) }
+                        device.groupName.takeIf { it.isNotBlank() }?.let { FaceLine(it) }
+                        device.notes.takeIf { it.isNotBlank() }?.let { FaceLine(it.take(90)) }
                     }
                     FACE_SPECS -> {
                         FaceTitle(stringResource(R.string.pixel_specs))
@@ -313,7 +330,7 @@ private fun FaceTitle(text: String) {
 
 @Composable
 private fun FaceLine(text: String) {
-    Text(text, color = Color.White.copy(alpha = 0.95f), fontSize = 14.sp, textAlign = TextAlign.Center, maxLines = 2, overflow = TextOverflow.Ellipsis)
+    Text(text, color = Color.White.copy(alpha = 0.95f), fontSize = 15.sp, textAlign = TextAlign.Center, maxLines = 2, overflow = TextOverflow.Ellipsis)
 }
 
 @Composable

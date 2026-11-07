@@ -45,7 +45,7 @@ import java.util.Locale
 
 /** History of Pixel Drops from 2024: searchable, filterable, with the exact Pixels that received each one. */
 @Composable
-fun PixelDropsScreen(vm: AppViewModel, fold: FoldState) {
+fun PixelDropsScreen(vm: AppViewModel, fold: FoldState, embedded: Boolean = false) {
     val knowledge = vm.container.knowledge
     val devices by vm.devices.collectAsStateWithLifecycle()
     val lang = currentLang()
@@ -70,7 +70,7 @@ fun PixelDropsScreen(vm: AppViewModel, fold: FoldState) {
     val selected = shown.firstOrNull { it.id == selectedId } ?: if (fold.isWide) shown.firstOrNull() else null
 
     Column(Modifier.fillMaxSize()) {
-        PixiTopBar(title = { Text(stringResource(R.string.tab_drops)) })
+        if (!embedded) PixiTopBar(title = { Text(stringResource(R.string.tab_drops)) })
         // search + filters
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Column(Modifier.widthIn(max = 860.dp).fillMaxWidth()) {
@@ -84,10 +84,10 @@ fun PixelDropsScreen(vm: AppViewModel, fold: FoldState) {
                     modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp),
                 )
                 LazyRow(contentPadding = PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    item { FilterChip(selected = year == null, onClick = { year = null }, label = { Text(stringResource(R.string.filter_all)) }) }
-                    items(years) { y -> FilterChip(selected = year == y, onClick = { year = y }, label = { Text(y.toString()) }) }
+                    item { PixiChip(selected = year == null, onClick = { year = null }, label = { Text(stringResource(R.string.filter_all)) }) }
+                    items(years) { y -> PixiChip(selected = year == y, onClick = { year = y }, label = { Text(y.toString()) }) }
                     if (mine.isNotEmpty()) item {
-                        FilterChip(
+                        PixiChip(
                             selected = mineOnly, onClick = { mineOnly = !mineOnly },
                             leadingIcon = { Icon(Icons.Filled.Star, null, Modifier.size(16.dp)) },
                             label = { Text(stringResource(R.string.drops_my_pixels)) },
@@ -153,7 +153,7 @@ private fun matches(d: PixelDrop, q: String, lang: String, knowledge: PixelKnowl
         d.devices.any { knowledge.model(it)?.name?.contains(t, true) == true }
 }
 
-private fun yearColor(year: Int, c: ColorScheme): Color = when (year % 3) { 0 -> c.primary; 1 -> c.secondary; else -> c.tertiary }
+private fun yearColor(year: Int, c: ColorScheme): Color = c.primary
 
 @Composable
 private fun DateBadge(drop: PixelDrop) {

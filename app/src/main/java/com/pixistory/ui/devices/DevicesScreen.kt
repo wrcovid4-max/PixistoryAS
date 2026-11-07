@@ -130,6 +130,7 @@ fun DevicesScreen(
                 value = query,
                 onValueChange = { query = it },
                 singleLine = true,
+                shape = androidx.compose.foundation.shape.RoundedCornerShape(14.dp),
                 leadingIcon = { Icon(Icons.Filled.Search, null) },
                 placeholder = { Text(stringResource(R.string.search_hint)) },
                 modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
@@ -139,7 +140,7 @@ fun DevicesScreen(
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
             ) {
                 items(StatusFilter.entries.toList()) { f ->
-                    FilterChip(selected = status == f, onClick = { status = f }, label = { Text(stringResource(f.label)) })
+                    PixiChip(selected = status == f, onClick = { status = f }, label = { Text(stringResource(f.label)) })
                 }
             }
             Row(Modifier.padding(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -270,8 +271,10 @@ private fun DeviceRow(device: DeviceEntity, selected: Boolean, vm: AppViewModel,
     val files = vm.container.files
     Card(
         onClick = onClick,
+        shape = androidx.compose.foundation.shape.RoundedCornerShape(18.dp),
+        border = androidx.compose.foundation.BorderStroke(1.dp, if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outlineVariant),
         colors = CardDefaults.cardColors(
-            containerColor = if (selected) MaterialTheme.colorScheme.secondaryContainer else MaterialTheme.colorScheme.surfaceContainerLow,
+            containerColor = if (selected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceContainerLow,
         ),
         modifier = Modifier.fillMaxWidth(),
     ) {

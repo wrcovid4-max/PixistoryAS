@@ -48,9 +48,9 @@ fun FeaturesScreen(vm: AppViewModel, fold: FoldState) {
     Column(Modifier.fillMaxSize()) {
         PixiTopBar(title = { Text(stringResource(R.string.tab_features)) })
         Row(Modifier.padding(horizontal = 16.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            FilterChip(selected = section == 0, onClick = { section = 0 }, label = { Text(stringResource(R.string.feat_availability)) })
-            FilterChip(selected = section == 1, onClick = { section = 1 }, label = { Text(stringResource(R.string.feat_graveyard)) })
-            FilterChip(selected = section == 2, onClick = { section = 2 }, label = { Text(stringResource(R.string.feat_fold)) })
+            PixiChip(selected = section == 0, onClick = { section = 0 }, label = { Text(stringResource(R.string.feat_availability)) })
+            PixiChip(selected = section == 1, onClick = { section = 1 }, label = { Text(stringResource(R.string.feat_graveyard)) })
+            PixiChip(selected = section == 2, onClick = { section = 2 }, label = { Text(stringResource(R.string.feat_fold)) })
         }
         Box(Modifier.weight(1f).fillMaxWidth()) {
             when (section) {
@@ -65,7 +65,7 @@ fun FeaturesScreen(vm: AppViewModel, fold: FoldState) {
 // ---------------------------------------------------------------- availability by country
 
 @Composable
-private fun AvailabilitySection(data: FeatureData, fold: FoldState) {
+internal fun AvailabilitySection(data: FeatureData, fold: FoldState) {
     var selectedSlug by rememberSaveable { mutableStateOf<String?>(null) }
     var query by rememberSaveable { mutableStateOf("") }
     val selected = data.countries.firstOrNull { it.slug == selectedSlug }
@@ -193,7 +193,7 @@ private fun FeatureGroup(title: String, features: List<AvailFeature>, color: Col
 // ---------------------------------------------------------------- Killed by Google
 
 @Composable
-private fun GraveyardSection(data: FeatureData) {
+internal fun GraveyardSection(data: FeatureData) {
     var query by rememberSaveable { mutableStateOf("") }
     var filter by rememberSaveable { mutableIntStateOf(0) }
     val uri = LocalUriHandler.current
@@ -220,7 +220,7 @@ private fun GraveyardSection(data: FeatureData) {
         )
         Row(Modifier.padding(16.dp, 8.dp).horizontalScrollRow(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             listOf(R.string.filter_all, R.string.grave_apps, R.string.grave_services, R.string.grave_hardware, R.string.grave_soon).forEachIndexed { i, r ->
-                FilterChip(selected = filter == i, onClick = { filter = i }, label = { Text(stringResource(r)) })
+                PixiChip(selected = filter == i, onClick = { filter = i }, label = { Text(stringResource(r)) })
             }
         }
         LazyColumn(contentPadding = PaddingValues(16.dp, 4.dp, 16.dp, 24.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -256,7 +256,7 @@ private fun GraveCard(g: GraveItem, today: String, onOpen: () -> Unit) {
 // ---------------------------------------------------------------- Pixel Fold apps
 
 @Composable
-private fun FoldAppsSection(data: FeatureData) {
+internal fun FoldAppsSection(data: FeatureData) {
     val uri = LocalUriHandler.current
     val c = MaterialTheme.colorScheme
     LazyColumn(contentPadding = PaddingValues(16.dp, 4.dp, 16.dp, 24.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {

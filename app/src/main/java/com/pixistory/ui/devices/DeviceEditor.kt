@@ -127,7 +127,7 @@ fun DeviceEditorScreen(
                 DropdownField(stringResource(R.string.f_type), d.typeEnum, DeviceType.entries.toList(), { it.text() }, { d = d.copy(type = it.name) }, Modifier.fillMaxWidth())
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     DeviceStatus.entries.forEach { s ->
-                        FilterChip(selected = d.statusEnum == s, onClick = { d = d.copy(status = s.name) }, label = { Text(s.text()) })
+                        PixiChip(selected = d.statusEnum == s, onClick = { d = d.copy(status = s.name) }, label = { Text(s.text()) })
                     }
                 }
 
