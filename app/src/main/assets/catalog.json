@@ -36,294 +36,6 @@
   "year": 2024
  },
  {
-  "name": "Galaxy S20",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2020,
-  "api": 29
- },
- {
-  "name": "Galaxy S21",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2021,
-  "api": 30
- },
- {
-  "name": "Galaxy S22",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2022,
-  "api": 31
- },
- {
-  "name": "Galaxy S23",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Galaxy S24",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2024,
-  "api": 34
- },
- {
-  "name": "Galaxy S25",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2025,
-  "api": 35
- },
- {
-  "name": "Galaxy Z Fold3",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2021,
-  "api": 31
- },
- {
-  "name": "Galaxy Z Flip3",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2021,
-  "api": 31
- },
- {
-  "name": "Galaxy Z Fold4",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2022,
-  "api": 32
- },
- {
-  "name": "Galaxy Z Flip4",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2022,
-  "api": 32
- },
- {
-  "name": "Galaxy Z Fold5",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Galaxy Z Flip5",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Galaxy Z Fold6",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2024,
-  "api": 34
- },
- {
-  "name": "Galaxy Z Flip6",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2024,
-  "api": 34
- },
- {
-  "name": "Galaxy Z Fold7",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2025,
-  "api": 36
- },
- {
-  "name": "Galaxy Z Flip7",
-  "brand": "Samsung",
-  "type": "FOLDABLE",
-  "year": 2025,
-  "api": 36
- },
- {
-  "name": "Galaxy A04s",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2022,
-  "api": 31
- },
- {
-  "name": "Galaxy A15",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 34
- },
- {
-  "name": "Galaxy A35 5G",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2024,
-  "api": 34
- },
- {
-  "name": "Galaxy A54 5G",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Galaxy A55 5G",
-  "brand": "Samsung",
-  "type": "PHONE",
-  "year": 2024,
-  "api": 34
- },
- {
-  "name": "Galaxy Tab S8",
-  "brand": "Samsung",
-  "type": "TABLET",
-  "year": 2022,
-  "api": 32
- },
- {
-  "name": "Galaxy Tab S9",
-  "brand": "Samsung",
-  "type": "TABLET",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Galaxy Watch6",
-  "brand": "Samsung",
-  "type": "WATCH",
-  "year": 2023
- },
- {
-  "name": "Galaxy Watch7",
-  "brand": "Samsung",
-  "type": "WATCH",
-  "year": 2024
- },
- {
-  "name": "Galaxy Buds2",
-  "brand": "Samsung",
-  "type": "EARBUDS",
-  "year": 2021
- },
- {
-  "name": "Galaxy Buds3 Pro",
-  "brand": "Samsung",
-  "type": "EARBUDS",
-  "year": 2024
- },
- {
-  "name": "Note 10 Pro",
-  "brand": "Infinix",
-  "type": "PHONE",
-  "year": 2021,
-  "api": 30
- },
- {
-  "name": "Zero 30 5G",
-  "brand": "Infinix",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "OnePlus 9 Pro",
-  "brand": "OnePlus",
-  "type": "PHONE",
-  "year": 2021,
-  "api": 30
- },
- {
-  "name": "OnePlus 11",
-  "brand": "OnePlus",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "OnePlus 12",
-  "brand": "OnePlus",
-  "type": "PHONE",
-  "year": 2024,
-  "api": 34
- },
- {
-  "name": "Xiaomi 13",
-  "brand": "Xiaomi",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Xiaomi 14",
-  "brand": "Xiaomi",
-  "type": "PHONE",
-  "year": 2024,
-  "api": 34
- },
- {
-  "name": "Redmi Note 13 Pro",
-  "brand": "Xiaomi",
-  "type": "PHONE",
-  "year": 2024,
-  "api": 33
- },
- {
-  "name": "Poco F5",
-  "brand": "Xiaomi",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Mi Smart Camera C100",
-  "brand": "Xiaomi",
-  "type": "CAMERA",
-  "year": 2021
- },
- {
-  "name": "Nothing Phone (1)",
-  "brand": "Nothing",
-  "type": "PHONE",
-  "year": 2022,
-  "api": 31
- },
- {
-  "name": "Nothing Phone (2)",
-  "brand": "Nothing",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Razr 40 Ultra",
-  "brand": "Motorola",
-  "type": "FOLDABLE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Xperia 1 V",
-  "brand": "Sony",
-  "type": "PHONE",
-  "year": 2023,
-  "api": 33
- },
- {
-  "name": "Buds T100",
-  "brand": "Realme",
-  "type": "EARBUDS",
-  "year": 2023
- },
- {
   "name": "Pixel",
   "brand": "Google",
   "type": "PHONE",
@@ -718,5 +430,65 @@
   "type": "TABLET",
   "year": 2012,
   "api": 17
+ },
+ {
+  "name": "Chromebook Pixel (2013)",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2013
+ },
+ {
+  "name": "Chromebook Pixel (2015)",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2015
+ },
+ {
+  "name": "Pixelbook",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2017
+ },
+ {
+  "name": "Pixel Slate",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2018
+ },
+ {
+  "name": "Pixelbook Go",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2019
+ },
+ {
+  "name": "Acer Googlebook 14",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2026
+ },
+ {
+  "name": "Dell XPS Googlebook",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2026
+ },
+ {
+  "name": "HP Googlebook 14",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2026
+ },
+ {
+  "name": "ASUS Googlebook 14",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2026
+ },
+ {
+  "name": "Lenovo Googlebook 15",
+  "brand": "Google",
+  "type": "LAPTOP",
+  "year": 2026
  }
 ]

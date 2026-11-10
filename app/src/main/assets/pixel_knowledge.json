@@ -865,6 +865,148 @@
      "ur": "پکسل سے پہلے کے آخری نیکسس فون"
     }
    ]
+  },
+  {
+   "id": "g_cbp",
+   "name": {
+    "en": "Chromebook Pixel (2013 and 2015)",
+    "ur": "کروم بک پکسل (2013 اور 2015)"
+   },
+   "year": 2013,
+   "history": {
+    "en": "The Chromebook Pixel was Google's first laptop, announced in February 2013 as a showcase for what a premium Chrome OS machine could be. Its sharp 2560 by 1700 touchscreen, aluminium body and 1,299 US dollar price were bold for a laptop that mainly ran a web browser. The 2015 model kept the screen, added Intel Broadwell chips and became the first laptop with USB-C ports, at 999 US dollars. Google stopped selling it in 2016 and moved the idea into the Pixelbook.",
+    "ur": "کروم بک پکسل گوگل کا پہلا لیپ ٹاپ تھا جو فروری 2013 میں اس بات کی نمائش کے طور پر متعارف ہوا کہ اعلیٰ درجے کی کروم او ایس مشین کیسی ہو سکتی ہے۔ اس کی واضح 2560×1700 ٹچ اسکرین، المونیم باڈی اور 1,299 امریکی ڈالر کی قیمت اس لیپ ٹاپ کے لیے جرات مندانہ تھی جو زیادہ تر ویب براؤزر چلاتا تھا۔ 2015 کے ماڈل نے وہی اسکرین رکھی، انٹیل براڈویل چپس شامل کیں اور 999 امریکی ڈالر میں یو ایس بی سی پورٹس والا پہلا لیپ ٹاپ بنا۔ گوگل نے 2016 میں اسے بیچنا بند کر دیا اور یہ خیال پکسل بک میں منتقل کیا۔"
+   },
+   "features": [
+    {
+     "en": "Google's first own-brand laptop",
+     "ur": "گوگل کا پہلا اپنے برانڈ کا لیپ ٹاپ"
+    },
+    {
+     "en": "2560 by 1700 touchscreen in a 3:2 shape",
+     "ur": "3:2 شکل میں 2560×1700 ٹچ اسکرین"
+    },
+    {
+     "en": "2015 model: first laptop with USB-C ports",
+     "ur": "2015 کا ماڈل: یو ایس بی سی پورٹس والا پہلا لیپ ٹاپ"
+    },
+    {
+     "en": "Premium aluminium body and a glowing light bar",
+     "ur": "اعلیٰ المونیم باڈی اور روشن لائٹ بار"
+    }
+   ]
+  },
+  {
+   "id": "g_pixelbook",
+   "name": {
+    "en": "Pixelbook (2017)",
+    "ur": "پکسل بک (2017)"
+   },
+   "year": 2017,
+   "history": {
+    "en": "The Pixelbook arrived at the Made by Google event in October 2017 as a premium convertible with a 360-degree hinge, a thin aluminium and glass body and the optional Pixelbook Pen. It was the first Chromebook with a dedicated Google Assistant key and one of the first to run Android apps from Google Play. Priced from 999 US dollars, it was admired and expensive, and Google removed it from its store in 2020.",
+    "ur": "پکسل بک اکتوبر 2017 میں میڈ بائی گوگل تقریب میں 360 ڈگری قبضے، پتلی المونیم اور شیشے کی باڈی اور اختیاری پکسل بک پین والے اعلیٰ کنورٹیبل کے طور پر آیا۔ یہ گوگل اسسٹنٹ کی مخصوص کلید والا پہلا کروم بک تھا اور ان اولین میں سے جو گوگل پلے سے اینڈرائیڈ ایپس چلاتے تھے۔ 999 امریکی ڈالر سے شروع ہونے والی قیمت پر اسے سراہا گیا مگر یہ مہنگا تھا، اور گوگل نے 2020 میں اسے اپنے اسٹور سے ہٹا دیا۔"
+   },
+   "features": [
+    {
+     "en": "360-degree convertible hinge",
+     "ur": "360 ڈگری کنورٹیبل قبضہ"
+    },
+    {
+     "en": "Pixelbook Pen with Google Assistant",
+     "ur": "گوگل اسسٹنٹ کے ساتھ پکسل بک پین"
+    },
+    {
+     "en": "Dedicated Google Assistant key",
+     "ur": "گوگل اسسٹنٹ کی مخصوص کلید"
+    },
+    {
+     "en": "Runs Android apps from Google Play",
+     "ur": "گوگل پلے سے اینڈرائیڈ ایپس چلاتا ہے"
+    }
+   ]
+  },
+  {
+   "id": "g_slate",
+   "name": {
+    "en": "Pixel Slate (2018)",
+    "ur": "پکسل سلیٹ (2018)"
+   },
+   "year": 2018,
+   "history": {
+    "en": "Announced in October 2018, the Pixel Slate was a detachable Chrome OS tablet with a sharp 3000 by 2000 display and an optional keyboard. It tried to make Chrome OS work as a touch-first tablet, but the software felt unfinished, and lower-end models with Celeron and Core m3 chips were criticised for being slow. Google stopped planning new Pixel Slate hardware in 2019.",
+    "ur": "اکتوبر 2018 میں متعارف ہونے والا پکسل سلیٹ علیحدہ ہو جانے والا کروم او ایس ٹیبلیٹ تھا جس میں 3000×2000 واضح ڈسپلے اور اختیاری کی بورڈ تھا۔ اس نے کروم او ایس کو ٹچ پر مبنی ٹیبلیٹ کے طور پر چلانے کی کوشش کی، مگر سافٹ ویئر ادھورا محسوس ہوا، اور سیلیرون اور کور ایم 3 چپس والے کم درجے کے ماڈلز کو سست ہونے پر تنقید ملی۔ گوگل نے 2019 میں پکسل سلیٹ کے نئے ہارڈ ویئر کا منصوبہ ختم کر دیا۔"
+   },
+   "features": [
+    {
+     "en": "Detachable Chrome OS tablet",
+     "ur": "علیحدہ ہونے والا کروم او ایس ٹیبلیٹ"
+    },
+    {
+     "en": "3000 by 2000 Molecular Display",
+     "ur": "3000×2000 مالیکیولر ڈسپلے"
+    },
+    {
+     "en": "Optional keyboard and Pixelbook Pen support",
+     "ur": "اختیاری کی بورڈ اور پکسل بک پین کی سپورٹ"
+    }
+   ]
+  },
+  {
+   "id": "g_pbgo",
+   "name": {
+    "en": "Pixelbook Go (2019)",
+    "ur": "پکسل بک گو (2019)"
+   },
+   "year": 2019,
+   "history": {
+    "en": "The Pixelbook Go, shown in October 2019, was Google's lighter and cheaper answer to the Pixelbook. It started at 649 US dollars, had a ribbed magnesium case that was easy to grip, a very quiet keyboard and a battery rated at up to 12 hours. It dropped the convertible hinge in favour of a classic clamshell. It was the last laptop in Google's own Pixel family before the Googlebook.",
+    "ur": "پکسل بک گو، جو اکتوبر 2019 میں دکھایا گیا، پکسل بک کا ہلکا اور سستا جواب تھا۔ اس کی ابتدائی قیمت 649 امریکی ڈالر تھی، اس کا دھاری دار میگنیشیم کیس پکڑنے میں آسان تھا، کی بورڈ بہت خاموش تھا اور بیٹری 12 گھنٹے تک کی درجہ بند تھی۔ اس نے کنورٹیبل قبضہ ترک کر کے روایتی کلیم شیل ڈیزائن اپنایا۔ یہ گوگل کے اپنے پکسل خاندان میں گوگل بک سے پہلے کا آخری لیپ ٹاپ تھا۔"
+   },
+   "features": [
+    {
+     "en": "Lighter and cheaper than the Pixelbook",
+     "ur": "پکسل بک سے ہلکا اور سستا"
+    },
+    {
+     "en": "Ribbed magnesium body and a very quiet keyboard",
+     "ur": "دھاری دار میگنیشیم باڈی اور بہت خاموش کی بورڈ"
+    },
+    {
+     "en": "Up to 12 hours of battery life",
+     "ur": "12 گھنٹے تک کی بیٹری"
+    }
+   ]
+  },
+  {
+   "id": "g_googlebook",
+   "name": {
+    "en": "Googlebook (2026)",
+    "ur": "گوگل بک (2026)"
+   },
+   "year": 2026,
+   "history": {
+    "en": "Googlebook is Google's successor to the Chromebook. It was first revealed in May 2026 as a laptop platform built on Android, running an operating system codenamed Aluminium OS, and the full line-up followed in September 2026 with pre-orders from the 21st and sale from 4 October. Instead of making the laptops itself, Google launched the platform with five partners: Acer, ASUS, Dell, HP and Lenovo. Googlebooks lean on Gemini AI, connect closely to Android phones and run the Android app catalogue, and Google has said cheaper models will follow.",
+    "ur": "گوگل بک گوگل کے کروم بک کا جانشین ہے۔ اسے پہلی بار مئی 2026 میں اینڈرائیڈ پر مبنی لیپ ٹاپ پلیٹ فارم کے طور پر ظاہر کیا گیا جو ایلومینیم او ایس نامی آپریٹنگ سسٹم پر چلتا ہے، اور مکمل لائن اپ ستمبر 2026 میں آیا جس کے پری آرڈر 21 تاریخ سے اور فروخت 4 اکتوبر سے شروع ہوئی۔ لیپ ٹاپ خود بنانے کے بجائے گوگل نے پانچ شراکت داروں کے ساتھ پلیٹ فارم متعارف کرایا: ایسر، ایسس، ڈیل، ایچ پی اور لینووو۔ گوگل بکس جیمنائی اے آئی پر انحصار کرتے ہیں، اینڈرائیڈ فونز سے گہرا تعلق رکھتے ہیں اور اینڈرائیڈ ایپس چلاتے ہیں، اور گوگل نے کہا ہے کہ سستے ماڈلز بعد میں آئیں گے۔"
+   },
+   "features": [
+    {
+     "en": "Android-based laptop platform (Aluminium OS) replacing Chrome OS",
+     "ur": "کروم او ایس کی جگہ اینڈرائیڈ پر مبنی لیپ ٹاپ پلیٹ فارم (ایلومینیم او ایس)"
+    },
+    {
+     "en": "Gemini AI built into the experience",
+     "ur": "تجربے میں شامل جیمنائی اے آئی"
+    },
+    {
+     "en": "Every Googlebook starts at 16 GB of RAM",
+     "ur": "ہر گوگل بک 16 جی بی ریم سے شروع ہوتی ہے"
+    },
+    {
+     "en": "NPU of over 45 TOPS, haptic glass trackpad, up to 14 hours of battery (Google's figure)",
+     "ur": "45 ٹاپس سے زائد NPU، ہیپٹک شیشے کا ٹریک پیڈ، 14 گھنٹے تک بیٹری (گوگل کا دعویٰ)"
+    }
+   ]
   }
  ],
  "models": [
@@ -3051,6 +3193,466 @@
      "ur": "سندر پچائی اور گوگل کی اینڈرائیڈ ٹیم"
     },
     "query": "Google event 2015 Nexus 5X Nexus 6P Chromecast"
+   }
+  },
+  {
+   "id": "chromebook_pixel_2013",
+   "name": "Chromebook Pixel (2013)",
+   "gen": "g_cbp",
+   "type": "LAPTOP",
+   "released": "2013-02-28",
+   "launchApi": 0,
+   "supportEnds": "Chrome OS auto-updates have ended; see Google's auto-update policy",
+   "specs": {
+    "os": "Chrome OS",
+    "chip": "Intel Core i5-3427U, 1.8 GHz",
+    "ram": "4 GB",
+    "storage": "32 GB SSD (64 GB with LTE)",
+    "display": "12.85\" touchscreen, 2560 x 1700 (3:2)",
+    "battery": "59 Wh (about 5 hours)",
+    "camera": "720p webcam",
+    "ports": "2 x USB 2.0, Mini DisplayPort, SD card slot, headphone/mic",
+    "price": "$1,299 ($1,449 with LTE)"
+   },
+   "faults": [
+    {
+     "en": "No widely documented hardware fault found in our sources. That is not a guarantee.",
+     "ur": "ہمارے ذرائع میں کوئی وسیع طور پر دستاویزی ہارڈ ویئر خرابی نہیں ملی۔ یہ کوئی ضمانت نہیں ہے۔",
+     "official": false
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://www.google.com/search?q=Chromebook+Pixel+2013+site%3Agoogle.com",
+   "officialIsStore": false,
+   "launch": {
+    "date": "2013-02-21",
+    "event": {
+     "en": "Chromebook Pixel announcement",
+     "ur": "کروم بک پکسل کا اعلان"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced by Google (blog post)",
+     "ur": "گوگل کی طرف سے اعلان (بلاگ پوسٹ)"
+    },
+    "query": "Chromebook Pixel Google announcement 2013"
+   }
+  },
+  {
+   "id": "chromebook_pixel_2015",
+   "name": "Chromebook Pixel (2015)",
+   "gen": "g_cbp",
+   "type": "LAPTOP",
+   "released": "2015-03-11",
+   "launchApi": 0,
+   "supportEnds": "Chrome OS auto-updates have ended; see Google's auto-update policy",
+   "specs": {
+    "os": "Chrome OS",
+    "chip": "Intel Core i5-5200U or Core i7-5500U",
+    "ram": "8 / 16 GB",
+    "storage": "32 / 64 GB SSD",
+    "display": "12.85\" touchscreen, 2560 x 1700 (3:2)",
+    "battery": "Up to 12 hours (Google's figure)",
+    "camera": "720p webcam",
+    "ports": "2 x USB-C, 2 x USB 3.0, SD card slot, headphone/mic",
+    "price": "$999 / $1,299"
+   },
+   "faults": [
+    {
+     "en": "Concerns about non-compliant third-party USB-C cables and chargers followed its launch, since it was one of the first laptops to rely on USB-C.",
+     "ur": "اس کے اجرا کے بعد غیر معیاری تیسرے فریق یو ایس بی سی کیبلز اور چارجرز کے بارے میں خدشات سامنے آئے، کیونکہ یہ یو ایس بی سی پر انحصار کرنے والے اولین لیپ ٹاپس میں سے تھا۔",
+     "official": false
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://www.google.com/search?q=Chromebook+Pixel+2015+site%3Agoogle.com",
+   "officialIsStore": false,
+   "launch": {
+    "date": "2015-03-11",
+    "event": {
+     "en": "Chromebook Pixel (2015) announcement",
+     "ur": "کروم بک پکسل (2015) کا اعلان"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced by Google (blog post)",
+     "ur": "گوگل کی طرف سے اعلان (بلاگ پوسٹ)"
+    },
+    "query": "Chromebook Pixel 2015 Google announcement"
+   }
+  },
+  {
+   "id": "pixelbook",
+   "name": "Pixelbook",
+   "gen": "g_pixelbook",
+   "type": "LAPTOP",
+   "released": "2017-10-30",
+   "launchApi": 0,
+   "supportEnds": "See Google's Chromebook auto-update policy",
+   "specs": {
+    "os": "Chrome OS",
+    "chip": "Intel Core i5-7Y57 or Core i7-7Y75",
+    "ram": "8 / 16 GB",
+    "storage": "128 / 256 / 512 GB",
+    "display": "12.3\" touchscreen, 2400 x 1600, 360-degree hinge",
+    "battery": "Up to 10 hours (Google's figure)",
+    "camera": "720p webcam",
+    "ports": "2 x USB-C, headphone jack",
+    "price": "From $999"
+   },
+   "faults": [
+    {
+     "en": "No widely documented hardware fault found in our sources. That is not a guarantee.",
+     "ur": "ہمارے ذرائع میں کوئی وسیع طور پر دستاویزی ہارڈ ویئر خرابی نہیں ملی۔ یہ کوئی ضمانت نہیں ہے۔",
+     "official": false
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://store.google.com/us/product/google_pixelbook_specs",
+   "officialIsStore": true,
+   "launch": {
+    "date": "2017-10-04",
+    "event": {
+     "en": "Made by Google 2017",
+     "ur": "میڈ بائی گوگل 2017"
+    },
+    "place": {
+     "en": "San Francisco, USA",
+     "ur": "سان فرانسسکو، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2017 event full"
+   }
+  },
+  {
+   "id": "pixel_slate",
+   "name": "Pixel Slate",
+   "gen": "g_slate",
+   "type": "LAPTOP",
+   "released": "2018-12",
+   "launchApi": 0,
+   "supportEnds": "See Google's Chromebook auto-update policy",
+   "specs": {
+    "os": "Chrome OS",
+    "chip": "Intel Celeron, Core m3, Core i5 or Core i7 (8th generation)",
+    "ram": "4 / 8 / 16 GB",
+    "storage": "32 / 64 / 128 / 256 GB",
+    "display": "12.3\" touchscreen, 3000 x 2000",
+    "battery": "Up to 10 hours (Google's figure)",
+    "camera": "8 MP rear, 8 MP front",
+    "ports": "2 x USB-C, headphone jack",
+    "price": "From $599 (keyboard sold separately)"
+   },
+   "faults": [
+    {
+     "en": "Lower-spec models with Celeron and Core m3 chips were criticised for slow performance, and early tablet-mode software felt unfinished. Google stopped planning new Pixel Slate hardware in 2019.",
+     "ur": "سیلیرون اور کور ایم 3 چپس والے کم درجے کے ماڈلز کو سست کارکردگی پر تنقید ملی، اور ابتدائی ٹیبلیٹ موڈ سافٹ ویئر ادھورا محسوس ہوا۔ گوگل نے 2019 میں پکسل سلیٹ کے نئے ہارڈ ویئر کا منصوبہ ختم کر دیا۔",
+     "official": false
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://www.google.com/search?q=Pixel+Slate+site%3Agoogle.com",
+   "officialIsStore": false,
+   "launch": {
+    "date": "2018-10-09",
+    "event": {
+     "en": "Made by Google 2018",
+     "ur": "میڈ بائی گوگل 2018"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2018 event full"
+   }
+  },
+  {
+   "id": "pixelbook_go",
+   "name": "Pixelbook Go",
+   "gen": "g_pbgo",
+   "type": "LAPTOP",
+   "released": "2019-10",
+   "launchApi": 0,
+   "supportEnds": "See Google's Chromebook auto-update policy",
+   "specs": {
+    "os": "Chrome OS",
+    "chip": "Intel Core m3, Core i5 or Core i7 (8th generation)",
+    "ram": "8 / 16 GB",
+    "storage": "64 / 128 / 256 GB",
+    "display": "13.3\" touchscreen, Full HD (1920 x 1080) or 4K",
+    "battery": "Up to 12 hours (Google's figure)",
+    "camera": "1080p webcam",
+    "ports": "2 x USB-C, headphone jack",
+    "price": "From $649"
+   },
+   "faults": [
+    {
+     "en": "No widely documented hardware fault found in our sources. That is not a guarantee.",
+     "ur": "ہمارے ذرائع میں کوئی وسیع طور پر دستاویزی ہارڈ ویئر خرابی نہیں ملی۔ یہ کوئی ضمانت نہیں ہے۔",
+     "official": false
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://www.google.com/search?q=Pixelbook+Go+site%3Agoogle.com",
+   "officialIsStore": false,
+   "launch": {
+    "date": "2019-10-15",
+    "event": {
+     "en": "Made by Google 2019",
+     "ur": "میڈ بائی گوگل 2019"
+    },
+    "place": {
+     "en": "New York, USA",
+     "ur": "نیویارک، امریکہ"
+    },
+    "presenter": {
+     "en": "Rick Osterloh, Google's head of devices",
+     "ur": "رِک اوسٹرلوہ، گوگل کے ڈیوائسز کے سربراہ"
+    },
+    "query": "Made by Google 2019 event full"
+   }
+  },
+  {
+   "id": "googlebook_acer_14",
+   "name": "Acer Googlebook 14",
+   "gen": "g_googlebook",
+   "type": "LAPTOP",
+   "released": "2026-10-04",
+   "launchApi": 0,
+   "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
+   "specs": {
+    "os": "Googlebook OS (Aluminium OS, based on Android)",
+    "chip": "Intel Core Ultra 5 325 or Core Ultra 7 355",
+    "ram": "16 / 32 GB",
+    "storage": "256 / 512 GB",
+    "display": "14\" 2.8K (2880 x 1800) OLED touchscreen, up to 500 nits, Gorilla Glass",
+    "battery": "71 Wh",
+    "camera": "—",
+    "ports": "Thunderbolt 4, USB-C, DisplayPort, USB Power Delivery",
+    "price": "From $899"
+   },
+   "faults": [
+    {
+     "en": "Google warned that some Android apps may not run well on Intel-based Googlebooks at launch.",
+     "ur": "گوگل نے خبردار کیا کہ انٹیل پر مبنی گوگل بکس پر لانچ کے وقت کچھ اینڈرائیڈ ایپس اچھی طرح نہیں چلیں گی۔",
+     "official": true
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://googlebook.google",
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-09-21",
+    "event": {
+     "en": "Googlebook reveal (May 12, 2026) and launch announcement (September 21, 2026)",
+     "ur": "گوگل بک کا اعلان (12 مئی 2026) اور اجرا کا اعلان (21 ستمبر 2026)"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced by Google; teased with Rick Osterloh at Snapdragon Summit",
+     "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
+    },
+    "query": "Googlebook launch Google Aluminium OS announcement"
+   }
+  },
+  {
+   "id": "googlebook_dell_xps",
+   "name": "Dell XPS Googlebook",
+   "gen": "g_googlebook",
+   "type": "LAPTOP",
+   "released": "2026-10-04",
+   "launchApi": 0,
+   "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
+   "specs": {
+    "os": "Googlebook OS (Aluminium OS, based on Android)",
+    "chip": "Qualcomm Snapdragon X Elite",
+    "ram": "16 - 32 GB",
+    "storage": "256 GB or more",
+    "display": "13.4\" 2.5K display",
+    "battery": "—",
+    "camera": "—",
+    "ports": "—",
+    "price": "From $1,199"
+   },
+   "faults": [
+    {
+     "en": "Too new for a reliable fault history; none reported in our sources yet.",
+     "ur": "قابل اعتماد خرابی کی تاریخ کے لیے بہت نیا ہے؛ ہمارے ذرائع میں ابھی تک کوئی اطلاع نہیں۔",
+     "official": false
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://googlebook.google",
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-09-21",
+    "event": {
+     "en": "Googlebook reveal (May 12, 2026) and launch announcement (September 21, 2026)",
+     "ur": "گوگل بک کا اعلان (12 مئی 2026) اور اجرا کا اعلان (21 ستمبر 2026)"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced by Google; teased with Rick Osterloh at Snapdragon Summit",
+     "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
+    },
+    "query": "Googlebook launch Google Aluminium OS announcement"
+   }
+  },
+  {
+   "id": "googlebook_hp_14",
+   "name": "HP Googlebook 14",
+   "gen": "g_googlebook",
+   "type": "LAPTOP",
+   "released": "2026-10-04",
+   "launchApi": 0,
+   "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
+   "specs": {
+    "os": "Googlebook OS (Aluminium OS, based on Android)",
+    "chip": "Qualcomm Snapdragon X Elite",
+    "ram": "16 - 32 GB",
+    "storage": "256 GB or more",
+    "display": "14\" 2.8K OLED",
+    "battery": "—",
+    "camera": "—",
+    "ports": "—",
+    "price": "From $1,299"
+   },
+   "faults": [
+    {
+     "en": "Too new for a reliable fault history; none reported in our sources yet.",
+     "ur": "قابل اعتماد خرابی کی تاریخ کے لیے بہت نیا ہے؛ ہمارے ذرائع میں ابھی تک کوئی اطلاع نہیں۔",
+     "official": false
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://googlebook.google",
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-09-21",
+    "event": {
+     "en": "Googlebook reveal (May 12, 2026) and launch announcement (September 21, 2026)",
+     "ur": "گوگل بک کا اعلان (12 مئی 2026) اور اجرا کا اعلان (21 ستمبر 2026)"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced by Google; teased with Rick Osterloh at Snapdragon Summit",
+     "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
+    },
+    "query": "Googlebook launch Google Aluminium OS announcement"
+   }
+  },
+  {
+   "id": "googlebook_asus_14",
+   "name": "ASUS Googlebook 14",
+   "gen": "g_googlebook",
+   "type": "LAPTOP",
+   "released": "2026-10-04",
+   "launchApi": 0,
+   "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
+   "specs": {
+    "os": "Googlebook OS (Aluminium OS, based on Android)",
+    "chip": "Intel Core Ultra 5 or Core Ultra 7",
+    "ram": "16 - 32 GB",
+    "storage": "256 GB or more",
+    "display": "14\" 2.8K OLED",
+    "battery": "—",
+    "camera": "—",
+    "ports": "—",
+    "price": "From $1,299"
+   },
+   "faults": [
+    {
+     "en": "Google warned that some Android apps may not run well on Intel-based Googlebooks at launch.",
+     "ur": "گوگل نے خبردار کیا کہ انٹیل پر مبنی گوگل بکس پر لانچ کے وقت کچھ اینڈرائیڈ ایپس اچھی طرح نہیں چلیں گی۔",
+     "official": true
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://googlebook.google",
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-09-21",
+    "event": {
+     "en": "Googlebook reveal (May 12, 2026) and launch announcement (September 21, 2026)",
+     "ur": "گوگل بک کا اعلان (12 مئی 2026) اور اجرا کا اعلان (21 ستمبر 2026)"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced by Google; teased with Rick Osterloh at Snapdragon Summit",
+     "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
+    },
+    "query": "Googlebook launch Google Aluminium OS announcement"
+   }
+  },
+  {
+   "id": "googlebook_lenovo_15",
+   "name": "Lenovo Googlebook 15",
+   "gen": "g_googlebook",
+   "type": "LAPTOP",
+   "released": "2026-10-04",
+   "launchApi": 0,
+   "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
+   "specs": {
+    "os": "Googlebook OS (Aluminium OS, based on Android)",
+    "chip": "Intel Core Ultra 5",
+    "ram": "16 GB",
+    "storage": "256 GB or more",
+    "display": "15.3\" 2.8K OLED",
+    "battery": "—",
+    "camera": "—",
+    "ports": "—",
+    "price": "From $1,299"
+   },
+   "faults": [
+    {
+     "en": "Google warned that some Android apps may not run well on Intel-based Googlebooks at launch.",
+     "ur": "گوگل نے خبردار کیا کہ انٹیل پر مبنی گوگل بکس پر لانچ کے وقت کچھ اینڈرائیڈ ایپس اچھی طرح نہیں چلیں گی۔",
+     "official": true
+    }
+   ],
+   "latestApi": 0,
+   "officialUrl": "https://googlebook.google",
+   "officialIsStore": true,
+   "launch": {
+    "date": "2026-09-21",
+    "event": {
+     "en": "Googlebook reveal (May 12, 2026) and launch announcement (September 21, 2026)",
+     "ur": "گوگل بک کا اعلان (12 مئی 2026) اور اجرا کا اعلان (21 ستمبر 2026)"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced by Google; teased with Rick Osterloh at Snapdragon Summit",
+     "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
+    },
+    "query": "Googlebook launch Google Aluminium OS announcement"
    }
   }
  ]

@@ -3,7 +3,6 @@
 S = {
     'app_name': ('Pixistory', 'پکسسٹوری'),
     'tagline': ('Your devices, their history and every Pixel Drop', 'آپ کے آلات، ان کی تاریخ اور ہر پکسل ڈراپ'),
-    'tap_to_continue': ('Tap to continue', 'جاری رکھنے کے لیے ٹیپ کریں'),
     'copyright': ('© 2026 WR COVID YT. All rights reserved.', '© 2026 WR COVID YT۔ جملہ حقوق محفوظ ہیں۔'),
     'back': ('Back', 'واپس'),
     'cancel': ('Cancel', 'منسوخ کریں'),
@@ -328,4 +327,6 @@ S = {
     'shelf_owned_days': ('Owned for %1$d days', '%1$d دن سے آپ کی ملکیت میں'),
     'tab_discover': ('Discover', 'دریافت'),
     'launch_line': ('Introduced %1$s • %2$s', 'متعارف: %1$s • %2$s'),
+    'spec_os': ('Operating system', 'آپریٹنگ سسٹم'),
+    'spec_ports': ('Ports', 'پورٹس'),
 }

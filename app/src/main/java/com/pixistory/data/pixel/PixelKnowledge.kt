@@ -143,7 +143,7 @@ class PixelKnowledge(private val context: Context) {
 
     /** Finds the Pixel in the database that a device entry is: "Google Pixel 9 Pro" matches "Pixel 9 Pro". */
     fun match(name: String, model: String = ""): PixelModel? {
-        val candidates = listOf(name, model).map { norm(it) }.filter { it.startsWith("pixel") || it.contains("nexus") }
+        val candidates = listOf(name, model).map { norm(it) }.filter { it.startsWith("pixel") || it.contains("nexus") || it.contains("googlebook") || it.contains("chromebook") }
         if (candidates.isEmpty()) return null
         return models.firstOrNull { m -> norm(m.name) in candidates }
     }

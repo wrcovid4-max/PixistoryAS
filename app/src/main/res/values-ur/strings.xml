@@ -2,7 +2,6 @@
 <resources>
     <string name="app_name">پکسسٹوری</string>
     <string name="tagline">آپ کے آلات، ان کی تاریخ اور ہر پکسل ڈراپ</string>
-    <string name="tap_to_continue">جاری رکھنے کے لیے ٹیپ کریں</string>
     <string name="copyright">© 2026 WR COVID YT۔ جملہ حقوق محفوظ ہیں۔</string>
     <string name="back">واپس</string>
     <string name="cancel">منسوخ کریں</string>
@@ -327,6 +326,8 @@
     <string name="shelf_owned_days">%1$d دن سے آپ کی ملکیت میں</string>
     <string name="tab_discover">دریافت</string>
     <string name="launch_line">متعارف: %1$s • %2$s</string>
+    <string name="spec_os">آپریٹنگ سسٹم</string>
+    <string name="spec_ports">پورٹس</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
 </resources>

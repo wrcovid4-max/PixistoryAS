@@ -80,6 +80,7 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
             "chip" to R.string.spec_chip, "ram" to R.string.f_ram, "storage" to R.string.f_storage,
             "display" to R.string.spec_display, "battery" to R.string.spec_battery, "camera" to R.string.spec_camera,
             "protection" to R.string.spec_protection, "price" to R.string.spec_price,
+            "os" to R.string.spec_os, "ports" to R.string.spec_ports,
         )
         val rows = model.specs.map { (k, v) -> (labels[k]?.let { stringResource(it) } ?: k) to v } + listOf(
             stringResource(R.string.spec_released) to model.released,
@@ -116,7 +117,7 @@ fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
         Text(stringResource(R.string.pixel_faults_note), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 
-    if (model.id.startsWith("pixel")) {
+    if (model.id.startsWith("pixel") && model.type != "LAPTOP") {
     SectionCard(stringResource(R.string.pixel_drops_received, drops.size)) {
         if (drops.isEmpty()) {
             Text(stringResource(R.string.pixel_drops_none), style = MaterialTheme.typography.bodyMedium)

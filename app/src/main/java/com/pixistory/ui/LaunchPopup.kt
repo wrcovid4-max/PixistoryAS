@@ -57,7 +57,6 @@ fun LaunchPopup(onDone: () -> Unit) {
         Modifier
             .fillMaxSize()
             .background(Color(0xFF172A43))
-            .clickable { onDone() }
             .statusBarsPadding()
             .navigationBarsPadding()
             .padding(24.dp)
@@ -68,7 +67,7 @@ fun LaunchPopup(onDone: () -> Unit) {
         Image(
             painterResource(R.drawable.pixistory_logo),
             contentDescription = stringResource(R.string.app_name),
-            modifier = Modifier.size(200.dp).clip(RoundedCornerShape(44.dp)),
+            modifier = Modifier.size(200.dp).clip(RoundedCornerShape(44.dp)).clickable { onDone() },
         )
         Spacer(Modifier.height(24.dp))
         Text(stringResource(R.string.app_name), color = Color.White, fontSize = 34.sp, fontWeight = FontWeight.Bold)
@@ -81,7 +80,5 @@ fun LaunchPopup(onDone: () -> Unit) {
         )
         Spacer(Modifier.height(48.dp))
         Text(stringResource(R.string.copyright), color = Color(0xFF8FA2BF), fontSize = 13.sp, textAlign = TextAlign.Center)
-        Spacer(Modifier.height(4.dp))
-        Text(stringResource(R.string.tap_to_continue), color = Color(0xFF6F819C), fontSize = 11.sp)
     }
 }

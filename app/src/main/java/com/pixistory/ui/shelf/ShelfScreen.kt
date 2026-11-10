@@ -343,6 +343,8 @@ private fun specLabel(key: String): String = stringResource(
         "battery" -> R.string.spec_battery
         "camera" -> R.string.spec_camera
         "protection" -> R.string.spec_protection
+        "os" -> R.string.spec_os
+        "ports" -> R.string.spec_ports
         else -> R.string.spec_price
     },
 )
