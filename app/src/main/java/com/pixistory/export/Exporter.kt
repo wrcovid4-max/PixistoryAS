@@ -58,7 +58,7 @@ class Exporter(private val context: Context, private val repo: DeviceRepository)
             return if (s.any { it == ',' || it == '"' || it == '\n' }) "\"" + s.replace("\"", "\"\"") + "\"" else s
         }
         val header = listOf(
-            "Name", "Brand", "Model", "Type", "Status", "Released", "Android", "API", "Security patch", "Build",
+            "Name", "Model", "Type", "Status", "Released", "Android", "API", "Security patch", "Build",
             "Serial", "Colour", "Storage GB", "RAM GB", "Purchased", "Price", "Currency", "Condition", "Group",
             "Asset tag", "Favourite", "Notes",
         )
@@ -66,7 +66,7 @@ class Exporter(private val context: Context, private val repo: DeviceRepository)
         devices.forEach { d ->
             sb.append(
                 listOf(
-                    d.name, d.brand, d.model, d.typeEnum.label, d.statusEnum.label, d.releaseYear, d.androidVersion,
+                    d.name, d.model, d.typeEnum.label, d.statusEnum.label, d.releaseYear, d.androidVersion,
                     d.apiLevel, d.securityPatch, d.buildNumber, d.serial, d.colorName, d.storageGb, d.ramGb,
                     d.purchaseDate?.let { formatDate(it) }, d.price, d.currency, d.condition, d.groupName,
                     d.assetTag, d.favorite, d.notes,
@@ -79,7 +79,7 @@ class Exporter(private val context: Context, private val repo: DeviceRepository)
     private fun describe(d: DeviceEntity): String = buildString {
         append(d.name)
         append("  [${d.typeEnum.label}, ${d.statusEnum.label}]\n")
-        if (d.brand.isNotBlank() || d.model.isNotBlank()) append("  ${listOf(d.brand, d.model).filter { it.isNotBlank() }.joinToString(" ")}\n")
+        if (d.model.isNotBlank()) append("  ${d.model}\n")
         if (d.releaseYear != null) append("  Released: ${d.releaseYear}\n")
         if (d.apiLevel != null || d.androidVersion.isNotBlank()) append("  Software: ${AndroidVersions.label(d.apiLevel, d.androidVersion)}\n")
         if (d.securityPatch.isNotBlank()) append("  Security patch: ${d.securityPatch}\n")
@@ -182,10 +182,10 @@ class Exporter(private val context: Context, private val repo: DeviceRepository)
         }
 
         accent.textSize = 36f; accent.typeface = Typeface.DEFAULT_BOLD
-        c.drawText("TOP BRANDS", 80f, 800f, accent)
+        c.drawText("DEVICE TYPES", 80f, 800f, accent)
         var yy = 860f
-        val maxCount = stats.byBrand.firstOrNull()?.second ?: 1
-        stats.byBrand.take(5).forEach { (brand, count) ->
+        val maxCount = stats.byType.firstOrNull()?.second ?: 1
+        stats.byType.take(5).forEach { (brand, count) ->
             white.textSize = 38f; white.typeface = Typeface.DEFAULT
             c.drawText(brand, 80f, yy, white)
             val barW = 520f * count / maxCount

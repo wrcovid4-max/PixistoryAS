@@ -89,7 +89,7 @@ fun DeviceDetailScreen(
                     DeviceAvatar(device, vm.container.files, 96.dp)
                     Spacer(Modifier.width(16.dp))
                     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                        Text(listOf(device.brand, device.model).filter { it.isNotBlank() }.joinToString(" "), style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text(device.model, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                             StatusPill(device.statusEnum.text(), statusColor(device.statusEnum))
                             StatusPill(device.typeEnum.text(), MaterialTheme.colorScheme.primary)

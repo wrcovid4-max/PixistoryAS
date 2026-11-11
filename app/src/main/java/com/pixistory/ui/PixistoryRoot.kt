@@ -86,7 +86,7 @@ fun PixistoryRoot(container: AppContainer, pendingAction: String?, onActionConsu
                 }
             },
         ) { padding ->
-            Row(Modifier.padding(padding).fillMaxSize()) {
+            Row(Modifier.padding(padding).consumeWindowInsets(padding).fillMaxSize()) {
                 if (fold.isWide) {
                     NavigationRail {
                         Spacer(Modifier.weight(1f))

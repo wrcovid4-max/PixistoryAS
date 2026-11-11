@@ -194,6 +194,14 @@ class AppViewModel(val container: AppContainer) : ViewModel() {
     fun askAi(text: String) {
         val q = text.trim()
         if (q.isEmpty() || _aiBusy.value) return
+        if (!container.ai.isConfigured) {
+            // No AI provider is set up in this build: answer politely instead of showing a technical message.
+            viewModelScope.launch {
+                repo.addChat("user", q)
+                repo.addChat("assistant", app.getString(R.string.ask_unavailable))
+            }
+            return
+        }
         viewModelScope.launch {
             _aiError.value = null
             _aiBusy.value = true

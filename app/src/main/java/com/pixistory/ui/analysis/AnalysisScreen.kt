@@ -80,7 +80,6 @@ private fun Charts(stats: com.pixistory.analysis.Stats, currency: String) {
     SectionCard(stringResource(R.string.analysis_insights)) {
         stats.insights.forEach { Text("•  $it", style = MaterialTheme.typography.bodyMedium) }
     }
-    if (stats.byBrand.isNotEmpty()) SectionCard(stringResource(R.string.analysis_by_brand)) { HBarChart(stats.byBrand.take(8), Modifier.fillMaxWidth()) }
     if (stats.byType.isNotEmpty()) SectionCard(stringResource(R.string.analysis_by_type)) {
         DonutChart(stats.byType.mapIndexed { i, (l, c) -> Triple(l, c, ChartColors[i % ChartColors.size]) }, centerLabel = stats.owned.toString())
     }

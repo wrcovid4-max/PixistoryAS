@@ -20,7 +20,6 @@ object CollectionContext {
             buildString {
                 append("- ${d.name}")
                 append(" | ${d.typeEnum.label} | ${d.statusEnum.label}")
-                if (d.brand.isNotBlank()) append(" | brand ${d.brand}")
                 if (d.releaseYear != null) append(" | released ${d.releaseYear}")
                 if (d.apiLevel != null || d.androidVersion.isNotBlank()) {
                     append(" | runs ${AndroidVersions.label(d.apiLevel, d.androidVersion)}")

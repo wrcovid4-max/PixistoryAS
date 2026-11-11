@@ -43,7 +43,7 @@ enum class StatusFilter(@androidx.annotation.StringRes val label: Int) {
 }
 
 enum class GroupBy(@androidx.annotation.StringRes val label: Int) {
-    NONE(R.string.group_none), GROUP(R.string.group_collection), BRAND(R.string.group_brand), TYPE(R.string.group_type),
+    NONE(R.string.group_none), GROUP(R.string.group_collection), TYPE(R.string.group_type),
 }
 
 enum class SortBy(@androidx.annotation.StringRes val label: Int) {
@@ -88,7 +88,7 @@ fun DevicesScreen(
             }
             .filter { type == null || it.typeEnum == type }
             .filter { d ->
-                query.isBlank() || listOf(d.name, d.brand, d.model, d.serial, d.assetTag, d.groupName, d.notes, d.androidVersion)
+                query.isBlank() || listOf(d.name, d.model, d.serial, d.assetTag, d.groupName, d.notes, d.androidVersion)
                     .any { it.contains(query, ignoreCase = true) }
             }
             .let { list ->
@@ -107,7 +107,6 @@ fun DevicesScreen(
             filtered.groupBy {
                 when (group) {
                     GroupBy.GROUP -> it.groupName.ifBlank { noGroup }
-                    GroupBy.BRAND -> it.brand.ifBlank { noGroup }
                     else -> it.type
                 }
             }.toSortedMap().flatMap { (k, list) ->
@@ -284,7 +283,6 @@ private fun DeviceRow(device: DeviceEntity, selected: Boolean, vm: AppViewModel,
             Column(Modifier.weight(1f)) {
                 Text(device.name.ifBlank { device.model }, style = MaterialTheme.typography.titleMedium, maxLines = 1, overflow = TextOverflow.Ellipsis)
                 val sub = listOfNotNull(
-                    device.brand.takeIf { it.isNotBlank() },
                     if (device.apiLevel != null || device.androidVersion.isNotBlank()) AndroidVersions.label(device.apiLevel, device.androidVersion) else null,
                     device.releaseYear?.toString(),
                 ).joinToString(" • ")

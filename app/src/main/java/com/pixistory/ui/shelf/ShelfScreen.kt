@@ -14,6 +14,7 @@ import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -58,6 +59,7 @@ import com.pixistory.data.model.typeEnum
 import com.pixistory.ui.AppViewModel
 import com.pixistory.ui.common.*
 import com.pixistory.util.AndroidVersions
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.time.LocalDateTime
@@ -70,6 +72,7 @@ private const val FACE_DETAILS = 1
 private const val FACE_SPECS = 2
 private const val FACE_STORY = 3
 private const val FACE_OWNERSHIP = 4
+private const val CYCLE_MS = 7600
 
 /**
  * Shelf mode: a glowing night-stand display. A big clock and a swipeable stack of glass cards, one per
@@ -93,32 +96,37 @@ fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String) -> Uni
     var tiltY by remember { mutableFloatStateOf(0f) }
     var face by remember { mutableIntStateOf(FACE_SUMMARY) }
     val wobble = remember { Animatable(0f) }
+    val progress = remember { Animatable(0f) }
     val animationsOff = remember { Settings.Global.getFloat(context.contentResolver, Settings.Global.ANIMATOR_DURATION_SCALE, 1f) == 0f }
     val knowledge = vm.container.knowledge
 
     LaunchedEffect(Unit) { while (true) { now = LocalDateTime.now(); delay(15_000) } }
 
     // Each device: show it, animate into one random face for a few seconds, then move on to the next device.
-    // Keyed on the *settled* page so a scroll that is still moving is never cancelled half way.
+    // The thin bar under the clock counts the cycle down. Keyed on the *settled* page, so a scroll that is
+    // still moving is never cancelled half way.
     LaunchedEffect(pager.settledPage, playing, devices.size) {
         face = FACE_SUMMARY
+        progress.snapTo(0f)
         if (devices.isEmpty()) return@LaunchedEffect
-        // a tiny wobble as the device arrives
-        if (!animationsOff) {
-            for (t in listOf(2.4f, -2.0f, 1.3f, -0.7f, 0f)) wobble.animateTo(t, tween(110))
+        coroutineScope {
+            if (!animationsOff) launch { for (t in listOf(2.4f, -2.0f, 1.3f, -0.7f, 0f)) wobble.animateTo(t, tween(110)) }
+            if (!playing) return@coroutineScope
+            launch { progress.animateTo(1f, tween(CYCLE_MS, easing = LinearEasing)) }
+            delay(1600)
+            val d = devices.getOrNull(pager.settledPage)
+            if (d != null) {
+                val known = knowledge.match(d.name, d.model)
+                val options = buildList {
+                    add(FACE_DETAILS)
+                    add(FACE_OWNERSHIP)
+                    if (known != null) { add(FACE_SPECS); add(FACE_STORY) }
+                }
+                face = options.random()
+            }
+            delay((CYCLE_MS - 1600).toLong())
         }
-        if (!playing) return@LaunchedEffect
-        delay(1600)
-        val d = devices.getOrNull(pager.settledPage) ?: return@LaunchedEffect
-        val known = knowledge.match(d.name, d.model)
-        val options = buildList {
-            add(FACE_DETAILS)
-            add(FACE_OWNERSHIP)
-            if (known != null) { add(FACE_SPECS); add(FACE_STORY) }
-        }
-        face = options.random()
-        delay(6000)
-        if (devices.size > 1) pager.animateScrollToPage((pager.settledPage + 1) % devices.size)
+        if (playing && devices.size > 1) pager.animateScrollToPage((pager.settledPage + 1) % devices.size)
     }
     DisposableEffect(Unit) {
         val window = context.findActivity()?.window
@@ -160,7 +168,22 @@ fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String) -> Uni
             return@Box
         }
 
-        val clock: @Composable () -> Unit = { ClockBlock(now, devices.size, compact = fold.isTabletop) }
+        val clock: @Composable () -> Unit = {
+            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                ClockBlock(now, devices.size, compact = fold.isTabletop)
+                Spacer(Modifier.height(10.dp))
+                LinearProgressIndicator(
+                    progress = { progress.value },
+                    modifier = Modifier.fillMaxWidth(0.4f).height(3.dp),
+                    color = glow,
+                    trackColor = Color.White.copy(alpha = 0.12f),
+                )
+                if (devices.size < 2) {
+                    Spacer(Modifier.height(6.dp))
+                    Text(stringResource(R.string.shelf_need_more), color = Color(0xFF8FA2BF), fontSize = 12.sp, textAlign = TextAlign.Center)
+                }
+            }
+        }
         val pagerBlock: @Composable (Modifier) -> Unit = { mod ->
             HorizontalPager(
                 state = pager,
@@ -280,7 +303,7 @@ private fun GlassCard(device: DeviceEntity, vm: AppViewModel, face: Int, tint: C
                     FACE_DETAILS -> {
                         FaceTitle(stringResource(R.string.section_details))
                         val rows = listOfNotNull(
-                            listOf(device.brand, device.model).filter { it.isNotBlank() }.joinToString(" ").takeIf { it.isNotBlank() && it != device.name },
+                            device.model.takeIf { it.isNotBlank() && it != device.name },
                             device.typeEnum.text(),
                             if (device.apiLevel != null || device.androidVersion.isNotBlank()) AndroidVersions.label(device.apiLevel, device.androidVersion) else null,
                             device.releaseYear?.let { stringResource(R.string.f_released) + ": " + it },

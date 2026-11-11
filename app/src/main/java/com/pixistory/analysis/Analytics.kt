@@ -134,8 +134,7 @@ object Analytics {
     ): List<String> {
         val out = ArrayList<String>()
         if (owned.isEmpty()) return listOf("Add your first device to see insights here.")
-        out += "You own ${owned.size} device${if (owned.size == 1) "" else "s"} from ${byBrand.size.coerceAtLeast(1)} brand${if (byBrand.size > 1) "s" else ""}."
-        byBrand.firstOrNull()?.let { if (byBrand.size > 1) out += "${it.first} is your biggest brand with ${it.second}." }
+        out += "You own ${owned.size} Google device${if (owned.size == 1) "" else "s"}."
         oldest?.let { out += "Oldest device: ${it.name} (${it.releaseYear})." }
         val stale = patchBuckets.firstOrNull { it.first == PatchStatus.STALE }?.second ?: 0
         val old = patchBuckets.firstOrNull { it.first == PatchStatus.OLD }?.second ?: 0

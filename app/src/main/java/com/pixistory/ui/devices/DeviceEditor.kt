@@ -85,7 +85,7 @@ fun DeviceEditorScreen(
     val groups = remember(devices) { devices.map { it.groupName }.filter { it.isNotBlank() }.distinct() }
 
     fun save() {
-        val name = d.name.trim().ifBlank { listOf(d.brand, d.model).filter { it.isNotBlank() }.joinToString(" ") }
+        val name = d.name.trim().ifBlank { d.model }
         if (name.isBlank()) { nameError = true; return }
         val fields = LinkedHashMap<String, String>()
         custom.filter { it.first.isNotBlank() }.forEach { fields[it.first.trim()] = it.second.trim() }
@@ -120,10 +120,7 @@ fun DeviceEditorScreen(
                 }
 
                 OutlinedTextField(d.name, { d = d.copy(name = it); nameError = false }, label = { Text(stringResource(R.string.f_name)) }, isError = nameError, singleLine = true, modifier = Modifier.fillMaxWidth())
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    OutlinedTextField(d.brand, { d = d.copy(brand = it) }, label = { Text(stringResource(R.string.f_brand)) }, singleLine = true, modifier = Modifier.weight(1f))
-                    OutlinedTextField(d.model, { d = d.copy(model = it) }, label = { Text(stringResource(R.string.f_model)) }, singleLine = true, modifier = Modifier.weight(1f))
-                }
+                OutlinedTextField(d.model, { d = d.copy(model = it) }, label = { Text(stringResource(R.string.f_model)) }, singleLine = true, modifier = Modifier.fillMaxWidth())
                 DropdownField(stringResource(R.string.f_type), d.typeEnum, DeviceType.entries.toList(), { it.text() }, { d = d.copy(type = it.name) }, Modifier.fillMaxWidth())
                 FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     DeviceStatus.entries.forEach { s ->

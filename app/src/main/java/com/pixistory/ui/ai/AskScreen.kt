@@ -15,7 +15,6 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.DeleteSweep
-import androidx.compose.material.icons.filled.Key
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -59,16 +58,6 @@ fun AskScreen(vm: AppViewModel, fold: FoldState) {
                     color = c.onSurfaceVariant,
                     modifier = Modifier.padding(horizontal = 20.dp),
                 )
-                if (!configured) {
-                    Row(
-                        Modifier.padding(20.dp, 12.dp).fillMaxWidth().clip(RoundedCornerShape(14.dp)).background(c.tertiaryContainer).padding(14.dp),
-                        verticalAlignment = Alignment.Top,
-                    ) {
-                        Icon(Icons.Filled.Key, null, tint = c.onTertiaryContainer, modifier = Modifier.size(18.dp))
-                        Spacer(Modifier.width(10.dp))
-                        Text(stringResource(R.string.ask_need_key), style = MaterialTheme.typography.bodySmall, color = c.onTertiaryContainer)
-                    }
-                }
                 if (chat.isEmpty()) {
                     Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                         Text(stringResource(R.string.ask_intro), style = MaterialTheme.typography.bodyLarge)
@@ -77,7 +66,7 @@ fun AskScreen(vm: AppViewModel, fold: FoldState) {
                             val shape = RoundedCornerShape(14.dp)
                             Row(
                                 Modifier.fillMaxWidth().clip(shape).border(1.dp, c.outlineVariant, shape).background(c.surfaceContainerLow)
-                                    .clickable { if (configured) vm.askAi(text) else input = text }.padding(horizontal = 14.dp, vertical = 12.dp),
+                                    .clickable { vm.askAi(text) }.padding(horizontal = 14.dp, vertical = 12.dp),
                                 verticalAlignment = Alignment.CenterVertically,
                             ) {
                                 Icon(Icons.Filled.AutoAwesome, null, tint = c.primary, modifier = Modifier.size(18.dp))
@@ -134,7 +123,7 @@ fun AskScreen(vm: AppViewModel, fold: FoldState) {
         // input
         Column(Modifier.fillMaxWidth().background(c.surface), horizontalAlignment = Alignment.CenterHorizontally) {
             HorizontalDivider(color = c.outlineVariant, thickness = 0.5.dp)
-            Row(Modifier.widthIn(max = 760.dp).fillMaxWidth().padding(12.dp).navigationBarsPadding(), verticalAlignment = Alignment.CenterVertically) {
+            Row(Modifier.widthIn(max = 760.dp).fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
                 OutlinedTextField(
                     value = input,
                     onValueChange = { input = it },
@@ -146,7 +135,7 @@ fun AskScreen(vm: AppViewModel, fold: FoldState) {
                 Spacer(Modifier.width(10.dp))
                 FilledIconButton(
                     onClick = { if (input.isNotBlank()) { vm.askAi(input); input = "" } },
-                    enabled = !busy && configured,
+                    enabled = !busy,
                     modifier = Modifier.size(50.dp),
                 ) { Icon(Icons.AutoMirrored.Filled.Send, stringResource(R.string.ask_send)) }
             }
