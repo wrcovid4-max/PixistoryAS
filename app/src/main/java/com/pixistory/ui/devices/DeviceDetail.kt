@@ -1,4 +1,4 @@
-@file:OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@file:OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class, androidx.compose.foundation.ExperimentalFoundationApi::class)
 
 package com.pixistory.ui.devices
 
@@ -50,7 +50,15 @@ fun DeviceDetailScreen(
     fold: FoldState,
     onBack: (() -> Unit)?,
     onDeleted: () -> Unit,
+    focusStory: Boolean = false,
 ) {
+    val storyRequester = remember { androidx.compose.foundation.relocation.BringIntoViewRequester() }
+    LaunchedEffect(device.id, focusStory) {
+        if (focusStory) {
+            kotlinx.coroutines.delay(620)
+            runCatching { storyRequester.bringIntoView() }
+        }
+    }
     val context = LocalContext.current
     val files by vm.filesFor(device.id).collectAsStateWithLifecycle(initialValue = emptyList())
     val knowledge = vm.container.knowledge
@@ -168,7 +176,7 @@ fun DeviceDetailScreen(
                     }
                 }
 
-                if (pixel != null) PixelInsights(pixel, vm.container.knowledge, lang)
+                if (pixel != null) PixelInsights(pixel, vm.container.knowledge, lang, storyRequester)
 
                 val custom = device.customFields()
                 if (custom.isNotEmpty()) {

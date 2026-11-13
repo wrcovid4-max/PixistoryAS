@@ -14,6 +14,7 @@ import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -82,7 +83,7 @@ private const val CYCLE_MS = 7600
  * On a half-folded Pixel Fold (tabletop posture) the clock and card sit above the hinge and the controls below.
  */
 @Composable
-fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String) -> Unit, onClose: () -> Unit) {
+fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String, Boolean) -> Unit, onClose: () -> Unit) {
     BackHandler(onBack = onClose)
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
@@ -101,6 +102,17 @@ fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String) -> Uni
     val knowledge = vm.container.knowledge
 
     LaunchedEffect(Unit) { while (true) { now = LocalDateTime.now(); delay(15_000) } }
+
+    // Tapping a card: it grows towards you while the shelf dissolves into the app, then the device page opens
+    // (straight to its Backstory if the Backstory face was showing).
+    var openingId by remember { mutableStateOf<String?>(null) }
+    var openingStory by remember { mutableStateOf(false) }
+    val openAnim = remember { Animatable(0f) }
+    LaunchedEffect(openingId) {
+        val id = openingId ?: return@LaunchedEffect
+        openAnim.animateTo(1f, tween(460, easing = FastOutSlowInEasing))
+        onOpenDevice(id, openingStory)
+    }
 
     // Each device: show it, animate into one random face for a few seconds, then move on to the next device.
     // The thin bar under the clock counts the cycle down. Keyed on the *settled* page, so a scroll that is
@@ -198,11 +210,17 @@ fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String) -> Uni
                     vm = vm,
                     face = if (isCurrent) face else FACE_SUMMARY,
                     tint = if (settings.shelfMatchColor) parseColorOrNull(devices[page].colorHex) else null,
-                    onOpen = { onOpenDevice(devices[page].id) },
+                    onOpen = {
+                        if (openingId == null) {
+                            openingStory = isCurrent && face == FACE_STORY
+                            openingId = devices[page].id
+                        }
+                    },
                     modifier = Modifier
                         .fillMaxSize()
                         .graphicsLayer {
-                            val scale = 1f - 0.12f * offset
+                            val open = if (isCurrent) openAnim.value else 0f
+                            val scale = (1f - 0.12f * offset) * (1f + 0.16f * open)
                             scaleX = scale; scaleY = scale; alpha = 1f - 0.45f * offset
                             translationX = tiltX * 5f; translationY = tiltY * 5f
                             rotationZ = if (isCurrent) wobble.value else 0f
@@ -247,6 +265,9 @@ fun ShelfScreen(vm: AppViewModel, fold: FoldState, onOpenDevice: (String) -> Uni
                 Spacer(Modifier.height(12.dp))
                 controls()
             }
+        }
+        if (openAnim.value > 0f) {
+            Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surface.copy(alpha = openAnim.value)))
         }
         if (fold.isTabletop) {
             IconButton(onClick = onClose, modifier = Modifier.align(Alignment.TopEnd).padding(8.dp)) {

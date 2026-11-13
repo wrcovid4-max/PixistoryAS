@@ -62,6 +62,7 @@ fun DevicesScreen(
     selectedId: String?,
     onSelect: (String?) -> Unit,
     onOpenShelf: () -> Unit,
+    focusStory: Boolean = false,
 ) {
     val devices by vm.devices.collectAsStateWithLifecycle()
     val context = LocalContext.current
@@ -204,7 +205,9 @@ fun DevicesScreen(
                 Spacer(Modifier.width(gap))
                 Box(Modifier.weight(0.58f).fillMaxHeight()) {
                     if (selected != null) {
-                        DeviceDetailScreen(selected, vm, fold, onBack = null, onDeleted = { onSelect(null) })
+                        Entrance(selected.id, Modifier.fillMaxSize()) {
+                            DeviceDetailScreen(selected, vm, fold, onBack = null, onDeleted = { onSelect(null) }, focusStory = focusStory)
+                        }
                     } else {
                         EmptyState(Icons.Filled.Devices, stringResource(R.string.select_device), stringResource(R.string.select_device_body))
                     }
@@ -212,7 +215,9 @@ fun DevicesScreen(
             }
         } else if (selected != null) {
             BackHandler { onSelect(null) }
-            DeviceDetailScreen(selected, vm, fold, onBack = { onSelect(null) }, onDeleted = { onSelect(null) })
+            Entrance(selected.id, Modifier.fillMaxSize()) {
+                DeviceDetailScreen(selected, vm, fold, onBack = { onSelect(null) }, onDeleted = { onSelect(null) }, focusStory = focusStory)
+            }
         } else {
             listPane(Modifier.fillMaxSize())
         }

@@ -48,6 +48,7 @@ fun PixistoryRoot(container: AppContainer, pendingAction: String?, onActionConsu
     val tab = MainTab.valueOf(tabName)
     var selectedId by rememberSaveable { mutableStateOf<String?>(null) }
     var shelfOpen by rememberSaveable { mutableStateOf(false) }
+    var focusStory by rememberSaveable { mutableStateOf(false) }
     var aboutOpen by rememberSaveable { mutableStateOf(false) }
     var showLaunch by rememberSaveable { mutableStateOf(true) }
     val editing by vm.editing.collectAsStateWithLifecycle()
@@ -108,7 +109,7 @@ fun PixistoryRoot(container: AppContainer, pendingAction: String?, onActionConsu
                         .then(if (fold.isWide) Modifier.navigationBarsPadding() else Modifier),
                 ) {
                     when (tab) {
-                        MainTab.DEVICES -> DevicesScreen(vm, fold, selectedId, { selectedId = it }, { shelfOpen = true })
+                        MainTab.DEVICES -> DevicesScreen(vm, fold, selectedId, { selectedId = it; focusStory = false }, { shelfOpen = true }, focusStory)
                         MainTab.DISCOVER -> DiscoverScreen(vm, fold)
                         MainTab.ANALYSIS -> AnalysisScreen(vm, fold)
                         MainTab.ASK -> AskScreen(vm, fold)
@@ -133,7 +134,7 @@ fun PixistoryRoot(container: AppContainer, pendingAction: String?, onActionConsu
         if (shelfOpen) {
             ShelfScreen(
                 vm, fold,
-                onOpenDevice = { id -> selectedId = id; tabName = MainTab.DEVICES.name; shelfOpen = false },
+                onOpenDevice = { id, story -> selectedId = id; focusStory = story; tabName = MainTab.DEVICES.name; shelfOpen = false },
                 onClose = { shelfOpen = false },
             )
         }

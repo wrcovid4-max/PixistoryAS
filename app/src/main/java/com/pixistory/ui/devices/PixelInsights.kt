@@ -1,8 +1,9 @@
-@file:OptIn(ExperimentalLayoutApi::class)
+@file:OptIn(ExperimentalLayoutApi::class, androidx.compose.foundation.ExperimentalFoundationApi::class)
 
 package com.pixistory.ui.devices
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
@@ -28,12 +29,20 @@ import com.pixistory.ui.common.SectionCard
 
 /** Background, tech specs, what was new, known faults and received Pixel Drops for a Pixel in the collection. */
 @Composable
-fun PixelInsights(model: PixelModel, knowledge: PixelKnowledge, lang: String) {
+fun PixelInsights(
+    model: PixelModel,
+    knowledge: PixelKnowledge,
+    lang: String,
+    storyRequester: androidx.compose.foundation.relocation.BringIntoViewRequester? = null,
+) {
     val gen = remember(model.gen) { knowledge.gen(model.gen) }
     val drops = remember(model.id) { knowledge.dropsFor(model.id) }
 
     if (gen != null) {
-        SectionCard(stringResource(R.string.pixel_background, gen.name.get(lang))) {
+        SectionCard(
+            stringResource(R.string.pixel_background, gen.name.get(lang)),
+            modifier = if (storyRequester != null) Modifier.bringIntoViewRequester(storyRequester) else Modifier,
+        ) {
             Text(gen.history.get(lang), style = MaterialTheme.typography.bodyMedium)
         }
     }

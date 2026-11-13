@@ -59,6 +59,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
@@ -394,4 +395,24 @@ fun CurrencySwitcher(selected: String, onSelect: (String) -> Unit, modifier: Mod
     } else {
         FlowRow(modifier, horizontalArrangement = Arrangement.spacedBy(8.dp)) { chips() }
     }
+}
+
+/** Fades, scales up slightly and slides in each time [key] changes: a soft arrival for a freshly opened page. */
+@Composable
+fun Entrance(key: Any?, modifier: Modifier = Modifier, content: @Composable () -> Unit) {
+    val progress = remember { androidx.compose.animation.core.Animatable(0f) }
+    androidx.compose.runtime.LaunchedEffect(key) {
+        progress.snapTo(0f)
+        progress.animateTo(1f, androidx.compose.animation.core.tween(420, easing = androidx.compose.animation.core.FastOutSlowInEasing))
+    }
+    Box(
+        modifier.graphicsLayer {
+            val p = progress.value
+            alpha = p
+            val scale = 0.94f + 0.06f * p
+            scaleX = scale
+            scaleY = scale
+            translationY = (1f - p) * 56f
+        },
+    ) { content() }
 }
