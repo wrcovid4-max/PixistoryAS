@@ -1007,6 +1007,32 @@
      "ur": "45 ٹاپس سے زائد NPU، ہیپٹک شیشے کا ٹریک پیڈ، 14 گھنٹے تک بیٹری (گوگل کا دعویٰ)"
     }
    ]
+  },
+  {
+   "id": "g_pixeltag",
+   "name": {
+    "en": "Pixel Tag (2026)",
+    "ur": "پکسل ٹیگ (2026)"
+   },
+   "year": 2026,
+   "history": {
+    "en": "Pixel Tag is Google's own item tracker. It went on sale on 11 November 2026 together with the November Pixel Drop, at 29.99 US dollars for one or 99.99 for a four-pack. It attaches to keys, bags or other things you do not want to lose and shows up in Google's Find Hub network, so a nearby Android phone can help you locate it. It works with phones running Android 9 or later.",
+    "ur": "پکسل ٹیگ گوگل کا اپنا اشیاء کا ٹریکر ہے۔ یہ 11 نومبر 2026 کو نومبر پکسل ڈراپ کے ساتھ فروخت کے لیے آیا، ایک کی قیمت 29.99 امریکی ڈالر اور چار کے پیک کی 99.99 ڈالر ہے۔ اسے چابیوں، بیگ یا ان چیزوں پر لگایا جاتا ہے جنہیں آپ کھونا نہیں چاہتے، اور یہ گوگل کے فائنڈ ہب نیٹ ورک میں ظاہر ہوتا ہے تاکہ قریب کا اینڈرائیڈ فون اسے تلاش کرنے میں مدد دے۔ یہ اینڈرائیڈ 9 یا نئے ورژن والے فونز کے ساتھ کام کرتا ہے۔"
+   },
+   "features": [
+    {
+     "en": "Works through Google's Find Hub network",
+     "ur": "گوگل کے فائنڈ ہب نیٹ ورک کے ذریعے کام کرتا ہے"
+    },
+    {
+     "en": "Supports phones on Android 9 or later",
+     "ur": "اینڈرائیڈ 9 یا نئے ورژن والے فونز کو سپورٹ کرتا ہے"
+    },
+    {
+     "en": "Sold singly or as a four-pack",
+     "ur": "ایک یا چار کے پیک میں دستیاب"
+    }
+   ]
   }
  ],
  "models": [
@@ -3653,6 +3679,46 @@
      "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
     },
     "query": "Googlebook launch Google Aluminium OS announcement"
+   }
+  },
+  {
+   "id": "pixel_tag",
+   "name": "Pixel Tag",
+   "gen": "g_pixeltag",
+   "type": "ACCESSORY",
+   "released": "2026-11-11",
+   "launchApi": 0,
+   "supportEnds": "To be confirmed by Google",
+   "latestApi": 0,
+   "specs": {
+    "os": "Works with Android 9 or later",
+    "ports": "Bluetooth tracker on Google's Find Hub network",
+    "price": "$29.99 (one) / $99.99 (four-pack)"
+   },
+   "faults": [
+    {
+     "en": "Too new for a reliable fault history; none reported in our sources yet.",
+     "ur": "قابل اعتماد خرابی کی تاریخ کے لیے بہت نیا ہے؛ ہمارے ذرائع میں ابھی تک کوئی اطلاع نہیں۔",
+     "official": false
+    }
+   ],
+   "officialUrl": "https://www.google.com/search?q=Pixel+Tag+site%3Agoogle.com",
+   "officialIsStore": false,
+   "launch": {
+    "date": "2026-11-10",
+    "event": {
+     "en": "November 2026 Pixel Drop announcement",
+     "ur": "نومبر 2026 پکسل ڈراپ کا اعلان"
+    },
+    "place": {
+     "en": "Online",
+     "ur": "آن لائن"
+    },
+    "presenter": {
+     "en": "Announced by Google (blog post)",
+     "ur": "گوگل کی طرف سے اعلان (بلاگ پوسٹ)"
+    },
+    "query": "Google Pixel Tag launch November 2026 Pixel Drop"
    }
   }
  ]

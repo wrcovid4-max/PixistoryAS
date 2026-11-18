@@ -2221,6 +2221,143 @@
      ]
     }
    ]
+  },
+  {
+   "id": "2026-11",
+   "date": "2026-11-10",
+   "title": {
+    "en": "November 2026 Pixel Drop",
+    "ur": "نومبر 2026 پکسل ڈراپ"
+   },
+   "tie": {
+    "en": "Android 17 QPR2",
+    "ur": "اینڈرائیڈ 17 کیو پی آر 2"
+   },
+   "summary": {
+    "en": "Rolled out a month early with Gemini Intelligence and Rambler for the Pixel 10 series, Create My Widget, Pixel Search on Pixel 6 and newer, Pixel Watch workouts, and the launch of Pixel Tag.",
+    "ur": "ایک ماہ پہلے جاری ہوا؛ پکسل 10 سیریز کے لیے جیمنائی انٹیلیجنس اور ریمبلر، کریٹ مائی ویجٹ، پکسل 6 اور نئے فونز پر پکسل سرچ، پکسل واچ ورک آؤٹس، اور پکسل ٹیگ کا اجرا۔"
+   },
+   "features": [
+    {
+     "en": "Gemini Intelligence and Rambler on the Pixel 10 series (not the Pixel 10a)",
+     "ur": "پکسل 10 سیریز پر جیمنائی انٹیلیجنس اور ریمبلر (پکسل 10a پر نہیں)"
+    },
+    {
+     "en": "Create My Widget: build custom AI widgets and get new icon styles",
+     "ur": "کریٹ مائی ویجٹ: اپنی مرضی کے اے آئی ویجٹ بنائیں اور نئے آئیکن انداز حاصل کریں"
+    },
+    {
+     "en": "Pixel Solver in the Calculator app",
+     "ur": "کیلکولیٹر ایپ میں پکسل سولور"
+    },
+    {
+     "en": "Gemini in Call Screen",
+     "ur": "کال اسکرین میں جیمنائی"
+    },
+    {
+     "en": "HiLight alerts for Google Messages (Pixel 11 Pro, Pro XL and Pro Fold)",
+     "ur": "گوگل میسجز کے لیے ہائی لائٹ الرٹس (پکسل 11 پرو، پرو ایکس ایل اور پرو فولڈ)"
+    },
+    {
+     "en": "Pixel Search finds photos, emails, messages and settings on Pixel 6 and newer",
+     "ur": "پکسل سرچ پکسل 6 اور نئے فونز پر تصاویر، ای میلز، پیغامات اور ترتیبات تلاش کرتا ہے"
+    },
+    {
+     "en": "Pixel Tag goes on sale; it works with phones on Android 9 or later through Google's Find Hub",
+     "ur": "پکسل ٹیگ فروخت کے لیے آ گیا؛ یہ اینڈرائیڈ 9 یا نئے ورژن والے فونز کے ساتھ گوگل کے فائنڈ ہب کے ذریعے کام کرتا ہے"
+    },
+    {
+     "en": "Pixel Watch: step-by-step workouts, phone-to-watch unlock and Wear OS 7.1",
+     "ur": "پکسل واچ: مرحلہ وار ورک آؤٹس، فون سے واچ کھولنا اور ویئر او ایس 7.1"
+    }
+   ],
+   "devices": [
+    "pixel_6",
+    "pixel_6_pro",
+    "pixel_6a",
+    "pixel_7",
+    "pixel_7_pro",
+    "pixel_7a",
+    "pixel_fold",
+    "pixel_tablet",
+    "pixel_8",
+    "pixel_8_pro",
+    "pixel_8a",
+    "pixel_9",
+    "pixel_9_pro",
+    "pixel_9_pro_xl",
+    "pixel_9_pro_fold",
+    "pixel_9a",
+    "pixel_10",
+    "pixel_10_pro",
+    "pixel_10_pro_xl",
+    "pixel_10_pro_fold",
+    "pixel_10a",
+    "pixel_11",
+    "pixel_11_pro",
+    "pixel_11_pro_xl",
+    "pixel_11_pro_fold"
+   ],
+   "note": {
+    "en": "The 2026-11-05 security patch also arrives with this drop. There was no separate October 2026 drop: Google moved the next drop up to November, as it did the year before.",
+    "ur": "5 نومبر 2026 کا سکیورٹی پیچ بھی اسی ڈراپ کے ساتھ آتا ہے۔ اکتوبر 2026 میں الگ ڈراپ نہیں آیا: گوگل نے اگلا ڈراپ نومبر میں کر دیا، جیسا اس نے پچھلے سال کیا تھا۔"
+   },
+   "details": [
+    {
+     "title": "Gemini Intelligence and Rambler",
+     "desc": "Gemini Intelligence arrives on the Pixel 10 series with Rambler dictation; Google lists only the Pixel 10 and Pixel 11 phones.",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_11",
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
+    },
+    {
+     "title": "HiLight alerts for Google Messages",
+     "desc": "A face-down phone glows when a favourite contact writes.",
+     "devices": [
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
+    },
+    {
+     "title": "Pixel Search",
+     "desc": "Find information across the phone: photos, emails, messages and settings.",
+     "devices": [
+      "pixel_6",
+      "pixel_6_pro",
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a",
+      "pixel_11",
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
+    }
+   ]
   }
  ]
 }

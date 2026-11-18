@@ -490,5 +490,11 @@
   "brand": "Google",
   "type": "LAPTOP",
   "year": 2026
+ },
+ {
+  "name": "Pixel Tag",
+  "brand": "Google",
+  "type": "ACCESSORY",
+  "year": 2026
  }
 ]

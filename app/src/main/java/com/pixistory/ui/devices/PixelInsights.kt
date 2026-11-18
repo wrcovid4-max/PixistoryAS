@@ -126,7 +126,7 @@ fun PixelInsights(
         Text(stringResource(R.string.pixel_faults_note), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
     }
 
-    if (model.id.startsWith("pixel") && model.type != "LAPTOP") {
+    if (model.id.startsWith("pixel") && model.type in setOf("PHONE", "TABLET", "FOLDABLE")) {
     SectionCard(stringResource(R.string.pixel_drops_received, drops.size)) {
         if (drops.isEmpty()) {
             Text(stringResource(R.string.pixel_drops_none), style = MaterialTheme.typography.bodyMedium)

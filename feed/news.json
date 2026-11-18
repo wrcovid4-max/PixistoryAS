@@ -1,7 +1,33 @@
 {
   "note": "Pixistory news feed. Add an item here and push; phones with the matching alert switched on are notified on their next check. Types: drop, device, leak, killed, availability. Each id must be unique and never reused.",
   "items": [
-    { "id": "drop-2026-09", "type": "drop", "title": "September 2026 Pixel Drop", "body": "Scam Detection in Gboard and a refreshed VIPs widget, plus the new Pixel 11 series.", "url": "" },
-    { "id": "device-pixel-11", "type": "device", "title": "Pixel 11 series is out", "body": "Pixel 11, 11 Pro, 11 Pro XL and 11 Pro Fold with Tensor G6.", "url": "" }
+    {
+      "id": "drop-2026-09",
+      "type": "drop",
+      "title": "September 2026 Pixel Drop",
+      "body": "Scam Detection in Gboard and a refreshed VIPs widget, plus the new Pixel 11 series.",
+      "url": ""
+    },
+    {
+      "id": "device-pixel-11",
+      "type": "device",
+      "title": "Pixel 11 series is out",
+      "body": "Pixel 11, 11 Pro, 11 Pro XL and 11 Pro Fold with Tensor G6.",
+      "url": ""
+    },
+    {
+      "id": "drop-2026-11",
+      "type": "drop",
+      "title": "November 2026 Pixel Drop",
+      "body": "Gemini Intelligence for the Pixel 10 series, Create My Widget, Pixel Search on Pixel 6+, and Pixel Tag.",
+      "url": ""
+    },
+    {
+      "id": "device-pixel-tag",
+      "type": "device",
+      "title": "Pixel Tag is on sale",
+      "body": "Google's item tracker for Find Hub: $29.99, or $99.99 for four.",
+      "url": ""
+    }
   ]
 }
