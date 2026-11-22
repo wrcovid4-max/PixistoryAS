@@ -23,6 +23,8 @@ import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -299,18 +301,29 @@ private fun GlassCard(device: DeviceEntity, vm: AppViewModel, face: Int, tint: C
     else Brush.linearGradient(listOf(Color.White.copy(alpha = 0.14f), Color.White.copy(alpha = 0.05f)))
     val edge = tint?.copy(alpha = 0.65f) ?: Color.White.copy(alpha = 0.20f)
     val known = remember(device.name, device.model) { vm.container.knowledge.match(device.name, device.model) }
-    Column(
+    // The card has a fixed size (it fills its pager page), but some faces — Ownership with a price,
+    // group and notes especially — are taller than it. The content therefore scrolls instead of being
+    // clipped, stays centred when it is shorter than the card, and the avatar shrinks on the detail
+    // faces so the common case fits without scrolling.
+    BoxWithConstraints(
         modifier
             .clip(shape)
             .background(fill)
             .border(1.dp, edge, shape)
-            .clickable(onClick = onOpen)
+            .clickable(onClick = onOpen),
+    ) {
+    val cardHeight = maxHeight
+    Column(
+        Modifier
+            .fillMaxWidth()
+            .verticalScroll(rememberScrollState())
+            .heightIn(min = cardHeight)
             .padding(22.dp)
             .animateContentSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        DeviceAvatar(device, vm.container.files, if (face == FACE_SUMMARY) 150.dp else 96.dp, Modifier.clickable(onClick = onOpen))
+        DeviceAvatar(device, vm.container.files, if (face == FACE_SUMMARY) 150.dp else 64.dp, Modifier.clickable(onClick = onOpen))
         Spacer(Modifier.height(14.dp))
         Text(device.name.ifBlank { device.model }, color = Color.White, fontSize = 24.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
         Spacer(Modifier.height(8.dp))
@@ -364,6 +377,7 @@ private fun GlassCard(device: DeviceEntity, vm: AppViewModel, face: Int, tint: C
                 }
             }
         }
+    }
     }
 }
 

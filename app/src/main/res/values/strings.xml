@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Pixistory</string>
     <string name="tagline">Your devices, their history and every Pixel Drop</string>
+    <string name="splash_credit" translatable="false">(C) WR COVID</string>
     <string name="copyright">© 2026 WR COVID YT. All rights reserved.</string>
     <string name="back">Back</string>
     <string name="cancel">Cancel</string>

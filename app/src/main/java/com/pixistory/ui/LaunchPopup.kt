@@ -7,7 +7,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
@@ -15,9 +14,7 @@ import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBarsPadding
-import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilterChip
-import androidx.compose.material3.FilterChipDefaults
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -30,7 +27,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -38,25 +34,27 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pixistory.R
-import com.pixistory.ui.common.currentLang
-import com.pixistory.util.AppLanguage
 import kotlinx.coroutines.delay
 
-/** The pop-up shown when the app opens: logo, name and copyright. */
-@OptIn(ExperimentalMaterial3Api::class)
+/**
+ * The one splash screen: the logo with "(C) WR COVID" under it, on the same dark blue as the system
+ * start-up window (which now shows nothing of its own), so opening the app is a single screen.
+ * Tap it to skip.
+ */
 @Composable
 fun LaunchPopup(onDone: () -> Unit) {
     var shown by remember { mutableStateOf(false) }
-    val alpha by animateFloatAsState(if (shown) 1f else 0f, tween(500), label = "launch-fade")
+    val alpha by animateFloatAsState(if (shown) 1f else 0f, tween(400), label = "launch-fade")
     LaunchedEffect(Unit) {
         shown = true
-        delay(3200)
+        delay(2000)
         onDone()
     }
     Column(
         Modifier
             .fillMaxSize()
             .background(Color(0xFF172A43))
+            .clickable { onDone() }
             .statusBarsPadding()
             .navigationBarsPadding()
             .padding(24.dp)
@@ -67,18 +65,15 @@ fun LaunchPopup(onDone: () -> Unit) {
         Image(
             painterResource(R.drawable.pixistory_logo),
             contentDescription = stringResource(R.string.app_name),
-            modifier = Modifier.size(200.dp).clip(RoundedCornerShape(44.dp)).clickable { onDone() },
+            modifier = Modifier.size(200.dp).clip(RoundedCornerShape(44.dp)),
         )
-        Spacer(Modifier.height(24.dp))
-        Text(stringResource(R.string.app_name), color = Color.White, fontSize = 34.sp, fontWeight = FontWeight.Bold)
-        Spacer(Modifier.height(6.dp))
+        Spacer(Modifier.height(20.dp))
         Text(
-            stringResource(R.string.tagline),
+            stringResource(R.string.splash_credit),
             color = Color(0xFFB9C7DE),
             fontSize = 15.sp,
+            fontWeight = FontWeight.Medium,
             textAlign = TextAlign.Center,
         )
-        Spacer(Modifier.height(48.dp))
-        Text(stringResource(R.string.copyright), color = Color(0xFF8FA2BF), fontSize = 13.sp, textAlign = TextAlign.Center)
     }
 }
