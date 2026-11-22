@@ -2356,6 +2356,128 @@
       "pixel_11_pro_xl",
       "pixel_11_pro_fold"
      ]
+    },
+    {
+     "title": "Pixel Tag",
+     "desc": "Google's item tracker goes on sale on 11 November: $29.99 for one or $99.99 for a four-pack. It uses the Find Hub network of more than a billion Android devices, and Ultra Wideband (UWB) shows direction and distance when you are close. It works with any phone on Android 9 or later, so no Pixel is needed.",
+     "devices": []
+    },
+    {
+     "title": "Create My Widget",
+     "desc": "Describe a widget in plain words (a monthly-spending tracker, a game-day widget in your team colours, a trip countdown) and Gemini builds it. Available in select markets.",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_11",
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
+    },
+    {
+     "title": "New custom icon styles",
+     "desc": "More styles that apply across all your home-screen app icons, following Custom Icons earlier in 2026.",
+     "devices": [
+      "pixel_6a",
+      "pixel_7",
+      "pixel_7_pro",
+      "pixel_7a",
+      "pixel_fold",
+      "pixel_tablet",
+      "pixel_8",
+      "pixel_8_pro",
+      "pixel_8a",
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a",
+      "pixel_11",
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
+    },
+    {
+     "title": "Gemini Call Screen upgrade",
+     "desc": "Gemini asks unknown callers why they are calling in a more conversational way and shows a live transcript until you pick up or end the call. US only.",
+     "devices": [
+      "pixel_11",
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
+    },
+    {
+     "title": "Conversation summaries",
+     "desc": "Summaries of long conversations, now in German, French, Spanish, Italian, Hindi and Traditional Chinese. Needs Android 16.1 or newer; Pixel 9a and Pixel 10a are excluded. Also coming to Pixel Watch 3, 4 and 5 on Wear OS 7.1 or newer.",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_11",
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
+    },
+    {
+     "title": "Unlock Pixel Watch with your phone",
+     "desc": "When the watch is on your wrist and the nearby phone is unlocked, the watch unlocks itself, so no PIN or pattern on the watch. Needs UWB on both: Pixel Watch 3, 4 or 5 with one of these phones. Rolling out over the next few weeks, where UWB is supported.",
+     "devices": [
+      "pixel_8_pro",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
+    },
+    {
+     "title": "Gemini multi-step tasks",
+     "desc": "Groceries, rides, takeout and restaurant reservations handled by Gemini, now also available in Japan, the UK and India on the Pixel 10 series.",
+     "devices": [
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold"
+     ]
+    },
+    {
+     "title": "Google Fi super network",
+     "desc": "Eligible Pixels switch automatically between two top 5G networks and millions of Wi-Fi networks. Needs Fi on an eSIM with other SIMs off; Pixel 9 and newer.",
+     "devices": [
+      "pixel_9",
+      "pixel_9_pro",
+      "pixel_9_pro_xl",
+      "pixel_9_pro_fold",
+      "pixel_9a",
+      "pixel_10",
+      "pixel_10_pro",
+      "pixel_10_pro_xl",
+      "pixel_10_pro_fold",
+      "pixel_10a",
+      "pixel_11",
+      "pixel_11_pro",
+      "pixel_11_pro_xl",
+      "pixel_11_pro_fold"
+     ]
     }
    ]
   }

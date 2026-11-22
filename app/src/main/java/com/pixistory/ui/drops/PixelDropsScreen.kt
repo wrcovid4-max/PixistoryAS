@@ -248,10 +248,13 @@ private fun DetailRow(detail: DropDetail, knowledge: PixelKnowledge, mine: Set<S
     ) {
         Text(detail.title, style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.SemiBold)
         Text(detail.desc, style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant)
-        TextButton(onClick = { show = !show }, contentPadding = PaddingValues(0.dp)) {
-            Text(stringResource(if (show) R.string.hide_devices else R.string.show_devices, detail.devices.size))
+        // Some entries (Pixel Tag works with any Android 9+ phone) have no device list to show.
+        if (detail.devices.isNotEmpty()) {
+            TextButton(onClick = { show = !show }, contentPadding = PaddingValues(0.dp)) {
+                Text(stringResource(if (show) R.string.hide_devices else R.string.show_devices, detail.devices.size))
+            }
+            AnimatedVisibility(visible = show) { DeviceChips(detail.devices, knowledge, mine) }
         }
-        AnimatedVisibility(visible = show) { DeviceChips(detail.devices, knowledge, mine) }
     }
 }
 
