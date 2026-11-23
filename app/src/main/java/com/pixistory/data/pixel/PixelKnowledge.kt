@@ -31,6 +31,8 @@ data class PixelModel(
     val ifixitUrl: String = "",
     val ifixitNote: String = "",
     val launch: LaunchInfo? = null,
+    /** A page with this model's full technical specifications, where GSMArena has none (it lists no laptops). */
+    val specsUrl: String = "",
 )
 data class DropDetail(val title: String, val desc: String, val devices: List<String>)
 data class PixelDrop(
@@ -103,6 +105,7 @@ class PixelKnowledge(private val context: Context) {
                     o.optString("ifixitUrl"),
                     o.optString("ifixitNote"),
                     o.optJSONObject("launch")?.let { l -> LaunchInfo(l.optString("date"), l.lt("event"), l.lt("place"), l.lt("presenter"), l.optString("query")) },
+                    o.optString("specsUrl"),
                 )
             }
         } catch (e: Exception) {

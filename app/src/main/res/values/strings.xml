@@ -329,4 +329,8 @@
     <string name="shelf_need_more">Add another device you own to see the shelf move.</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
+    <string name="link_tech_specs">Full technical specifications</string>
+    <string name="spec_weight">Weight</string>
+    <string name="spec_dimensions">Dimensions</string>
+    <string name="spec_wireless">Wireless</string>
 </resources>

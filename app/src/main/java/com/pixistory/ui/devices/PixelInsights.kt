@@ -71,12 +71,23 @@ fun PixelInsights(
         OutlinedButton(onClick = { uri.openUri(model.officialUrl) }, modifier = Modifier.fillMaxWidth()) {
             Text(stringResource(if (model.officialIsStore) R.string.link_official_store else R.string.link_official_search))
         }
-        OutlinedButton(onClick = { uri.openUri("https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=" + URLEncoder.encode(model.name, "UTF-8").replace("+", "%20")) }, modifier = Modifier.fillMaxWidth()) {
-            Text(stringResource(R.string.link_gsmarena))
+        // GSMArena lists phones and tablets, never laptops, so a search there finds nothing for a Googlebook.
+        // Models with a specsUrl show that page instead.
+        if (model.specsUrl.isNotBlank()) {
+            OutlinedButton(onClick = { uri.openUri(model.specsUrl) }, modifier = Modifier.fillMaxWidth()) {
+                Text(stringResource(R.string.link_tech_specs))
+            }
+        } else {
+            OutlinedButton(onClick = { uri.openUri("https://www.gsmarena.com/results.php3?sQuickSearch=yes&sName=" + URLEncoder.encode(model.name, "UTF-8").replace("+", "%20")) }, modifier = Modifier.fillMaxWidth()) {
+                Text(stringResource(R.string.link_gsmarena))
+            }
         }
         model.ifixitScore?.let { score ->
             Text(stringResource(R.string.repair_score, String.format("%.0f", score)), style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.secondary)
             if (model.ifixitNote.isNotBlank()) Text(stringResource(R.string.repair_provisional), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        }
+        if (model.ifixitScore == null && model.ifixitNote.isNotBlank()) {
+            Text(model.ifixitNote, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
         OutlinedButton(
             onClick = { uri.openUri(model.ifixitUrl.ifBlank { "https://www.ifixit.com/Search?query=$q" }) },
@@ -90,6 +101,7 @@ fun PixelInsights(
             "display" to R.string.spec_display, "battery" to R.string.spec_battery, "camera" to R.string.spec_camera,
             "protection" to R.string.spec_protection, "price" to R.string.spec_price,
             "os" to R.string.spec_os, "ports" to R.string.spec_ports,
+            "weight" to R.string.spec_weight, "dimensions" to R.string.spec_dimensions, "wireless" to R.string.spec_wireless,
         )
         val rows = model.specs.map { (k, v) -> (labels[k]?.let { stringResource(it) } ?: k) to v } + listOf(
             stringResource(R.string.spec_released) to model.released,

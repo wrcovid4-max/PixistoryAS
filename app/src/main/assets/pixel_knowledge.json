@@ -3476,14 +3476,18 @@
    "launchApi": 0,
    "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
    "specs": {
-    "os": "Googlebook OS (Aluminium OS, based on Android)",
-    "chip": "Intel Core Ultra 5 325 or Core Ultra 7 355",
-    "ram": "16 / 32 GB",
-    "storage": "256 / 512 GB",
-    "display": "14\" 2.8K (2880 x 1800) OLED touchscreen, up to 500 nits, Gorilla Glass",
-    "battery": "71 Wh",
-    "camera": "—",
-    "ports": "Thunderbolt 4, USB-C, DisplayPort, USB Power Delivery",
+    "os": "Googlebook OS (Android-based, codename Aluminium OS)",
+    "chip": "Intel Core Ultra 5 325 (NPU up to 49 TOPS)",
+    "ram": "16 GB LPDDR5X",
+    "storage": "512 GB NVMe SSD",
+    "display": "14\" 2.8K (2880 × 1800) OLED touchscreen, 120 Hz, 500 nits, 100% DCI-P3, Gorilla Glass, USI 2.0 stylus support",
+    "battery": "71 Wh, up to 16 hours of web browsing, 100 W USB-C charging",
+    "camera": "5 MP FHD webcam with privacy shutter",
+    "protection": "Google Titan C security chip, fingerprint reader, camera shutter",
+    "ports": "1 × USB4 (Thunderbolt 4), 2 × USB 3.2 Gen 2 Type-C, 3.5 mm audio combo",
+    "weight": "2.51 lb (1.14 kg), 360° convertible",
+    "dimensions": "312 × 222.9 × 13.9 mm",
+    "wireless": "Wi-Fi 7, Bluetooth 6.0",
     "price": "From $899"
    },
    "faults": [
@@ -3494,7 +3498,7 @@
     }
    ],
    "latestApi": 0,
-   "officialUrl": "https://googlebook.google",
+   "officialUrl": "https://googlebook.google/shop/acer-googlebook-14",
    "officialIsStore": true,
    "launch": {
     "date": "2026-09-21",
@@ -3511,7 +3515,10 @@
      "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
     },
     "query": "Googlebook launch Google Aluminium OS announcement"
-   }
+   },
+   "specsUrl": "https://store.google.com/product/acer_googlebook_specs",
+   "ifixitUrl": "https://www.ifixit.com/laptop-repairability",
+   "ifixitNote": "iFixit hasn't published a teardown or repairability score for this Googlebook yet. This opens iFixit's laptop repairability scores."
   },
   {
    "id": "googlebook_dell_xps",
@@ -3522,15 +3529,19 @@
    "launchApi": 0,
    "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
    "specs": {
-    "os": "Googlebook OS (Aluminium OS, based on Android)",
-    "chip": "Qualcomm Snapdragon X Elite",
-    "ram": "16 - 32 GB",
-    "storage": "256 GB or more",
-    "display": "13.4\" 2.5K display",
-    "battery": "—",
-    "camera": "—",
-    "ports": "—",
-    "price": "From $1,199"
+    "os": "Googlebook OS (Android-based, codename Aluminium OS)",
+    "chip": "Qualcomm Snapdragon X Elite X1E-80-100 (NPU up to 45 TOPS)",
+    "ram": "16 GB LPDDR5X (32 GB option)",
+    "storage": "512 GB PCIe Gen 4 SSD",
+    "display": "13.4\" 2.5K (2560 × 1600) IPS LCD touchscreen, 30–120 Hz, 500 nits, anti-glare",
+    "battery": "52 Wh, up to 18 hours, 65 W USB-C charging",
+    "camera": "2 MP webcam",
+    "protection": "Google Titan C2 security chip, fingerprint reader",
+    "ports": "2 × USB Type-C 3.2 (10 Gbps) with DisplayPort 1.4 and Power Delivery",
+    "weight": "2.2 lb (1.0 kg)",
+    "dimensions": "296.9 × 200.7 × 12.7 mm",
+    "wireless": "Wi-Fi 7, Bluetooth 5.4",
+    "price": "From $999 (Google Store)"
    },
    "faults": [
     {
@@ -3540,7 +3551,7 @@
     }
    ],
    "latestApi": 0,
-   "officialUrl": "https://googlebook.google",
+   "officialUrl": "https://googlebook.google/shop/xps-googlebook",
    "officialIsStore": true,
    "launch": {
     "date": "2026-09-21",
@@ -3557,7 +3568,10 @@
      "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
     },
     "query": "Googlebook launch Google Aluminium OS announcement"
-   }
+   },
+   "specsUrl": "https://store.google.com/product/xps_googlebook_specs",
+   "ifixitUrl": "https://www.ifixit.com/laptop-repairability",
+   "ifixitNote": "iFixit hasn't published a teardown or repairability score for this Googlebook yet. This opens iFixit's laptop repairability scores."
   },
   {
    "id": "googlebook_hp_14",
@@ -3568,14 +3582,18 @@
    "launchApi": 0,
    "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
    "specs": {
-    "os": "Googlebook OS (Aluminium OS, based on Android)",
-    "chip": "Qualcomm Snapdragon X Elite",
-    "ram": "16 - 32 GB",
-    "storage": "256 GB or more",
-    "display": "14\" 2.8K OLED",
-    "battery": "—",
-    "camera": "—",
-    "ports": "—",
+    "os": "Googlebook OS (Android-based, codename Aluminium OS)",
+    "chip": "Qualcomm Snapdragon X Elite X1E-80-100, 12 cores up to 4.0 GHz (NPU 45 TOPS)",
+    "ram": "16 GB LPDDR5X-8448 (32 GB option)",
+    "storage": "512 GB NVMe SSD (1 TB option)",
+    "display": "14\" 3K (2880 × 1800) OLED touchscreen, up to 120 Hz, 500 nits, 100% DCI-P3, Gorilla Glass 3",
+    "battery": "70 Wh, up to 19 hours, 65 W USB-C GaN charger",
+    "camera": "5 MP IR webcam with privacy shutter",
+    "protection": "Google Titan C2 security chip, fingerprint reader, face unlock",
+    "ports": "2 × USB-C (10 Gbps, Power Delivery, DisplayPort 1.4), 3.5 mm audio combo",
+    "weight": "2.74 lb (1.24 kg)",
+    "dimensions": "311.1 × 216.6 × 10.9 mm",
+    "wireless": "Wi-Fi 7, Bluetooth 5.4",
     "price": "From $1,299"
    },
    "faults": [
@@ -3586,7 +3604,7 @@
     }
    ],
    "latestApi": 0,
-   "officialUrl": "https://googlebook.google",
+   "officialUrl": "https://googlebook.google/shop/hp-googlebook-14",
    "officialIsStore": true,
    "launch": {
     "date": "2026-09-21",
@@ -3603,7 +3621,10 @@
      "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
     },
     "query": "Googlebook launch Google Aluminium OS announcement"
-   }
+   },
+   "specsUrl": "https://www.hp.com/us-en/shop/mlp/hp-googlebook",
+   "ifixitUrl": "https://www.ifixit.com/laptop-repairability",
+   "ifixitNote": "iFixit hasn't published a teardown or repairability score for this Googlebook yet. This opens iFixit's laptop repairability scores."
   },
   {
    "id": "googlebook_asus_14",
@@ -3614,14 +3635,18 @@
    "launchApi": 0,
    "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
    "specs": {
-    "os": "Googlebook OS (Aluminium OS, based on Android)",
-    "chip": "Intel Core Ultra 5 or Core Ultra 7",
-    "ram": "16 - 32 GB",
-    "storage": "256 GB or more",
-    "display": "14\" 2.8K OLED",
-    "battery": "—",
-    "camera": "—",
-    "ports": "—",
+    "os": "Googlebook OS (Android-based, codename Aluminium OS)",
+    "chip": "Intel Core Ultra 5 325 or Core Ultra 7 (NPU up to 49 TOPS)",
+    "ram": "16 GB LPDDR5X",
+    "storage": "512 GB PCIe 4.0 SSD",
+    "display": "14\" 3K (2880 × 1800) OLED touchscreen, 120 Hz, 450 nits (1,000 nits HDR peak), matte anti-glare, Gorilla Glass",
+    "battery": "70 Wh, up to 18 hours of video or 16 hours of web browsing",
+    "camera": "FHD (1080p) webcam with privacy shutter",
+    "protection": "Google Titan C2 security chip, fingerprint reader, camera shutter",
+    "ports": "2 × Thunderbolt 4 USB-C, 2 × USB 3.2 Gen 2 Type-A, HDMI 2.1b, 3.5 mm audio combo",
+    "weight": "2.18 lb (0.99 kg)",
+    "dimensions": "310.9 × 212.8 × 10.9–16.4 mm",
+    "wireless": "Wi-Fi 7, Bluetooth 6.0",
     "price": "From $1,299"
    },
    "faults": [
@@ -3632,7 +3657,7 @@
     }
    ],
    "latestApi": 0,
-   "officialUrl": "https://googlebook.google",
+   "officialUrl": "https://googlebook.google/shop/asus-googlebook-14",
    "officialIsStore": true,
    "launch": {
     "date": "2026-09-21",
@@ -3649,7 +3674,10 @@
      "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
     },
     "query": "Googlebook launch Google Aluminium OS announcement"
-   }
+   },
+   "specsUrl": "https://press.asus.com/news/press-releases/asus-googlebook-14-gemini-intelligence/",
+   "ifixitUrl": "https://www.ifixit.com/laptop-repairability",
+   "ifixitNote": "iFixit hasn't published a teardown or repairability score for this Googlebook yet. This opens iFixit's laptop repairability scores."
   },
   {
    "id": "googlebook_lenovo_15",
@@ -3660,15 +3688,19 @@
    "launchApi": 0,
    "supportEnds": "Googlebook updates: Google says feature updates will be faster than on traditional laptops (support period to be confirmed)",
    "specs": {
-    "os": "Googlebook OS (Aluminium OS, based on Android)",
-    "chip": "Intel Core Ultra 5",
-    "ram": "16 GB",
-    "storage": "256 GB or more",
-    "display": "15.3\" 2.8K OLED",
-    "battery": "—",
-    "camera": "—",
-    "ports": "—",
-    "price": "From $1,299"
+    "os": "Googlebook OS (Android-based, codename Aluminium OS)",
+    "chip": "Intel Core Ultra 5 325 (NPU 47 TOPS)",
+    "ram": "16 GB LPDDR5X (up to 32 GB announced)",
+    "storage": "512 GB SSD (replaceable M.2 2242)",
+    "display": "15.3\" 2.8K (2880 × 1800) OLED touchscreen, 120 Hz, anti-glare, anti-fingerprint",
+    "battery": "70 Wh, up to 13 hours (Google's figure; Lenovo quotes 12.5), 65 W USB-C charging",
+    "camera": "5 MP webcam with physical shutter",
+    "protection": "Google Titan C2 security chip, fingerprint reader, face unlock, camera shutter",
+    "ports": "2 × Thunderbolt 4 (one each side), 1 × USB 3.2 Type-A, HDMI 2.0, 3.5 mm audio combo",
+    "weight": "2.84 lb (1.29 kg)",
+    "dimensions": "341 × 236 × 15.9 mm",
+    "wireless": "Wi-Fi 7, Bluetooth 5.4",
+    "price": "From $1,099"
    },
    "faults": [
     {
@@ -3678,7 +3710,7 @@
     }
    ],
    "latestApi": 0,
-   "officialUrl": "https://googlebook.google",
+   "officialUrl": "https://googlebook.google/shop/lenovo-googlebook-15",
    "officialIsStore": true,
    "launch": {
     "date": "2026-09-21",
@@ -3695,7 +3727,10 @@
      "ur": "گوگل کی طرف سے اعلان؛ رِک اوسٹرلوہ کے ساتھ سنیپ ڈریگن سمٹ میں اشارہ"
     },
     "query": "Googlebook launch Google Aluminium OS announcement"
-   }
+   },
+   "specsUrl": "https://store.google.com/product/lenovo_googlebook_specs",
+   "ifixitUrl": "https://www.ifixit.com/laptop-repairability",
+   "ifixitNote": "iFixit hasn't published a teardown or repairability score for this Googlebook yet. This opens iFixit's laptop repairability scores."
   },
   {
    "id": "pixel_tag",

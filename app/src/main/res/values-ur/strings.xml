@@ -328,4 +328,8 @@
     <string name="shelf_need_more">شیلف کو حرکت میں دیکھنے کے لیے اپنا ایک اور آلہ شامل کریں۔</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
+    <string name="link_tech_specs">مکمل تکنیکی تفصیلات</string>
+    <string name="spec_weight">وزن</string>
+    <string name="spec_dimensions">پیمائش</string>
+    <string name="spec_wireless">وائرلیس</string>
 </resources>
