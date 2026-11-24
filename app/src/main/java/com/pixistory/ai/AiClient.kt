@@ -20,8 +20,8 @@ class AiException(message: String, val code: Int = 0) : Exception(message)
 /**
  * Talks to Claude (Anthropic) or Gemini (Google).
  *
- * Keys come from Settings > Ask Pixi (stored on the phone), falling back to the ones baked in from
- * local.properties at build time. A key is only ever sent to its own provider.
+ * Keys are baked in from local.properties at build time (ANTHROPIC_API_KEY / GEMINI_API_KEY); there is no
+ * key field in the app. A key is only ever sent to its own provider.
  *
  * Gemini models: the free tier moves quickly (the 2.5 models are being retired), so unless a model is
  * chosen explicitly Pixi tries the current free models in turn and remembers the one that works.
@@ -52,9 +52,6 @@ class AiClient(private val settings: SettingsStore) {
             geminiWithFallback(geminiKey(), system, clean)
         }
     }
-
-    /** A tiny round trip, so Settings can say plainly whether the key works. */
-    suspend fun test(): String = ask("You are a connection test.", listOf(AiTurn("user", "Reply with the single word OK.")))
 
     /** Providers need the first turn from the user and strictly alternating roles. */
     private fun normalise(turns: List<AiTurn>): List<AiTurn> {
@@ -99,9 +96,11 @@ class AiClient(private val settings: SettingsStore) {
     }
 
     private fun geminiWithFallback(key: String, system: String, turns: List<AiTurn>): String {
-        if (key.isBlank()) throw AiException("Add a Gemini API key in Settings")
+        if (key.isBlank()) throw AiException("GEMINI_API_KEY is missing from local.properties")
         // A model the user typed in themselves goes first; the old default is treated as "automatic".
-        val chosen = settings.current.geminiModel.trim().takeIf { it.isNotBlank() && it != OLD_DEFAULT_MODEL }
+        // A model set in local.properties (GEMINI_MODEL) or in settings goes first; the old default is treated as "automatic".
+        val chosen = listOf(BuildConfig.GEMINI_MODEL, settings.current.geminiModel)
+            .map { it.trim() }.firstOrNull { it.isNotBlank() && it != OLD_DEFAULT_MODEL }
         val candidates = (listOfNotNull(chosen, workingGeminiModel) + GEMINI_FREE_MODELS).distinct()
 
         var last: AiException? = null

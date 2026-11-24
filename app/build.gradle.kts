@@ -29,7 +29,7 @@ android {
         buildConfigField("String", "ANTHROPIC_MODEL", "\"${secret("ANTHROPIC_MODEL", "claude-sonnet-5-5")}\"")
         buildConfigField("String", "GEMINI_API_KEY", "\"${secret("GEMINI_API_KEY")}\"")
         buildConfigField("String", "NEWS_FEED_URL", "\"${secret("NEWS_FEED_URL", "https://raw.githubusercontent.com/wrcovid4-max/PixistoryAS/main/feed/news.json")}\"")
-        buildConfigField("String", "GEMINI_MODEL", "\"${secret("GEMINI_MODEL", "gemini-2.5-flash")}\"")
+        buildConfigField("String", "GEMINI_MODEL", "\"${secret("GEMINI_MODEL", "")}\"")
     }
 
     buildTypes {

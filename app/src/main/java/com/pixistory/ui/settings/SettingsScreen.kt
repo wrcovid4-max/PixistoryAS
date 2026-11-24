@@ -17,13 +17,6 @@ import com.pixistory.ui.common.PixiTopBar
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.text.input.PasswordVisualTransformation
-import androidx.compose.ui.text.input.VisualTransformation
-import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Visibility
-import androidx.compose.material.icons.filled.VisibilityOff
-import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.pixistory.R
@@ -132,37 +125,6 @@ fun SettingsScreen(vm: AppViewModel, onOpenShelf: () -> Unit, onOpenAbout: () ->
                         Switch(checked = s.assetUseCategory, onCheckedChange = { on -> vm.updateSettings { it.copy(assetUseCategory = on) } })
                     }
                     OutlinedButton(onClick = { vm.export(ExportKind.LABELS) }, modifier = Modifier.fillMaxWidth()) { Text(stringResource(R.string.set_print_labels)) }
-                }
-
-                SectionCard(stringResource(R.string.ask_name)) {
-                    var key by remember(s.geminiKey) { mutableStateOf(s.geminiKey) }
-                    var show by remember { mutableStateOf(false) }
-                    val testResult by vm.aiTest.collectAsStateWithLifecycle()
-                    val busy by vm.aiBusy.collectAsStateWithLifecycle()
-                    val uri = LocalUriHandler.current
-                    Text(stringResource(R.string.set_ai_body), style = MaterialTheme.typography.bodyMedium)
-                    OutlinedTextField(
-                        value = key,
-                        onValueChange = { key = it.filterNot(Char::isWhitespace) },
-                        label = { Text(stringResource(R.string.set_gemini_key)) },
-                        singleLine = true,
-                        visualTransformation = if (show) VisualTransformation.None else PasswordVisualTransformation(),
-                        keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
-                        trailingIcon = {
-                            IconButton(onClick = { show = !show }) {
-                                Icon(if (show) Icons.Filled.VisibilityOff else Icons.Filled.Visibility, contentDescription = null)
-                            }
-                        },
-                        modifier = Modifier.fillMaxWidth(),
-                    )
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Button(onClick = { vm.setGeminiKey(key) }, enabled = key != s.geminiKey) { Text(stringResource(R.string.set_save_key)) }
-                        OutlinedButton(onClick = { vm.testAi() }, enabled = !busy && (key.isNotBlank() || vm.aiConfigured)) {
-                            Text(stringResource(R.string.set_test_conn))
-                        }
-                    }
-                    testResult?.let { Text(it, style = MaterialTheme.typography.bodyMedium) }
-                    TextButton(onClick = { uri.openUri("https://aistudio.google.com/apikey") }) { Text(stringResource(R.string.set_get_key)) }
                 }
 
                 SectionCard(stringResource(R.string.set_data)) {

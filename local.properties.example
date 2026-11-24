@@ -1,0 +1,7 @@
+## Copy these lines into local.properties (project root, never committed).
+## Ask Pixi works with either key; Claude is used when its key is present, otherwise Gemini.
+## Free keys: https://aistudio.google.com/apikey
+GEMINI_API_KEY=your-gemini-key
+#ANTHROPIC_API_KEY=your-claude-key
+## Optional: force one Gemini model. Leave out to let Pixi try the current free models automatically.
+#GEMINI_MODEL=gemini-3.8-flash

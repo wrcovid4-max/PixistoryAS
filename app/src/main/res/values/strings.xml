@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Pixistory</string>
     <string name="tagline">Your devices, their history and every Pixel Drop</string>
-    <string name="splash_credit" translatable="false">© WR COVID</string>
+    <string name="splash_credit" translatable="false">© WR COVID YT 2026</string>
     <string name="copyright">© 2026 WR COVID YT. All rights reserved.</string>
     <string name="back">Back</string>
     <string name="cancel">Cancel</string>
@@ -308,7 +308,7 @@
     <string name="f_latest_update">Latest update for this model</string>
     <string name="mark_updated">Mark as updated to Android %1$s</string>
     <string name="about_credits_title">Thanks and credits</string>
-    <string name="about_credits_body">Technical Details by GSMArena (gsmarena.com): open any device\'s specs page from its details.\nRepairability scores by iFixit (ifixit.com): see the full teardowns there.\nFeature availability by whereisenabled.com.\nKilled by Google by killedbygoogle.com.\nPixel Drop history compiled from Google\'s announcements and Android Authority, 9to5Google and other press.</string>
+    <string name="about_credits_body">Technical details for phones and tablets by GSMArena (gsmarena.com): open any device\'s specs page from its details.\nRepairability scores by iFixit (ifixit.com): see the full teardowns there.\nGooglebook specs from Google Store tech-spec pages and the makers\' own pages (Acer, Dell, Lenovo, ASUS, HP).\nGooglebook Play Store desktop tags as reported by Google, Android Police, Tom\'s Hardware and Wired.\nFeature availability by whereisenabled.com.\nKilled by Google by killedbygoogle.com.\nPixel Drop history compiled from Google\'s announcements and Android Authority, 9to5Google and other press.\nAsk Pixi is powered by Google Gemini.</string>
     <string name="repair_provisional">Provisional score from iFixit\'s first look.</string>
     <string name="pixel_launch">Launch information</string>
     <string name="launch_date">Introduced</string>
@@ -325,7 +325,7 @@
     <string name="launch_line">Introduced %1$s • %2$s</string>
     <string name="spec_os">Operating system</string>
     <string name="spec_ports">Ports</string>
-    <string name="ask_unavailable">Pixi needs a Gemini API key. Add one in Settings → Ask Pixi (a free key from Google AI Studio works).</string>
+    <string name="ask_unavailable">Pixi isn\'t available right now. Please try again later.</string>
     <string name="shelf_need_more">Add another device you own to see the shelf move.</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
@@ -333,12 +333,6 @@
     <string name="spec_weight">Weight</string>
     <string name="spec_dimensions">Dimensions</string>
     <string name="spec_wireless">Wireless</string>
-    <string name="set_ai_body">Pixi answers with Google\'s Gemini. Paste a key from Google AI Studio (the free one works). It stays on this phone and is only sent to Google.</string>
-    <string name="set_gemini_key">Gemini API key</string>
-    <string name="set_save_key">Save key</string>
-    <string name="set_test_conn">Test connection</string>
-    <string name="ai_test_ok">Connected. Pixi can answer now.</string>
-    <string name="set_get_key">Get a free key from Google AI Studio</string>
     <string name="feat_googlebook">Compatible with Googlebooks</string>
     <string name="gb_title">Apps tagged for Googlebooks</string>
     <string name="gb_intro">Google Play marks every Android app with one of five desktop tags on a Googlebook. Open the Play Store on your Googlebook to see the current tag on each app.</string>

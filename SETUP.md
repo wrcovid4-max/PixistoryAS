@@ -29,9 +29,11 @@ ANTHROPIC_API_KEY=your-claude-key
 GEMINI_API_KEY=your-gemini-key
 # optional model overrides
 ANTHROPIC_MODEL=claude-sonnet-5-5
-GEMINI_MODEL=gemini-2.5-flash
+GEMINI_MODEL=gemini-3.8-flash
 ```
+Paste the key as-is: no quotes, no spaces around `=`. Then **File > Sync Project with Gradle Files** and run again (a key added after a build only takes effect on the next build).
 Claude is used when its key is present, otherwise Gemini. The key is compiled into your own build; it is not in the repo and there is no key field in the app.
+Leave `GEMINI_MODEL` out and Pixi tries the current free Gemini models in turn (the old `gemini-2.5-flash` is being retired by Google on 1 Dec 2026). A free key works. `local.properties.example` has the lines to copy.
 
 ## 4. Pixel data
 `app/src/main/assets/pixel_knowledge.json` and `pixel_drops.json` hold the history, specs, faults and Pixel Drops (English and Urdu).

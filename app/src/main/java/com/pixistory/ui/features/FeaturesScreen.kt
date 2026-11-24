@@ -15,11 +15,13 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.OpenInNew
 import androidx.compose.material.icons.filled.Public
+import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -269,7 +271,13 @@ internal fun FoldAppsSection(data: FeatureData) {
                 }
             }
         }
-        item { Text(stringResource(R.string.fold_this_app), style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant) }
+        item {
+            Row(verticalAlignment = Alignment.Top) {
+                Icon(Icons.Outlined.Info, contentDescription = null, tint = c.onSurfaceVariant, modifier = Modifier.size(18.dp))
+                Spacer(Modifier.width(8.dp))
+                Text(stringResource(R.string.fold_this_app), style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant, modifier = Modifier.weight(1f))
+            }
+        }
         items(data.foldApps, key = { it.pkg }) { a -> FoldAppCard(a) { uri.openUri(a.url) } }
         item { Text(stringResource(R.string.fold_source), style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant) }
     }
@@ -311,14 +319,25 @@ internal fun GooglebookAppsSection(data: FeatureData) {
             }
         }
         item {
+            // Centred and evenly spaced: title, then each tag as an equal-width pill with its meaning under it.
             Card(colors = CardDefaults.cardColors(containerColor = c.surfaceContainerLow), modifier = Modifier.fillMaxWidth()) {
-                Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text(stringResource(R.string.gb_tags_title), style = MaterialTheme.typography.titleSmall)
-                    GOOGLEBOOK_TAGS.forEach { (label, meaning) ->
-                        Row(verticalAlignment = Alignment.Top) {
-                            StatusPill(label, if (label == "Better on the website" || label == "Built for mobile") c.error else c.secondary)
-                            Spacer(Modifier.width(10.dp))
-                            Text(stringResource(meaning), style = MaterialTheme.typography.bodySmall, modifier = Modifier.weight(1f))
+                Column(
+                    Modifier.fillMaxWidth().padding(vertical = 18.dp, horizontal = 16.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(16.dp),
+                ) {
+                    Text(stringResource(R.string.gb_tags_title), style = MaterialTheme.typography.titleSmall, textAlign = TextAlign.Center)
+                    GOOGLEBOOK_TAGS.forEachIndexed { index, (label, meaning) ->
+                        if (index > 0) Box(Modifier.fillMaxWidth(0.35f).height(1.dp).background(c.outlineVariant))
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                            LegendPill(label, if (label == "Better on the website" || label == "Built for mobile") c.error else c.secondary)
+                            Text(
+                                stringResource(meaning),
+                                style = MaterialTheme.typography.bodySmall,
+                                color = c.onSurfaceVariant,
+                                textAlign = TextAlign.Center,
+                                modifier = Modifier.fillMaxWidth(0.9f),
+                            )
                         }
                     }
                 }
@@ -330,6 +349,17 @@ internal fun GooglebookAppsSection(data: FeatureData) {
             items(steerAway, key = { it.pkg }) { a -> GooglebookAppCard(a) { uri.openUri(a.url) } }
         }
         item { Text(stringResource(R.string.gb_source, data.googlebookUpdated), style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant) }
+    }
+}
+
+/** An equal-width, centred tag pill, so the five legend rows line up. */
+@Composable
+private fun LegendPill(text: String, color: androidx.compose.ui.graphics.Color) {
+    Box(
+        Modifier.widthIn(min = 220.dp).clip(RoundedCornerShape(8.dp)).background(color.copy(alpha = 0.12f)).padding(horizontal = 12.dp, vertical = 5.dp),
+        contentAlignment = Alignment.Center,
+    ) {
+        Text(text, style = MaterialTheme.typography.labelLarge, color = color, textAlign = TextAlign.Center)
     }
 }
 
