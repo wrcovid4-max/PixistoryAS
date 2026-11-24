@@ -30,6 +30,8 @@ data class AvailFeature(
 enum class Avail { AVAILABLE, NOT_AVAILABLE, VARIES }
 
 data class GraveItem(val name: String, val opened: String, val closed: String, val type: String, val description: String, val link: String)
+/** One app with the desktop tag Google Play shows for it on a Googlebook. [tag] is MADE, TOP2 (made or optimized, tier not stated by the source), OPTIMIZED, COMPATIBLE, BETTER_WEB or MOBILE. */
+data class GooglebookApp(val name: String, val pkg: String, val publisher: String, val tag: String, val note: String, val source: String, val url: String)
 data class FoldApp(val name: String, val pkg: String, val publisher: String, val category: String, val note: String, val source: String, val url: String)
 
 /**
@@ -82,6 +84,17 @@ class FeatureData(private val context: Context) {
     }
 
     private val fold: JSONObject by lazy { runCatching { JSONObject(read("foldapps.json")) }.getOrDefault(JSONObject()) }
+    private val googlebook: JSONObject by lazy { runCatching { JSONObject(read("googlebook_apps.json")) }.getOrDefault(JSONObject()) }
+    val googlebookIntro: String get() = googlebook.optString("intro")
+    val googlebookUpdated: String get() = googlebook.optString("updated")
+    val googlebookApps: List<GooglebookApp> by lazy {
+        val a = googlebook.optJSONArray("apps") ?: JSONArray()
+        (0 until a.length()).map {
+            val o = a.getJSONObject(it)
+            GooglebookApp(o.optString("name"), o.optString("pkg"), o.optString("publisher"), o.optString("tag"), o.optString("note"), o.optString("source"), o.optString("url"))
+        }
+    }
+
     val foldIntro: String get() = fold.optString("intro")
     val foldApps: List<FoldApp> by lazy {
         val a = fold.optJSONArray("apps") ?: JSONArray()

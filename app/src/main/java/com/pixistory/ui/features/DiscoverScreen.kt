@@ -37,6 +37,7 @@ fun DiscoverScreen(vm: AppViewModel, fold: FoldState) {
             PixiChip(selected = section == 1, onClick = { section = 1 }, label = { Text(stringResource(R.string.feat_availability)) })
             PixiChip(selected = section == 2, onClick = { section = 2 }, label = { Text(stringResource(R.string.feat_graveyard)) })
             PixiChip(selected = section == 3, onClick = { section = 3 }, label = { Text(stringResource(R.string.feat_fold)) })
+            PixiChip(selected = section == 4, onClick = { section = 4 }, label = { Text(stringResource(R.string.feat_googlebook)) })
         }
         Spacer(Modifier.height(4.dp))
         Box(Modifier.weight(1f).fillMaxWidth()) {
@@ -44,7 +45,8 @@ fun DiscoverScreen(vm: AppViewModel, fold: FoldState) {
                 0 -> PixelDropsScreen(vm, fold, embedded = true)
                 1 -> AvailabilitySection(data, fold)
                 2 -> GraveyardSection(data)
-                else -> FoldAppsSection(data)
+                3 -> FoldAppsSection(data)
+                else -> GooglebookAppsSection(data)
             }
         }
     }

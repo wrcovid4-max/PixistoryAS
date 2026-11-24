@@ -34,6 +34,7 @@ import com.pixistory.data.features.AvailFeature
 import com.pixistory.data.features.Country
 import com.pixistory.data.features.FeatureData
 import com.pixistory.data.features.FoldApp
+import com.pixistory.data.features.GooglebookApp
 import com.pixistory.data.features.GraveItem
 import com.pixistory.ui.AppViewModel
 import com.pixistory.ui.common.*
@@ -271,6 +272,89 @@ internal fun FoldAppsSection(data: FeatureData) {
         item { Text(stringResource(R.string.fold_this_app), style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant) }
         items(data.foldApps, key = { it.pkg }) { a -> FoldAppCard(a) { uri.openUri(a.url) } }
         item { Text(stringResource(R.string.fold_source), style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant) }
+    }
+}
+
+// ---------------------------------------------------------------- apps tagged for Googlebooks
+
+/** The five desktop tags Google Play shows on Googlebooks, best first, with what each one means. */
+private val GOOGLEBOOK_TAGS = listOf(
+    "Made for desktop" to R.string.gb_tag_made,
+    "Optimized for desktop" to R.string.gb_tag_optimized,
+    "Compatible with desktop" to R.string.gb_tag_compatible,
+    "Better on the website" to R.string.gb_tag_web,
+    "Built for mobile" to R.string.gb_tag_mobile,
+)
+
+private fun googlebookTagLabel(tag: String): String = when (tag) {
+    "MADE" -> "Made for desktop"
+    "OPTIMIZED" -> "Optimized for desktop"
+    "COMPATIBLE" -> "Compatible with desktop"
+    "BETTER_WEB" -> "Better on the website"
+    "MOBILE" -> "Built for mobile"
+    else -> "Optimized or made for desktop"      // named in the top two tiers, exact tier not stated
+}
+
+@Composable
+internal fun GooglebookAppsSection(data: FeatureData) {
+    val uri = LocalUriHandler.current
+    val c = MaterialTheme.colorScheme
+    val good = data.googlebookApps.filter { it.tag != "BETTER_WEB" && it.tag != "MOBILE" }
+    val steerAway = data.googlebookApps.filter { it.tag == "BETTER_WEB" || it.tag == "MOBILE" }
+    LazyColumn(contentPadding = PaddingValues(16.dp, 4.dp, 16.dp, 24.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+        item {
+            Card(colors = CardDefaults.cardColors(containerColor = c.primaryContainer), modifier = Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text(stringResource(R.string.gb_title), style = MaterialTheme.typography.titleMedium, color = c.onPrimaryContainer)
+                    Text(data.googlebookIntro.ifBlank { stringResource(R.string.gb_intro) }, style = MaterialTheme.typography.bodyMedium, color = c.onPrimaryContainer)
+                }
+            }
+        }
+        item {
+            Card(colors = CardDefaults.cardColors(containerColor = c.surfaceContainerLow), modifier = Modifier.fillMaxWidth()) {
+                Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text(stringResource(R.string.gb_tags_title), style = MaterialTheme.typography.titleSmall)
+                    GOOGLEBOOK_TAGS.forEach { (label, meaning) ->
+                        Row(verticalAlignment = Alignment.Top) {
+                            StatusPill(label, if (label == "Better on the website" || label == "Built for mobile") c.error else c.secondary)
+                            Spacer(Modifier.width(10.dp))
+                            Text(stringResource(meaning), style = MaterialTheme.typography.bodySmall, modifier = Modifier.weight(1f))
+                        }
+                    }
+                }
+            }
+        }
+        items(good, key = { it.pkg }) { a -> GooglebookAppCard(a) { uri.openUri(a.url) } }
+        if (steerAway.isNotEmpty()) {
+            item { Text(stringResource(R.string.gb_steer_away), style = MaterialTheme.typography.titleSmall, modifier = Modifier.padding(top = 6.dp)) }
+            items(steerAway, key = { it.pkg }) { a -> GooglebookAppCard(a) { uri.openUri(a.url) } }
+        }
+        item { Text(stringResource(R.string.gb_source, data.googlebookUpdated), style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant) }
+    }
+}
+
+@Composable
+private fun GooglebookAppCard(app: GooglebookApp, onOpen: () -> Unit) {
+    val c = MaterialTheme.colorScheme
+    val warn = app.tag == "BETTER_WEB" || app.tag == "MOBILE"
+    Card(colors = CardDefaults.cardColors(containerColor = c.surfaceContainerLow), modifier = Modifier.fillMaxWidth()) {
+        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Column(Modifier.weight(1f)) {
+                    Text(app.name, style = MaterialTheme.typography.titleMedium)
+                    Text(app.publisher, style = MaterialTheme.typography.bodySmall, color = c.onSurfaceVariant)
+                }
+            }
+            // The tag exactly as the Play Store words it, shown under the app like its own listing.
+            StatusPill(googlebookTagLabel(app.tag), if (warn) c.error else c.secondary)
+            if (app.note.isNotBlank()) Text(app.note, style = MaterialTheme.typography.bodyMedium)
+            Text(stringResource(R.string.fold_source_line, app.source), style = MaterialTheme.typography.labelSmall, color = c.onSurfaceVariant)
+            OutlinedButton(onClick = onOpen) {
+                Icon(Icons.AutoMirrored.Filled.OpenInNew, null)
+                Spacer(Modifier.width(8.dp))
+                Text(stringResource(R.string.fold_open_play))
+            }
+        }
     }
 }
 

@@ -338,4 +338,15 @@
     <string name="set_test_conn">رابطہ جانچیں</string>
     <string name="ai_test_ok">رابطہ ہو گیا۔ اب پکسی جواب دے سکتا ہے۔</string>
     <string name="set_get_key">گوگل AI اسٹوڈیو سے مفت کلید حاصل کریں</string>
+    <string name="feat_googlebook">گوگل بُکس کے ساتھ مطابقت</string>
+    <string name="gb_title">گوگل بُکس کے لیے ٹیگ شدہ ایپس</string>
+    <string name="gb_intro">گوگل پلے ہر اینڈرائیڈ ایپ پر گوگل بُک کے لیے پانچ ڈیسک ٹاپ ٹیگز میں سے ایک لگاتا ہے۔ ہر ایپ کا موجودہ ٹیگ دیکھنے کے لیے اپنی گوگل بُک پر پلے اسٹور کھولیں۔</string>
+    <string name="gb_tags_title">پلے اسٹور کے ٹیگز کا مطلب</string>
+    <string name="gb_tag_made">ڈیسک ٹاپ کے استعمال کے لیے بنائی گئی، ماؤس، کی بورڈ اور بڑی اسکرین کو سامنے رکھ کر۔</string>
+    <string name="gb_tag_optimized">فون یا ٹیبلٹ سے شروع ہوئی مگر لیپ ٹاپ پر فطری لگنے کے لیے ڈھالی گئی۔</string>
+    <string name="gb_tag_compatible">ماؤس یا کی بورڈ کے ساتھ چلتی ہے، مگر ہو سکتا ہے ترتیب اب بھی فون ہی کی ہو۔</string>
+    <string name="gb_tag_web">گوگل کے مطابق ویب سائٹ ایپ سے بہتر تجربہ دیتی ہے۔</string>
+    <string name="gb_tag_mobile">ڈیسک ٹاپ پر جانچی نہیں گئی اور ہو سکتا ہے فون کی ترتیب ہی رکھے۔</string>
+    <string name="gb_steer_away">وہ ایپس جن سے پلے اسٹور آپ کو دور رکھتا ہے</string>
+    <string name="gb_source">ٹیگز گوگل اور پریس جائزوں (اینڈرائیڈ پولیس، ٹامز ہارڈ ویئر، وائرڈ) کے مطابق؛ فہرست %1$s کو اپ ڈیٹ ہوئی۔ یہ مکمل نہیں، اور ڈیولپرز کے اپ ڈیٹ کرنے پر گوگل ٹیگز بدلتا رہتا ہے۔</string>
 </resources>

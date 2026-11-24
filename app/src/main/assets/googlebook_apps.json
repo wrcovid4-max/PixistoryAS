@@ -1,0 +1,123 @@
+{
+ "updated": "2026-11-23",
+ "intro": "Google Play marks every Android app with one of five desktop tags for Googlebooks. These are the apps press reviews and Google have named with a tag; the list is not complete, and tags change. Open the Play Store on your Googlebook to see the current tag on each app.",
+ "apps": [
+  {
+   "name": "Adobe Photoshop",
+   "pkg": "adobe-photoshop",
+   "publisher": "Adobe",
+   "tag": "MADE",
+   "note": "Google's headline example. Reviewers note it is the limited Android version, not the full desktop Photoshop.",
+   "source": "Android Police, Oct 2026; Wired, Sep 2026",
+   "url": "https://play.google.com/store/search?q=Adobe%20Photoshop&c=apps"
+  },
+  {
+   "name": "Luminar",
+   "pkg": "luminar",
+   "publisher": "Skylum",
+   "tag": "MADE",
+   "note": "Rebuilt for Googlebook. One review found no pinch or rotate gestures on the trackpad.",
+   "source": "Android Police, Oct 2026",
+   "url": "https://play.google.com/store/search?q=Luminar%20Skylum&c=apps"
+  },
+  {
+   "name": "Fantastical",
+   "pkg": "fantastical",
+   "publisher": "Flexibits",
+   "tag": "MADE",
+   "note": "The calendar app skipped Android phones and launched on Googlebooks first.",
+   "source": "Android Police, Oct 2026; Tom's Hardware, Oct 2026",
+   "url": "https://play.google.com/store/search?q=Fantastical%20Flexibits&c=apps"
+  },
+  {
+   "name": "Notability",
+   "pkg": "notability",
+   "publisher": "Ginger Labs",
+   "tag": "TOP2",
+   "note": "Google's own example of an adaptive app: its canvas and toolbars reflow as you resize the window, and keyboard and trackpad support carry over.",
+   "source": "Google Googlebook announcement; Tom's Hardware, Oct 2026",
+   "url": "https://play.google.com/store/search?q=Notability%20Ginger%20Labs&c=apps"
+  },
+  {
+   "name": "CapCut",
+   "pkg": "com.lemon.lvoverseas",
+   "publisher": "Bytedance Pte. Ltd.",
+   "tag": "TOP2",
+   "note": "Named by Google as one of the roughly 20 apps in the top two tiers at launch.",
+   "source": "Wired, Sep 2026",
+   "url": "https://play.google.com/store/apps/details?id=com.lemon.lvoverseas"
+  },
+  {
+   "name": "Netflix",
+   "pkg": "com.netflix.mediaclient",
+   "publisher": "Netflix, Inc.",
+   "tag": "TOP2",
+   "note": "Listed among the major apps optimized or made for desktop.",
+   "source": "Tom's Hardware, Oct 2026",
+   "url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient"
+  },
+  {
+   "name": "Obsidian",
+   "pkg": "md.obsidian",
+   "publisher": "Obsidian",
+   "tag": "TOP2",
+   "note": "Listed among the major apps optimized or made for desktop.",
+   "source": "Tom's Hardware, Oct 2026",
+   "url": "https://play.google.com/store/apps/details?id=md.obsidian"
+  },
+  {
+   "name": "Zoom",
+   "pkg": "us.zoom.videomeetings",
+   "publisher": "Zoom Video Communications",
+   "tag": "TOP2",
+   "note": "Listed among the major apps optimized or made for desktop.",
+   "source": "Tom's Hardware, Oct 2026",
+   "url": "https://play.google.com/store/apps/details?id=us.zoom.videomeetings"
+  },
+  {
+   "name": "Microsoft 365 (Office)",
+   "pkg": "com.microsoft.office.officehubrow",
+   "publisher": "Microsoft Corporation",
+   "tag": "TOP2",
+   "note": "Microsoft Office is listed among the major apps optimized or made for desktop.",
+   "source": "Tom's Hardware, Oct 2026",
+   "url": "https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow"
+  },
+  {
+   "name": "Spotify",
+   "pkg": "com.spotify.music",
+   "publisher": "Spotify AB",
+   "tag": "OPTIMIZED",
+   "note": "Carries the Optimized tag, though one reviewer found it scales poorly on a 14-inch screen.",
+   "source": "Android Police, Oct 2026",
+   "url": "https://play.google.com/store/apps/details?id=com.spotify.music"
+  },
+  {
+   "name": "Apple Music",
+   "pkg": "com.apple.android.music",
+   "publisher": "Apple",
+   "tag": "OPTIMIZED",
+   "note": "Tagged Optimized for desktop and chosen automatically when you set a Googlebook up from your phone.",
+   "source": "Tom's Hardware, Oct 2026",
+   "url": "https://play.google.com/store/apps/details?id=com.apple.android.music"
+  },
+  {
+   "name": "Facebook",
+   "pkg": "com.facebook.katana",
+   "publisher": "Meta Platforms, Inc.",
+   "tag": "BETTER_WEB",
+   "note": "The Play Store points you to the website instead of the app, and it is not moved over automatically during setup.",
+   "source": "Android Police, Oct 2026; Wired, Sep 2026",
+   "url": "https://play.google.com/store/apps/details?id=com.facebook.katana"
+  },
+  {
+   "name": "Twitch",
+   "pkg": "tv.twitch.android.app",
+   "publisher": "Twitch Interactive, Inc.",
+   "tag": "BETTER_WEB",
+   "note": "The Play Store steers you to the website rather than the Android app.",
+   "source": "Android Police, Oct 2026",
+   "url": "https://play.google.com/store/apps/details?id=tv.twitch.android.app"
+  }
+ ]
+}

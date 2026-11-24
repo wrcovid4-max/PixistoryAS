@@ -339,4 +339,15 @@
     <string name="set_test_conn">Test connection</string>
     <string name="ai_test_ok">Connected. Pixi can answer now.</string>
     <string name="set_get_key">Get a free key from Google AI Studio</string>
+    <string name="feat_googlebook">Compatible with Googlebooks</string>
+    <string name="gb_title">Apps tagged for Googlebooks</string>
+    <string name="gb_intro">Google Play marks every Android app with one of five desktop tags on a Googlebook. Open the Play Store on your Googlebook to see the current tag on each app.</string>
+    <string name="gb_tags_title">What the Play Store tags mean</string>
+    <string name="gb_tag_made">Built for desktop use, with controls designed around a mouse, keyboard and big display.</string>
+    <string name="gb_tag_optimized">Started on phones or tablets but adapted so it feels natural on a laptop.</string>
+    <string name="gb_tag_compatible">Works with a mouse or keyboard, but the layout may still be a phone\'s.</string>
+    <string name="gb_tag_web">Google says the website gives you a better experience than the app.</string>
+    <string name="gb_tag_mobile">Not tested on desktop and may keep its phone layout.</string>
+    <string name="gb_steer_away">Apps the Play Store steers you away from</string>
+    <string name="gb_source">Tags as reported by Google and press reviews (Android Police, Tom\'s Hardware, Wired); list updated %1$s. It is not complete, and Google changes tags as developers update their apps.</string>
 </resources>
