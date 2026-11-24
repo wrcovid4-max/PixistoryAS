@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Pixistory</string>
     <string name="tagline">Your devices, their history and every Pixel Drop</string>
-    <string name="splash_credit" translatable="false">(C) WR COVID</string>
+    <string name="splash_credit" translatable="false">© WR COVID</string>
     <string name="copyright">© 2026 WR COVID YT. All rights reserved.</string>
     <string name="back">Back</string>
     <string name="cancel">Cancel</string>
@@ -325,7 +325,7 @@
     <string name="launch_line">Introduced %1$s • %2$s</string>
     <string name="spec_os">Operating system</string>
     <string name="spec_ports">Ports</string>
-    <string name="ask_unavailable">Pixi isn\'t available right now. Please try again later.</string>
+    <string name="ask_unavailable">Pixi needs a Gemini API key. Add one in Settings → Ask Pixi (a free key from Google AI Studio works).</string>
     <string name="shelf_need_more">Add another device you own to see the shelf move.</string>
     <string name="shortcut_add">Add device</string>
     <string name="shortcut_ask">Ask Pixi</string>
@@ -333,4 +333,10 @@
     <string name="spec_weight">Weight</string>
     <string name="spec_dimensions">Dimensions</string>
     <string name="spec_wireless">Wireless</string>
+    <string name="set_ai_body">Pixi answers with Google\'s Gemini. Paste a key from Google AI Studio (the free one works). It stays on this phone and is only sent to Google.</string>
+    <string name="set_gemini_key">Gemini API key</string>
+    <string name="set_save_key">Save key</string>
+    <string name="set_test_conn">Test connection</string>
+    <string name="ai_test_ok">Connected. Pixi can answer now.</string>
+    <string name="set_get_key">Get a free key from Google AI Studio</string>
 </resources>

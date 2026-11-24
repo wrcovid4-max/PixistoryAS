@@ -10,6 +10,7 @@ import androidx.lifecycle.viewmodel.viewModelFactory
 import com.pixistory.AppContainer
 import com.pixistory.R
 import com.pixistory.util.FriendlyError
+import com.pixistory.ai.AiException
 import com.pixistory.ai.AiTurn
 import com.pixistory.ai.CollectionContext
 import com.pixistory.data.model.ChatMessageEntity
@@ -190,6 +191,32 @@ class AppViewModel(val container: AppContainer) : ViewModel() {
     private val _aiError = MutableStateFlow<String?>(null)
     val aiError: StateFlow<String?> = _aiError.asStateFlow()
     val aiConfigured: Boolean get() = container.ai.isConfigured
+
+    // Settings > Ask Pixi: save a Gemini key and check that it works.
+    private val _aiTest = MutableStateFlow<String?>(null)
+    val aiTest: StateFlow<String?> = _aiTest.asStateFlow()
+
+    fun setGeminiKey(key: String) {
+        container.settings.update { it.copy(geminiKey = key.trim()) }
+        _aiTest.value = null
+    }
+
+    fun testAi() {
+        if (_aiBusy.value) return
+        viewModelScope.launch {
+            _aiBusy.value = true
+            _aiTest.value = null
+            try {
+                container.ai.test()
+                _aiTest.value = app.getString(R.string.ai_test_ok)
+            } catch (e: Exception) {
+                _aiTest.value = if (FriendlyError.isNetwork(e)) app.getString(R.string.err_no_internet)
+                else (e as? AiException)?.message ?: app.getString(R.string.err_ai_failed)
+            } finally {
+                _aiBusy.value = false
+            }
+        }
+    }
 
     fun askAi(text: String) {
         val q = text.trim()

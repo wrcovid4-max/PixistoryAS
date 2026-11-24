@@ -324,7 +324,7 @@
     <string name="launch_line">متعارف: %1$s • %2$s</string>
     <string name="spec_os">آپریٹنگ سسٹم</string>
     <string name="spec_ports">پورٹس</string>
-    <string name="ask_unavailable">پکسی اس وقت دستیاب نہیں۔ براہ کرم بعد میں کوشش کریں۔</string>
+    <string name="ask_unavailable">پکسی کو جیمنی API کلید درکار ہے۔ سیٹنگز ← پکسی سے پوچھیں میں کلید شامل کریں (گوگل AI اسٹوڈیو کی مفت کلید بھی چلتی ہے)۔</string>
     <string name="shelf_need_more">شیلف کو حرکت میں دیکھنے کے لیے اپنا ایک اور آلہ شامل کریں۔</string>
     <string name="shortcut_add">آلہ شامل کریں</string>
     <string name="shortcut_ask">پکسی سے پوچھیں</string>
@@ -332,4 +332,10 @@
     <string name="spec_weight">وزن</string>
     <string name="spec_dimensions">پیمائش</string>
     <string name="spec_wireless">وائرلیس</string>
+    <string name="set_ai_body">پکسی گوگل کے جیمنی سے جواب دیتا ہے۔ گوگل AI اسٹوڈیو سے کلید یہاں چسپاں کریں (مفت کلید بھی چلتی ہے)۔ یہ صرف اسی فون پر رہتی ہے اور صرف گوگل کو بھیجی جاتی ہے۔</string>
+    <string name="set_gemini_key">جیمنی API کلید</string>
+    <string name="set_save_key">کلید محفوظ کریں</string>
+    <string name="set_test_conn">رابطہ جانچیں</string>
+    <string name="ai_test_ok">رابطہ ہو گیا۔ اب پکسی جواب دے سکتا ہے۔</string>
+    <string name="set_get_key">گوگل AI اسٹوڈیو سے مفت کلید حاصل کریں</string>
 </resources>
